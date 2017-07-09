@@ -1,0 +1,43 @@
+#body{  
+color: black; /* bleu foncé  */
+margin: auto;
+    width: 100%;
+    border: 1px solid #0059b3;
+    padding: 0px;
+} 
+ 
+h1{font-size:1.5 em;line-height:0.5 em;margin-top:0;margin-bottom:0.2 em;}
+h2{font-size:1.3 em;line-height:0.8 em;margin-top:0.4 em;margin-bottom:0.4 em;}
+h3{font-size:0.9 em;line-height:0.9 em;margin-top:0.5 em;margin-bottom:0.5 em;}
+h4,h5,h6{font-size:0.8em;line-height:0.9 em;margin-top:0.7 em;margin-bottom:0.7 em;}
+
+/********************************/
+/* le calendrier des evenements */
+/********************************/
+#section-articlebis {
+/* supression du gradient... */
+width:70%;
+height:100%;
+color:black ; /* #3b0071 violet foncé! */
+background-color:none; /*#80bfff; /* bleu claire... */
+/
+margin-right:2%;
+ border-width:0px;
+ border-style:none;
+ /*border-color:#339fff; /* bleu moyen */
+
+
+ text-align:center;
+ }
+
+#footbis
+{
+position:relative; 
+width:30%;
+padding:5px;
+display:inline-block; 
+background-color:#ffffff;
+float: right;
+height:100%;
+text-align: center;	
+}

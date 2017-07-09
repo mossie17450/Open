@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.centre {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.code {
+	border: 1px dotted black;
+	padding: 5px;
+}
+
+
+/* Calendrier */
+table.calendrier {
+	margin: auto;
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table.calendrier th {
+	border-bottom: 1px solid black;
+}
+
+table.calendrier td {
+	border: 1px solid black;
+	width: 25px;
+	height: 25px;
+}
+
+table.calendrier td div {
+	padding: 0px;
+}
+
+.jourEvenement {
+	background-color: rgb(112, 121, 241);
+}
+
+.lienCalendrierJour {
+	background-color: rgb(203, 206, 250);
+}
+
+.calendrier caption {
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+
+/* Administration */
+#tabAjoutEvent {
+	margin: auto;
+}
+#tabAjoutEvent td {
+	width: 50%;
+	text-align:center;
+}
+
+
+/* Infobulles */
+a.info {
+	position: relative;
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+a.info span {
+	display: none; /* on masque l'infobulle */
+}
+a.info:hover {
+	background: none; /* correction d'un bug IE */
+	z-index: 500; /* on définit une valeur pour l'ordre d'affichage */
+}
+a.info:hover span {
+	display: inline; /* on affiche l'infobulle */
+	position: absolute;
+
+	white-space: nowrap; /* on change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non-désiré */
+
+	top: 30px; /* on positionne notre infobulle */
+	left: 20px;
+	
+	text-align: left;
+	background: white;
+	padding: 3px;
+	border: 1px solid black;
+}
+
+/* Liste des événements à supprimer */
+table.listeEvent {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table.listeEvent td {
+	padding: 5px;
+}

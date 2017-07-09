@@ -1,0 +1,70 @@
+<style type="text/css" media="screen">
+
+body {
+	margin: auto;
+    width: 80%;
+    border: 3px solid ;
+    padding: 10px;
+	position:center;
+
+background: white;
+font: 50% verdana, arial, sans-serif;
+}
+
+dl, dt, dd, ul, li {
+margin-top:0px;
+padding: 0;
+list-style-type: none;
+}
+#menu {
+position: center; /* placement du menu, à modifier selon vos besoins */
+top: 400;
+left: 0;
+z-index:100;
+width: 100%; /* correction pour Opera */
+}
+#menu dl {
+float: left;
+width: 15em;
+}
+
+#menu dt {
+color: #3b0071; /* violet tres foncé */
+cursor: pointer;
+text-align: center;
+font-weight: bold;
+background:#80bfff; /* bleu foncé */
+border: 1px solid #339fff;
+margin: 1px;
+}
+#menu dd {
+display: none;
+border: 1px solid #339fff;
+}
+#menu li {
+text-align: center;
+background:#80bfff;
+}
+#menu li a, #menu dt a {
+color: #fff7e6 ; /* orange tres claire */
+text-decoration: none;
+display: block;
+height: 10%;
+border: 0 none;
+}
+#menu li a:hover, #menu li a:focus, #menu dt a:hover, #menu dt a:focus {
+background: #0059b3;
+}
+
+#site {
+position: absolute;
+z-index: 1;
+top : 10%;
+left : 5%;
+bottom : 20%;
+color: black;
+background-color: white;
+padding: 2%;
+border: 1px solid #339fff; 
+}
+</style>

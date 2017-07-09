@@ -1,0 +1,19 @@
+
+#body{  
+color: black; /* bleu foncé  */
+margin: auto;
+    width: 95%;
+   
+
+position:center;
+ background: -webkit-linear-gradient(left,#339fff,white,white,white,#339fff);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,#339fff,white,white,white,#339fff);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,#339fff,white,white,white,#339fff);
+  /* Standard syntax */
+  background: linear-gradient(to right,#339fff,white,white,white,#339fff);
+} 
+
+
+

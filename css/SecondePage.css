@@ -1,0 +1,651 @@
+/* bouton radio cachés  */
+
+/*
+input[type="radio"]
+{
+transform: scale(0,0);
+}
+input[type="radio"]:checked+label img{outline: 3px solid #0f0;}
+*/
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+	}
+
+/* image de fond du site : pour les tres grand ecran : pas de fond blanc, plus agreable à regarder!  */
+#equipe{
+background-image:url("../image/occludert.png"); 
+background-repeat: repeat;
+background-origin: content-box;
+/*background-size: cover; */
+ opacity: 0.90;
+ filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+#articleManagement,#introManagement{
+margin-left:10%;
+margin-right:5%;
+}
+
+#puces  li{
+list-style-type: square; 
+text-align:left;
+position:left;
+padding:0;
+margin:0;
+}
+
+
+/* texte clingnotant  */
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+/* calendrier à droite.  */
+.right {
+    position: absolute;
+    right: 10%;
+    width: 20%;
+	top:20%;
+    border:none;
+    padding: 0.5%;
+}
+
+
+#choixlangueIE
+{
+width:15%; 
+position:relative;
+padding:0px;
+
+}
+
+#projet lu,li{
+text-align:left;
+position:left;
+padding:0;
+margin:0;
+}
+
+nav
+{ 
+ display:inline;
+ position:left; /*modif?*/
+}
+
+
+body 
+   {
+   color: black;
+   min-height:1000px;
+   max-width:1800px; /*voir comment cela s'affiche sur la page en ligne  */
+   height:100%;
+   font-family:"sherif, Georgia";
+   /*background-color:#0059b3; /* essai  bleu fonce:#339fff * à remplacer par un gradient:#0059b3,white...*/
+   background: -webkit-linear-gradient(top,#0059b3,white);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(top,#0059b3,white);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(top,#0059b3,white);
+  /* Standard syntax */
+  background: linear-gradient(to bottom,#0059b3,white);
+      /* color:#fff7e6;  /* jaune orange tres claire */
+  
+  }
+  
+/*  pour fixer la taille du site....quelque soit la taille de l'écran :    */
+#body{  
+color: black; /* noire */
+margin: auto;
+  height:100%;
+    width:85%;
+	
+    border: 1px solid #339fff ;
+    padding: 0px;
+
+position:center;
+ background: -webkit-linear-gradient(left,#339fff,white,white,white,#339fff);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,#339fff,white,white,white,#339fff);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,#339fff,white,white,white,#339fff);
+  /* Standard syntax */
+  background: linear-gradient(to right,#339fff,white,white,white,#339fff); 
+ text-color: black; /* noire, 0059b3: moyen:#339fff */
+}  
+
+#admin{
+padding: 50px 30px 50px 80px;
+}
+
+
+#header{  /* position de l'image en tête */
+ /*  position:center;   
+width:20%;
+height:10px;
+margin-bottom:0px;
+margin-top:0px;
+margin-left: 150px;
+
+z-index:-100px; 
+*/
+}
+
+
+#cell{
+display:flex;
+flex-wrap:wrap;
+}
+
+article
+{
+text-align:justify;
+margin-left:5%;
+margin-right:22%;
+}
+
+
+#articlebis
+{
+/* supression du gradient... */
+width:100%;
+height:100%;
+color:black; /* #3b0071 violet foncé! */
+background-color: #80bfff; /* bleu claire... */
+/* gradient */
+background-color:#80bfff; 
+background: -webkit-linear-gradient(left,white,#80bfff,#80bfff,#80bfff,white);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient (left,white,#80bfff,#80bfff,#80bfff,white);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,white,#80bfff,#80bfff,#80bfff,white);
+  /* Standard syntax */
+ background: linear-gradient(to right,white,#80bfff,#80bfff,#80bfff,white);
+/* fin gradient  */
+margin-right:2%;
+ border-width:0px;
+ border-style:none;
+ /*border-color:#339fff; /* bleu moyen */
+ padding:3%;
+-moz-border-radius:10px ;
+-webkit-border-radius:10px ;
+border-radius:10px ;
+ text-align:center;
+}
+
+/* couleur des lien   */
+
+
+
+
+#activite{color:transparent;}
+
+#contenu{
+width:100%;
+color:black;
+}
+
+a{color:#5858da;}
+
+#section-article {
+/* supression du gradient... */
+width:90%;
+height:100%;
+text-align:justify;
+color:black ; /* #3b0071 violet foncé! noire*/
+background-color:none; /*#80bfff; /* bleu claire... */
+margin-left:2%;
+margin-right:2%;
+padding-right:10%;
+border-width:0px;
+border-style:none;
+ /*border-color:#339fff; /* bleu moyen */
+ padding:1%;
+-moz-border-radius:10px ;
+-webkit-border-radius:10px ;
+border-radius:10px ;
+
+ }
+ 
+ #section-articlebis {
+/* supression du gradient... */
+width:100%;
+height:100%;
+color:black; /* #3b0071 violet foncé! */
+background-color:none; /*#80bfff; /* bleu claire... */
+margin-left:3%;
+margin-right:3%;
+border-width:0px;
+border-style:none;
+ /*border-color:#339fff; /* bleu moyen */
+ text-align:justify;
+ }
+ 
+  
+#fin-article{
+width:100%;
+margin-left:0px;
+
+background-color:#e6f2ff;
+
+ border-width:0px;
+ border-style:solid;
+ border-color:#ccccff;
+ padding:2px;
+-moz-border-radius:20px ;
+-webkit-border-radius:20px ;
+border-radius:30px ;
+ }
+ #PTIB{
+width:100%;
+margin-left:0px;
+
+
+
+ border-width:0px;
+ border-style:solid;
+ border-color:#ccccff;
+ padding:0px;
+-moz-border-radius:20px ;
+-webkit-border-radius:20px ;
+border-radius:30px ;
+ }
+ 
+.arrondie{
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px;
+}
+
+#footbis
+{
+position:relative; 
+width:20%;
+padding:2px;
+display:inline-block; 
+background-color:#ffffff;
+float: right;
+height:100%;
+text-align: center;	
+}
+
+#foot
+{
+position:relative; 
+width:20%;
+padding:2px;
+display:inline-block; 
+margin-right:5%;
+
+float: right;
+height:100%;
+text-align: justify;	
+
+}
+
+
+#test a{color:#0059b3;}
+
+#test, #page
+{
+clear:left;
+text-align:center;
+background-color:#ffffff;opacity:0.5;
+}
+
+th, td {
+    padding: 0.5%;
+    text-align: left;
+}
+
+#tab {
+    width: 95%;
+}
+
+#tab td {
+    height: 50px;
+    vertical-align: left;	
+}
+
+#tab tr {
+    background-color:#339fff;  /* bleu moyen */
+	border-spacing: white;  /* #004d99; */
+	color:#fff7e6; /* jaune orangé  */
+	text-align:center;
+}
+
+#tab th {
+   background-color:#3b0071; /* violet tres foncé */
+   text-align:left;
+   color:#80bfff; /* bleu claire */
+}
+
+/*************************************/
+/* mise en forme des formulaires ... */
+/*************************************/
+/*
+form {
+ padding:0px;
+ width:100%;
+background-color:transparent;
+ }
+ */
+ form {
+text-align: center;
+ padding:0%;
+ margin-left:10%;
+ /*width:80%;*/
+background-color:transparent;
+ }
+
+ 
+/* 
+#form
+{ 
+width:100%; 
+position:relative;
+}
+
+fieldset {
+ padding:0 20px 20px 20px;
+ margin-bottom:10px;
+ border:1px solid white;
+ }
+ */
+ 
+ fieldset {
+ padding:0 5px 5px 5px;
+ margin-bottom:10px;
+ border:1px solid white;
+ width:90%;
+ }
+ 
+legend {
+ color:white;
+ font-weight:bold
+ }
+/*label {
+ margin-top:10px;
+ display:block;
+ } */
+ label {
+text-align:left;
+ margin-top:10px;
+ margin-left:10%;
+ display:block;
+ }
+ 
+ 
+ label.inline {
+ display:inline;
+ margin-right:20px;
+ }
+
+input, textarea, select {
+ padding:3px;
+ border:1px solid white;
+ border-radius:5px;
+ width:70%;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ }
+select {
+ margin-top:10px;
+ }
+input[type=radio] {
+ background-color:transparent;
+ border:none;
+ width:20px;
+ }
+ 
+input[type=submit], input[type=reset] {
+border:none;
+color:bleu;
+ margin-left:1px;
+ box-shadow:1px 1px 1px #D83F3D;
+ cursor:pointer;
+ }
+ 
+
+ input:focus, textarea:focus {
+ background-color:white;
+ }
+input[type=submit]:focus, input[type=reset]:focus {
+ background-color:white;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+ background-color:white;
+ }
+
+ /* quelques formulaire: */
+ /* formulaire de contact !  */
+#FdC{
+text-align: center;
+ padding:0%;
+ margin-left:10%;
+ width:80%;
+background-color:#b3d9ff;
+ }
+
+ /* choix des langues  */ 
+ #CdL {
+ position:relative;
+text-align: center;
+ padding:0%;
+ float:left;
+ /*margin-left:85%;*/
+ width:15%;
+background-color:transparent;
+ }
+ 
+
+hr {
+    display: block;
+    clear: both;
+    height: 0;
+    margin: 10% 0% 10%;
+    padding: 0;
+    border: 0;
+    font-family: arial;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1;
+}
+
+
+/********************************/
+/* les images, galerie d'images */
+/********************************/
+/*
+div.img {
+    margin: 5px; 
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+li
+{
+list-style-type:none;
+}
+*/
+img{
+  display:block;
+    margin:0px; 
+}
+.img{
+margin-left:20%;
+}
+.img2{
+margin-left:10%;
+padding-right:2px;
+}
+.img3{
+margin-left:2%;
+padding-right:2px;
+margin-right:2%;
+}
+
+/********************************/
+/* le calendrier des evenements */
+/********************************/
+
+table.calendrier {
+	margin: auto;
+	text-align: center;
+	/* border: 1px solid black; */
+	border-collapse: collapse;
+}
+
+table.calendrier th {
+	border-bottom: 1px solid black;
+}
+
+table.calendrier td {
+	/* border: 1px solid black; */
+	width: 25px;
+	height: 25px;
+}
+
+table.calendrier td div {
+	padding: 0px;
+}
+
+.jourEvenement {
+	background-color: rgb(253, 241, 184);
+}
+
+.lienCalendrierJour {
+	background-color: rgb(203, 206, 250);
+}
+
+.calendrier caption {
+	margin: auto;
+	margin-bottom: 3px;
+}
+
+
+/* Administration */
+#tabAjoutEvent {
+	margin: auto;
+}
+#tabAjoutEvent td {
+	width: 50%;
+	text-align:center;
+}
+
+
+/* Infobulles 
+a.info {
+	position: relative;
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+a.info span {
+	display: none; /* on masque l'infobulle 
+}
+a.info:hover {
+	background: none; /* correction d'un bug IE 
+	z-index: 500; /* on définit une valeur pour l'ordre d'affichage 
+}
+a.info:hover span {
+	display: inline; /* on affiche l'infobulle 
+	position: absolute;
+
+	white-space: nowrap; /* on change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non-désiré 
+
+	top: 30px; /* on positionne notre infobulle 
+	left: 20px;
+	
+	text-align: left;
+	background: white;
+	padding: 3px;
+	border: 1px solid black;
+}
+
+
+/* Liste des événements à supprimer */
+table.listeEvent {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table.listeEvent td {
+	padding: 5px;
+}
+/************************************/
+/* fin du calendrier des evenements */
+/************************************/
+
+
+
+h1{font-size:3.0em;line-height:1.5em;margin-top:0;margin-bottom:0.8em;}
+h2{font-size:2.0em;line-height:1.5em;margin-top:0.75em;margin-bottom:0.75em;}
+h3{font-size:1.5em;line-height:1.5em;margin-top:0.85em;margin-bottom:0.85em;}
+h4,h5,h6{font-size:1.2em;line-height:1.5em;margin-top:1.2em;margin-bottom:1.2em;}
+
+#header{  /* position de l'image en tête */
+width:100%;
+height:150px;
+margin-bottom:0px;
+margin-top:0px;
+margin-left: px;
+z-index:-100px; 
+}
+
+
+
+
+
+
+
+
+
+
+

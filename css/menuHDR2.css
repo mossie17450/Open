@@ -1,0 +1,128 @@
+
+
+#menu, #menu ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:left;
+font-family:"sherif, Georgia";
+}
+
+#menu li{
+display:inline-block;
+position:relative;
+border-radius:6px 6px 0 0;
+}
+#menu ul li{
+display:inherit;
+border-radius:0;
+}
+#menu ul li:hover{
+border-radius:0;
+}
+#menu ul li:last-child{
+border-radius:0 0 6px 6px;
+}
+#menu ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .5s all .2s;
+-webkit-transition: .5s all .2s;
+transition: .5s all .2s;
+}
+#menu li:hover ul{
+max-height:30em;
+}
+/* background des liens menus */
+#menu li:first-child{
+background-color: #65537A;
+background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
+background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+}
+#menu li:nth-child(2){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+#menu li:nth-child(3){
+background-color: #F6AD1A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+}
+#menu li:nth-child(4){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+#menu li:nth-child(5){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+#menu li:last-child{
+background-color: #CFFF6A;
+background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+/* background des liens sous menus */
+#menu li:first-child li{
+background:#2A2333;
+}
+#menu li:nth-child(2) li{
+background:#333A40;
+}
+#menu li:nth-child(3) li{
+background:#9F391A;
+}
+#menu li:nth-child(4) li{
+background:#333A40;
+}
+#menu li:nth-child(5) li{
+background:#333A40;
+}
+#menu li:last-child li{
+background:#677F35;
+}
+/* background des liens menus et sous menus au survol */
+#menu li:first-child:hover, #menu li:first-child li:hover{
+background:#65537A;
+}
+#menu li:nth-child(2):hover, #menu li:nth-child(2) li:hover{
+background:#729EBF;
+}
+#menu2 li:nth-child(3):hover, #menu li:nth-child(3) li:hover{
+background:#F6AD1A;
+}
+#menu li:nth-child(4):hover, #menu li:nth-child(4) li:hover{
+background:#729EBF;
+}
+#menu li:nth-child(5):hover, #menu li:nth-child(5) li:hover{
+background:#729EBF;
+}
+#menu li:last-child:hover, #menu li:last-child li:hover{
+background:#CFFF6A;
+}
+/* les a href */
+#menu a{
+text-decoration:none;
+display:block;
+padding:10px 10px;
+color:#fff;
+font-family:"sherif, Georgia";
+}
+
+#menu ul a{
+padding:5px 0px;
+}
+#menu li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu li:hover a, #menu li li:hover a{
+color:#000;
+}
+#menu{margin-top:20px; margin-bottom:0px; margin-left:0px;}
