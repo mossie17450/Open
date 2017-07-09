@@ -1,6 +1,6 @@
 # Open
-repository crée pour l'exercice du cours sur github de openclassroom
-
-Ce cours sur GIT de openclassroom est très interessant. Il permet de s'initié rapidement et facilement à git et github ainsi 
-qu'au versionning de applications que l'on développe.
-Merci openclassroom!
+repository crée pour l'exercice du cours sur github de openclassroom en Juin 2016.
+repris pour le dépot du developpement fait pour le CIC-IT de Bordeaux en Juillet 2017.
+Mon premier dépot. 
+Je met ainsi à disposition le code du site web du CIC-IT de Bordeaux.
+J'ai pu developper grace au différents tutoriels ( W3C  et openclassroom developpez.com ) sur internet et aussi grace au api de php, mysql.
