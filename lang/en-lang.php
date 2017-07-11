@@ -17,12 +17,13 @@
 	 <li><a href=\"html/systeme-qualite.php\">quality system</a></li>
 	 </ul></li>
 	 
-	 <li><a href=\"html/activites.php\">Activities/expertise</a><ul><li>
-	<a href=\"html/histologie.php\">Histology</a></li>
+	 <li><a href=\"html/activites.php\">Activities/expertise</a><ul>
+	 
+	 <li><a href=\"html/histologie.php\">Histology</a></li>
 	 <li><a href=\"html/CulturesCellulaires.php\">Cell culture</a></li>
 	 <li><a href=\"html/Bacteriologie.php\">Bacteriology</a></li>
 	 <li><a href=\"html/Hemocompatibilite.php\">Hemocompatibility</a></li>
-	 <li><a href=\"html/Hemodynamiques.php\" >Hemodynamic</li>
+	 <li><a href=\"html/Hemodynamiques.php\" >Hemodynamic</a></li>
 	  <li><a href=\"html/TestesPreCliniquesInVivo.php\">Preclinical studies in vivo</a></li>
 	 <li><a href=\"html/TestesCliniques.php\">Clinical Studies</a></li>
 	
@@ -85,7 +86,7 @@ It is supported by INSERM U1026 BIOTIS (Bordeaux), to be in partnership with cli
 	 <li><a href=\"CulturesCellulaires.php\">Cell culture</a></li>
 	 <li><a href=\"Bacteriologie.php\">Bacteriology</a></li>
 	 <li><a href=\"Hemocompatibilite.php\">Hemocompatibility</a></li>
-	 <li><a href=\"Hemodynamiques.php\" >Hemodynamic</li>
+	 <li><a href=\"Hemodynamiques.php\" >Hemodynamic</a></li>
 	 <li><a href=\"TestesCliniques.php\">Clinical Studies</a></li>
 	 <li><a href=\"TestesPreCliniquesInVivo.php\">Preclinical studies in vivo</a></li>
 	 </ul></li>
@@ -682,13 +683,13 @@ Fax: +33 (0) 557 102 863</p>");
 <p style=\"margin-top:2px\"><strong>Laurence Bordenave, </strong><br/>
 Coordinator of the CIC-IT Biomaterials<br/>
 CIT-IT Inserm/CHU of Bordeaux</p>
-<p><a href=\"mailto:laurence.bordenave@chu-bordeaux.fr\">Email:laurence.bordenave@chu-bordeaux.fr</a><br/>Tél: <br/>
-Fax: +33 </p>");
+<p><a href=\"mailto:laurence.bordenave@chu-bordeaux.fr\">Email:laurence.bordenave@chu-bordeaux.fr</a><br/>Tél:+33 (0) 557 102 866 <br/>
+Fax:+33 (0) 557 102 869</p>");
 	
 	define('TXT_Coordo',"<h4 style=\"margin-top:10px\">Join the South Hospital Group<br>Xavier Arnozan</h4>");
 	define('TXT_CoordoTrafic',"<h4 style=\"margin-top:10px\"><h4>By car</h4>Real-time traffic freeways<br>for Bordeaux");
 	define('TXT_CoordoBusTram',"<h4 style=\"margin-top:10px\">with the TBM network.</h4>");
-	define('TXT_MobiliteTBM',"<a solutions proposed by the tbm : href=\" http://www.infotbm.com/ \"> http://www.infotbm.com/ </a>");
+	define('TXT_MobiliteTBM',"<a solutions proposed by the tbm : href=\"\">  </a>");
 	
 	
 	//---------------------------------------------------------
