@@ -220,14 +220,14 @@ else if($_POST['langue']=='en'){
 
 <a href="http://www.bisonfute.equipement.gouv.fr/diri/listeflashs.do?pageAstec=ie1_bordeaux.html&amp;langue=fr&amp;evt=1" target="_blank">
 <hr><?php echo TXT_CoordoTrafic; ?>
-<p><img src="../image/coordonnees_bison_fute.jpg" width="60%"/><br/></p></a>                       
-<br><a href="http://www.infotbm.com/" ><?php echo TXT_CoordoBusTram; ?>
-<img src="../image/Coordonnees_tbcbis.jpg" width="60%"><br/>
+<p><img src="../image/coordonnees_bison_fute.jpg" width="60%"/><br/></p></a>
+<a  target="_blank" href="LaurenceBordenave.php">                       
+<br><a target="_blank" href="plantbcchu.php"><?php echo TXT_CoordoBusTram; ?>
+<img src="../image/plantbcchu.jpg" width="60%"><br/>
+<br>
 </a>
-<?php echo TXT_MobiliteTBM; ?>
+<?php echo TXT_MobiliteTBM; echo "<br>(informations tcb :pour se déplacé sur<br>la communoté urbaine de bordeaux)";?><a href="http://www.infotbm.com/" ></a>
 </div></div>        
-
-
 </div>
 </article>  
   
