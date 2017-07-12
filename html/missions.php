@@ -151,15 +151,13 @@ else if($_POST['langue']=='en'){
 </div>
 
 <article>	
-<h1 ><?php echo TXT_TitreMission; ?></h1>
+<h1><?php echo TXT_TitreMission; ?></h1>
 <!--  titres de la page....   -->
 <!--<div style="margin-right:20px; padding-right:20px;">-->
 
 <h3><?php echo TXT_SSSTitreMission; ?></h3>
 <?php echo TXT_SSMenuMission; ?>		
 <br><?php echo TXT_ArticleMission; ?>
-
-<!--</div> -->
 </article>
 
 </div>
