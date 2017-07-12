@@ -24,7 +24,7 @@
 	 <li><a href=\"html/Bacteriologie.php\">Bacteriology</a></li>
 	 <li><a href=\"html/Hemocompatibilite.php\">Hemocompatibility</a></li>
 	 <li><a href=\"html/Hemodynamiques.php\" >Hemodynamic</a></li>
-	  <li><a href=\"html/TestesPreCliniquesInVivo.php\">Preclinical studies in vivo</a></li>
+	  <li><a href=\"html/TestesPreCliniquesInVivo.php\">Preclinical studies <em>in vivo</em></a></li>
 	 <li><a href=\"html/TestesCliniques.php\">Clinical Studies</a></li>
 	
 	 </ul></li>
@@ -88,7 +88,7 @@ It is supported by INSERM U1026 BIOTIS (Bordeaux), to be in partnership with cli
 	 <li><a href=\"Hemocompatibilite.php\">Hemocompatibility</a></li>
 	 <li><a href=\"Hemodynamiques.php\" >Hemodynamic</a></li>
 	 <li><a href=\"TestesCliniques.php\">Clinical Studies</a></li>
-	 <li><a href=\"TestesPreCliniquesInVivo.php\">Preclinical studies in vivo</a></li>
+	 <li><a href=\"TestesPreCliniquesInVivo.php\">Preclinical studies <em>in vivo</em></a></li>
 	 </ul></li>
 	 
 	
@@ -129,7 +129,7 @@ To this end, the CIC-IT of Bordeaux relies on the ACT (Aquitaine Science Transfe
   	//---------------------------------------------------------
 	define ('TXT_TitreEnvironnement',"<h1>The CIC-IT concept Biomaterials</h1><h2>Advanced Environment</h2>");
 	define ('TXT_ArticleEnvironnement',"<p>CIC-IT Bordeaux works with clinicians from University Hospital (CHU) covering different medical expertise involved in the use of IMD (orthopedic and vascular surgery, ophthalmology, dentistry, ENT, intensive care, diabetology, nuclear medicine, radiology, etc ...), and the EFSNA (Etablissement Français du Sang de la Nouvelle-Aquitaine).<br>
-<br>CIC-IT is located in Xavier Arnozan Hospital within thePTIB (Plateforme Technologique d'Innovation Biomédicale) building closely connected to IJU LIRYC (Institute de  Rhythmologie Cardiaque) providing access to laboratories (histology, P2 cell culture) and advanced equipments (in vivo experimentation and imaging plates).<br>
+<br>CIC-IT is located in Xavier Arnozan Hospital within thePTIB (Plateforme Technologique d'Innovation Biomédicale) building closely connected to IJU LIRYC (Institute de  Rhythmologie Cardiaque) providing access to laboratories (histology, P2 cell culture) and advanced equipments (<em>in vivo</em> experimentation and imaging plates).<br>
 <br>Additionally, CIC-IT takes an active part in the Federation of academic and industrial skills in the field of biomaterials in  New Aquitaine region via the Aquitaine Association Biomaterials and Implants (2ACBI), and actively participates in BxCRM (Bordeaux consortium of Regenerative Medicine) and FR TECSAN (Federation de Recherche Technologie pour la Santé) of Bordeaux University.</p>.");
 		
 	//---------------------------------------------------------
@@ -342,14 +342,14 @@ Fax. : 05-57-10-28-63
 	define('TXT_ArticleA1',"
 <p>Integrated innovative biomaterials and the assessment of their biocompatibility in a leading scientific and clinical environment in two main areas including bone and vascular substitution.
 </p><p> Demonstrate the concept of an implantable medical device at the service and/or in collaboration with researchers, clinicians and industry, from the physico-chemical characterization to the pilot clinical study.
-</p><p>Conduct the design, research and development of new in vivo and in vitro models,the process or organizational innovation.
+</p><p>Conduct the design, research and development of new <em>in vivo</em> and <em>in vitro</em> models,the process or organizational innovation.
 </p>");
 	
 	define('TXT_ArticleA11',"The activities of the CIT -IT Biomaterials and DMI of Bordeaux are divided into 3 scientific and technical axes:<br>");
 
 	define('TXT_ArticleA12',"<div style = \" display: block; text-align : left; \"><ul>
-<li>Preclinical in vitro research </li>
-    <li>Preclinical in vivo research</li>
+<li>Preclinical <em>in vitro</em> research </li>
+    <li>Preclinical<em> in vivo </em>research</li>
     <li>Pre- and post- CE clinical research</li>
 </ul></div>");
 	
@@ -362,7 +362,7 @@ Fax. : 05-57-10-28-63
 <h3>By developing evaluation models :</h3>
 <h6><ul><li>Simulation of arterial circulation on a hemodynamic bench. </li>
 <li>Surgical Models. </li>
-<li>Longitudinal follow-up in vivo by non-invasive imaging.</li>
+<li>Longitudinal follow-up <em>in vivo</em> by non-invasive imaging.</li>
 <li>Etc...</li></ul></h6></div>");
 		
 
@@ -535,7 +535,7 @@ define('TXT_CCEA1',"PSM");
   	// page  in vivo,  tests precliniques...
   	//---------------------------------------------------------
 	define('TXT_ResponsableInVivo',"responsible: Marlène Durand");
-	define('TXT_IVT',"Preclinical Studies");
+	define('TXT_IVT',"Preclinical studies");
 	define('TXT_IVR',"PhD<br>Project manager<br>Tél. : 05 57 10 28 66<br>Fax. :05 57 10 28 63<br><a href=\"mailto:marlene.durand@chu-bordeaux.fr\">Email: marlene.durand@chu-bordeaux.fr</a><br>");
 
 	define('TXT_IVA1',"<div  style=\"display:block; text-align:left;\"><ul><li>Protocols drafting for submission to the ethics committee of Bordeaux</li><br>
@@ -556,31 +556,33 @@ define('TXT_CCEA1',"PSM");
   	// page etudes cliniques...
   	//---------------------------------------------------------
 	define('TXT_Resp',"Responsible: ");
-	define('TXT_ResponsableClinique',"Elodie Seris");
-	define('TXT_TCT',"Clinical Studies");
+	define('TXT_ResponsableClinique',"Elodie Belmo (born Seris)");
+	define('TXT_TCT',"Clinical studies");
 	define('TXT_TCR',"Responsible for clinical studies <br>Phone : 05 57 10 28 35 <br> Fax : 05 57 10 28 63 <br><a href=\"mailto:elodie.seris@chu-bordeaux.fr\">Email: elodie.seris@chu-bordeaux.fr</a>");
-	define('TXT_ECM1',"<h2>Missions Clinical Research</h2>
+	define('TXT_ECM1',"<h2>missions clinical research</h2>
 <h4><strong>coordination and management of single and multi-centred clinical trials management on medical devices.</strong></h4>
- <div  style=\"display:block; text-align:left;\">
-<ul><li>Protocol design and drafting and study documents (info-consent note, investigator's brochure, observation booklet, etc.)</li>
-<li>Collaborations research (clinicians, industries, researchers) and financing (call for project, etc.)</li>
-<li>Incorporation and monitoring of administrative and regulatory issues at national level.</li>
-<li>Logistics of the study (pharmacy circuit, biological samples, etc.), investigator support.</li>
-<li>Data quality control ( e-CRF or paper support): monitoring of public or private site .</li>
-<li>Participation In the research development(statitical assistance, summary of the final report and publication)</li>
+ <div  style=\"display:block; text-align:left;\" id=\"puces\">
+<ul><li>protocol design and drafting and study documents (info-consent note, investigator's brochure, observation booklet, etc...)</li>
+<li>collaborations research (clinicians, industries, researchers) and financing (call for project, etc...)</li>
+<li>incorporation and monitoring of administrative and regulatory issues at national level</li>
+<li>logistics of the study (pharmacy circuit, biological samples, etc...), investigator support</li>
+<li>data quality control ( e-CRF or paper support): monitoring of public or private site </li>
+<li>participation in the research development(statitical assistance, summary of the final report and publication)</li>
 </ul></div>");
 	
-	define('TXT_ECM2',"<h2>Transversal Missions:</h2> 
-<div  style=\"display:block; text-align:left;\">
+	define('TXT_ECM2',"<h2>transversal missions</h2> 
+
+<div  style=\"display:block; text-align:left;\" id=\"puces\">
 <ul>
-<li>Definition of biomaterials specifications.</li>
- <li>Regulatory monitoring of medical devices and clinical research.</li>
- <li>Participation in the development / validation of documentation related to quality Management in the Clinical Research (Bordeaux University Hospital, Inserm and CIC Network, EUCLID platform).</li>
+<li>definition of biomaterials specifications</li>
+ <li>regulatory monitoring of medical devices and clinical research</li>
+ <li>participation in the development / validation of documentation related to quality Management in the Clinical Research (Bordeaux University Hospital, Inserm and CIC Network, EUCLID platform)</li>
  </ul>
  </div><br>
- <div id=\"section-article\"><h2>Relevant medical fields :</h2>
-Orthopaedics , Vascular Surgery , ENT and maxillofacial surgery , ( pediatric ENT) , plastic and reconstructive surgery , dental implantology , tissue engineering , imaging and interventional cardiology .
- </div>");
+ <div  style=\"display:block; text-align:left;\" id=\"puces\">
+ <h2><em>experience in the following medical fields:</em></h2>
+<em>orthopaedics , vascular surgery , ENT and maxillofacial surgery , ( pediatric ENT) , plastic and reconstructive surgery , dental implantology , tissue engineering , imaging and interventional cardiology 
+ </em></div>");
 	
 	//---------------------------------------------------------
   	// Master BIDIM

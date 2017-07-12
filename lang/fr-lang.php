@@ -7,7 +7,9 @@
 	 <ul>
 	 <li><a href=\"html/histoire.php\">Histoire et partenaires</a></li>
 	 <li><a href=\"html/missions.php\">Missions</a></li>
-	 <li><a href=\"html/environnement-de-pointe.php\">Environnement de pointe</a></li></ul></li>
+	 <li><a href=\"html/environnement-de-pointe.php\">Environnement de pointe</a></li>
+	 <li><a href=\"html/cic-it-publications.php\">Nos réalisations</a></li>
+	 </ul></li>
 	 
 	 <li><a href=\"html/organisation.php\">Fonctionnement</a><ul>
 	 <li><a href=\"html/organisation.php\">Organisation</a></li>
@@ -20,13 +22,10 @@
 	 <li><a href=\"html/CulturesCellulaires.php\">Culture cellulaire</a></li>
 	 <li><a href=\"html/Bacteriologie.php\">Bactériologie</a></li>
 	 <li><a href=\"html/Hemocompatibilite.php\">Hémocompatibilité</a></li>
-	 <li><a href=\"html/Hemodynamiques.php\" >Hémodynamiques</a></li>
-	 <li><a href=\"html/TestesPreCliniquesInVivo.php\">Etudes précliniques in vivo</a></li>
+	 <li><a href=\"html/Hemodynamiques.php\" >Hémodynamique</a></li>
+	 <li><a href=\"html/TestesPreCliniquesInVivo.php\">Etudes précliniques <em>in vivo</em></a></li>
 	 <li><a href=\"html/TestesCliniques.php\">Etudes cliniques</a></li>
-	 
 	 </ul></li>
-	 
-	 
 	 
 	 <li><a href=\"html/master-bidim.php\">Formations/Recrutement</a>
 	 <ul><li><a href=\"html/master-bidim.php\">Master BiDim</a></li>
@@ -53,7 +52,7 @@
 	define('TXT_HPT',"Histoire et partenaires");
 	
 	define('TXT_histoire',"Le Centre d'Innovations Technologiques créé en 2001 sur le thème des Biomatériaux au CHU de Bordeaux a été labellisé en CIC-IT Biomatériaux par <a target=\"_blank\" href=\" http://social-sante.gouv.fr/ministere/organisation/directions/article/dgos-direction-generale-de-l-offre-de-soins  \">l'INSERM/DGOS </a> en 2008.<br> Il a été renouvelé en 2011, a rejoint le giron de l'Université de Bordeaux ainsi que l'Institut Bergonié en 2012 puis été renouvelé avec succès en 2016 par l'HCERES.<br> 
-		Il constitue l'un des 3 modules du CIC de Bordeaux avec les <a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr \">CIC-Plurithématique</a> (support investigateur) et CIC-Epidémiologique Clinique (méthodologie et statistiques).<br>
+		Il constitue l'un des 3 modules du CIC de Bordeaux avec les <a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr \">CIC-Plurithématique</a> (support investigateur) et <a href=\"http://usmr.isped.u-bordeaux2.fr/\">CIC-Epidémiologique Clinique</a> (méthodologie et statistiques).<br>
 		Il est adossé à l'<a target=\"_blank\" href=\"http://www.biotis-bordeaux.com \">unité INSERM U1026 BIOTIS</a> (Bordeaux) avec laquelle il participe, en partenariat avec des cliniciens, à des programmes de recherche translationnelle dans le domaine de la BioIngénierie Tissulaire.");
 	
 		
@@ -66,7 +65,9 @@
 	 <ul>
 	 <li><a href=\"histoire.php\">Histoire et partenaires</a></li>
 	 <li><a href=\"missions.php\">Missions</a></li>
-	 <li><a href=\"environnement-de-pointe.php\">Environnement de pointe</a></li></ul></li>
+	 <li><a href=\"environnement-de-pointe.php\">Environnement de pointe</a></li>
+	 <li><a href=\"cic-it-publications.php\">Nos réalisations</a></li>
+	 </ul></li>
 	 
 	 <li><a href=\"organisation.php\">Fonctionnement</a><ul>
 	 <li><a href=\"organisation.php\">Organisation</a></li>
@@ -80,9 +81,9 @@
 	 <li><a href=\"CulturesCellulaires.php\">Culture cellulaire</a></li>
 	 <li><a href=\"Bacteriologie.php\">Bactériologie</a></li>
 	 <li><a href=\"Hemocompatibilite.php\">Hémocompatibilité</a></li>
-	 <li><a href=\"Hemodynamiques.php\" >Hémodynamiques</li>
+	 <li><a href=\"Hemodynamiques.php\" >Hémodynamique</a></li>
 	 <li><a href=\"TestesCliniques.php\">Etudes cliniques</a></li>
-	 <li><a href=\"TestesPreCliniquesInVivo.php\">Etudes précliniques in vivo</a></li>
+	 <li><a href=\"TestesPreCliniquesInVivo.php\">Etudes précliniques <em>in vivo</em></a></li>
 	 </ul></li>
 	 
 	 
@@ -102,11 +103,14 @@
 	define('TXT_TitreMission', "<h1 align=\"center\">Nos missions</h1>");
 	
 	define('TXT_Piedhtml', "<ul><a href=\"sitemap.php\" title=\"Plan du site\">Plan du site |</a><a href=\"mentions-legales.php\">Mentions légales |</a><a href=\"fiche-de-contact.php\" title=\"Contact\">Contact</a></ul>");
-	define('TXT_ArticleMission',"	
-Pour ce faire, le CIC-IT de Bordeaux s'appuie sur la <a target=\"_blank\" href=\"http://ast-innovations.com/ \">Société d'Accélération de Transfert </a>\"Aquitaine Science Transfert\" (AST),  le réseau national des CIC-IT et  les plateformes nationales TECH4HEALTH et EUCLID de la structure F-CRIN pour les essais cliniques multicentriques nationaux et internationaux.</p>" );
+	define('TXT_ArticleMission',"Pour ce faire, le CIC-IT de Bordeaux s'appuie sur la 
+	<a target=\"_blank\" href=\"http://ast-innovations.com/ \">Société d'Accélération de Transfert 
+	</a>\"Aquitaine Science Transfert\" (AST),  le réseau national des CIC-IT et  les plateformes nationales 
+	<a http://tech4health.fr/>TECH4HEALTH</a> et <a href=\"http://euclid-ctu.eu/\">EUCLID</a> 
+	de la structure F-CRIN pour les essais cliniques multicentriques nationaux et internationaux.</p>" );
 	
 	define('TXT_SSSTitreMission', "Les objectifs poursuivis se déclinent à plusieurs niveaux :");
-	define('TXT_SSMenuMission', "<div  style=\"display:block; text-align:left;\"><ul><li>Coordonner les expertises nécessaires à l'achèvement, la validation et la promotion de produits innovants dans le cadre de prestations pour les industriels.</li><li>Développer des partenariats avec les entreprises sur des projets à fort potentiel de valorisation scientifique (brevets, publications), dans le cadre de programmes soutenus à l'échelle nationale et internationale ;</li><li>Mettre en place des protocoles de recherche clinique dans le respect de la réglementation de la recherche biomédicale, en s'appuyant sur le réseau CIC .</li><li>S'investir dans de nouvelles missions: évaluation de la qualité de dispositifs médicaux innovants de et nouvelles procédures de suppléance ou d'assistance fonctionnelle et du service médical rendu (SMR), matério-vigilance et nouvelles méthodologies d'évaluation pré-clinique.</li></ul></div>");
+	define('TXT_SSMenuMission', "<div  id=\"puces\" ><ul><li>Coordonner les expertises nécessaires à l'achèvement, la validation et la promotion de produits innovants dans le cadre de prestations pour les industriels.</li><li>Développer des partenariats avec les entreprises sur des projets à fort potentiel de valorisation scientifique (brevets, publications), dans le cadre de programmes soutenus à l'échelle nationale et internationale ;</li><li>Mettre en place des protocoles de recherche clinique dans le respect de la réglementation de la recherche biomédicale, en s'appuyant sur le réseau CIC .</li><li>S'investir dans de nouvelles missions: évaluation de la qualité de dispositifs médicaux innovants de et nouvelles procédures de suppléance ou d'assistance fonctionnelle et du service médical rendu (SMR), matério-vigilance et nouvelles méthodologies d'évaluation pré-clinique.</li></ul></div>");
   	
 	
 	//---------------------------------------------------------
@@ -122,7 +126,7 @@ De plus, le CIC-IT prend une part active à la fédération des compétences aca
   	//---------------------------------------------------------
 	define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organisation</h1> ");
 	define('TXT_A1Fonction'," Le CIC de Bordeaux (regroupant la gouvernance des 3 modules IT, P et EC) est géré via un comité de pilotage annuel, et est l'objet d'une évaluation quadriennale par l'HCERES.<br> Le CIC dépend directement de la Direction de la Recherche Clinique et de l'Innovation (DRCI) du CHU de Bordeaux et de la Délégation Régionale de l'INSERM.<br> 
-Le CIC-IT travaille étroitement avec les modules P et EC du CIC de Bordeaux en particulier pour les essais cliniques, pour lesquels il fait appel aux compétences du CIC-P pour le support investigateur et du CIC-EC pour la méthodologie, le data management et les statistiques, et sous la direction de la DRCI pour les essais cliniques à promotion académique.");
+Le CIC-IT travaille étroitement avec les modules P et EC du CIC de Bordeaux en particulier pour les essais cliniques, pour lesquels il fait appel aux compétences du <a href=\"https://cic-p.u-bordeaux.fr/\">CIC-P</a>pour le support investigateur et du<a> CIC-EC </a>pour la méthodologie, le data management et les statistiques, et sous la direction de la DRCI pour les essais cliniques à promotion académique.");
 	define('TXT_A2Fonction',"Le CIC-IT est piloté via un comité stratégique annuel, sous la direction du président du comité (Pr Fricain), et regroupant le coordinateur médical (Pr Bordenave) et le coordinateur délégué (Dr Durand), les représentants de ses tutelles, le directeur de la PTIB et les membres scientifiques. Les coordonnateurs des modules EC et P sont également conviés. Un bilan d'activité y est présenté et les orientations scientifiques et stratégiques futures y sont déterminées.
 Les nouveaux projets soumis au CIC-IT sont présentés au comité technique mensuel regroupant toute l'équipe, le représentant valorisation de la SATT et de l'INSERM, et les porteurs des nouveaux projets si nécessaire.
 Le Comité Technique a pour missions : 
@@ -275,11 +279,9 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
 	//responsable : Carolina
 	define('TXT_TQ',"<h1 style=\"text-align:center\"><strong>Systeme de management qualité</strong></h1>");
 	define('TXT_ResponsableQ', "<h3>Responsable:<br>Carolina Lanchas Fuentes.</h3>");
-	define('TXT_TQR',"Ingénieur Hospitalier.<br>
-Responsable qualité.<br>
-<br><a href=\"mailto:carolina.lanchas-fuentes@chu-bordeaux.fr\">Courriel: carolina.lanchas-fuentes@chu-bordeaux.fr </a><br>Tél. :  05-57-10-28-65<br>
-Fax. : 05-57-10-28-63
-<br>");
+	define('TXT_TQR',"chargée d'études qualité<br>responsable qualité.
+<div style=\"display:inline\">Courriel:<a href=\"mailto:carolina.lanchas-fuentes@chu-bordeaux.fr\" >carolina.lanchas-fuentes@chu-bordeaux.fr </a></div>Tél : 05-57-10-28-65
+ Fax : 05-57-10-28-63<br>");
 
 	//---------------------------------------------------------
   	//  Valorisation
@@ -319,13 +321,13 @@ Fax. : 05-57-10-28-63
 	define('TXT_ArticleA1',"
 <p>Aborder de manière intégrée les biomatériaux innovants et l'appréciation de leur biocompatibilité dans un environnement scientifique et clinique de pointe, dans deux domaines de prédilection (substitution osseuse et vasculaire), mais pas seulement.
 </p><p>Faire la preuve du concept d'un dispositif médical implantable au service et/ou en collaboration avec des chercheurs, des cliniciens et des industriels, depuis la caractérisation physico-chimique jusqu'à l'étude clinique pilote.
-</p><p>Réaliser la conception, la recherche et la mise au point de nouveaux modèles d'étude, in vitro et in vivo, à visée d'innovation de procédés ou organisationnelle.
+</p><p>Réaliser la conception, la recherche et la mise au point de nouveaux modèles d'étude, <em>in vitro</em> et <em>in vivo</em>, à visée d'innovation de procédés ou organisationnelle.
 </p>");
 	define('TXT_ArticleA11',"Les activités du CIT-IT Biomatériaux et DMI de Bordeaux se décomposent en 3 axes scientifiques et techniques :<br>");
 
 	define('TXT_ArticleA12',"<div style=\"display:block; text-align:left;\"><ul>
-	<li>recherche préclinique in vitro,</li>
-    <li>recherche préclinique in vivo,</li>
+	<li>recherche préclinique <em>in vitro</em>,</li>
+    <li>recherche préclinique <em>in vivo</em>,</li>
     <li>recherche clinique pré- et post-marquage CE</li>
 </ul></div> ");
 
@@ -339,7 +341,7 @@ Fax. : 05-57-10-28-63
 <h3>En mettant au point des modèles d'évaluation :<br></h3>
 	<ul><li>Simulation de circulation artérielle sur banc hémodynamique</li>
 <li>Modèles chirurgicaux</li>
-<li> Suivi longitudinal in vivo par imagerie non invasive</li>
+<li> Suivi longitudinal <em>in vivo</em> par imagerie non invasive</li>
 <li>Etc.</li></ul></div>");
 
 	define('TXT_Img',"<img src='../image/cic_it_preuve_concept.jpg'  width=\"100%\" class=\"arrondie\">");
@@ -378,11 +380,10 @@ Fax. : 05-57-10-28-63
 //---------------------------------------------------------
 	define('TXT_TH',"<h1 style=\"text-align:center\">Plateforme histologie</h1>");
 	define('TXT_ResponsableHisto', "<h3>Responsable:<br> Samantha Roques (née Delmond) </h3>");
-	define('TXT_THR',"Ingénieur Hospitalier<br>
-Chargée d'études Précliniques<br>
-Responsable du Plateau Histologie de la PTIB
-<br><a href=\"mailto:samantha.delmond@chu-bordeaux.fr\">Courriel: samantha.delmond@chu-bordeaux.fr </a><br>Tél. :  05 57 10 28 61<br>
-Fax. : 05 57 10 28 63
+	define('TXT_THR',"Chargée d'études Précliniques<br>
+Responsable du Plateau Histologie de la PTIB<br>
+<div style=\"display:inline\">Courriel:<a href=\"mailto:samantha.delmond@chu-bordeaux.fr\"> samantha.delmond@chu-bordeaux.fr </a></div>
+<br>Tél. :  05 57 10 28 61 ,Fax. : 05 57 10 28 63
 <br>");
 
 	define('TXT_HST',"<h1 align=\"center\"><strong>Activités</strong></h1>");
@@ -432,10 +433,9 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
   	// page hemodynamique
   	//---------------------------------------------------------
 	define('TXT_ResponsableHemodynamique',"Responsable: Mallory Meulle");
-	define('TXT_HDR',"Assistante Ingénieur culture cellulaire et banc de simulation de flux artériel.
-<br>tél : 05 47 30 27 54
-<br>fax : 05 57 10 28 63
-<br><a href=\"mailto:mallory.meulle.univ@chu-bordeaux.fr\">Courriel : mallory.meulle.univ@chu-bordeaux.fr</a><br>");
+	define('TXT_HDR',"chargée d'études en culture cellulaire et banc de simulation de flux artériel.
+<br>tél : 05 47 30 27 54, fax : 05 57 10 28 63
+<br><div style=\"display:inline;\">Courriel :<a href=\"mailto:mallory.meulle.univ@chu-bordeaux.fr\"> mallory.meulle.univ@chu-bordeaux.fr</a><br></div>");
 
 	define('TXT_HDT',"Hemodynamique");
 	define('TXT_HDTA',"<h1><strong>Activités</strong></h1>");
@@ -489,7 +489,9 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
   	//              page Culture cellulaire
   	//---------------------------------------------------------
 	define('TXT_ResponsableCellule',"Responsable: Martine RENARD");
-	define('TXT_TCBHR',"<br>TSO<br>Chargée d'études précliniques en culture cellulaire et bactériologie<br>Responsable du plateau culture cellulaire de la PTIB<br><a href=\"mailto:martine.renard@chu-bordeaux.fr\">Courriel: martine.renard@chu-bordeaux.fr</a><br>tel (+33) (0)5 57 10 28 59<br>fax (+33) (0)5 57 10 28 63<br>");
+	define('TXT_TCBHR',"Chargée d'études précliniques en culture cellulaire et bactériologie<br>Responsable du plateau culture cellulaire de la PTIB<br>
+	<div style=\"display:inline;\">Courriel: <a href=\"mailto:martine.renard@chu-bordeaux.fr\">martine.renard@chu-bordeaux.fr</a></div>
+	<br>tel (+33) (0)5 57 10 28 59, fax (+33) (0)5 57 10 28 63");
 
 
 	define('TXT_CCM',"<h2 style=\"width:100%; text-align:center; \">Culture cellulaire: </h2><em><h3>Cellules endothéliales, musculaires lisses, musculaires striées, urothéliales, fibroblastes, d'origine humaines, porcines, ovines, ...</h3><em>
@@ -518,8 +520,11 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
   	// page    tests precliniques in vivo...
   	//---------------------------------------------------------
 	define('TXT_ResponsableInVivo',"Responsable: Marlène Durand");
-	define('TXT_IVT',"Les tests pré-cliniques<br> in vivo.");
-	define('TXT_IVR',"PhD<br>Chef de projets<br>Tél. : 05 57 10 28 66<br>Fax. :05 57 10 28 63<br><a href=\"mailto:marlene.durand@chu-bordeaux.fr\">Courriel: marlene.durand@chu-bordeaux.fr</a><br>");
+	define('TXT_IVT',"Les tests pré-cliniques<em> in vivo</em>");
+	define('TXT_IVR',"Chargée d'études précliniques<br>Chef de projets<br>
+	<div style=\"display:inline\">Courriel:<a href=\"mailto:marlene.durand@chu-bordeaux.fr\"> marlene.durand@chu-bordeaux.fr</div></a><br>
+	Tél. : 05 57 10 28 66 , Fax. :05 57 10 28 63<br>
+	");
 
 	define('TXT_IVA1',"<div  style=\"display:block; text-align:left;\"><ul id=\"puces\"><li>Rédaction des protocoles pour soumission au comité d'éthique de Bordeaux</li><br>
 <li>Organisation des expérimentations avec les animaleries agréées de Bordeaux (rongeur et gros animal) et les chirurgiens agréés du CHU de Bordeaux</li><br>
@@ -541,32 +546,35 @@ Ressources de l'Université de Bordeaux, la PTIB et l'IHU LIRYC:</h4><h6><br><ul
   	// page études cliniques...
   	//---------------------------------------------------------
 	define('TXT_Resp',"Responsable: ");
-	define('TXT_ResponsableClinique',"Elodie Seris");
-	define('TXT_TCT',"Les Etudes cliniques");
-	define('TXT_TCR',"Chargée d'études cliniques<br>Tél : 05 57 10 28 35  <br>Fax : 05 57 10 28 63 <br><a href=\"mailto:elodie.seris@chu-bordeaux.fr\">Courriel: elodie.seris@chu-bordeaux.fr</a>");	
-	define('TXT_ECM1',"<h2>Missions de Recherche Clinique,</h2>
-<h4><strong>Coordination et gestion d'essais cliniques mono et multicentriques portant sur des dispositifs médicaux.</strong></h4>
+	define('TXT_ResponsableClinique',"Elodie Belmo (née Seris)");
+	define('TXT_TCT',"Les études cliniques");
+	define('TXT_TCR',"Chargée d'études cliniques
+	<div style=\"display:inline;\">Courriel: <a href=\"mailto:elodie.seris@chu-bordeaux.fr\">elodie.seris@chu-bordeaux.fr</div></a>	
+	<br>Tél : 05 57 10 28 35 , Fax : 05 57 10 28 63 <br>");
+	define('TXT_ECM1',"<h2>missions de recherche clinique </h2>
+<h4><strong>Coordination et gestion d'essais cliniques mono et multicentriques portant sur des dispositifs médicaux</strong></h4>
  <div  style=\"display:block; text-align:left;\" id=\"puces\">
-<ul ><li>Conception/Rédaction de protocole et documents de l'étude (note d'info-consentement, brochure investigateur, cahier d'observation, etc...)</li>
-<li>Recherche de collaborations (cliniciens, industriels, chercheurs) et de financements (appels d'offres, etc.)</li>
-<li>Constitution et suivi des dossiers administratifs et réglementaires au niveau national.</li>
-<li>Logistique de l'étude (circuit pharmacie, échantillons biologiques, etc.).</li>
-<li>Contrôle qualité des données (e-CRF ou support papier) : monitoring sur site public ou privé.</li>
-<li>Participation à la valorisation de la recherche (aide au plan statistique, résumé du rapport final et publication)</li>
+<ul ><li>conception/Rédaction de protocole et documents de l'étude (note d'info-consentement, brochure investigateur, cahier d'observation, etc...)</li>
+<li>recherche de collaborations (cliniciens, industriels, chercheurs) et de financements (appels d'offres, etc...)</li>
+<li>constitution et suivi des dossiers administratifs et réglementaires au niveau national</li>
+<li>logistique de l'étude (circuit pharmacie, échantillons biologiques, etc...)</li>
+<li>contrôle qualité des données (e-CRF ou support papier) : monitoring sur site public ou privé</li>
+<li>participation à la valorisation de la recherche (aide au plan statistique, résumé du rapport final et publication)</li>
 </ul></div>");
 
-	define('TXT_ECM2',"<h2>Missions transversales :</h2> 
+	define('TXT_ECM2',"<h2>missions transversales </h2> 
 <div  style=\"display:block; text-align:left;\" id=\"puces\">
 <ul>
-<li>Définition de cahiers des charges de biomatériaux.</li>
- <li>Veille réglementaire relative aux dispositifs médicaux et à la recherche clinique.</li>
- <li>Participation à l'élaboration/validation de documents Qualité relatifs au Management par la Qualité en recherche clinique (CHU de Bordeaux, Inserm et Réseau des CIC, plateforme EUCLID).</li>
+<li>définition de cahiers des charges de biomatériaux</li>
+ <li>veille réglementaire relative aux dispositifs médicaux et à la recherche clinique</li>
+ <li>participation à l'élaboration/validation de documents Qualité relatifs au Management par la Qualité en recherche clinique (CHU de Bordeaux, Inserm et Réseau des CIC, plateforme EUCLID)</li>
  </ul>
  </div>
  
- <div id=\"section-article\"><h2>Domaines médicaux concernés :</h2>
- Orthopédie, Chirurgie Vasculaire, ORL et chirurgie maxillo-faciale, ORL pédiatrique, Chirurgie plastique et reconstructrice, Implantologie dentaire, Ingénierie tissulaire, Cardiologie et Imagerie interventionnelle et plus...
- </div>");
+<h2><em>expérience dans les domaines médicaux suivants :</em></h2>
+ <div  style=\"display:block; text-align:left;\" id=\"puces\"><em>
+ orthopédie, chirurgie vasculaire, ORL et chirurgie maxillo-faciale, ORL pédiatrique, chirurgie plastique et reconstructrice, implantologie dentaire, ingénierie tissulaire, cardiologie et imagerie interventionnelle et plus...
+ </em></div>");
 	//---------------------------------------------------------
   	// Master BIDIM
   	//---------------------------------------------------------
@@ -656,8 +664,8 @@ define('TXT_CoordoLB',"
 <p style=\"margin-top:2px\"><strong>Laurence Bordenave, </strong><br/>
 Coordonnatrice du CIC-IT Biomatériaux<br/>
 CIT-IT Inserm/CHU de Bordeaux</p>
-<p><a href=\"mailto:laurence.bordenave@chu-bordeaux.fr\">Courriel:laurence.bordenave@chu-bordeaux.fr</a><br/>Tél: <br/>
-Fax: +33 </p>");
+<p><a href=\"mailto:laurence.bordenave@chu-bordeaux.fr\">Courriel:laurence.bordenave@chu-bordeaux.fr</a><br/>Tél: Tél: +33 (0) 557 102 866 <br/>
+Fax:+33 (0) 557 102 869</p>");
 
 //Claire
 define('TXT_CoordoCoSecretériat',"
@@ -775,7 +783,7 @@ La mise en place de liens hypertextes par des tiers vers des pages ou des docume
 	define('TXT_carrouselIm10',"La laverie");
 	define('TXT_carrouselIm11',"Chambre froide");
 	define('TXT_carrouselIm12',"centrifugeuse pour la culture cellulaire");
-	define('TXT_HTC61',"microscope NIKON 80i à tête motorisée 90i."); //problème?
+	//define('TXT_HTC61',"microscope NIKON 80i à tête motorisée 90i."); //problème?
 	
 	
 	//---------------------------------------------------------
