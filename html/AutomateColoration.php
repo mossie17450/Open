@@ -81,35 +81,22 @@ if (d) {d.style.display='block';}
   	
 	 ?>
 
+<div class="img" style="position:relative; top:5%; left:20%;">
 
-
-
-<div class="img" style="position:relative; top:5%; left:150%; width:200%;">
- <a target="_blank" href="LaurenceBordenave.php"><!-- lien quand on clique sur l'image....   -->
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/Tissus_Leica_TP1020.jpg\" width=\"70%\" >";
+			echo "<img src=\"../image/tienturierHMS70.jpg\" width=\"70%\" >";
 		}
 		else {
 			
-		echo "<img src=\"../image/Tissus_Leica_TP1020.jpg\" width=\"70%\" >";
+		echo "<img src=\"../image/tienturierHMS70.jpg\" width=\"70%\" >";
 		}
 		?>
-  </a><br>
-  <div><?php echo "automate de coloration....";   ?></div>
+ <br>
+  <div><?php echo "Automate de coloration \"Microm Microtech HMS MYR\"<br>mis à disposition par la PTIB.";   ?></div>
 	</div>
 
 
 </div>
 </div>
-
-
-
-
-
-<br>
-
-</div>
-</body>
-</html>

@@ -123,8 +123,20 @@ else if($_POST['langue']=='en'){
 
 <div style="display:flex; flex-direction:column; height:100%;" >
 
+
+
+
+
+<div id="section-article" style="width:90%;">
+<?php // echo TXT_TitresFonctionnement ; ?>
+<br>
+<div align="justify"><?php  echo TXT_A1Fonction ; ?></div>
+<br>
+<div align="justify"><?php echo TXT_A2Fonction ; ?></div>
+<br></div>
+<br>
 <div  style="display:flex; flex-direction:row; width:100%;  height:10%;" class="arrondie">
- <div  style="width:50%; height:auto;"><!-- compatibilité avec IE  -->
+ <div  style="width:40%; height:auto;"><!-- compatibilité avec IE  -->
  <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
@@ -140,26 +152,29 @@ else if($_POST['langue']=='en'){
 
 <!--<img src="../image/personnels/PhotoGroupeCIC-IT2017.jpg" width="100%" height="auto" style="margin-left:2%; margin-right:2%; display:align;" class="arrondie" />-->
 <h4 align="center"><strong>Equipe du CIC-IT (Mars 2017)</strong></h4>
-<br><br><br><br>
+
 </div>
- <div  style=" width:40%; float:right;"><br>
+ <div  style=" width:50%;"><br>
+
+<a href="../image/OrganigrammeCIC-ITnov2016.jpg" title="<?php echo TXT_imgOrganigramme; ?>" >
+ <?php
+		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
+			
+			echo "<img src=\"../image/OrganigrammeCIC-ITnov2016.jpg\" width=\"100%\" style=\"margin-left:2%; margin-right:2%; height:90%; \" >
+";
+		}
+		else {
+			
+		echo "<img src=\"../image/OrganigrammeCIC-ITnov2016.jpg\" style=\"margin-left:2%; margin-right:2%; \"  width=\"100%\" >
+			";
+		}
+		?></a>
+ 
  <h4 align="center"><?php echo TXT_legendeImg; ?></h4>
-<a href="../image/OrganigrammeCIC-ITnov2016.jpg" title="<?php echo TXT_imgOrganigramme; ?>" ><img src="../image/OrganigrammeCIC-ITnov2016.jpg"  title="<?php echo TXT_imgOrganigramme; ?>" width="95%" style="margin-left:2%"></a>
-
 
 </div>
 
 </div>
-<br>
-
-
-<div id="section-article" style="width:90%;">
-<?php  echo TXT_TitresFonctionnement ; ?>
-<div align="justify"><?php  echo TXT_A1Fonction ; ?></div>
-<br>
-<div align="justify"><?php echo TXT_A2Fonction ; ?></div>
-<br></div>
-
  <!--  plan du site....   --> 
 </div>
  

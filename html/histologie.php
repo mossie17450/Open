@@ -237,7 +237,7 @@ else if($_POST['langue']=='en'){
 			";
 		}
 		?> </a>
-<div  style="display:inline-block; width:80%; height:auto; text-align:left;">
+<div  style="display:inline-block; width:100%; height:auto; text-align:left;">
 <?php echo TXT_THR ; ?> 
 </div></div>
 </div>
@@ -425,14 +425,14 @@ else if($_POST['langue']=='en'){
 
  <?php echo TXT_HT1; ?>
 
- <table class="table" width="100%";><tr><td colspan="5">
+ <table class="table" ><tr><td colspan="5">
   <?php echo TXT_HTC1; ?></td></tr><td>
   <?php echo TXT_HCI; ?></td></table>
  
 
 <!-- deusième tableau... -->
  
-<table class="table"><tr><td colspan="3"><h4><? echo TXT_HTC3; ?></h4></td></tr>
+<table class="table" ><tr><td colspan="3"><? echo TXT_HTC3; ?></td></tr>
 <tr><td><div id="show4" class="slideshow" >
     <img src="../image/15-01 158D-c- A (G10)b.jpg" width="50%" height="auto" alt="Trichrome de Goldner" />
   </div></td><td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>

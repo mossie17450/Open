@@ -286,106 +286,47 @@ echo " <br><img src=\"../image/etuvesCO2.jpg\" style=\"width:80%; padding:2px; h
 
 </div> 
 
-<!--<div  style="display:flex; flex-direction:column; ">-->
+
 <div id="section-article" > 
 <?php echo TXT_HST; ?>
 <?php echo TXT_CCM; ?>
 
 <!-- image et legende , voire avec Martine! -->
 
-<table class="table">
+<table>
 <tr><td colspan="2"><div id="show10" class="slideshow" >
     <img src="../image/vWF x40.jpg" alt="" width="50%" />
-  </div></td><td><img src="../image/markerTransparent.png" width="10%" height="5%"></td>
+  </div></td>
+ <td><img src="../image/markerTransparent.png" width="10%" height="5%"></td>
   <td><div id="show11" class="slideshow">
     <img src="../image/Isolement ECP J9.jpg" alt="" width="70%"/>
 	</div></td><tr><td style="text-align:left" colspan="2"><em><?php echo TXT_IlegCC1; ?></em></td><td></td><td style="text-align:left"><em><?php echo TXT_IlegCC2; ?></em></td></tr>
-</td></tr></table>
+</td>
+</tr></table>
   
 <h4><?php echo TXT_CCTM1; ?></h4>
 
 
 
-<table class="table">
+<!--<table class="table">
 <tr><td colspan="3"><div id="show8" class="slideshow" >
     <img src="../image/11.jpg" alt="" width="70%" />
   </div></td><td><img src="../image/markerTransparent.png" width="50%" height="5%"></td>
   <td><div id="show9" class="slideshow">
     <img src="../image/blanc.jpg" alt="" width="60%"/>
-	</div></td><tr><td style="text-align:left" colspan="3"><em><?php echo TXT_IlegCC3; ?></em></td><td></td><td style="text-align:left"><em><?php echo TXT_IlegCC4; ?></em></td></tr>
-</td></tr></table>
+	</div></td><tr><td style="text-align:left" colspan="3"><em><?php //echo TXT_IlegCC3; ?></em></td><td></td><td style="text-align:left"><em><?php //echo TXT_IlegCC4; ?></em></td></tr>
+</td></tr></table>-->
 </div>
-
-
-<!-- carrousselle :   -->
-<?php// echo TXT_AEQ; ?>
-
- <!--<div class="container">
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
-    <!-- Indicators 
-    <ol class="carousel-indicators">
-    <li data-target="../css/#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="../css/#myCarousel" data-slide-to="1"></li>  
-    <li data-target="../css/#myCarousel" data-slide-to="2"></li>
-    <li data-target="../css/#myCarousel" data-slide-to="3"></li>
-	<li data-target="../css/#myCarousel" data-slide-to="4"></li>
-	<li data-target="../css/#myCarousel" data-slide-to="5"></li>
-	<li data-target="../css/#myCarousel" data-slide-to="6"></li>  
-    </ol>
-    <!-- Wrapper for slides 
-    <div class="carousel-inner" role="listbox">
-      <div class="item active"><h6><?php// echo TXT_carrouselIm1;?><br><?php// echo TXT_legCIC; ?></h6>
-   <img src="../image/compteurCellules.jpg" alt="compteur de cellules" width="auto" height="150px">
-      </div> 	  	  
-	  <div class="item"><h6><?php// echo TXT_carrouselIm2; ?><br><?php// echo TXT_legCIC; ?></h6>
-        <img src="../image/centrifugeuseJouan.jpg" alt="centrifugeuse Jouan" width="auto" height="150px">
-      </div>
-	  
-	  <div class="item"><h4><?//  echo TXT_carrouselIm3; ?><br><?php// echo TXT_legendeCar; ?></h4>
-		<img src="../image/ContenairesN2Lbis.jpg" alt="ContenairesN2L" width="auto" height="150px">
-      </div>
-	  
-	 <div class="item"><h4><?// echo TXT_carrouselIm4; ?><br><?php// echo TXT_legCIC; ?></h4>
-        <img src="../image/Chameleon.jpg" alt="" width="auto" height="150px">
-      </div> 
-	  
-	  <div class="item"><h4><?// echo TXT_carrouselIm5; ?><br><?php// echo TXT_legendeCar; ?></h4>
-        <img src="../image/combinebis.jpg" alt="combine-20°C&-80°C" width="auto" height="150px">
-      </div> 
-	  
-	  <div class="item"><h4><?// echo TXT_carrouselIm6; ?><br><?php// echo TXT_legendeCar; ?></h4>
-        <img src="../image/bainsThermostate.jpg" alt="" width="auto" height="150px">
-      </div> 
-	  
-	  <div class="item"><h6><? //echo// TXT_carrouselIm7; ?><br><?php// echo TXT_legendeCar;  ?></h6>
-        <img src="../image/BainUltraSon.jpg" alt="" width="auto" height="150px">
-      </div>   
-	 
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-	 
-    </div>
-	</div> 
-	</div> -->
-
-<!-- fin du carousel! --> 
-
-
 </div></div>
+
+
 <!-- fin du contenu  -->
 <!-- ajout pied de page : plan du site....   --> 
 <div id="test" class="arrondie">
 <?php echo TXT_Piedhtml ; ?>
 </div>
-</div></div>
-<!-- fin ajout -->
 
+<!-- fin ajout -->
+</div>
 </body>
 </html>

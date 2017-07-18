@@ -141,14 +141,14 @@ else if($_POST['langue']=='en'){
 
 
 <!-- fin du menu -->
-<article>
+<div>
 <div style="text-align:center"><?php echo TXT_CoordoTitre; ?></div>                        
 <div style="text-align:center"><?php echo TXT_CoordoAdresse; ?></div> 
 <div  style="margin-top:25px;">
 
 <div  style="display:flex; flex-direction:row;">
-<div   style="display:flex; flex-direction:column; margin-left:2%; width:30%;"> 
-
+<div   style="display:flex; flex-direction:column; margin-left:5%; width:30%;"> 
+<!-- Malène Durand -->
 <div class="img">
   <a target="_blank" href="../image/personnels/MarleneP.png">
    <?php
@@ -168,7 +168,6 @@ else if($_POST['langue']=='en'){
 <br>
 
 <!-- laurence Bordenave -->
-
 <div class="img">
   <a target="_blank" href="../image/personnels/LBordenavePP.png"><!-- lien quand on clique sur l'image....   -->
    <?php
@@ -188,7 +187,9 @@ else if($_POST['langue']=='en'){
 
 </div>
 </div>
-<div  style="display:flex; flex-direction:column; margin-left:5%; width:30%;"> 
+
+<!-- Claire Darcos  -->
+<div  style="display:flex; flex-direction:column; margin-left:2%; width:30%;"> 
 <div class="img">
   <a target="_blank" href="../image/personnels/ClaireP.png">
    <?php
@@ -207,13 +208,8 @@ else if($_POST['langue']=='en'){
   <div><?php echo TXT_CoordoCoSecretériat;  ; ?></div>
   </div></div> 
 
-
 <br><br>
-
-
-
-
-<div  style="display:flex; flex-direction:column; margin-left:2%; width:30%">
+<div  style="display:flex; flex-direction:column; margin-left:5%; width:40%">
 <?php echo TXT_Coordo; ?><br>
 <iframe width="70%" height="70%"  frameborder="2px" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=Hopital+Xavier+Arnozan,+33600+Pessac&amp;aq=&amp;sll=44.848567,-0.623131&amp;sspn=0.120486,0.220757&amp;ie=UTF8&amp;hq=Hopital+Xavier+Arnozan,&amp;hnear=Pessac,+Gironde,+Aquitaine&amp;cid=14449669705423434568&amp;ll=44.833474,-0.604935&amp;spn=0.121735,0.192261&amp;z=11&amp;output=embed">
 </iframe>
@@ -224,12 +220,14 @@ else if($_POST['langue']=='en'){
 <a  target="_blank" href="LaurenceBordenave.php">                       
 <br><a target="_blank" href="plantbcchu.php"><?php echo TXT_CoordoBusTram; ?>
 <img src="../image/plantbcchu.jpg" width="60%"><br/>
+<?php echo "Plan de l'hopital Xavier Xernozan de Pessac"; ?>
 <br>
 </a>
-<?php echo TXT_MobiliteTBM; echo "<br>(informations tcb :pour se déplacé sur<br>la communoté urbaine de bordeaux)";?><a href="http://www.infotbm.com/" ></a>
+<?php echo "informations tcb :pour se déplacé sur<br>la communauté urbaine de bordeaux<br>"; echo TXT_MobiliteTBM; ?><a href="http://www.infotbm.com/" ></a>
+<img src="../image/aeroportXavierXernozan.png" width="50%"><br/>
 </div></div>        
 </div>
-</article>  
+</div>  
   
 <!-- ajout pied de page : plan du site....   --> 
 <div id="test" class="arrondie">
