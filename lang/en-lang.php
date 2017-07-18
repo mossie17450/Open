@@ -61,9 +61,9 @@
   	 //---------------------------------------------------------
 	define('TXT_HPT',"History and partners");
 	
-	define('TXT_histoire',"The Center for Technological Innovation was created in 2001 covering the theme of Biomaterials at the Bordeaux University Hospital and it was certified as CIC-IT Biomaterials by INSERM / DGOS <br> in 2008.CIC-IT joined the University of Bordeaux and Bergonie Institute in 2012 and it was successfully renewed in 2016 by the HCERES.<br>
-It is one of 3 Bordeaux  CIC-modules including CIC-multi-thematic (investigator support) and CIC-Epidemiological Clinic (methodology and statistics). <br>
-It is supported by INSERM U1026 BIOTIS (Bordeaux), to be in partnership with clinicians to conduct translational research programs in the field of Tissue bioengineering .");
+	define('TXT_histoire',"The Center for Technological Innovation was created in 2001 covering the theme of Biomaterials at the Bordeaux University Hospital and it was certified as CIC-IT Biomaterials by <a target=\"_blank\" href=\" http://social-sante.gouv.fr/ministere/organisation/directions/article/dgos-direction-generale-de-l-offre-de-soins\">INSERM / DGOS</a> in 2008.CIC-IT joined the University of Bordeaux and Bergonie Institute in 2012 and it was successfully renewed in 2016 by the HCERES.<br>
+It is one of 3 Bordeaux  CIC-modules including <a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr \">CIC-multi-thematic</a> (investigator support) and <a href=\"http://usmr.isped.u-bordeaux2.fr/\">CIC-Epidemiological Clinic </a>(methodology and statistics). <br>
+It is supported by <a target=\"_blank\" href=\"http://www.biotis-bordeaux.com \">INSERM U1026 BIOTIS </a>(Bordeaux), to be in partnership with clinicians to conduct translational research programs in the field of Tissue bioengineering .");
 		
 	//---------------------------------------------------------
   	// html/Missions.php
@@ -109,7 +109,7 @@ It is supported by INSERM U1026 BIOTIS (Bordeaux), to be in partnership with cli
 	define('TXT_TitreMission', "<h1 align=\"center\">Our missions</h1>");
 	
 	define('TXT_ArticleMission',"
-To this end, the CIC-IT of Bordeaux relies on the ACT (Aquitaine Science Transfer), the national network of CIC-IT and national platforms TECH4HEALTH and EUCLID of theF-CRIN structure for national and international multicenter clinical trials. </p >");	
+To this end, the CIC-IT of Bordeaux relies on the <a target=\"_blank\" href=\"http://ast-innovations.com/ \">AST</a> (Aquitaine Science Transfer), the national network of CIC-IT and national platforms <a target=\"_blank\" http://tech4health.fr/>TECH4HEALTH</a> and <a target=\"_blank\" href=\"http://euclid-ctu.eu/\">EUCLID</a> of the F-CRIN structure for national and international multicenter clinical trials. </p >");	
 	define('TXT_ImageMission', "\"Stages of proof of concept\"");
 	define('TXT_SSSTitreMission', "The objectives pursued are defined at several levels:");
 	 define('TXT_SSMenuMission', "<div style = \" display: block; text-align:left; \"><ul><li>Coordinating the expertise required for completion, validation and promotion of innovative products in the context of industrial benefits .</li><li>Developing partnerships with companies on projects with high potential for scientific development (patents, publications), to supported nationally and internationally programm. </li><li>Developing clinical research protocols (pilot clinical studies) in respect of the regulation of biomedical research , based on the CIC network; </li><li> Investing in new missions: quality evaluation of innovative medical devices and new for substitution of functional and actual sevice rendering (SMR), material vigilance and new pre-clinical evaluation methodologies.</li></ul></div>");
@@ -127,17 +127,26 @@ To this end, the CIC-IT of Bordeaux relies on the ACT (Aquitaine Science Transfe
 	//---------------------------------------------------------
   	// html/environnementDePointe.php
   	//---------------------------------------------------------
-	define ('TXT_TitreEnvironnement',"<h1>The CIC-IT concept Biomaterials</h1><h2>Advanced Environment</h2>");
-	define ('TXT_ArticleEnvironnement',"<p>CIC-IT Bordeaux works with clinicians from University Hospital (CHU) covering different medical expertise involved in the use of IMD (orthopedic and vascular surgery, ophthalmology, dentistry, ENT, intensive care, diabetology, nuclear medicine, radiology, etc ...), and the EFSNA (Etablissement Français du Sang de la Nouvelle-Aquitaine).<br>
-<br>CIC-IT is located in Xavier Arnozan Hospital within thePTIB (Plateforme Technologique d'Innovation Biomédicale) building closely connected to IJU LIRYC (Institute de  Rhythmologie Cardiaque) providing access to laboratories (histology, P2 cell culture) and advanced equipments (<em>in vivo</em> experimentation and imaging plates).<br>
-<br>Additionally, CIC-IT takes an active part in the Federation of academic and industrial skills in the field of biomaterials in  New Aquitaine region via the Aquitaine Association Biomaterials and Implants (2ACBI), and actively participates in BxCRM (Bordeaux consortium of Regenerative Medicine) and FR TECSAN (Federation de Recherche Technologie pour la Santé) of Bordeaux University.</p>.");
+	define ('TXT_TitreEnvironnement',"<h1>Advanced Environment</h1>");
+	define ('TXT_ArticleEnvironnement',"<p>CIC-IT Bordeaux works with clinicians from University Hospital (CHU) 
+	covering different medical expertise involved in the use of IMD (orthopedic and vascular surgery, ophthalmology, 
+	dentistry, ENT, intensive care, diabetology, nuclear medicine, radiology, etc ...), and the <a href=\"https://www.dondusang.net/rewrite/heading/804/efs/l-efs-en-regions/aquitaine-limousin.htm?idRubrique=804\" />EFSNA 
+	(Etablissement Français du Sang de la Nouvelle-Aquitaine)</a>.<br>
+<br>CIC-IT is located in Xavier Arnozan Hospital within the <a href=\"http://www.ptib.u-bordeaux2.fr/index.php?p=accueil\" />PTIB 
+(Plateforme Technologique d'Innovation Biomédicale)</a> building closely connected to <a href=\"https://www.ihu-liryc.fr/\" \>IHU LIRYC 
+(Institute de  Rhythmologie Cardiaque)</a> providing access to laboratories (histology, P2 cell culture) 
+and advanced equipments (<em>in vivo</em> experimentation and imaging plates).<br>
+<br>Additionally, CIC-IT takes an active part in the Federation of academic and industrial skills in the field 
+of biomaterials in  New Aquitaine region via <a href=\"http://www.2acbi-asso.fr/\" \>the Aquitaine Association Biomaterials and Implants</a> (2ACBI), 
+and actively participates in <a href=\"https://bcrm.u-bordeaux.fr/\" />BxCRM (Bordeaux consortium of Regenerative Medicine)</a> and FR TECSAN 
+(Federation de Recherche Technologie pour la Santé) of Bordeaux University.</p>.");
 		
 	//---------------------------------------------------------
   	// Fonctionnement/organisation.php
   	//---------------------------------------------------------
-	define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organization</h1> ");
+	//define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organization</h1> ");
 	define('TXT_A1Fonction',"The CIC Bordeaux (comprising 3 IT Governance modules, P & EC) is managed via an annual steering committee, and is subject to a four-year evaluation by the HCERES. <br>CIC depends directly on the Directorate of Clinical Research and Innovation (DRCI) of the University, Hospital of Bordeaux and the Regional Delegation of INSERM. <br>
-The CIC-IT works closely with P & EC CIC modules Bordeaux especially for clinical trials, for which it uses the CIC-P of skills for investigative support and the CIC-EC for the methodology, data management and statistics, and under the direction of DRCI for clinical trials in academic promotion.");
+The CIC-IT works closely with P & EC CIC modules Bordeaux especially for clinical trials, for which it uses <a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr/\">the CIC-P</a> of skills for investigative support and <a target=\"_blank\" href=\"http://usmr.isped.u-bordeaux2.fr/\"> the CIC-EC</a> for the methodology, data management and statistics, and under the direction of DRCI for clinical trials in academic promotion.");
 	define('TXT_A2Fonction',"
 	The CIC-IT is controlled via an annual strategic committee, under the leadership of Committee Chair (Pr Fricain), and combining the medical coordinator (Pr Bordenave) and the delegate coordinator (Dr Durand), representatives of its supervisors, the Director the PTIB and scientific members. The coordinators of the EC and P modules are also invited. An activity report is presented there and the future scientific and strategic direction are determined there.
 New projects submitted to the CIC-IT are presented in monthly technical committee comprising the whole team, the representative of valuation SATT and INSERM, and the holders of new projects if necessary.
@@ -297,9 +306,10 @@ For further information regarding the quality system, please contact the Quality
 	define('TXT_ResponsableQ', "<h3>Responsible:<br>Carolina Lanchas Fuentes.</h3>");
 	define('TXT_TQR',"Hospital Engineer<br>
 Quality Manager<br>
-<br><a href=\"mailto:carolina.lanchas-fuentes@chu-bordeaux.fr\">Email: carolina.lanchas-fuentes@chu-bordeaux.fr </a><br>Tél. :  05-57-10-28-65<br>
+<br><br>phone :  05-57-10-28-65, 
 Fax. : 05-57-10-28-63
-<br>");
+<a href=\"mailto:carolina.lanchas-fuentes@chu-bordeaux.fr\">Email: carolina.lanchas-fuentes@chu-bordeaux.fr </a>
+");
 
 	
 	//---------------------------------------------------------
@@ -377,7 +387,7 @@ define('TXT_Img',"<img src='../image/cic_it_preuve_concepten.jpg'  width=\"100%\
 </li><li>
 <em><strong>1FUI:<em><strong>COLOMATRIX</li>
 <li><em><strong>1PHRCI:</em></strong>DIRC(Matribone ).</li>
-<li><em><strong>2 AOI</em></strong>(EVAFAV, EOS)</li>
+<li><em><strong>2 Appel d'Offre Interne</em></strong>du CHU(EVAFAV, EOS)</li>
 <li><em><strong>2 RCT:</em></strong> INSERM/DGOS(NASEPT, PREDIOS)</li>
 <li><em><strong>Fondation de l'Avenir :</em></strong>Septum nasal</li>
 <li><em><strong>1 RNTS</em></strong>(OTV, TRICOS )</li>
@@ -385,7 +395,7 @@ define('TXT_Img',"<img src='../image/cic_it_preuve_concepten.jpg'  width=\"100%\
 <li><em><strong>Agence de Biomédecine</em></strong>(ITOV).</li></ul></div>");
 
 	define('TXT_TCol',"Collaborative projects since 2006:");
-	define('TXT_Pub',"Our publications");
+	//define('TXT_Pub',"Our publications");
 	//---------------------------------------------------------
   	// page histologie
   	//---------------------------------------------------------
@@ -393,10 +403,11 @@ define('TXT_Img',"<img src='../image/cic_it_preuve_concepten.jpg'  width=\"100%\
 	define('TXT_ResponsableHisto', "<h3>responsible :<br>Samantha Roques (born Delmond)</h3>");
 	define('TXT_THR',"Hospital engineer<br>
 Preclinical studies<br>
-Head of Histology platform at PTIB. 
-<br><a href=\"mailto:samantha.delmond@chu-bordeaux.fr\">Email: samantha.delmond@chu-bordeaux.fr </a><br>phone :  05 57 10 28 61<br>
+Head of Histology platform at PTIB.
+<br>phone :  05 57 10 28 61, 
 Fax. : 05 57 10 28 63
-<br>");
+ 
+<br><a href=\"mailto:samantha.delmond@chu-bordeaux.fr\">Email: samantha.delmond@chu-bordeaux.fr </a>");
 
 	define('TXT_HEA',"<h4>Associated equipments</h4></br>");
 	define('TXT_HST',"<h1 align=\"center\"><strong>Activities</strong></h1>");
@@ -436,9 +447,8 @@ Fax. : 05 57 10 28 63
   	// page hemodynamique
   	//---------------------------------------------------------
 	define('TXT_ResponsableHemodynamique',"responsible: Mallory Meulle");
-	define('TXT_HDR',"Assistant Engineer for cell culture and arterial flow simulation bench.
-<br>tel: 05 47 30 27 54
-<br>fax: 05 57 10 28 63
+	define('TXT_HDR',"Responsible for preclinical studies for cell culture and arterial flow simulation bench.
+<br>phone: 05 47 30 27 54, fax: 05 57 10 28 63
 <br><a href=\"mailto:mallory.meulle@chu-bordeaux.fr\">Email : mallory.meulle@chu-bordeaux.fr</a>");
 	
 	define('TXT_HDT',"Testes hemodynamic");
@@ -460,7 +470,7 @@ Fax. : 05 57 10 28 63
   	// page Culture cellulaire
   	//---------------------------------------------------------
 	define('TXT_ResponsableCellule',"responsible: Martine RENARD");
-	define('TXT_TCBHR',"<br>TSO<br>Responsible for preclinical studies in cell culture, bacteriology and hémocompatibility<br>Head of cell Culture lab at PTIB.<br><a href=\"mailto:martine.renard@chu-bordeaux.fr\">Email: martine.renard@chu-bordeaux.fr</a><br>tel (+33) (0)5 57 10 28 59<br>fax (+33) (0)5 57 10 28 63<br>");
+	define('TXT_TCBHR',"Responsible for preclinical studies in cell culture, bacteriology and hémocompatibility<br>Head of cell Culture lab at PTIB.<br>phone: (+33) (0)5 57 10 28 59, fax: (+33) (0)5 57 10 28 63<br><a href=\"mailto:martine.renard@chu-bordeaux.fr\">Email: martine.renard@chu-bordeaux.fr</a>");
 	
 define('TXT_CCM',"
 	<h2 style=\"width:100%; text-align:center; \">cell cultures :</h2>
@@ -536,7 +546,7 @@ define('TXT_CCEA1',"PSM");
   	//---------------------------------------------------------
 	define('TXT_ResponsableInVivo',"responsible: Marlène Durand");
 	define('TXT_IVT',"Preclinical studies");
-	define('TXT_IVR',"PhD<br>Project manager<br>Tél. : 05 57 10 28 66<br>Fax. :05 57 10 28 63<br><a href=\"mailto:marlene.durand@chu-bordeaux.fr\">Email: marlene.durand@chu-bordeaux.fr</a><br>");
+	define('TXT_IVR',"PhD<br>Project manager<br>Phone : 05 57 10 28 66, Fax. :05 57 10 28 63<br><a href=\"mailto:marlene.durand@chu-bordeaux.fr\">Email: marlene.durand@chu-bordeaux.fr</a><br>");
 
 	define('TXT_IVA1',"<div  style=\"display:block; text-align:left;\"><ul><li>Protocols drafting for submission to the ethics committee of Bordeaux</li><br>
 <li>Experimental management with the approved animal husbandry in Bordeaux (rodent and large animal) and approved surgeons from hospital center.</li><br>
@@ -558,8 +568,8 @@ define('TXT_CCEA1',"PSM");
 	define('TXT_Resp',"Responsible: ");
 	define('TXT_ResponsableClinique',"Elodie Belmo (born Seris)");
 	define('TXT_TCT',"Clinical studies");
-	define('TXT_TCR',"Responsible for clinical studies <br>Phone : 05 57 10 28 35 <br> Fax : 05 57 10 28 63 <br><a href=\"mailto:elodie.seris@chu-bordeaux.fr\">Email: elodie.seris@chu-bordeaux.fr</a>");
-	define('TXT_ECM1',"<h2>missions clinical research</h2>
+	define('TXT_TCR',"Responsible for clinical studies <br>Phone : 05 57 10 28 35, Fax : 05 57 10 28 63 <br><a href=\"mailto:elodie.seris@chu-bordeaux.fr\">Email: elodie.seris@chu-bordeaux.fr</a>");
+	define('TXT_ECM1',"<h2>missions clinical research:</h2>
 <h4><strong>coordination and management of single and multi-centred clinical trials management on medical devices.</strong></h4>
  <div  style=\"display:block; text-align:left;\" id=\"puces\">
 <ul><li>protocol design and drafting and study documents (info-consent note, investigator's brochure, observation booklet, etc...)</li>
@@ -570,7 +580,7 @@ define('TXT_CCEA1',"PSM");
 <li>participation in the research development(statitical assistance, summary of the final report and publication)</li>
 </ul></div>");
 	
-	define('TXT_ECM2',"<h2>transversal missions</h2> 
+	define('TXT_ECM2',"<h2>transversal missions:</h2> 
 
 <div  style=\"display:block; text-align:left;\" id=\"puces\">
 <ul>
