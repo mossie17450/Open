@@ -169,7 +169,7 @@ else if($_POST['langue']=='en'){
 
 <!-- laurence Bordenave -->
 <div class="img">
-  <a target="_blank" href="../image/personnels/LBordenavePP.png"><!-- lien quand on clique sur l'image....   -->
+  <a target="_blank" href="LaurenceBordenave.php"><!-- lien quand on clique sur l'image....   -->
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
@@ -206,7 +206,9 @@ else if($_POST['langue']=='en'){
 		?>
   </a><br>
   <div><?php echo TXT_CoordoCoSecretériat;  ; ?></div>
-  </div></div> 
+  </div>
+  annuaire du personnel du cicit <a href="annuairePDF.php">ici</a>
+  </div> 
 
 <br><br>
 <div  style="display:flex; flex-direction:column; margin-left:5%; width:40%">
@@ -217,14 +219,25 @@ else if($_POST['langue']=='en'){
 <a href="http://www.bisonfute.equipement.gouv.fr/diri/listeflashs.do?pageAstec=ie1_bordeaux.html&amp;langue=fr&amp;evt=1" target="_blank">
 <hr><?php echo TXT_CoordoTrafic; ?>
 <p><img src="../image/coordonnees_bison_fute.jpg" width="60%"/><br/></p></a>
-<a  target="_blank" href="LaurenceBordenave.php">                       
+<a  target="_blank" href="plantbcchu.php">                       
 <br><a target="_blank" href="plantbcchu.php"><?php echo TXT_CoordoBusTram; ?>
 <img src="../image/plantbcchu.jpg" width="60%"><br/>
 <?php echo "Plan de l'hopital Xavier Xernozan de Pessac"; ?>
 <br>
 </a>
-<?php echo "informations tcb :pour se déplacé sur<br>la communauté urbaine de bordeaux<br>"; echo TXT_MobiliteTBM; ?><a href="http://www.infotbm.com/" ></a>
-<img src="../image/aeroportXavierXernozan.png" width="50%"><br/>
+<?php echo "informations tcb :pour se déplacé sur la communauté urbaine de bordeaux<br>"; echo TXT_MobiliteTBM; ?><a href="http://www.infotbm.com/" ></a>
+<br>
+<div align="inline"><?php echo "Venir au CIC-IT (hopital Xavier Xernozan) en partant de l'aeroport de Mérignac"; ?><a target="_blank" href="aeroportXavierXernozan.php" >
+<!--<img src="../image/aeroportXavierXernozan.png" width="50%"><br/>-->
+le plan est ici
+</a></div>
+
+<br>
+<div align="inline"><?php echo "Venir au CIC-IT (hopital Xavier Xernozan) en partant de la gare Saint Jean (Bordeaux)"; ?>
+<a target="_blank" href="gareStJeanXavierXernozan.php">
+<!--<img src="../image/gareStJeanXavierXernozan.png" width="50%"><br/>  gareStJeanXavierXernozan-->
+les renseignements sont ici
+</a><br><br></div>
 </div></div>        
 </div>
 </div>  
