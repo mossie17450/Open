@@ -207,7 +207,7 @@ else if($_POST['langue']=='en'){
   </a><br>
   <div><?php echo TXT_CoordoCoSecretériat;  ; ?></div>
   </div>
-  annuaire du personnel du cicit <a href="annuairePDF.php">ici</a>
+  annuaire du personnel du cicit : <br>en cour de developpement.<a href="annuairePDF.php">ici</a>
   </div> 
 
 <br><br>
@@ -222,21 +222,20 @@ else if($_POST['langue']=='en'){
 <a  target="_blank" href="plantbcchu.php">                       
 <br><a target="_blank" href="plantbcchu.php"><?php echo TXT_CoordoBusTram; ?>
 <img src="../image/plantbcchu.jpg" width="60%"><br/>
-<?php echo "Plan de l'hopital Xavier Xernozan de Pessac"; ?>
-<br>
+<?php //echo "Plan de l'hopital Xavier Xernozan de Pessac"; ?>
 </a>
-<?php echo "informations tcb :pour se déplacé sur la communauté urbaine de bordeaux<br>"; echo TXT_MobiliteTBM; ?><a href="http://www.infotbm.com/" ></a>
+<?php echo "Pour se déplacer sur la communauté urbaine de bordeaux grace au transport en commun.<br>"; echo TXT_MobiliteTBM; ?><a href="http://www.infotbm.com/" ></a>
 <br>
-<div align="inline"><?php echo "Venir au CIC-IT (hopital Xavier Xernozan) en partant de l'aeroport de Mérignac"; ?><a target="_blank" href="aeroportXavierXernozan.php" >
+<div align="inline"><?php echo "Pour venir au CIC-IT(hopital Xavier Xernozan) en partant de l'aeroport de Mérignac"; ?><a target="_blank" href="aeroportXavierXernozan.php" >
 <!--<img src="../image/aeroportXavierXernozan.png" width="50%"><br/>-->
 le plan est ici
 </a></div>
 
 <br>
-<div align="inline"><?php echo "Venir au CIC-IT (hopital Xavier Xernozan) en partant de la gare Saint Jean (Bordeaux)"; ?>
+<div align="inline"><?php echo "Pour venir au CIC-IT hopital Xavier Xernozan) en partant de la gare Saint Jean(Bordeaux)"; ?>
 <a target="_blank" href="gareStJeanXavierXernozan.php">
 <!--<img src="../image/gareStJeanXavierXernozan.png" width="50%"><br/>  gareStJeanXavierXernozan-->
-les renseignements sont ici
+le plan est ici
 </a><br><br></div>
 </div></div>        
 </div>
