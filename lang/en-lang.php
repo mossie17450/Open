@@ -404,9 +404,8 @@ define('TXT_Img',"<img src='../image/cic_it_preuve_concepten.jpg'  width=\"100%\
 	define('TXT_THR',"Hospital engineer<br>
 Preclinical studies<br>
 Head of Histology platform at PTIB.
-<br>phone :  05 57 10 28 61, 
+<br>phone :  05 57 10 28 61 /
 Fax. : 05 57 10 28 63
- 
 <br><a href=\"mailto:samantha.delmond@chu-bordeaux.fr\">Email: samantha.delmond@chu-bordeaux.fr </a>");
 
 	define('TXT_HEA',"<h4>Associated equipments</h4></br>");
@@ -448,7 +447,7 @@ Fax. : 05 57 10 28 63
   	//---------------------------------------------------------
 	define('TXT_ResponsableHemodynamique',"responsible: Mallory Meulle");
 	define('TXT_HDR',"Responsible for preclinical studies for cell culture and arterial flow simulation bench.
-<br>phone: 05 47 30 27 54, fax: 05 57 10 28 63
+<br>Phone: 05 47 30 27 54 / Fax: 05 57 10 28 63
 <br><a href=\"mailto:mallory.meulle@chu-bordeaux.fr\">Email : mallory.meulle@chu-bordeaux.fr</a>");
 	
 	define('TXT_HDT',"Testes hemodynamic");
@@ -470,7 +469,7 @@ Fax. : 05 57 10 28 63
   	// page Culture cellulaire
   	//---------------------------------------------------------
 	define('TXT_ResponsableCellule',"responsible: Martine RENARD");
-	define('TXT_TCBHR',"Responsible for preclinical studies in cell culture, bacteriology and hémocompatibility<br>Head of cell Culture lab at PTIB.<br>phone: (+33) (0)5 57 10 28 59, fax: (+33) (0)5 57 10 28 63<br><a href=\"mailto:martine.renard@chu-bordeaux.fr\">Email: martine.renard@chu-bordeaux.fr</a>");
+	define('TXT_TCBHR',"Responsible for preclinical studies in cell culture, bacteriology and hémocompatibility<br>Head of cell Culture lab at PTIB.<br>Phone: 05 57 10 28 59 / Fax: 05 57 10 28 63<br><a href=\"mailto:martine.renard@chu-bordeaux.fr\">Email: martine.renard@chu-bordeaux.fr</a>");
 	
 define('TXT_CCM',"
 	<h2 style=\"width:100%; text-align:center; \">cell cultures :</h2>
@@ -546,7 +545,7 @@ define('TXT_CCEA1',"PSM");
   	//---------------------------------------------------------
 	define('TXT_ResponsableInVivo',"responsible: Marlène Durand");
 	define('TXT_IVT',"Preclinical studies");
-	define('TXT_IVR',"PhD<br>Project manager<br>Phone : 05 57 10 28 66, Fax. :05 57 10 28 63<br><a href=\"mailto:marlene.durand@chu-bordeaux.fr\">Email: marlene.durand@chu-bordeaux.fr</a><br>");
+	define('TXT_IVR',"PhD<br>Project manager<br>Phone: 05 57 10 28 66 / Fax: 05 57 10 28 63<br><a href=\"mailto:marlene.durand@chu-bordeaux.fr\">Email: marlene.durand@chu-bordeaux.fr</a><br>");
 
 	define('TXT_IVA1',"<div  style=\"display:block; text-align:left;\"><ul><li>Protocols drafting for submission to the ethics committee of Bordeaux</li><br>
 <li>Experimental management with the approved animal husbandry in Bordeaux (rodent and large animal) and approved surgeons from hospital center.</li><br>
@@ -568,7 +567,7 @@ define('TXT_CCEA1',"PSM");
 	define('TXT_Resp',"Responsible: ");
 	define('TXT_ResponsableClinique',"Elodie Belmo (born Seris)");
 	define('TXT_TCT',"Clinical studies");
-	define('TXT_TCR',"Responsible for clinical studies <br>Phone : 05 57 10 28 35, Fax : 05 57 10 28 63 <br><a href=\"mailto:elodie.seris@chu-bordeaux.fr\">Email: elodie.seris@chu-bordeaux.fr</a>");
+	define('TXT_TCR',"Responsible for clinical studies <br>Phone : 05 57 10 28 35 / Fax : 05 57 10 28 63 <br><a href=\"mailto:elodie.seris@chu-bordeaux.fr\">Email: elodie.seris@chu-bordeaux.fr</a>");
 	define('TXT_ECM1',"<h2>missions clinical research:</h2>
 <h4><strong>coordination and management of single and multi-centred clinical trials management on medical devices.</strong></h4>
  <div  style=\"display:block; text-align:left;\" id=\"puces\">

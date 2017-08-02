@@ -51,7 +51,11 @@
   	 //---------------------------------------------------------
 	define('TXT_HPT',"Histoire et partenaires");
 	
-	define('TXT_histoire',"Le Centre d'Innovations Technologiques créé en 2001 sur le thème des Biomatériaux au CHU de Bordeaux a été labellisé en CIC-IT Biomatériaux par <a target=\"_blank\" href=\" http://social-sante.gouv.fr/ministere/organisation/directions/article/dgos-direction-generale-de-l-offre-de-soins  \">l'INSERM/DGOS </a> en 2008.<br> Il a été renouvelé en 2011, a rejoint le giron de l'Université de Bordeaux ainsi que l'Institut Bergonié en 2012 puis été renouvelé avec succès en 2016 par l'HCERES.<br> 
+	define('TXT_histoire',"Le Centre d'Innovations Technologiques créé en 2001 sur le thème des Biomatériaux au 
+	CHU de Bordeaux a été labellisé en CIC-IT Biomatériaux par 
+	<a target=\"_blank\" href=\" http://social-sante.gouv.fr/ministere/organisation/directions/article/dgos-direction-generale-de-l-offre-de-soins\">l'INSERM/DGOS </a> en 2008.<br>
+	Il a été renouvelé en 2011, a rejoint le giron de l'Université de Bordeaux ainsi que l'Institut Bergonié 
+	en 2012 puis été renouvelé avec succès en 2016 par l'HCERES.<br> 
 		Il constitue l'un des 3 modules du CIC de Bordeaux avec les <a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr \">CIC-Plurithématique</a> (support investigateur) et <a href=\"http://usmr.isped.u-bordeaux2.fr/\">CIC-Epidémiologique Clinique</a> (méthodologie et statistiques).<br>
 		Il est adossé à l'<a target=\"_blank\" href=\"http://www.biotis-bordeaux.com \">unité INSERM U1026 BIOTIS</a> (Bordeaux) avec laquelle il participe, en partenariat avec des cliniciens, à des programmes de recherche translationnelle dans le domaine de la BioIngénierie Tissulaire.");
 	
@@ -106,7 +110,7 @@
 	define('TXT_ArticleMission',"Pour ce faire, le CIC-IT de Bordeaux s'appuie sur la 
 	<a target=\"_blank\" href=\"http://ast-innovations.com/ \">Société d'Accélération de Transfert 
 	</a>\"Aquitaine Science Transfert\" (AST),  le réseau national des CIC-IT et  les plateformes nationales 
-	<a http://tech4health.fr/>TECH4HEALTH</a> et <a href=\"http://euclid-ctu.eu/\">EUCLID</a> 
+	<a target=\"_blank\" href=http://tech4health.fr/>TECH4HEALTH</a> et <a target=\"_blank\" href=\"http://euclid-ctu.eu/\">EUCLID</a> 
 	de la structure F-CRIN pour les essais cliniques multicentriques nationaux et internationaux.</p>" );
 	
 	define('TXT_SSSTitreMission', "Les objectifs poursuivis se déclinent à plusieurs niveaux :");
@@ -116,23 +120,46 @@
 	//---------------------------------------------------------
   	// html/environnementDePointe.php
   	//---------------------------------------------------------
-	define ('TXT_TitreEnvironnement',"<h1>Le CIC-IT Biomatériaux</h1><h2>Un environnement de pointe</h2>");
-	define ('TXT_ArticleEnvironnement',"<p>Le CIC-IT de Bordeaux  collabore quotidiennement avec les équipes cliniques des différents pôles d'activité médicale du CHU de Bordeaux, impliqués dans l'utilisation de DMs (chirurgie orthopédique et vasculaire, ophtalmologie, odontologie, ORL, réanimation, diabétologie, médecine nucléaire, radiologie, etc...), et aussi avec l'Etablissement Français du Sang de la Nouvelle-Aquitaine (EFSNA).<br><br>
-Son hébergement à l'Hôpital Xavier Arnozan de Pessac par la Plateforme Technologique d'Innovation Biomédicale (PTIB) et à proximité de l'Institut de Rythmologie Cardiaque (IHU LIRYC) lui donne accès à des laboratoires (histologie, P2 culture cellulaire) et à des équipements (plateaux expérimentation In vivo et imagerie) performants et spécialisés.<br><br>
-De plus, le CIC-IT prend une part active à la fédération des compétences académiques et industrielles dans le domaine des Biomatériaux et BioImplants de la région Nouvelle-Aquitaine via l'Association Aquitaine Biomatériaux et Implants (2ACBI), et participe au \"Bordeaux Consortium of Regenerative Medicine\" (BxCRM) et à la \"Fédération de Recherche Technologies pour la Santé\" (FR TECSAN) de l'Université de Bordeaux.</p>");
+	define ('TXT_TitreEnvironnement',"<h1>Un environnement de pointe</h1>");
+	define ('TXT_ArticleEnvironnement',"<p>Le CIC-IT de Bordeaux  collabore quotidiennement avec les équipes cliniques 
+	des différents pôles d'activité médicale du CHU de Bordeaux, impliqués dans l'utilisation de DMs 
+	(chirurgie orthopédique et vasculaire, ophtalmologie, odontologie, ORL, réanimation, diabétologie, 
+	médecine nucléaire, radiologie, etc...), et aussi avec <a href=\"https://www.dondusang.net/rewrite/heading/804/efs/l-efs-en-regions/aquitaine-limousin.htm?idRubrique=804\" />l'Etablissement Français du Sang de la Nouvelle-Aquitaine</a> (EFSNA).<br>
+	<br>
+Son hébergement à l'Hôpital Xavier Arnozan de Pessac par <a href=\"http://www.ptib.u-bordeaux2.fr/index.php?p=accueil\" />la Plateforme Technologique d'Innovation Biomédicale</a> (PTIB)
+ et à proximité de l'<a href=\"https://www.ihu-liryc.fr/\" \>Institut de Rythmologie Cardiaque</a> (IHU LIRYC) lui donne accès à des laboratoires (histologie, 
+ P2 culture cellulaire) et à des équipements (plateaux expérimentation In vivo et imagerie) performants et spécialisés.<br>
+ <br>
+De plus, le CIC-IT prend une part active à la fédération des compétences académiques et industrielles dans le domaine 
+des Biomatériaux et BioImplants de la région Nouvelle-Aquitaine via l'<a href=\"http://www.2acbi-asso.fr/\" \>Association Aquitaine Biomatériaux et Implants</a> (2ACBI), 
+et participe au <a href=\"https://bcrm.u-bordeaux.fr/\" /> \"Bordeaux Consortium of Regenerative Medicine\"</a> (BxCRM) et à la \"Fédération de Recherche Technologies pour la Santé\" 
+(FR TECSAN) de l'Université de Bordeaux.</p>");
 		
 	//---------------------------------------------------------
   	// Fonctionnement/organisation.php
   	//---------------------------------------------------------
-	define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organisation</h1> ");
-	define('TXT_A1Fonction'," Le CIC de Bordeaux (regroupant la gouvernance des 3 modules IT, P et EC) est géré via un comité de pilotage annuel, et est l'objet d'une évaluation quadriennale par l'HCERES.<br> Le CIC dépend directement de la Direction de la Recherche Clinique et de l'Innovation (DRCI) du CHU de Bordeaux et de la Délégation Régionale de l'INSERM.<br> 
-Le CIC-IT travaille étroitement avec les modules P et EC du CIC de Bordeaux en particulier pour les essais cliniques, pour lesquels il fait appel aux compétences du <a href=\"https://cic-p.u-bordeaux.fr/\">CIC-P</a>pour le support investigateur et du<a> CIC-EC </a>pour la méthodologie, le data management et les statistiques, et sous la direction de la DRCI pour les essais cliniques à promotion académique.");
-	define('TXT_A2Fonction',"Le CIC-IT est piloté via un comité stratégique annuel, sous la direction du président du comité (Pr Fricain), et regroupant le coordinateur médical (Pr Bordenave) et le coordinateur délégué (Dr Durand), les représentants de ses tutelles, le directeur de la PTIB et les membres scientifiques. Les coordonnateurs des modules EC et P sont également conviés. Un bilan d'activité y est présenté et les orientations scientifiques et stratégiques futures y sont déterminées.
-Les nouveaux projets soumis au CIC-IT sont présentés au comité technique mensuel regroupant toute l'équipe, le représentant valorisation de la SATT et de l'INSERM, et les porteurs des nouveaux projets si nécessaire.
+	//define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organisation</h1> ");
+	define('TXT_A1Fonction'," Le CIC de Bordeaux (regroupant la gouvernance des 3 modules: IT, P et EC) est géré via un 
+	comité de pilotage annuel, et est l'objet d'une évaluation quadriennale par l'HCERES.<br> Le CIC dépend directement 
+	de la Direction de la Recherche Clinique et de l'Innovation (DRCI) du CHU de Bordeaux et de la Délégation Régionale 
+	de l'INSERM.<br> 
+Le CIC-IT travaille étroitement avec les modules P et EC du CIC de Bordeaux en particulier pour les essais cliniques, 
+pour lesquels il fait appel aux compétences du <a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr/\">CIC-P</a>pour le support investigateur et du <a target=\"_blank\" href=\"http://usmr.isped.u-bordeaux2.fr/\"> CIC-EC </a>pour la méthodologie, le data management et les statistiques, et sous la direction de la DRCI pour les essais cliniques à promotion académique.");
+	define('TXT_A2Fonction',"Le CIC-IT est piloté via un comité stratégique annuel, sous la direction du président du 
+	comité (Pr Fricain), et regroupant le coordinateur médical (Pr Bordenave) et le coordinateur délégué (Dr Durand), 
+	les représentants de ses tutelles, le directeur de la PTIB (Pierre Dos Santos) et les membres scientifiques. Les coordonnateurs 
+	des modules EC et P sont également conviés. Un bilan d'activité y est présenté et les orientations 
+	scientifiques et stratégiques futures y sont déterminées.
+Les nouveaux projets soumis au CIC-IT sont présentés au comité technique mensuel regroupant toute l'équipe, 
+le représentant valorisation de la SATT et de l'INSERM, et les porteurs des nouveaux projets si nécessaire.
 Le Comité Technique a pour missions : 
 <ul>
-	<li>Les nouveaux projets soumis au CIC-IT sont présentés au comité technique mensuel regroupant toute l'équipe, le représentant valorisation de la SATT et de l’INSERM, et les porteurs des nouveaux projets si nécessaire.</li>
-    <li>D'examiner les protocoles proposés, d'en évaluer la faisabilité méthodologique et logistique, d'en prévoir l'exécution. La sélection des projets soumis au CIC-IT repose sur la pertinence de la question posée, l'adéquation de la méthodologie proposée, le respect de l'éthique, de la réglementation et de bonnes pratiques cliniques, et sur l'adéquation entre le projet et les missions du CIC-IT.   
+	<li>Les nouveaux projets soumis au CIC-IT sont présentés au comité technique mensuel regroupant toute l'équipe, 
+	le représentant valorisation de la SATT et de l’INSERM, et les porteurs des nouveaux projets si nécessaire.</li>
+    <li>D'examiner les protocoles proposés, d'en évaluer la faisabilité méthodologique et logistique, d'en prévoir 
+	l'exécution. La sélection des projets soumis au CIC-IT repose sur la pertinence de la question posée, 
+	l'adéquation de la méthodologie proposée, le respect de l'éthique, de la réglementation et de bonnes pratiques cliniques, 
+	et sur l'adéquation entre le projet et les missions du CIC-IT.   
 		<li>De suivre l'exécution des projets acceptés.</li>
             <li>De faciliter la collaboration entre les différents acteurs de la recherche clinique au CHU et la continuité entre la recherche pré-clinique et clinique.</li>
             <li>De préparer la réponse aux appels d'offres.</li>
@@ -361,7 +388,7 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
 
 <li><em><strong>1PHRCI:</em></strong>DIRC(Matribone ).</li>
 
-<li><em><strong>2 AOI</em></strong>(EVAFAV, EOS)</li>
+<li><em><strong>2 Appel d'Offres Interne</em></strong> du chu de bordeaux(EVAFAV, EOS)</li>
 
 <li><em><strong>2 RCT:</em></strong>INSERM/DGOS (NASEPT, PREDIOS)</li>
 
@@ -374,22 +401,22 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
 <li><em><strong>Agence de Biomédecine</em></strong> (ITOV )</li><ul>
 </div>");
 	define('TXT_TCol',"Projets collaboratifs depuis 2006:");
-	define('TXT_Pub',"<strong>Nos publications</strong>");
+	//define('TXT_Pub',"<strong>Nos publications</strong>");
 //---------------------------------------------------------
 // page histologie
 //---------------------------------------------------------
 	define('TXT_TH',"<h1 style=\"text-align:center\">Plateforme histologie</h1>");
 	define('TXT_ResponsableHisto', "<h3>Responsable:<br> Samantha Roques (née Delmond) </h3>");
-	define('TXT_THR',"Chargée d'études Précliniques<br>
+	define('TXT_THR',"Chargée d'études précliniques en histologie<br>
 Responsable du Plateau Histologie de la PTIB<br>
 <div style=\"display:inline\">Courriel:<a href=\"mailto:samantha.delmond@chu-bordeaux.fr\"> samantha.delmond@chu-bordeaux.fr </a></div>
-<br>Tél. :  05 57 10 28 61 ,Fax. : 05 57 10 28 63
+<br>Tél. :  05 57 10 28 61 / Fax. : 05 57 10 28 63
 <br>");
 
 	define('TXT_HST',"<h1 align=\"center\"><strong>Activités</strong></h1>");
-	define('TXT_HT1',"<h2 align=\"justify\">Inclusion tissus mous<em> (paraffine) </em>et calcifiés <em>(résine méthacrylate, technovit 9100)<em></h2>  
+	define('TXT_HT1',"<h2 align=\"justify\">Inclusion de tissus mous<em> (paraffine) </em>et calcifiés <em>(résine méthacrylate, technovit 9100)<em></h2>  
 <br>
-<h3>Coupes petits et gros échantillons</h3>
+<h3>Coupes de petits et gros échantillons</h3>
  <br>");
  
 	//define('TXT_HT11',"Automate de traitement des tissus: Leica TP1020<br>mis à diposition par la PTIB.");
@@ -408,8 +435,8 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
 	
 	define('TXT_HTC21',"Automate de coloration");
 		//define('TXT_HTC21',"Automate de coloration \"Microm Microtech HMS MYR\"<br>mis à disposition par la PTIB.");
-	define('TXT_HTC3',"<h2>Coloration sur tissu calcifié</h2>(<em>Trichrome de Goldner, Von Kossa Mac Neal)</em>");
-	define('TXT_HTC4',"<h2>IHC sur coupes paraffines </h2><em>( alpha-actine, CD31, CD45, CD68, Ki67,... ) et mises au point.</em>");
+	define('TXT_HTC3',"<h2>Coloration sur tissu calcifié</h2>(<em>Trichrome de Goldner, Von Kossa Mac Neal</em>)");
+	define('TXT_HTC4',"<h2>immuno-histo-chimie sur \"coupes de paraffines\"</h2><em>( alpha-actine, CD31, CD45, CD68, Ki67,... ) et mises au point.</em>");
 	define('TXT_HTC5',"<h2>Analyse histomorphométrique, quantification de différents paramètres</h2><em>(reconstruction osseuse, fibrose, inflammation, ...)</em>");
 	define('TXT_HTC6',"<em>Equipements associés : Microscope Ni-U Nikon et microscope NIKON Eclipse 80i à tête motorisée 90i (équipés de deux caméras pour fluorescence DS-Qi1Mc et lumière blanche DS-Fi2) (PTIB) et logiciel d'analyse d'images NIS-Elements D version 4.2.</em>");
 	define('TXT_HTC61',"microscope NIKON Ni-U");
@@ -433,8 +460,8 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
   	// page hemodynamique
   	//---------------------------------------------------------
 	define('TXT_ResponsableHemodynamique',"Responsable: Mallory Meulle");
-	define('TXT_HDR',"chargée d'études en culture cellulaire et banc de simulation de flux artériel.
-<br>tél : 05 47 30 27 54, fax : 05 57 10 28 63
+	define('TXT_HDR',"chargée d'études précliniques en culture cellulaire et banc de simulation de flux artériel.
+<br>Tél : 05 47 30 27 54 / Fax : 05 57 10 28 63
 <br><div style=\"display:inline;\">Courriel :<a href=\"mailto:mallory.meulle.univ@chu-bordeaux.fr\"> mallory.meulle.univ@chu-bordeaux.fr</a><br></div>");
 
 	define('TXT_HDT',"Hemodynamique");
@@ -443,7 +470,7 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
 	define('TXT_HDA1',"Chambre BioDynamic BOSE + moteur pulsatile + pompe et veines saphènes en parallèles");
 	define('TXT_HDTA2',"<h3>Tests d'étanchéité de produits d'ingénierie tissulaire tubulaires.</h3> ");
 	define('TXT_HDA2',"<h3>Décellularisation dynamique.</h3>");
-	define('TXT_HDAp1',"<strong>Mise sous flux d'un vaisseau artificiel et veines saphènes.</strong>");
+	define('TXT_HDAp1',"<strong>Mise sous flux d'un vaisseau artificiel et de veines saphènes.</strong>");
 	
 
 	define('TXT_HDAp3',"<strong>Décellularisation dynamique.</strong>");
@@ -457,10 +484,10 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
   	//---------------------------------------------------------
 	define('TXT_TAB',"<h1 style=\"text-align:center\">Plateforme de bactériologie</h1>");
 	define('TXT_BM',"Activité antibiotique des tissus extraits");
-	define('TXT_BM1',"Réalisation d'un modéle d'osteomyelyte infectieuse.");
+	define('TXT_BM1',"Réalisation d'un modéle d'ostéomyelyte infectieuse.");
 	define('TXT_BM4',"<h2 align=\"center\">Activité bactérienne/antibactérienne</h2>");
 	define('TXT_BLI3',"<strong>Broyeur de tissus.</strong>");
-	define('TXT_BLI1',"<strong>Activité bactierienne /<br> anti-bactérienne: CMI, CMB.</strong>");
+	define('TXT_BLI1',"<strong>Activité bactiérienne /<br> anti-bactérienne: CMI, CMB.</strong>");
 	define('TXT_BLI2',"<strong>Caractérisation.</strong>");
 	define('TXT_BM3',"<h2 align=\"center\">Colorations de GRAM</h2>");
 	define('TXT_BLI4',"<strong>GRAM sur étalement.</strong>"); 
@@ -468,7 +495,7 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
 	
 	
 	define('TXT_BEA1',"Etuve à Bactéries.");
-	define('TXT_BEA2',"Spectrophotométre.");
+	define('TXT_BEA2',"Spectrophotomètre.");
 	define('TXT_BEA3',"Lecteur de plaque.");
 	define('TXT_BEA4',"PSM.");
 	define('TXT_BEC5',"Microscope Ni-U Nikon.");
@@ -476,7 +503,7 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
   	// page  hemocompatibilité
   	//---------------------------------------------------------
 	define('TXT_HCT',"<strong><h2 style=\"width:100%; text-align:center; \">Activités :</h2></strong>");
-	define('TXT_HMT',"<h2 style=\"text-align:center\">Hémocompatibilité.</h2></h4>");
+	define('TXT_HMT',"<h2 style=\"text-align:center\">Hémocompatibilité</h2></h4>");
 	define('TXT_HM',"<br><div style=\"width:100%; text-align:left; \"><h3><strong>Tests hémocompatibilités :</strong></h3><ul><li><strong>Tests d'hémolyse selon la norme ASTM F756-08</strong></li><li><strong>Test d'activation plaquettaire</strong></li><li><strong>Complément(C3a, CH50, SC5b-9)</strong></li><li><strong>ASTM F2888-13 compte plaquettes et leucocytes des matériaux utilisés en cardiovasculaire.</strong></li></ul></div>");
 	define('TXT_HLI1',"<strong>Test d'hémolyse.</strong>");
 	define('TXT_HLI2',"<strong>Activaion plaquettaire T=0min</strong>");
@@ -490,8 +517,8 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
   	//---------------------------------------------------------
 	define('TXT_ResponsableCellule',"Responsable: Martine RENARD");
 	define('TXT_TCBHR',"Chargée d'études précliniques en culture cellulaire et bactériologie<br>Responsable du plateau culture cellulaire de la PTIB<br>
-	<div style=\"display:inline;\">Courriel: <a href=\"mailto:martine.renard@chu-bordeaux.fr\">martine.renard@chu-bordeaux.fr</a></div>
-	<br>tel (+33) (0)5 57 10 28 59, fax (+33) (0)5 57 10 28 63");
+	<div style=\"display:inline;\">Tel 05 57 10 28 59 / Fax 05 57 10 28 63<br>Courriel: <a href=\"mailto:martine.renard@chu-bordeaux.fr\">martine.renard@chu-bordeaux.fr</a></div>
+	");
 
 
 	define('TXT_CCM',"<h2 style=\"width:100%; text-align:center; \">Culture cellulaire: </h2><em><h3>Cellules endothéliales, musculaires lisses, musculaires striées, urothéliales, fibroblastes, d'origine humaines, porcines, ovines, ...</h3><em>
@@ -522,8 +549,9 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
 	define('TXT_ResponsableInVivo',"Responsable: Marlène Durand");
 	define('TXT_IVT',"Les tests pré-cliniques<em> in vivo</em>");
 	define('TXT_IVR',"Chargée d'études précliniques<br>Chef de projets<br>
-	<div style=\"display:inline\">Courriel:<a href=\"mailto:marlene.durand@chu-bordeaux.fr\"> marlene.durand@chu-bordeaux.fr</div></a><br>
-	Tél. : 05 57 10 28 66 , Fax. :05 57 10 28 63<br>
+	<div style=\"display:inline;\">	
+	Tél : 05 57 10 28 66 / Fax. :05 57 10 28 63<br>
+	Courriel:<a href=\"mailto:marlene.durand@chu-bordeaux.fr\"> marlene.durand@chu-bordeaux.fr</div></a><br>
 	");
 
 	define('TXT_IVA1',"<div  style=\"display:block; text-align:left;\"><ul id=\"puces\"><li>Rédaction des protocoles pour soumission au comité d'éthique de Bordeaux</li><br>
@@ -549,9 +577,10 @@ Ressources de l'Université de Bordeaux, la PTIB et l'IHU LIRYC:</h4><h6><br><ul
 	define('TXT_ResponsableClinique',"Elodie Belmo (née Seris)");
 	define('TXT_TCT',"Les études cliniques");
 	define('TXT_TCR',"Chargée d'études cliniques
-	<div style=\"display:inline;\">Courriel: <a href=\"mailto:elodie.seris@chu-bordeaux.fr\">elodie.seris@chu-bordeaux.fr</div></a>	
-	<br>Tél : 05 57 10 28 35 , Fax : 05 57 10 28 63 <br>");
-	define('TXT_ECM1',"<h2>missions de recherche clinique </h2>
+	<div style=\"display:inline;\">	
+	<br>Tél : 05 57 10 28 35 / Fax : 05 57 10 28 63 <br>
+	Courriel: <a href=\"mailto:elodie.seris@chu-bordeaux.fr\">elodie.seris@chu-bordeaux.fr</div></a>");
+	define('TXT_ECM1',"<h2>missions recherche clinique:</h2>
 <h4><strong>Coordination et gestion d'essais cliniques mono et multicentriques portant sur des dispositifs médicaux</strong></h4>
  <div  style=\"display:block; text-align:left;\" id=\"puces\">
 <ul ><li>conception/Rédaction de protocole et documents de l'étude (note d'info-consentement, brochure investigateur, cahier d'observation, etc...)</li>
@@ -562,7 +591,7 @@ Ressources de l'Université de Bordeaux, la PTIB et l'IHU LIRYC:</h4><h6><br><ul
 <li>participation à la valorisation de la recherche (aide au plan statistique, résumé du rapport final et publication)</li>
 </ul></div>");
 
-	define('TXT_ECM2',"<h2>missions transversales </h2> 
+	define('TXT_ECM2',"<h2>missions transversales:</h2> 
 <div  style=\"display:block; text-align:left;\" id=\"puces\">
 <ul>
 <li>définition de cahiers des charges de biomatériaux</li>
@@ -571,7 +600,7 @@ Ressources de l'Université de Bordeaux, la PTIB et l'IHU LIRYC:</h4><h6><br><ul
  </ul>
  </div>
  
-<h2><em>expérience dans les domaines médicaux suivants :</em></h2>
+<h2><em>expérience dans les domaines médicaux suivants :<em></h2>
  <div  style=\"display:block; text-align:left;\" id=\"puces\"><em>
  orthopédie, chirurgie vasculaire, ORL et chirurgie maxillo-faciale, ORL pédiatrique, chirurgie plastique et reconstructrice, implantologie dentaire, ingénierie tissulaire, cardiologie et imagerie interventionnelle et plus...
  </em></div>");
@@ -628,17 +657,17 @@ Les compétences réglementaires ont été renforcées ces dernieres années.");
 	//---------------------------------------------------------
   	// candidature spontanées
   	//---------------------------------------------------------
-	define('TXT_TitreSpon',"<h1 style=\"text-align:center\">Vous souhaitez travailler au le CIC-IT!</h1><br/>Déposez votre CV et remplissez le formulaire ici,<br/> Nous pourrons vous contacter dés qu'une offre en rapport avec nos besoins et vos capacités sera disponible.</h4>
+	define('TXT_TitreSpon',"<h1 style=\"text-align:center\">Vous souhaitez travailler au CIC-IT!</h1><br/>Déposez votre CV et remplissez le formulaire ici,<br/> Nous pourrons vous contacter dés qu'une offre en rapport avec nos besoins et vos capacités sera disponible.</h4>
 <div style=\"text-align:center\"></div>");
-	define('TXT_Spon',"<h3>merci de bien vouloire compléter le formulaire ci-dessous:</h3>");
+	define('TXT_Spon',"<h3>Merci de bien vouloire compléter le formulaire ci-dessous:</h3>");
 	
 	define('TXT_Tel',"Téléphone:");
 	define('TXT_Int',"Intitulé: <span title=\"Ce champ est obligatoire.\">");
 	define('TXT_Competences',"Vos compétences :");
 	define('TXT_Donnees',"Envoyez-nous les données.");
 	
-	define('TXT_Note',"<h3>à note</h3><strong>les fichier pouvant être transferé sont doc, pdf, jpg, zip, rar, ppt et txt.
- Ils est conseillé d'utilisé le format compresse zip (sous widow) ou rar (sous linux) pour nous envoyer plusieurs documents en un seul telechargement(diplomes et autres certificat)  avec le CV et lettre de motivation");
+	define('TXT_Note',"<h3>A note</h3><strong>les fichier pouvant être transferé sont doc, pdf, jpg, zip, rar, ppt et txt.
+ Il est conseillé d'utilisé le format compressé zip (sous widow) ou rar (sous linux) pour nous envoyer plusieurs documents en un seul telechargement(diplômes, certificats) avec le CV et la lettre de motivation");
 	define('TXT_Max',"attention: la taille maximum autorisé est de 8 Mo");
 	define('TXT_CV',"CV :");
 	define('TXT_Motiv'," Lettre de motivation : ");
@@ -657,7 +686,7 @@ Avenue du Haut Lévêque<br>
 Coordonnateur délégué du CIC-IT Biomatériaux<br/>
 CIT-IT Inserm/CHU de Bordeaux</p>
 <p><a href=\"mailto:marlene.durand@chu-bordeaux.fr\">Courriel:marlene.durand@chu-bordeaux.fr</a><br/>Tél: +33 (0) 557 102 866<br/>
-Fax: +33 (0) 557 102 869</p>");
+Fax: +33 (0) 557 102 863</p>");
 
 //ajouter Laurence Bordenave
 define('TXT_CoordoLB',"
@@ -665,7 +694,7 @@ define('TXT_CoordoLB',"
 Coordonnatrice du CIC-IT Biomatériaux<br/>
 CIT-IT Inserm/CHU de Bordeaux</p>
 <p><a href=\"mailto:laurence.bordenave@chu-bordeaux.fr\">Courriel:laurence.bordenave@chu-bordeaux.fr</a><br/>Tél: Tél: +33 (0) 557 102 866 <br/>
-Fax:+33 (0) 557 102 869</p>");
+Fax:+33 (0) 557 102 863</p>");
 
 //Claire
 define('TXT_CoordoCoSecretériat',"
