@@ -126,10 +126,10 @@ else if($_POST['langue']=='en'){
 <!-- expertise -->
 
 <div id="fin-article" style="display:flex; flex-direction:row;">
-<div style="display:flex; flex-direction:column; width:50%; ">
+<div style="display:flex; flex-direction:column; width:30%; ">
 <h1 style="text-align:center"><?php echo TXT_IVT; ?></h1> 
-<h3><?php echo TXT_ResponsableInVivo; ?></h3></div>
-<div style="display:flex; flex-direction:column; ">
+</div>
+<div style="display:flex; flex-direction:column; width:30%; ">
 <a target="_blank" href="../image/personnels/MarleneP.png">
 <!--<img src="../image/personnels/MarleneP.png" width="60%" >-->
 <?php
@@ -144,7 +144,10 @@ else if($_POST['langue']=='en'){
 			";
 		}
 		
-		?></a> 
+		?></a>
+		</div>
+<div style="display:flex; flex-direction:column; width:30%; ">
+<h3><?php echo TXT_ResponsableInVivo; ?></h3>		
 <br><?php echo TXT_IVR; ?></div>
 </div>
 

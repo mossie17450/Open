@@ -184,30 +184,34 @@ else if($_POST['langue']=='en'){
 <!-- fin du choix de la langue  -->	
 <!-- fin du menu -->
 
-<div  style="display:flex; flex-direction:column; ">
+
 
 <div id="fin-article" style="display:flex; flex-direction:row;">
-<div style="display:flex; flex-direction:column; width:60%; ">
+<div style="display:flex; flex-direction:column; width:30%; ">
 
 <?php echo  TXT_TAB ; ?>
-<h3><?php echo TXT_ResponsableCellule; ?></h3></div>
-<div style="display:flex; flex-direction:column; ">
+</div>
+<div style="display:flex; flex-direction:column; width:30%; ">
 <a target="_blank" href="../image/personnels/MartineP">
 
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/MartineP.png\" width=\"40%\" height=\"auto\"></a>
+			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\" ></a>
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/MartineP.png\" width=\"30%\" ></a>
+		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" ></a>
 			";
 		}
 	?>
-<?php echo TXT_TCBHR; ?></div></div>
+	</div>
+	<div style="display:flex; flex-direction:column; width:30%; ">
+	<h3><?php echo TXT_ResponsableCellule; ?></h3>
+<?php echo TXT_TCBHR; ?></div>
 </div>
+
 
 
 <div  style="display:flex; flex-direction:row; ">

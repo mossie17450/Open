@@ -5,7 +5,7 @@ session_start();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8;">
 <title>Innovation biomédicale, recherche de biomateriaux avec le CHU de Bordeaux : le CIC-IT. Aquitaine - France</title>
 <meta name="keywords" content="CIC, centre, investigation, clinique, innovation, technologique, biomatériaux, bordeaux, CIC-IT, chu bordeaux, PTIB, Master, bidim, cellules, in vivo, in vitro, médical, recherche, Pessac, Arnozan, hôpital, réparation tissulaire, CIC IT, biomédical, Aquitaine, ingénierie tissulaire, scientifique" />
 <meta name="description" content="Acteur aquitain de l&#039;innovation biomédicale, le Centre d&#039;Investigation Clinique Innovation Technologique Biomatériaux de Bordeaux opère au sein d&#039;une structure scientifique actuelle et avancée pour appuyer tous ces travaux de recherche." />
@@ -22,8 +22,6 @@ session_start();
   }  
   
   </style> 
-
-  
 
 <!-- diaporama :    -->
 
@@ -150,26 +148,27 @@ else if($_POST['langue']=='en'){
 <!-- fin du menu -->
 
 <div id="fin-article" style="display:flex; flex-direction:row;">
-<div style="display:flex; flex-direction:column; width:50%; ">
+<div style="display:flex; flex-direction:column; width:30%; ">
 <?php echo  TXT_HMT; ?> 
-<h3 align="center"><?php echo TXT_ResponsableCellule ; ?></h3></div>
-<div style="display:flex; flex-direction:column; ">
+</div>
+<div style="display:flex; flex-direction:column; width:30%;">
 <br><a target="_blank" href="../image/personnels/MartineP.png">
 
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/MartineP.png\" width=\"40%\" height=\"auto\">
+			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\">
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/MartineP.png\" width=\"35%\" >
+		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" >
 			";
 		}
-		?>
-
-</a> 
+		?></a>
+		</div>
+<div style="display:flex; flex-direction:column; width:30%;">
+<h3 align="center"><?php echo TXT_ResponsableCellule ; ?></h3>
 <?php echo TXT_TCBHR; ?></div></div>
 
 

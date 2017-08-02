@@ -124,10 +124,10 @@ else if($_POST['langue']=='en'){
 <!-- fin du menu -->
 
 <div id="fin-article" style="display:flex; flex-direction:row;">
-<div style="display:flex; flex-direction:column; width:50%;">
+<div style="display:flex; flex-direction:column; width:30%;">
 <h1 style="text-align:center"><?php echo TXT_TCT; ?></h1>
- <h3><?php echo TXT_Resp ; ?><?php echo TXT_ResponsableClinique ; ?></h3></div>
- <div style="display:flex; flex-direction:column; ">
+</div>
+ <div style="display:flex; flex-direction:column; width:30%; ">
  <a target="_blank" href="../image/personnels/ElodieP.png">
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
@@ -142,6 +142,9 @@ else if($_POST['langue']=='en'){
 		}
 		
 		?></a>
+		</div>
+		<div style="display:flex; flex-direction:column; width:30%; ">
+		 <h3><?php echo TXT_Resp ; ?></h3>
 <?php echo TXT_ResponsableClinique ; ?><br>
 <?php echo TXT_TCR ; ?>
 </div>

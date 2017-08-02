@@ -218,11 +218,11 @@ else if($_POST['langue']=='en'){
 
  <!-- samantha -->
 <div id="fin-article" style="display:flex; flex-direction:row;">
-<div style="display:flex; flex-direction:column; width:50%; ">
+<div style="display:flex; flex-direction:column; width:30%; ">
 <?php echo TXT_TH ; ?> 
-<?php echo TXT_ResponsableHisto ; ?>
+
 </div>
-<div style="display:flex; flex-direction:column; ">
+<div style="display:flex; flex-direction:column; width:30%;  ">
 <a target="_blank" href="../image/personnels/SamP.png">
 
 <?php
@@ -233,10 +233,12 @@ else if($_POST['langue']=='en'){
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/SamP.png\" width=\"35%\" >
+		echo "<img src=\"../image/personnels/SamP.png\" width=\"50%\" >
 			";
 		}
 		?> </a>
+	</div><div style="display:flex; flex-direction:column; width:30%;  ">
+<?php echo TXT_ResponsableHisto ; ?>	
 <div  style="display:inline-block; width:100%; height:auto; text-align:left;">
 <?php echo TXT_THR ; ?> 
 </div></div>
@@ -244,8 +246,6 @@ else if($_POST['langue']=='en'){
 
 
 <!--<div  style="display:flex; flex-direction:row; width:100%; height:100%; ">-->
-
-
 <div  style="display:flex; flex-direction:row; ">
 <div id="contenu" align="inline-block" width="100%" >
 
