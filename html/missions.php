@@ -146,18 +146,19 @@ else if($_POST['langue']=='en'){
 
 <a href="http://www.fcrin.org/"><img src="../image/logos/F-CRIN.png" width="50%" class="displayed"></a><br><span><img src="../image/blanc.png" width="2%" ></span>
 
-<br><span><a href="http://tech4health.fr/"><img src="../image/logos/T4Hbr.jpg" width="70%" class="displayed"></a><img src="../image/blanc.png" width="2%"></span><br>
+<br><span><a href="http://tech4health.fr/"><img src="../image/logos/tech4health.jpg" width="70%" class="displayed"></a><img src="../image/blanc.png" width="2%"></span><br>
 
 </div>
 
 <article>	
+
 <h1><?php echo TXT_TitreMission; ?></h1>
 <!--  titres de la page....   -->
 <!--<div style="margin-right:20px; padding-right:20px;">-->
 
 <h3><?php echo TXT_SSSTitreMission; ?></h3>
-<?php echo TXT_SSMenuMission; ?>		
-<br><?php echo TXT_ArticleMission; ?>
+<div style="text-align:justify;"><?php echo TXT_SSMenuMission; ?>		
+<br><?php echo TXT_ArticleMission; ?></div>
 </article>
 
 </div>
