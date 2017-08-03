@@ -37,8 +37,9 @@ session_start();
 <link rel="stylesheet" type="text/css" href="../css/slideshow.css" media="screen" />
 <script type="text/javascript" src="../js/mootools.js"></script>
 
-<link rel="stylesheet" type="text/css" href="../css/SecondePage.css">
-<!-- affichage différent en fonction de la taille de l'écran/du navigateur   -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
+<link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
 <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/moyenneResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/petitResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 400px)" href="../css/toutpetitResolution.css" />

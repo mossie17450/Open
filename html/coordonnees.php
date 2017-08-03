@@ -12,15 +12,13 @@ session_start();
 <link rel="icon" type="image/png" href="../image/logoCIC-ITB.png" />
 <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
 
-<!--- ma premiere( presque) feuille de style : -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
 <link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
-<link rel="stylesheet" type="text/css" href="../css/menuHDR2.css" />
+<link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
 <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/moyenneResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/petitResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 400px)" href="../css/toutpetitResolution.css" />
-<script type="text/javascript">
+<link rel="stylesheet" type="text/css" href="../css/menuHDR2.css" />
 <!--
 window.onload=montre;
 function montre(id) {

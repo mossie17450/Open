@@ -15,20 +15,18 @@ session_start();
 <meta name="keywords" content="CIC, centre, investigation, clinique, innovation, technologique, biomatériaux, bordeaux, CIC-IT, chu bordeaux, PTIB, Master, bidim, cellules, in vivo, in vitro, médical, recherche, Pessac, Arnozan, hôpital, réparation tissulaire, CIC IT, biomédical, Aquitaine, ingénierie tissulaire, scientifique" />
 
 <meta name="description" content="Acteur aquitain de l&#039;innovation biomédicale, le Centre d&#039;Investigation Clinique Innovation Technologique Biomatériaux de Bordeaux opère au sein d&#039;une structure scientifique actuelle et avancée pour appuyer tous ces travaux de recherche." />
-
+<!---  icone barre du navigateur...                        -->
+<link rel="icon" type="image/png" href="../image/logos/logoCIC-ITB.png" />
+<!--[if IE]><link rel="icon" type="image/png" href="../image/logos/logoCIC-ITB.png" /><![endif]-->
 <!--- mes feuilles de style : -->
 
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
-
-<link rel="stylesheet" type="text/css" href="../css/SecondePage.css">
-
-<link rel="stylesheet" type="text/css" href="../css/menuHDR2.css">
-
-<link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/moyenneResolution.css"/>
-
-<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/petitResolution.css"/>
-
-<link rel="stylesheet" media="screen and (max-width: 400px)" href="../css/toutpetitResolution.css"/>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
+<link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
+<link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/moyenneResolution.css" />
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/petitResolution.css" />
+<link rel="stylesheet" media="screen and (max-width: 400px)" href="../css/toutpetitResolution.css" />
+<link rel="stylesheet" type="text/css" href="../css/menuHDR2.css" />
 
 <!-- vérification du formulaire contacte -->
 
@@ -216,7 +214,7 @@ else if($_POST['langue']=='en'){
 
 <!-- fin du menu -->
 <br><br>
-
+<article>
 <div style="text-align:center"><? echo TXT_TitreContact;?></div>
 <div id="FdC">
 <div style="text-align:center"><? echo TXT_stContact;?></div>
@@ -278,10 +276,10 @@ else if($_POST['langue']=='en'){
 
 </form>
 
-<br>
+
 </div>
 <br>
-
+</article>
 
 
 <?php

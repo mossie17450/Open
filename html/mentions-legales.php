@@ -10,13 +10,17 @@ session_start();
 <meta name="description" content="Acteur aquitain de l&#039;innovation biomédicale, le Centre d&#039;Investigation Clinique Innovation Technologique Biomatériaux de Bordeaux opère au sein d&#039;une structure scientifique actuelle et avancée pour appuyer tous ces travaux de recherche." />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--- ma premiere( presque) feuille de style : -->
+<!---  icone barre du navigateur...                        -->
+<link rel="icon" type="image/png" href="../image/logos/logoCIC-ITB.png" />
+<!--[if IE]><link rel="icon" type="image/png" href="../image/logos/logoCIC-ITB.png" /><![endif]-->
+<!--                            -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
 <link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
-<link rel="stylesheet" type="text/css" href="../css/menuHDR2.css" />
+<link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
 <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/moyenneResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/petitResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 400px)" href="../css/toutpetitResolution.css" />
+<link rel="stylesheet" type="text/css" href="../css/menuHDR2.css" />
 <script type="text/javascript">
 <!--
 window.onload=montre;
