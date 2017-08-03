@@ -253,7 +253,7 @@ border-style:none;
  text-align:justify;
  }
  
-  
+ /* page  activite expaertise : cartouche responsable */
 #fin-article{
 width:100%;
 margin-left:0px;
@@ -454,7 +454,7 @@ input[type=submit]:hover, input[type=reset]:hover {
 text-align: center;
  padding:0%;
  margin-left:10%;
- width:80%;
+ width:100%;
 background-color:#b3d9ff;
  }
 
@@ -547,8 +547,8 @@ table.calendrier th {
 
 table.calendrier td {
 	/* border: 1px solid black; */
-	width: 25px;
-	height: 25px;
+	width: 4%; /*20px; */
+	height:4%; /* 20px; */
 }
 
 table.calendrier td div {
