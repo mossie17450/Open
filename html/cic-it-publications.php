@@ -1,8 +1,8 @@
 <?php
 session_start();
 ?>
-<!DOCTYPE html >
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
@@ -16,16 +16,24 @@ session_start();
 <link rel="icon" type="image/png" href="../image/logos/logoCIC-ITB.png" />
 <!--[if IE]><link rel="icon" type="image/png" href="../image/logos/logoCIC-ITB.png" /><![endif]-->
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.bootpag.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://raw.github.com/botmonster/jquery-bootpag/master/lib/jquery.bootpag.min.js"></script>
+
 
 <!--- mes  feuille de style : -->
 
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 <link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
 <link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
 <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/moyenneResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/petitResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 400px)" href="../css/toutpetitResolution.css" />
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 <link rel="stylesheet" type="text/css" href="../css/menuHDR2.css" />
 <!--- mes scripts javascript : -->
 
@@ -220,8 +228,8 @@ else if($_POST['langue']=='en'){
 
 	<?php 
 
-//$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev'); //serveur distant
-$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
+$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev'); //serveur distant
+//$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
  if (!$link) {
 
 die('Impossible de se connecter : ' . mysql_error());
@@ -291,6 +299,7 @@ echo "<TD width=\"5%\">".$row[1]."</TD></TR>";
 	</div><!-- /.modal -->
 	<div>.<br>.</div>
 	
+	
 	<button class="btn btn-info  btn-block" data-toggle="modal" data-target="#myModal1" style=" position: relative; width:80%; height:7%; left:10%; align:justify; color:white; background-color:#339fff;" >
 	 <h1><?php echo TXT_TM1 ; ?></h1>
 	</button>
@@ -305,8 +314,8 @@ echo "<TD width=\"5%\">".$row[1]."</TD></TR>";
 	<h2><?php echo TXT_TbM1 ; ?></h2>
 	<?php
 
-//$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  //serveur distant
-$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
+$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  //serveur distant
+//$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
  if (!$link) {
 
 die('Impossible de se connecter : ' . mysql_error());
@@ -395,8 +404,8 @@ echo "<TD width=\"5%\">".$row[1]."</TD></TR>";
 	
 		<?php
 
-//$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  // serveur distant
-$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
+$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  // serveur distant
+//$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
  if (!$link) {
 
 die('Impossible de se connecter : ' . mysql_error());
@@ -478,8 +487,8 @@ echo "<TD width=\"5%\">".$row[1]."</TD></TR>";
 	<h1><?php echo TXT_TbM4 ; ?></h1>
 		<?php
 
-//$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  //serveur distant
-$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
+$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  //serveur distant
+//$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
  if (!$link) {
 
 die('Impossible de se connecter : ' . mysql_error());
@@ -563,8 +572,8 @@ echo "<TD width=\"5%\">".$row[1]."</TD></TR>";
 	<h1><?php echo TXT_TbM5;?></h1>
 			<?php
 
-//$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  //serveur distant
-$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
+$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  //serveur distant
+//$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
  if (!$link) {
 
 die('Impossible de se connecter : ' . mysql_error());
@@ -586,9 +595,11 @@ $req= mysqli_query($link,$sql) or die ("Erreur SQL !<br>".$sql."<br>".mysqli_err
 <!--premiere boucle while : liste des publications -->
 
 <?php 
+
 while($row= mysqli_fetch_array($req, MYSQLI_BOTH)){  
 
-echo "<TR><TD width=\"40%\">".$row[0]."</TD><TD width=\"35%\">";// si publication ecrite : mettre en lien vers la publication(sur pubmed par exemple....
+echo "<TR><TD width=\"40%\">".$row[0]."</TD><TD width=\"35%\">";
+// si publication ecrite : mettre en lien vers la publication(sur pubmed par exemple....
 // deusième boucle while à l'intérieur de la première :
 
 $sql1="SELECT nom, prenom, Rang FROM auteur join communique on auteur.idAuteur=communique.idAuteur   WHERE communique.idPublication=".$row[4]." ORDER BY communique.Rang";
