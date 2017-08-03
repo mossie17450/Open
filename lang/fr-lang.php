@@ -43,7 +43,7 @@
 	 define('TXT_Titre', "Le CIC-IT de Bordeaux");
 	 define('TXT_Pied', "<ul><a href=\"html/sitemap.php\" title=\"Plan du site\">Plan du site  | </a><a href=\"html/mentions-legales.php\">Mentions légales | </a>|<a href=\"html/fiche-de-contact.php\" title=\"Contact\">Contact</a></ul>");
 	 define('TXT_SSTitre', "Un guichet unique pour amener votre innovation au lit du patient");
-	 define('TXT_Article', "<br>Le CIC-IT de Bordeaux est un service dédié à l'innovation biomédicale et la recherche translationnelle dans le domaine des Biomatériaux et Dispositifs Médicaux Implantables (DMI).<br><br>
+	 define('TXT_Article', "<br>Le CIC-IT de Bordeaux est un service du CHU dédié à l'innovation biomédicale et la recherche translationnelle dans le domaine des Biomatériaux et Dispositifs Médicaux Implantables (DMI).<br><br>
 			Il est issu de la collaboration entre l'Inserm, le CHU de Bordeaux, l'Institut Bergonié et l'Université de Bordeaux pour structurer efficacement le transfert des innovations technologiques :<br> le CIC-IT aborde de manière intégrée l'évaluation préclinique et clinique des biomatériaux et DMI dans un environnement scientifique et clinique de pointe.");	
 	 define('TXT_IE',"<p><strong>Note:</strong>animation non supportée par Internet Explorer 9 et les précédantes versions.</p>");
 	//---------------------------------------------------------
@@ -54,7 +54,7 @@
 	define('TXT_histoire',"Le Centre d'Innovations Technologiques créé en 2001 sur le thème des Biomatériaux au 
 	CHU de Bordeaux a été labellisé en CIC-IT Biomatériaux par 
 	<a target=\"_blank\" href=\" http://social-sante.gouv.fr/ministere/organisation/directions/article/dgos-direction-generale-de-l-offre-de-soins\">l'INSERM/DGOS </a> en 2008.<br>
-	Il a été renouvelé en 2011, a rejoint le giron de l'Université de Bordeaux ainsi que l'Institut Bergonié 
+	Il a été renouvelé en 2011, a rejoint le périmètre de l'Université de Bordeaux ainsi que l'Institut Bergonié 
 	en 2012 puis été renouvelé avec succès en 2016 par l'HCERES.<br> 
 		Il constitue l'un des 3 modules du CIC de Bordeaux avec les <a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr \">CIC-Plurithématique</a> (support investigateur) et <a href=\"http://usmr.isped.u-bordeaux2.fr/\">CIC-Epidémiologique Clinique</a> (méthodologie et statistiques).<br>
 		Il est adossé à l'<a target=\"_blank\" href=\"http://www.biotis-bordeaux.com \">unité INSERM U1026 BIOTIS</a> (Bordeaux) avec laquelle il participe, en partenariat avec des cliniciens, à des programmes de recherche translationnelle dans le domaine de la BioIngénierie Tissulaire.");
@@ -111,10 +111,13 @@
 	<a target=\"_blank\" href=\"http://ast-innovations.com/ \">Société d'Accélération de Transfert 
 	</a>\"Aquitaine Science Transfert\" (AST),  le réseau national des CIC-IT et  les plateformes nationales 
 	<a target=\"_blank\" href=http://tech4health.fr/>TECH4HEALTH</a> et <a target=\"_blank\" href=\"http://euclid-ctu.eu/\">EUCLID</a> 
-	de la structure F-CRIN pour les essais cliniques multicentriques nationaux et internationaux.</p>" );
+	de la structure <a target=\"_blank\" href=\"http://www.fcrin.org/ \"/>F-CRIN</a> pour les essais cliniques multicentriques nationaux et internationaux.</p>" );
 	
 	define('TXT_SSSTitreMission', "Les objectifs poursuivis se déclinent à plusieurs niveaux :");
-	define('TXT_SSMenuMission', "<div  id=\"puces\" ><ul><li>Coordonner les expertises nécessaires à l'achèvement, la validation et la promotion de produits innovants dans le cadre de prestations pour les industriels.</li><li>Développer des partenariats avec les entreprises sur des projets à fort potentiel de valorisation scientifique (brevets, publications), dans le cadre de programmes soutenus à l'échelle nationale et internationale ;</li><li>Mettre en place des protocoles de recherche clinique dans le respect de la réglementation de la recherche biomédicale, en s'appuyant sur le réseau CIC .</li><li>S'investir dans de nouvelles missions: évaluation de la qualité de dispositifs médicaux innovants de et nouvelles procédures de suppléance ou d'assistance fonctionnelle et du service médical rendu (SMR), matério-vigilance et nouvelles méthodologies d'évaluation pré-clinique.</li></ul></div>");
+	define('TXT_SSMenuMission', "<div  id=\"puces\" ><ul><li style=\"text-align:justify;\">Coordonner les expertises nécessaires à l'achèvement, la validation et la promotion de produits innovants dans le cadre de prestations pour les industriels.</li>
+	<li style=\"text-align:justify;\">Développer des partenariats avec les entreprises sur des projets à fort potentiel de valorisation scientifique (brevets, publications), dans le cadre de programmes soutenus à l'échelle nationale et internationale ;</li>
+	<li style=\"text-align:justify;\">Mettre en place des protocoles de recherche clinique dans le respect de la réglementation de la recherche biomédicale, en s'appuyant sur <a href=\"http://www.cic-it.fr\">le réseau CIC</a> .</li>
+	<li style=\"text-align:justify;\">S'investir dans de nouvelles missions: évaluation de la qualité de dispositifs médicaux innovants et nouvelles procédures de suppléance ou d'assistance fonctionnelle et du service médical rendu (SMR), matério vigilance et nouvelles méthodologies d'évaluation pré-clinique.</li></ul></div>");
   	
 	
 	//---------------------------------------------------------
@@ -122,13 +125,13 @@
   	//---------------------------------------------------------
 	define ('TXT_TitreEnvironnement',"<h1>Un environnement de pointe</h1>");
 	define ('TXT_ArticleEnvironnement',"<p>Le CIC-IT de Bordeaux  collabore quotidiennement avec les équipes cliniques 
-	des différents pôles d'activité médicale du CHU de Bordeaux, impliqués dans l'utilisation de DMs 
+	des différents pôles d'activité médicale du CHU de Bordeaux, impliqués dans l'utilisation de DMI 
 	(chirurgie orthopédique et vasculaire, ophtalmologie, odontologie, ORL, réanimation, diabétologie, 
 	médecine nucléaire, radiologie, etc...), et aussi avec <a href=\"https://www.dondusang.net/rewrite/heading/804/efs/l-efs-en-regions/aquitaine-limousin.htm?idRubrique=804\" />l'Etablissement Français du Sang de la Nouvelle-Aquitaine</a> (EFSNA).<br>
 	<br>
 Son hébergement à l'Hôpital Xavier Arnozan de Pessac par <a href=\"http://www.ptib.u-bordeaux2.fr/index.php?p=accueil\" />la Plateforme Technologique d'Innovation Biomédicale</a> (PTIB)
  et à proximité de l'<a href=\"https://www.ihu-liryc.fr/\" \>Institut de Rythmologie Cardiaque</a> (IHU LIRYC) lui donne accès à des laboratoires (histologie, 
- P2 culture cellulaire) et à des équipements (plateaux expérimentation In vivo et imagerie) performants et spécialisés.<br>
+ P2 culture cellulaire) et à des équipements (plateaux d'expérimentation <em>In vivo</em> et imagerie) performants et spécialisés.<br>
  <br>
 De plus, le CIC-IT prend une part active à la fédération des compétences académiques et industrielles dans le domaine 
 des Biomatériaux et BioImplants de la région Nouvelle-Aquitaine via l'<a href=\"http://www.2acbi-asso.fr/\" \>Association Aquitaine Biomatériaux et Implants</a> (2ACBI), 
@@ -139,8 +142,8 @@ et participe au <a href=\"https://bcrm.u-bordeaux.fr/\" /> \"Bordeaux Consortium
   	// Fonctionnement/organisation.php
   	//---------------------------------------------------------
 	//define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organisation</h1> ");
-	define('TXT_A1Fonction'," Le CIC de Bordeaux (regroupant la gouvernance des 3 modules: IT, P et EC) est géré via un 
-	comité de pilotage annuel, et est l'objet d'une évaluation quadriennale par l'HCERES.<br> Le CIC dépend directement 
+	define('TXT_A1Fonction',"Le CIC de Bordeaux (regroupant la gouvernance des 3 modules: IT, P et EC) est géré via un 
+	comité de pilotage annuel, et est l'objet d'une évaluation quinquennale par l'HCERES.<br> Le CIC dépend directement 
 	de la Direction de la Recherche Clinique et de l'Innovation (DRCI) du CHU de Bordeaux et de la Délégation Régionale 
 	de l'INSERM.<br> 
 Le CIC-IT travaille étroitement avec les modules P et EC du CIC de Bordeaux en particulier pour les essais cliniques, 
@@ -304,11 +307,10 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
 	define('TXT_ImgQP',"<a href=\"../image/carto_v2.4.png\"  title=\"CIC-IT : processus de management, réalisation et support\"><img src=\"../image/carto_v2.4.png\" alt=\" CIC-IT : processus de management, réalisation et support\" title=\"CIC-IT : processus de management, réalisation et support \" width=\"60%\";></a>");
 
 	//responsable : Carolina
-	define('TXT_TQ',"<h1 style=\"text-align:center\"><strong>Systeme de management qualité</strong></h1>");
+	define('TXT_TQ',"<h2 style=\"text-align:center\"><strong>Systeme de management qualité</strong></h2>");
 	define('TXT_ResponsableQ', "<h3>Responsable:<br>Carolina Lanchas Fuentes.</h3>");
-	define('TXT_TQR',"chargée d'études qualité<br>responsable qualité.
-<div style=\"display:inline\">Courriel:<a href=\"mailto:carolina.lanchas-fuentes@chu-bordeaux.fr\" >carolina.lanchas-fuentes@chu-bordeaux.fr </a></div>Tél : 05-57-10-28-65
- Fax : 05-57-10-28-63<br>");
+	define('TXT_TQR',"Chargée d'études qualité<br>Tél : 05-57-10-28-65 / Fax : 05-57-10-28-63<br>
+<div style=\"display:inline\">Courriel:<a href=\"mailto:carolina.lanchas-fuentes@chu-bordeaux.fr\" >carolina.lanchas-fuentes@chu-bordeaux.fr </a></div>");
 
 	//---------------------------------------------------------
   	//  Valorisation
@@ -409,9 +411,9 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
 	define('TXT_ResponsableHisto', "<h3>Responsable:<br> Samantha Roques (née Delmond) </h3>");
 	define('TXT_THR',"Chargée d'études précliniques en histologie<br>
 Responsable du Plateau Histologie de la PTIB<br>
-<div style=\"display:inline\">Courriel:<a href=\"mailto:samantha.delmond@chu-bordeaux.fr\"> samantha.delmond@chu-bordeaux.fr </a></div>
-<br>Tél. :  05 57 10 28 61 / Fax. : 05 57 10 28 63
-<br>");
+<div style=\"display:inline\">
+Tél. :  05 57 10 28 61 / Fax. : 05 57 10 28 63
+<br>Courriel:<a href=\"mailto:samantha.delmond@chu-bordeaux.fr\"> samantha.delmond@chu-bordeaux.fr </a></div>");
 
 	define('TXT_HST',"<h1 align=\"center\"><strong>Activités</strong></h1>");
 	define('TXT_HT1',"<h2 align=\"justify\">Inclusion de tissus mous<em> (paraffine) </em>et calcifiés <em>(résine méthacrylate, technovit 9100)<em></h2>  
