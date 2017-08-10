@@ -82,7 +82,7 @@ session_start();
 					echo "debut du traitement des données envoyees!";
 	
 					//$link = mysqli_connect('localhost', 'root','','cic-it2017');
-					$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev'); // à distance...
+					$link = mysqli_connect(...); // à distance...
 				
 				$req = "INSERT INTO stagiaires( nomS, prenomS, formation, annee) VALUES ( '$nomS', '$prenomS','$formationS','$anneeS')";
 				mysqli_query($link,$req) or die(mysqli_error($link));
