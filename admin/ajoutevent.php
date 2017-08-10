@@ -44,7 +44,7 @@ session_start();
 					//include("../calendrier/includes/sql_connect.php");
 					
 					
-					$link = mysqli_connect( 'localhost', 'c4cicit','dyKaTm8H#','c4dev');
+					$link = mysqli_connect( ...);
 
 					for($i=0 ; $i<$nbreJours ; $i++) {
 						$req = "INSERT INTO calendrier(jour_evenement, mois_evenement, annee_evenement, id_evenement) VALUES ( ".date('d', $timeDuJour).", ".date('m', $timeDuJour).", ".date('Y', $timeDuJour).", $identifiantCommun)";
