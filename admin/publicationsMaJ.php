@@ -132,7 +132,7 @@ else echo "on continue.";
 {
    //echo"<br>on insert dans la bd!<br>";
 //echo"type de publi :".$codification."<br>";
-$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev'); // bd distante...
+$link = mysqli_connect(...); // bd distante...
 	if (!$link) {
 		die('Impossible de se connecter : ' . mysql_error());
 				}
