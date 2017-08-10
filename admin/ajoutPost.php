@@ -131,7 +131,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 	
 	
 	
-					$link = mysqli_connect( 'localhost', 'c4cicit','dyKaTm8H#','c4dev');
+					$link = mysqli_connect( ...);
 				
 					$req = "INSERT INTO poste (titrePoste, descriptionPoste, NomPDFPoste) VALUES ( '$poste', '$description','$fichier')";
 					mysqli_query($link,$req) or die(mysqli_error($link));
