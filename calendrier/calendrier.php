@@ -16,7 +16,7 @@
 		$result = array();
 		
 		//include("includes/sql_connect.php");
-		$link = mysqli_connect('localhost', 'c1cicitdev','yuvREZ_7s3B','c1cicitdev');
+		$link = mysqli_connect(...);
 
 $sql = 'SELECT DISTINCT jour_evenement, titre_evenement FROM calendrier c, evenements e WHERE mois_evenement='.$mois.' AND annee_evenement='.$annee.' AND c.id_evenement = e.id_evenement ORDER BY jour_evenement';
 
