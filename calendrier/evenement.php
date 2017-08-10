@@ -17,7 +17,7 @@
 			$req = "SELECT * FROM evenements WHERE id_evenement IN (SELECT id_evenement FROM calendrier WHERE jour_evenement=".$tabDate[0]." AND mois_evenement=".$tabDate[1]." AND annee_evenement=".$tabDate[2].")";
 			
 			//include("includes/sql_connect.php");
-			$link = mysqli_connect( 'localhost', 'c4cicit','dyKaTm8H#','c4dev');
+			$link = mysqli_connect( ...);
 			
 			$evenements = mysqli_query($link,$req);
 			
