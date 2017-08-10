@@ -128,7 +128,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 				if(!empty($titreStage) && !empty($descriptionStage)&& !empty($fichier)) {
 					// Traitement de l'enregistrement de l'événement
 	
-					$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');
+					$link = mysqli_connect(...);
 				
 					$req = "INSERT INTO stage ( titreStage, descriptionStage, NomStagePDF) VALUES ( '$titreStage', '$descriptionStage','$fichier')";
 					mysqli_query($link,$req) or die("error!!!");
