@@ -19,7 +19,7 @@ session_start();
 		$idJou= $_POST['idJou'];
 		//echo "id publication".$idPubli."<br>";
 		//connection a la base de données...a modifier en cic-itbd!
-		$link = mysqli_connect( 'localhost', 'c4cicit','dyKaTm8H#','c4dev');
+		$link = mysqli_connect( ...);
 		if (!$link) {
 		die('Impossible de se connecter : ' . mysql_error());
 		}
