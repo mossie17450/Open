@@ -5,8 +5,7 @@ if(isset($_POST['idListeContactes'])){
 echo "idcontact :".$_POST['idListeContactes'];
 $i=$_POST['idListeContactes'];
 //echo $i."!!!";
-$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');
-//echo"coucou1";
+$link = mysqli_connect(...);
  if (!$link) {
 die('Impossible de se connecter : ' . mysql_error());
 }
