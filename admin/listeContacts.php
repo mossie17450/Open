@@ -12,7 +12,7 @@ session_start();
 <h1>liste des contactes</h1>
 <?php
 
-$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');
+$link = mysqli_connect(...);
 
  if (!$link) {
 
