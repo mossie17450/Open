@@ -49,24 +49,36 @@ background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
 background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
 }
 #menu li:nth-child(3){
+/*
+background-color: #00e6e6;
+background-image:-webkit-linear-gradient(top, #00e6e6 0%, #003333 100%);
+background-image:linear-gradient(to bottom, #00e6e6 0%, #003333 100%);
+*/
+background-color: #87c4c4;
+background-image:-webkit-linear-gradient(top, #87c4c4 0%, #254b4b 100%);
+background-image:linear-gradient(to bottom, #87c4c4 0%, #254b4b 100%);
+}
+#menu li:nth-child(4){
+background-color:  #ccccb3;
+background-image: -webkit-linear-gradient(top, #ccccb3 0%,#4d4d33 100%);
+background-image:linear-gradient(to bottom, #ccccb3  0%, #4d4d33 100%);
+}
+/* à faire */
+#menu li:nth-child(5){
+background-color: #df9f9f;
+background-image: -webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+background-image:linear-gradient(to bottom,#CFFF6A; 0%, #677F35 100%);
+}
+#menu li:last-child{
+/* orange */
 background-color: #F6AD1A;
 background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
 background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
-}
-#menu li:nth-child(4){
-background-color: #729EBF;
-background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
-background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
-}
-#menu li:nth-child(5){
-background-color: #729EBF;
-background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
-background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
-}
-#menu li:last-child{
-background-color: #CFFF6A;
-background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
-background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+/* rose rouge: pas tres joli...
+background-color: #ff8080;
+background-image:-webkit-linear-gradient(top, #ff8080 0%,#800000 100%);
+background-image:linear-gradient(to bottom, #ff8080 0%, #800000 100%);
+*/
 }
 /* background des liens sous menus */
 #menu li:first-child li{
@@ -76,16 +88,17 @@ background:#2A2333;
 background:#333A40;
 }
 #menu li:nth-child(3) li{
-background:#9F391A;
+background:#254b4b;
 }
 #menu li:nth-child(4) li{
-background:#333A40;
+background:#4d4d33;
 }
+/* ...   */
 #menu li:nth-child(5) li{
-background:#333A40;
+background: #677F35;
 }
 #menu li:last-child li{
-background:#677F35;
+background:#9F391A; 
 }
 /* background des liens menus et sous menus au survol */
 #menu li:first-child:hover, #menu li:first-child li:hover{
@@ -95,16 +108,17 @@ background:#65537A;
 background:#729EBF;
 }
 #menu2 li:nth-child(3):hover, #menu li:nth-child(3) li:hover{
-background:#F6AD1A;
+background:#87c4c4;
 }
 #menu li:nth-child(4):hover, #menu li:nth-child(4) li:hover{
-background:#729EBF;
+background: #ccccb3;
 }
+/*  ... */
 #menu li:nth-child(5):hover, #menu li:nth-child(5) li:hover{
-background:#729EBF;
+background: #CFFF6A;;
 }
 #menu li:last-child:hover, #menu li:last-child li:hover{
-background:#CFFF6A;
+background: #F6AD1A /*   #CFFF6A; */
 }
 /* les a href */
 #menu a{
