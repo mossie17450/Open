@@ -1,7 +1,6 @@
 <?php
 session_start();
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
 <head>
@@ -45,11 +44,8 @@ if (d) {d.style.display='block';}
 <!---                         -->
 <!--  photo de la PTIB avec calendrier...  -->
 <div id="header" style="height:auto;">
-<img src="image/headerGG.jpg" width="100%" height="150px" class="arrondie" /><!-- a optimiser en responsive -->
+<img src="image/headerGGt.jpg" width="100%" height="180px" class="arrondie" /><!-- a optimiser en responsive -->
 </div> 
-
-
-
 
 <div  style="display:flex; flex-direction:row; "> 
 <!-- animation....--> 
@@ -94,17 +90,17 @@ if (d) {d.style.display='block';}
 else {
 	echo 'Les variables ne sont pas déclarées.';
 }
-	
-	 ?>
+?>
 	
 	<!--            -->
 	<!--image animé -->
 	<!--            -->
+	<div style="margin-left:0%;margin-right:20%"><!-- ajout du responsif -->
 <?php 
  if((empty($_SESSION['lang'])&& empty($_GET['langue']))||$_SESSION['lang']=='fr'){
-
+//modif ligne +2 et +31
 echo "
-<DIV style=\" width:600px; height:350px; \">
+<DIV style=\" width:80%; height:20%; \">
 <P id=cloud></P>
 </DIV>
 
@@ -133,7 +129,7 @@ swfobject.addDomLoadEvent(function() {
 }
 else {
 echo "
-<DIV style=\" width:600px; height:350px; \">
+<DIV style=\" width:80%; height:20%; \">
 <P id=cloud></P>
 </DIV>
 
@@ -161,7 +157,7 @@ swfobject.addDomLoadEvent(function() {
 ";
 }
 
-?></div>
+?></div></div>
 
 <!-- calendrier des evenements  --> 
  
@@ -173,7 +169,9 @@ function getEventsDate($mois, $annee) {
 		$result = array();
 //connection à la base de données		
 		//include("../calendrier/includes/sql_connect.php");
-		$link = mysqli_connect( 'localhost', 'c4cicit','dyKaTm8H#','c4dev'); // site local'localhost', 'root','','cic-it2017' site distant: 'localhost', 'c1cicitdev','yuvREZ_7s3B','c1cicitdev'
+		//$link = mysqli_connect( 'localhost', 'c4cicit','dyKaTm8H#','c4dev'); // site local'localhost', 'root','','cic-it2017' site distant: 'localhost', 'c1cicitdev','yuvREZ_7s3B','c1cicitdev'
+		
+		$link = mysqli_connect( 'localhost', 'root','','cic-it2017');
 		if (!$link) {
 die('Impossible de se connecter : ' . mysql_error());
 }
@@ -261,7 +259,7 @@ $me = array("01" => "January", "02" => "February", "03" => "March", "04" => "Apr
 	else $numero_jour1er--; // Sinon on mets lundi à 0, Mardi à 1, Mercredi à 2...
 	?>
     
-	<table class="calendrier">
+	<table class="calendrier"><!-- un peu responsif,limite les ecran de telephone !!! -->
 	
 <?php  
 if($_SESSION['lang']=='fr'){
@@ -415,17 +413,17 @@ else if($_GET['langue']=='en'){
 
 <div id="footbis"  class="arrondie" >
 <!-- a droite -->   <ul style="list-style-type: none; block-align:center;"> <li style="color:white;">.<br>.</li>                      
-<li><a href="https://www.chu-bordeaux.fr/" ><img src="../image/logos/Chubordeaux.jpg"   style="width:80%;" class="displayed"></a></li><br> 
+<li><a href="https://www.chu-bordeaux.fr/" ><img src="image/logos/(fix)LogoCHU_2011.GIF"   style="width:80%;" class="displayed"></a></li><br> 
 <li style="color:white;">.</li>
-<li height="20%"><a href="http://www.aquitaine-poitou-charentes.inserm.fr/"><img src="../image/logos/logo-generique-SD.gif"  width="100%" class="displayed"></a></li><br>
+<li height="20%"><a href="http://www.aquitaine-poitou-charentes.inserm.fr/"><img src="image/logos/logo-generique-SD.gif"  width="100%" class="displayed"></a></li><br>
 <li style="color:white;">.</li>
-<li height="20%"><a href="http//www.u-bordeaux.fr/"><img src="../image/logos/Universite-BordeauxRVB-01.jpg" width="100%" class="displayed"></a></li><br>
+<li height="20%"><a href="http//www.u-bordeaux.fr/"><img src="image/logos/Universite-BordeauxRVB-01.jpg" width="100%" class="displayed"></a></li><br>
 <li style="color:white;">.</li>  
-<li><a href="http://www.bergonie.org/"><img src="../image/logos/Bergonie.jpg"  width="80%" class="displayed"></a></li><br>
+<li><a href="http://www.bergonie.org/"><img src="image/logos/Bergonie.jpg"  width="80%" class="displayed"></a></li><br>
 <li style="color:white;">.</li>  
-<li style="color:white;"><a href="http://www.ptib.u-bordeaux2.fr/index.php?p=accueil"><img src="../image/logos/logo_PTIB.jpg"  width="100%" class="displayed"></a></li><br>
+<li style="color:white;"><a href="http://www.ptib.u-bordeaux2.fr/index.php?p=accueil"><img src="image/logos/logo_PTIB.jpg"  width="100%" class="displayed"></a></li><br>
 <li style="color:white;">.</li>  
-<li><a href="http://www.2acbi-asso.fr/"><img src="../image/logos/logo-2acbi.jpg"  width="60%" class="displayed" ></a></li></ul>
+<li><a href="http://www.2acbi-asso.fr/"><img src="image/logos/logo-2acbi.jpg"  width="60%" class="displayed" ></a></li></ul>
 </div>
 
 
@@ -439,12 +437,12 @@ else if($_GET['langue']=='en'){
  <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/PTIBmontagesmall3.jpg\" width=\"80%\" style=\"margin-left:10%; margin-right:10%; \" height=\"auto\" >
+			echo "<img src=\"image/PTIBmontagesmall3.jpg\" width=\"80%\" style=\"margin-left:10%; margin-right:10%; \" height=\"auto\" >
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/PTIBmontagesmall3.jpg\" style=\"margin-left:10%; margin-right:10%; \"  width=\"80%\" >
+		echo "<img src=\"image/PTIBmontagesmall3.jpg\" style=\"margin-left:10%; margin-right:10%; \"  width=\"80%\" >
 			";
 		}
 		?>
