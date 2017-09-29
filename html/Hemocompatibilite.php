@@ -3,7 +3,6 @@ session_start();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
-
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8;">
 <title>Innovation biomédicale, recherche de biomateriaux avec le CHU de Bordeaux : le CIC-IT. Aquitaine - France</title>
@@ -60,9 +59,14 @@ if (d) {d.style.display='block';}
 <body id="equipe">
 <div id="body" class="arrondie">
 
-<div id="header">
-<img src="../image/header.jpg" width="100%" height="150px"; class="arrondie">
-</div><br>
+<div id="header" style=" display:flex; flex-direction:row;" >
+<div style=" display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<h3 style="color:white; text-align:center;">CENTRE D’INVESTIGATION CLINIQUE</h3><h3 style="color:red; text-align:center;">INNOVATION TECHNOLOGIQUE</h3><h3 style="color:white; text-align:center;">BIOMATERIAUX ET DISPOSITIFS MEDICAUX IMPLANTABLES</h3>
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div>
+
 <!-- choix de la langue  -->
 
 <?php
@@ -151,18 +155,18 @@ else if($_POST['langue']=='en'){
 <div style="display:flex; flex-direction:column; width:30%; ">
 <?php echo  TXT_HMT; ?> 
 </div>
-<div style="display:flex; flex-direction:column; width:30%;">
+<div style="display:flex; flex-direction:column; width:30%;margin-right:1%;">
 <br><a target="_blank" href="../image/personnels/MartineP.png">
 
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\">
+			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\" align=\"right\";>
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" >
+		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" align=\"right\";>
 			";
 		}
 		?></a>
@@ -191,13 +195,13 @@ else if($_POST['langue']=='en'){
 <div id="footbis"  class="arrondie" align="block">
 <?php echo TXT_HEA; ?>
 
- <a target="_blank" href="../image/VetABC.jpg"><img src="../image/VetABC.jpg" style="width:95%; padding:2px;">
+ <a target="_blank" href="../image/equipements/VetABC.jpg"><img src="../image/equipements/VetABC.jpg" style="width:95%; padding:2px;">
 <br><h6><?php echo TXT_HEA1; ?></h6></a>
 
-<a target="_blank" href="../image/Cytometre.jpg"><img src="../image/Cytometre.jpg" alt="cytometre" style="width:95%; padding:2px;" >
+<a target="_blank" href="../image/equipements/Cytometre.jpg"><img src="../image/equipements/Cytometre.jpg" alt="cytometre" style="width:95%; padding:2px;" >
 <br><h6><?php echo TXT_HEA2; ?></h6></a>
 
-<a target="_blank" href="../image/PSMell.jpg"><img src="../image/PSMCell.jpg"  alt="PSM culture cellulaire" style="width:95%; padding:2px;" >
+<a target="_blank" href="../image/equipements/PSMCell.jpg"><img src="../image/equipements/PSMCell.jpg"  alt="PSM culture cellulaire" style="width:95%; padding:2px;" >
 <br><h6><?php echo TXT_HEA3; ?></h6></a>
 
 </div>
@@ -211,7 +215,7 @@ else if($_POST['langue']=='en'){
  <?php echo TXT_HM; ?><br>
  
 <div style="display:flex; flex-direction:column; ">
-
+<?php echo "<h3>Hémolyse</h3>"; ?>
 <div  style="display:flex;flex-direction:column; margin:5px;">
   <a target="_blank" href="../image/hemolyse.jpg">
     <img src="../image/hemolyse.jpg" alt="test d'hémolyse" style="width:80%;" class="displayed">
@@ -219,7 +223,21 @@ else if($_POST['langue']=='en'){
   <div style="display:flex;flex-direction:column; text-align:center;"><?php echo TXT_HLI1; ?></div>
   </div>
   <br>
+  
+
+ <?php echo "<h3>Plaquettes</h3>"; ?><br>
   <div class="displayed" style="display:flex;flex-direction:raw; margin:5px; ">
+   
+   
+    <div class="displayed" style="display:flex;flex-direction:raw; margin:5px; ">
+  
+  <div class="displayed" style="display:flex;flex-direction:column; margin:5px; ">
+  <a target="_blank" href="../image/agrego.png">
+    <img src="../image/agrego.png" alt="" style="width:80%" class="displayed">
+  </a><br>
+  <div><?php echo TXT_HLI4; ?></div>
+  </div></div>
+   
   <div class="displayed" style="display:flex;flex-direction:column; margin:5px; ">
   <a target="_blank" href="../image/facs1.jpg">
     <img src="../image/facs1.jpg" alt="activaion plaquettaire T=0min" style="width:80%" class="displayed">
@@ -236,7 +254,36 @@ else if($_POST['langue']=='en'){
   </div>
  </div> 
  
+
  
+ <div style="display:flex;flex-direction:column; margin:5px;">
+  <div><h3><?php echo TXT_HTI5; ?></h3></div>
+ <div  style="display:flex;flex-direction:column; margin:5px;">
+  <a target="_blank" href="../image/cpt.jpg">
+    <img src="../image/cpt.jpg" alt="test complement:ELISA C3a" style="width:80%;" class="displayed">
+  </a><br>
+   <div style="display:flex;flex-direction:column; text-align:center;"><?php echo TXT_HLI8; ?></div>
+ </div>
+ 
+ <div style="display:flex;flex-direction:column; margin:5px;">
+ 
+ <div><h3><?php echo TXT_HTI6; ?></h3></div>
+ <div  style="display:flex;flex-direction:column; margin:5px;">
+  <a target="_blank" href="../image/PTT.jpg">
+    <img src="../image/PTT.jpg" alt="test chronométriques" style="width:20%;" class="displayed">
+  </a><br>
+   <div style="display:flex;flex-direction:column; text-align:center;"><?php echo TXT_HLI9; ?></div>
+ </div>
+ 
+  <div style="display:flex;flex-direction:column; margin:5px;">
+
+ <div><h3><?php echo TXT_HTI7; ?></h3></div>
+ <div  style="display:flex;flex-direction:column; margin:5px;">
+  <a target="_blank" href="../image/num.jpg">
+    <img src="../image/num.jpg" alt="Automate" style="width:50%;" class="displayed">
+  </a><br>
+   <div style="display:flex;flex-direction:column; text-align:center;"><?php echo TXT_HLI10; ?></div>
+ </div>
  
  
 
