@@ -104,10 +104,14 @@ if (d) {d.style.display='block';}
 
 <body id="equipe">
 <div id="body" class="arrondie">
-
-<div id="header">
-<img src="../image/header.jpg" width="100%" height="150px"; class="arrondie">
-</div><br>
+<!-- en tête -->
+<div id="header" style=" display:flex; flex-direction:row;" >
+<div style=" display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<h3 style="color:white; text-align:center;">CENTRE D’INVESTIGATION CLINIQUE</h3><h3 style="color:red; text-align:center;">INNOVATION TECHNOLOGIQUE</h3><h3 style="color:white; text-align:center;">BIOMATERIAUX ET DISPOSITIFS MEDICAUX IMPLANTABLES</h3>
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div>
 <!--                     -->
 <!-- choix de la langue  -->
 <!--                     -->
@@ -190,29 +194,30 @@ else if($_POST['langue']=='en'){
 <!-- presentation responsable -->
 <!--<div  style="display:flex; flex-direction:column;">--> 
 
-<div id="fin-article" style="display:flex; flex-direction:row;">
-<div style="display:flex; flex-direction:column; width:30%; ">
+<div id="fin-article" style="display:flex; flex-direction:row; margin-right:2%;">
+<div style="display:flex; width:35%; ">
 
 <?php echo  TXT_CCT ; ?>
 
 </div>
-<div style="display:flex; flex-direction:column; width:30%;">
+<div style="display:flex; flex-direction:column; width:30%;margin-right:1%;">
 <a target="_blank" href="../image/personnels/MartineP.png">
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\" title=\"Martine Renard\">";
+			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\" title=\"Martine Renard\" align=\"right\";>";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" title=\"Martine Renard\">";
+		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" title=\"Martine Renard\" align=\"right\";>";
 		}
 		?> 
 		</a>
 		</div>
 		<div style="display:flex; flex-direction:column; width:30%; ">
 		<h3><?php echo TXT_ResponsableCellule; ?></h3>
-<br><?php echo TXT_TCBHR; ?></div>
+<br><?php echo TXT_TCBHR; ?>
+</div>
 </div>
 
 <!-- corps de la page -->
@@ -222,7 +227,6 @@ else if($_POST['langue']=='en'){
 
 <div id="footbis"  class="arrondie" ><!-- images a droite -->
 
-
 <h4><?php echo TXT_HEA; ?></h4><br><br>
 <!--  -->
 <div class="img" style="border:none; ">
@@ -230,14 +234,14 @@ else if($_POST['langue']=='en'){
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-echo " <br><img src=\"../image/PSMCell.jpg\" style=\"width:80%; padding:2px; height:10%; \";></a>
+echo " <br><img src=\"../image/equipements/PSMCell.jpg\" style=\"width:80%; padding:2px; height:10%; \";></a>
 ";	
 		}
 		else {
 		
 
 		
-		echo "<img src=\"../image/PSMCell.jpg\" alt=\"PSM culture cellulaire\" title=\"PSM culture cellulaire\" style=\"width:80%; padding:2px;\">
+		echo "<img src=\"../image/equipements/PSMCell.jpg\" alt=\"PSM culture cellulaire\" title=\"PSM culture cellulaire\" style=\"width:80%; padding:2px;\">
 ";
 		}
 		?>
@@ -250,14 +254,14 @@ echo " <br><img src=\"../image/PSMCell.jpg\" style=\"width:80%; padding:2px; hei
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-echo " <br><img src=\"../image/microscopeInverse.jpg\" style=\"width:80%; padding:2px; height:10%;\";></a>
+echo " <br><img src=\"../image/equipements/microscopeInverse.jpg\" style=\"width:80%; padding:2px; height:10%;\";></a>
 ";	
 		}
 		else {
 		
 
 		
-		echo "<img src=\"../image/microscopeInverse.jpg\" alt=\"microscope Inverse\" title=\"microscope Inverse\" style=\"width:80%; padding:2px;\">
+		echo "<img src=\"../image/equipements/microscopeInverse.jpg\" alt=\"microscope Inverse\" title=\"microscope Inverse\" style=\"width:80%; padding:2px;\">
 ";
 		}
 		?>
@@ -270,14 +274,14 @@ echo " <br><img src=\"../image/microscopeInverse.jpg\" style=\"width:80%; paddin
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-echo " <br><img src=\"../image/etuvesCO2.jpg\" style=\"width:80%; padding:2px; height:10%;\";></a>
+echo " <br><img src=\"../image/equipements/etuvesCO2.jpg\" style=\"width:80%; padding:2px; height:10%;\";></a>
 ";	
 		}
 		else {
 		
 
 		
-		echo "<img src=\"../image/etuvesCO2.jpg\" alt=\"etuves à CO2\" title=\"etuves à CO2\" style=\"width:80%; padding:2px; \">
+		echo "<img src=\"../image/equipements/etuvesCO2.jpg\" alt=\"etuves à CO2\" title=\"etuves à CO2\" style=\"width:80%; padding:2px; \">
 ";
 		}
 		?>
@@ -306,19 +310,13 @@ echo " <br><img src=\"../image/etuvesCO2.jpg\" style=\"width:80%; padding:2px; h
 	</div></td><tr><td style="text-align:left" colspan="2"><em><?php echo TXT_IlegCC1; ?></em></td><td></td><td style="text-align:left"><em><?php echo TXT_IlegCC2; ?></em></td></tr>
 </td>
 </tr></table>
-  
-<h4><?php echo TXT_CCTM1; ?></h4>
 
-
-
-<!--<table class="table">
-<tr><td colspan="3"><div id="show8" class="slideshow" >
-    <img src="../image/11.jpg" alt="" width="70%" />
-  </div></td><td><img src="../image/markerTransparent.png" width="50%" height="5%"></td>
-  <td><div id="show9" class="slideshow">
-    <img src="../image/blanc.jpg" alt="" width="60%"/>
-	</div></td><tr><td style="text-align:left" colspan="3"><em><?php //echo TXT_IlegCC3; ?></em></td><td></td><td style="text-align:left"><em><?php //echo TXT_IlegCC4; ?></em></td></tr>
-</td></tr></table>-->
+<h2>Cyto-compatibilité</h2>
+<h4>Cytotoxicité (EN ISO 10993-5)</h4>
+<h4>Attachement, prolifération (EN ISO 10993-5)</h4>
+<h2>Bio-ingénierie</h2>
+<h4>Culture en condition statique (bio-réacteur)</h4>
+<h4>Culture sous flux (cf page "hémodynamique")</h4>
 </div>
 </div></div>
 
