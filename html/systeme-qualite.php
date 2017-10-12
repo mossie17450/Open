@@ -14,11 +14,12 @@ session_start();
 
 <!--- ma premiere( presque) feuille de style : -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../css/SecondePage.css">
-<link rel="stylesheet" type="text/css" href="../css/menuHDR2.css">
+<link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
+<link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
 <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/moyenneResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/petitResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 400px)" href="../css/toutpetitResolution.css" />
+<link rel="stylesheet" type="text/css" href="../css/menuHDR2.css" />
 <script type="text/javascript">
 <!--
 window.onload=montre;
@@ -34,13 +35,6 @@ if (d) {d.style.display='block';}
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-<!-- en tête -->
-<div id="header">
-<img src="../image/header.jpg" width="100%" height="150px"class="arrondie">
-</div>
-<!-- en tête fin-->
-<br>
 <!-- choix de langue -->
  <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
@@ -64,7 +58,16 @@ if (d) {d.style.display='block';}
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
-
+<div id="body" class="arrondie">
+<!-- en tête -->
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div><br><br>
+<!-- en tête fin-->
 <div  style="display:flex; flex-direction:row;"> 
  <div id="contenu" align="inline" width="100%">
  
@@ -128,29 +131,32 @@ else if($_POST['langue']=='en'){
 
 <!--   responsable qualité  -->
 <div id="fin-article" style="display:flex; flex-direction:row;">
-<div style="display:flex; flex-direction:column; width:50%; ">
+<div style="display:flex; flex-direction:column; width:30%;">
 <?php echo TXT_TQ ; ?> 
-<?php echo TXT_ResponsableQ ; ?>
+
 </div>
-<div style="display:flex; flex-direction:column; ">
+<div style="display:flex; flex-direction:column; width:30%; float:left; margin-right:1%;">
 <a target="_blank" href="../image/personnels/Carolina2P.png">
 
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/Carolina2P.png\" width=\"50%\" height=\"auto\" title=\"Carolina Lanchas-Fuentes\">
+			echo "<img src=\"../image/personnels/Carolina2P.png\" width=\"60%\" height=\"auto\" title=\"Carolina Lanchas-Fuentes\" alt=\"Carolina Lanchas-Fuentes\" align=\"right\";>
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/Carolina2P.png\" width=\"35%\" title=\"Carolina Lanchas-Fuentes\">
+		echo "<img src=\"../image/personnels/Carolina2P.png\" width=\"50%\" title=\"Carolina Lanchas-Fuentes\" alt=\"Carolina Lanchas-Fuentes\" align=\"right\";>
 			";
 		}
 		?>
 
 </a> 
-
-<?php echo TXT_TQR ; ?> 
+</div>
+<div style="display:flex; flex-direction:column; width:30%">
+<?php echo TXT_ResponsableQ ; ?>
+<div  style="display:inline-block; width:100%;  text-align:left;">
+<?php echo TXT_TQR ; ?></div> 
 </div>
 </div>
 <!-- fin responsable qualité -->
@@ -160,24 +166,40 @@ else if($_POST['langue']=='en'){
 <!-- article -->
 <br>
 <h1><?php echo TXT_QualiteTitre; ?></h1>
-<h3 style="margin-left:10px;"><?php echo TXT_A1Qualite; ?></h3>
+<h4 style="margin-left:1%; text-align:justify;"><?php echo TXT_A1Qualite; ?></h4>
 <h4><?php echo TXT_SuiteA1Q; ?></h4>
 
 <h4><?php echo TXT_SuiteA2Q; ?></h4>
 <!-- a mettre en commentaire en attendant la cartographie définitif du systéme qualité  -->
-<h4 style="margin-left:10px;"><? echo TXT_A3Qualite; ?></h4>
+<h4 style="margin-left:1%; text-align:justify;"><? echo TXT_A3Qualite; ?></h4>
 <?php echo TXT_TexteImage; ?>
 <br>
 <div align="center" width="50%">
-<?php //echo TXT_ImgQP; ?><!-- ici je met l'image de cartographie des... attendre la mise à jours de Carolina! -->
+<?php //echo TXT_ImgQP; ?>
+<!--  mise à jours de Carolina: -->
+<div style="display:flex; flex-direction:column; width:80%">
+<a target="_blank" href="../image/cartographieDesProcessust.jpg">
 
+<?php
+		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
+			
+			echo "<img src=\"../image/cartographieDesProcessust.jpg\" width=\"100%\" height=\"auto\" title=\"Cartographie des processus\" alt=\"Cartographie des processus\">
+";
+		}
+		else {
+			
+		echo "<img src=\"../image/cartographieDesProcessust.jpg\" width=\"100%\" title=\"Cartographie des processus\" alt=\"Cartographie des processus\">
+			";
+		}
+		?>
+
+</a> 
+</div>
 </div>
 </div>
 </div>
 
 <!--   article....   fin -->
-
-
 <!--pied de page : plan du site....   --> 
 <br>
 <div id="test" class="arrondie">

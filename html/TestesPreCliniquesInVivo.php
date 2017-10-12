@@ -35,12 +35,6 @@ if (d) {d.style.display='block';}
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-
-<div id="header">
-<img src="../image/header.jpg" width="100%" height="150px"; class="arrondie">
-</div><br>
-
 <!-- choix de la langue  -->
  <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
@@ -64,7 +58,15 @@ if (d) {d.style.display='block';}
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
- 
+<div id="body" class="arrondie">
+
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div><br><br>
 
  <div  style="display:flex; flex-direction:row;"> 
  <div id="contenu" align="inline-block" width="100%">
@@ -126,32 +128,32 @@ else if($_POST['langue']=='en'){
 <!-- expertise -->
 
 <div id="fin-article" style="display:flex; flex-direction:row;">
-<div style="display:flex; flex-direction:column; width:30%; ">
-<h1 style="text-align:center"><?php echo TXT_IVT; ?></h1> 
+<div style="display:flex; flex-direction:column; width:40%; ">
+<h2 style="text-align:center"><?php echo TXT_IVT; ?></h2> 
 </div>
-<div style="display:flex; flex-direction:column; width:30%; ">
+<div style="display:flex; flex-direction:column; width:20%; margin-right:1%;">
 <a target="_blank" href="../image/personnels/MarleneP.png">
 <!--<img src="../image/personnels/MarleneP.png" width="60%" >-->
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/MarleneP.png\" width=\"50%\" height=\"auto\">
+			echo "<img src=\"../image/personnels/MarleneP.png\" width=\"65%\" height=\"auto\" align=\"right\";>
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/MarleneP.png\" width=\"50%\" >
+		echo "<img src=\"../image/personnels/MarleneP.png\" width=\"65%\" align=\"right\";>
 			";
 		}
 		
 		?></a>
 		</div>
 <div style="display:flex; flex-direction:column; width:30%; ">
-<h3><?php echo TXT_ResponsableInVivo; ?></h3>		
-<br><?php echo TXT_IVR; ?></div>
+<h3><?php echo TXT_ResponsableInVivo; ?></h3>
+<div  style="display:inline-block; width:100%;  text-align:left;">		
+<?php echo TXT_IVR; ?></div>
 </div>
-
-
+</div>
 <!-- contenu -->
 <div style="display:flex; flex-direction:row; "> 
 <div id="contenu" align="inline-block" width="100%">
