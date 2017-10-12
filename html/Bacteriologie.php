@@ -93,15 +93,6 @@ if (d) {d.style.display='block';}
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-
-<div id="header">
-<img src="../image/header.jpg" width="100%" height="150px"; class="arrondie">
-</div><br>
-
-<!-- choix de la langue  -->
-<!-- mon menu HDR -->
-
  <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
  ($_SESSION['lang']);
@@ -124,6 +115,21 @@ if (d) {d.style.display='block';}
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
+<div id="body" class="arrondie">
+
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div>
+<br><br>
+
+<!-- choix de la langue  -->
+<!-- mon menu HDR -->
+
+
  
 
 <div  style="display:flex; flex-direction:row;" >
@@ -191,26 +197,30 @@ else if($_POST['langue']=='en'){
 
 <?php echo  TXT_TAB ; ?>
 </div>
-<div style="display:flex; flex-direction:column; width:30%; ">
+<div style="display:flex; flex-direction:column; width:30%; float:left; margin-right:1%;">
 <a target="_blank" href="../image/personnels/MartineP">
 
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\" ></a>
+			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\" title=\"Martine Renard\" alt=\"Martine Renard\" align=\"right\";></a>
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" ></a>
+		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" title=\"Martine Renard\" alt=\"Martine Renard\" align=\"right\";></a>
 			";
 		}
 	?>
 	</div>
+	
 	<div style="display:flex; flex-direction:column; width:30%; ">
 	<h3><?php echo TXT_ResponsableCellule; ?></h3>
-<?php echo TXT_TCBHR; ?></div>
+	<div  style="display:inline-block; width:100%;  text-align:left;">
+<?php echo TXT_TCBHRbis; ?></div>
 </div>
+</div>
+
 
 
 
@@ -228,10 +238,10 @@ else if($_POST['langue']=='en'){
    <?php	
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
    
-		echo "<a target=\"_blank\" href=\"../image/EtuveBacterio.jpg\"><img src=\"../image/EtuveBacterio.jpg\" style=\"width:95%; padding:5px; height:auto \" ></a>";	
+		echo "<a target=\"_blank\" href=\"../image/equipements/EtuveBacterio.jpg\"><img src=\"../image/equipements/EtuveBacterio.jpg\" style=\"width:95%; padding:5px; height:auto \" ></a>";	
 			}
 		else {
-				echo "<a target=\"_blank\" href=\"../image/EtuveBacterio.jpg\"><img src=\"../image/EtuveBacterio.jpg\" style=\"width:95%; padding:5px; height:auto \" ></a>";	
+				echo "<a target=\"_blank\" href=\"../image/equipements/EtuveBacterio.jpg\"><img src=\"../image/equipements/EtuveBacterio.jpg\" style=\"width:95%; padding:5px; height:auto \" ></a>";	
 }
 		?>
 	
@@ -242,10 +252,10 @@ else if($_POST['langue']=='en'){
    <?php	
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
    
-		echo "<a target=\"_blank\" href=\"../image/PSMCell3.jpg\"><img src=\"../image/PSMCell3.jpg\" style=\"width:95%; padding:5px; height:auto \" ></a>";	
+		echo "<a target=\"_blank\" href=\"../image/equipements/PSMCell3.jpg\"><img src=\"../image/equipements/PSMCell3.jpg\" style=\"width:95%; padding:5px; height:auto \" ></a>";	
 			}
 		else {
-				echo "<a target=\"_blank\" href=\".../image/PSMCell3.jpg\"><img src=\"../image/PSMCell3.jpg\" style=\"width:95%; padding:5px; height:auto \" ></a>";	
+				echo "<a target=\"_blank\" href=\".../image/equipements/PSMCell3.jpg\"><img src=\"../image/equipements/PSMCell3.jpg\" style=\"width:95%; padding:5px; height:auto \" ></a>";	
 }
 		?>
 	
@@ -253,13 +263,13 @@ else if($_POST['langue']=='en'){
   </a>
 
 <a target="_blank" href="../image/Spectrophotometre.jpg">
- <?php echo "<br><a target=\"_blank\" href=\"../image/Spectrophotometre.jpg\"><img src=\"../image/Spectrophotometre.jpg\" style=\"width:95%; padding:2px; height:auto\"></a>";
+ <?php echo "<br><a target=\"_blank\" href=\"../image/equipements/Spectrophotometre.jpg\"><img src=\"../image/equipements/Spectrophotometre.jpg\" style=\"width:95%; padding:2px; height:auto\"></a>";
  ?>
 <?php echo TXT_BEA2; ?><br></a>
 
 <a target="_blank" href="../image/lecteurDePlaque.jpg">
 <?php
- echo "<br><a target=\"_blank\" href=\"../image/lecteurDePlaque.jpg\"><img src=\"../image/lecteurDePlaque.jpg\" style=\"width:95%; padding:2px; height:auto\"></a>"; ?>
+ echo "<br><a target=\"_blank\" href=\"../image/equipements/lecteurDePlaque.jpg\"><img src=\"../image/equipements/lecteurDePlaque.jpg\" style=\"width:95%; padding:2px; height:auto\"></a>"; ?>
 <div><?php echo TXT_BEA3; ?></div></a>
 </div>
  </div>
@@ -269,37 +279,45 @@ else if($_POST['langue']=='en'){
 
 
 <div id="section-article"> 
-  <?php echo TXT_HST; ?>
-   <h2 align="center"><?php echo TXT_BM; ?></h2>
- <h3 align="center"><?php echo TXT_BM1; ?></h3>
-<img src="../image/Broyeure.jpg" alt="Broyeure" width="auto" height="250px" align="center" class="displayed">
+<?php echo TXT_HST; ?>
+<h2><?php echo TXT_BM; ?></h2>
+<h3><?php echo TXT_BM1; ?></h3>
+<img src="../image/equipements/Broyeure.jpg" alt="Broyeure" width="auto" height="250px" align="center" class="displayed">
 <br><h3 align="center"><?php echo TXT_BLI3; ?></h3>
  
- <h2 align="center"><?php echo TXT_BM4; ?></h2> <!-- titre -->
- <table class="table">
+ <h2><?php echo TXT_BM4; ?></h2> <!-- titre -->
+ <table class="table" width="100%">
 <tr><td colspan="3"><div id="show9" class="slideshow">
 <img src="../image/CMIphotoA.jpg" alt="" width="100%" /></div><br><?php echo TXT_BLI1; ?></td>
 <td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>
-<td><div id="show10" class="slideshow">
+<!--<td><div id="show10" class="slideshow">
 <img src="../image/TestAgglutination.jpg" alt="" width="100%" /></div>
-<br><?php echo TXT_BLI2; ?></td></tr>
+<br><?php// echo TXT_BLI2; ?></td>-->
+</tr>
 </table>
 
 
 
-<h3 align="center"><?php echo TXT_BM3; ?></h3><!-- au centre ...-->
+<h3><?php echo TXT_BM3; ?></h3><!-- au centre ...-->
  
 <table class="table">
   
-<tr><td colspan="3">
+<tr><td colspan="5">
 <div id="show7" class="slideshow"><img src="../image/GRAM1p.jpg" alt="coloration GRAM etalement" width="50%" /></div>
 
   </td><td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>
    
 	<td><div id="show8" class="slideshow" >
     <img src="../image/TissusGRAM1pp.jpg" alt="GRAM sur coupe de tissus" width="50%"/></div> 
-	</td></tr><tr><td colspan="3" style="text-align:left"><?php echo TXT_BLI5; ?></td><td></td><td style="text-align:left"><?php echo TXT_BLI4; ?></td><tr>
-  </tr></table><br>
+	
+	
+	</td><td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>
+	
+	<td><div id="show10" class="slideshow" >
+    <img src="../image/TestAgglutination.jpg" alt="" width="20%"/></div> 
+	
+	</td></tr><tr><td colspan="5" style="text-align:left;"><?php echo TXT_BLI4; ?></td><td></td><td style="text-align:left;"><?php echo TXT_BLI5; ?></td><td></td><td style="text-align:left;"><?php echo TXT_BLI2; ?></td></tr>
+  </table><br>
  </div> 
 
 
