@@ -23,7 +23,7 @@
 	 <li><a href=\"html/Bacteriologie.php\">Bactériologie</a></li>
 	 <li><a href=\"html/Hemocompatibilite.php\">Hémocompatibilité</a></li>
 	 <li><a href=\"html/Hemodynamiques.php\" >Hémodynamique</a></li>
-	 <li><a href=\"html/TestesPreCliniquesInVivo.php\">Etudes précliniques <em>in vivo</em></a></li>
+	 <li><a href=\"html/TestesPreCliniquesInVivo.php\">Etudes pré-cliniques<em>in vivo</em></a></li>
 	 <li><a href=\"html/TestesCliniques.php\">Etudes cliniques</a></li>
 	 </ul></li>
 	 
@@ -86,8 +86,9 @@
 	 <li><a href=\"Bacteriologie.php\">Bactériologie</a></li>
 	 <li><a href=\"Hemocompatibilite.php\">Hémocompatibilité</a></li>
 	 <li><a href=\"Hemodynamiques.php\" >Hémodynamique</a></li>
+	  <li><a href=\"TestesPreCliniquesInVivo.php\">Etudes précliniques <em>in vivo</em></a></li>
 	 <li><a href=\"TestesCliniques.php\">Etudes cliniques</a></li>
-	 <li><a href=\"TestesPreCliniquesInVivo.php\">Etudes précliniques <em>in vivo</em></a></li>
+	
 	 </ul></li>
 	 
 	 
@@ -107,17 +108,17 @@
 	define('TXT_TitreMission', "<h1 align=\"center\">Nos missions</h1>");
 	
 	define('TXT_Piedhtml', "<ul><a href=\"sitemap.php\" title=\"Plan du site\">Plan du site |</a><a href=\"mentions-legales.php\">Mentions légales |</a><a href=\"fiche-de-contact.php\" title=\"Contact\">Contact</a></ul>");
-	define('TXT_ArticleMission',"Pour ce faire, le CIC-IT de Bordeaux s'appuie sur la 
-	<a target=\"_blank\" href=\"http://ast-innovations.com/ \">Société d'Accélération de Transfert 
-	</a>\"Aquitaine Science Transfert\" (AST),  le réseau national des CIC-IT et  les plateformes nationales 
-	<a target=\"_blank\" href=http://tech4health.fr/>TECH4HEALTH</a> et <a target=\"_blank\" href=\"http://euclid-ctu.eu/\">EUCLID</a> 
-	de la structure <a target=\"_blank\" href=\"http://www.fcrin.org/ \"/>F-CRIN</a> pour les essais cliniques multicentriques nationaux et internationaux.</p>" );
+	define('TXT_ArticleMission',"Pour ce faire, le CIC-IT de Bordeaux s'appuie sur:<ol><li>-La 
+	<a href=\"http://ast-innovations.com/ \">Société d'Accélération de Transfert 
+	</a>\"Aquitaine Science Transfert\" (AST),</li><li>-Le réseau national des <a href=\"http://www.cic-it.fr/\">CIC-IT</a></li><li>-Les plateformes nationales 
+	<a href=http://tech4health.fr/>TECH4HEALTH</a>, <a href=\"http://euclid-ctu.eu/\"> EUCLID</a> 
+	de la structure <a href=\"http://www.fcrin.org/ \"/>F-CRIN</a> pour les essais cliniques multicentriques nationaux et internationaux</li><li>-Et <a href=\"http://www.accelence.fr/\">Accelence</a> pour les essais cliniques à promotion industrielle</li></ol></p>" );
 	
 	define('TXT_SSSTitreMission', "Les objectifs poursuivis se déclinent à plusieurs niveaux :");
-	define('TXT_SSMenuMission', "<div  id=\"puces\" ><ul><li style=\"text-align:justify;\">Coordonner les expertises nécessaires à l'achèvement, la validation et la promotion de produits innovants dans le cadre de prestations pour les industriels.</li>
+	define('TXT_SSMenuMission', "<div id=\"puces\" ><ul><li style=\"text-align:justify;\">Coordonner les expertises nécessaires à l'achèvement, la validation et la promotion de produits innovants dans le cadre de prestations pour les industriels.</li>
 	<li style=\"text-align:justify;\">Développer des partenariats avec les entreprises sur des projets à fort potentiel de valorisation scientifique (brevets, publications), dans le cadre de programmes soutenus à l'échelle nationale et internationale ;</li>
-	<li style=\"text-align:justify;\">Mettre en place des protocoles de recherche clinique dans le respect de la réglementation de la recherche biomédicale, en s'appuyant sur <a href=\"http://www.cic-it.fr\">le réseau CIC</a> .</li>
-	<li style=\"text-align:justify;\">S'investir dans de nouvelles missions: évaluation de la qualité de dispositifs médicaux innovants et nouvelles procédures de suppléance ou d'assistance fonctionnelle et du service médical rendu (SMR), matério vigilance et nouvelles méthodologies d'évaluation pré-clinique.</li></ul></div>");
+	<li style=\"text-align:justify;\">Mettre en place des protocoles de recherche clinique dans le respect de la réglementation de la recherche biomédicale, en s'appuyant sur <a href=\"http://www.cic-it.fr\">le réseau CIC</a>,</li>
+	<li style=\"text-align:justify; \">S'investir dans de nouvelles missions: <ol><li style=\"list-style-type:none;\">-Evaluation de la qualité de dispositifs médicaux innovants</li><li style=\"list-style-type:none;\">-Nouvelles procédures de suppléance ou d'assistance fonctionnelle et du service médical rendu (SMR)</li><li style=\"list-style-type:none;\">-Matério vigilance et nouvelles méthodologies d'évaluation pré-clinique</li></ol></li></ul></div>");
   	
 	
 	//---------------------------------------------------------
@@ -141,7 +142,8 @@ et participe au <a href=\"https://bcrm.u-bordeaux.fr/\" /> \"Bordeaux Consortium
 	//---------------------------------------------------------
   	// Fonctionnement/organisation.php
   	//---------------------------------------------------------
-	//define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organisation</h1> ");
+	
+	define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organisation</h1> ");
 	define('TXT_A1Fonction',"Le CIC de Bordeaux (regroupant la gouvernance des 3 modules: IT, P et EC) est géré via un 
 	comité de pilotage annuel, et est l'objet d'une évaluation quinquennale par l'HCERES.<br> Le CIC dépend directement 
 	de la Direction de la Recherche Clinique et de l'Innovation (DRCI) du CHU de Bordeaux et de la Délégation Régionale 
@@ -172,7 +174,7 @@ Le Comité Technique a pour missions :
 	define('TXT_SSTitreFonction',"L'équipe");
 	define('TXT_imgOrganigramme',"Organigramme CIC-IT Biomatériaux");
 	define('TXT_imgOrganigrammeDRCI',"Organigramme de la DRCI");
-	define('TXT_legendeImg',"<b>Organigramme<br/>CIC-IT Biomatériaux</b>");
+	define('TXT_legendeImg',"<b>Organigramme<b/>");
 	define('TXT_legendeImgDRCI',"<b>Organigramme<br/>DRCI</b>");
 	define('TXT_Equipe',"Equipe du CIC-IT");
 		
@@ -181,7 +183,7 @@ Le Comité Technique a pour missions :
   	//---------------------------------------------------------
 	define('TXT_TM',"Management du CIC-IT de Bordeaux.");
 	define('TXT_TMA3',"<button class=\"btn btn-md btn-info \" data-toggle=\"modal\" data-target=\"#myModal1\" style=\"position:center;color:#9999ff; background-color:transparent; border:none; \" >
-	Une réunion plénière (ou comité technique) mensuelle
+	Revue de projets
 	</button>
 	<!-- Modal -->
 	<div class=\"modal fade\" id=\"myModal1\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\" style=\"width:90%; left:5%;\">
@@ -189,21 +191,21 @@ Le Comité Technique a pour missions :
 	<div class=\"modal-content\" >
 	<div class=\"modal-header\">
 	<button type=\"button-sm\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>
-	<h2 class=\"modal-title\" id=\"myModalLabel\">La réunion pléniére</h2>
+	<h2 class=\"modal-title\" id=\"myModalLabel\">La réunion pléniére ou revue de projets</h2>
 	</div>
-	<div class=\"modal-body\">
+	<div class=\"modal-body\" style=\"text-align:justify;\">
 	elle regroupe les coordonnateurs du CIC-IT et toute son équipe. Sont conviés également le représentant de la SATT Aquitaine Science Transfert, les services de valorisation de l’INSERM et du CHU de Bordeaux, et si besoin des porteurs de projet. Ce comité technique est animé par les deux coordonnateurs et a pour missions :
-<ul><li>De soumettre les nouvelles demandes de projet : discussion sur leur éligibilité et leur faisabilité méthodologique et logistique, questions à soumettre au porteur et réunions à organiser en vue de l’établissement du cahier des charges et du devis. La sélection des projets soumis au CIC-IT repose sur :</li>
+<div  id=\"puces\" style=\"margin-left:2%;\"><ul><li>De soumettre les nouvelles demandes de projet : discussion sur leur éligibilité et leur faisabilité méthodologique et logistique, questions à soumettre au porteur et réunions à organiser en vue de l’établissement du cahier des charges et du devis. La sélection des projets soumis au CIC-IT repose sur :</li>
 <li>la pertinence de la question posée, </li>
 <li>l’adéquation de la méthodologie proposée,</li> 
 <li>le respect de l’éthique, de la réglementation et des bonnes pratiques cliniques,</li> 
 <li>et sur l’adéquation du projet avec les missions du CIC-IT.</li>
 <li>De discuter des réponses aux appels d’offre en cours d’instruction : sujet, place du CIC-IT (coordonnateur, partenaire, prestataire), partenariat, ressources nécessaires, budget, deadline.</li>
-<li>De suivre l’exécution des projets acceptés en termes de gestion administrative, méthodologie, logistique, résultats scientifiques, délais et valorisation. Chaque membre de l’équipe impliqué fournit les informations nécessaires et des actions sont proposées en fonction des problèmes rencontrés.</li></ul>
+<li>De suivre l’exécution des projets acceptés en termes de gestion administrative, méthodologie, logistique, résultats scientifiques, délais et valorisation. Chaque membre de l’équipe impliqué fournit les informations nécessaires et des actions sont proposées en fonction des problèmes rencontrés.</li></ul></div>
 Un compte-rendu est rédigé et adressé à toute l’équipe ainsi qu’aux personnes conviées. A chaque réunion, l’ordre du jour est constitué du compte-rendu précédent, complété des nouveaux projets à discuter.
-
 	
-	</div></div></div></div> permet de discuter l’avancement des projets en cours.
+</div></div></div></div> 
+permet de discuter l’avancement des projets en cours.
 
 
 
@@ -219,7 +221,7 @@ Un compte-rendu est rédigé et adressé à toute l’équipe ainsi qu’aux per
 	<h2 class=\"modal-title\" id=\"myModalLabel\">La réunion de fonctionnement</h2>
 	</div>
 	<div class=\"modal-body\">
-<ul><li>Commandes particulières, règles de gestion/circuit des commandes</li>
+<div  id=\"puces\" style=\"margin-left:2%;\"><ul><li>Commandes particulières, règles de gestion/circuit des commandes</li>
 <li>Recrutements en cours, rappel des règles RH</li>
 <li>Information des absences pour missions/formations des personnels</li>
 <li>Activités d’enseignement de l’équipe (accueil de stagiaires)</li>
@@ -227,12 +229,12 @@ Un compte-rendu est rédigé et adressé à toute l’équipe ainsi qu’aux per
 <li>Relations fonctionnelles avec les partenaires proches : PTIB, IHU LIRYC, U1026 INSERM, BIOTIS, les autres modules du CIC1401</li>
 <li>Informations sur les réseaux structurants : 2ACBI, FR TECSAN, ATT BxCRM, réseau national CIC-IT, plateformes F-CRIN TECH4HEALTH et EUCLID</li>
 <li>Actualités sur la politique Qualité du CIC-IT</li>
-<li>Actualités sur la communication interne et externe du CIC-IT</li></ul>
+<li>Actualités sur la communication interne et externe du CIC-IT</li></ul></div>
 Un compte-rendu est rédigé et adressé à toute l’équipe. A chaque réunion, l’ordre du jour est constitué du compte-rendu précédent.
 	</div></div></div></div> 
 
 est régulièrement animée par le coordonnateur délégué du CIC-IT, avec toute l’équipe, afin de discuter de l'organisation et fonctionnement quotidiens de la structure.<br>");
-	define('TXT_TMA1',"Le CIC-IT est piloté via un Comité d’Orientation Stratégique (COS) annuel, sous la direction de son président <a>le Pr Jean-Christophe Fricain</a>, et regroupant le coordonnateur médical (<a href=\"LaurenceBordenave.php\">Pr Laurence Bordenave</a>), le coordonnateur délégué (<a href=\"MarleneDurand.php\">Marlène Durand</a>), les représentants des tutelles du 
+define('TXT_TMA1',"Le CIC-IT est piloté via un Comité d’Orientation Stratégique (COS) annuel, sous la direction de son président <a>le Pr Jean-Christophe Fricain</a>, et regroupant le coordonnateur médical (<a href=\"LaurenceBordenave.php\">Pr Laurence Bordenave</a>), le coordonnateur délégué (<a href=\"MarleneDurand.php\">Marlène Durand</a>), les représentants des tutelles du 
 
 <button class=\"btn btn-md btn-info \" data-toggle=\"modal\" data-target=\"#myModal\" style=\"position:center;color:#9999ff; background-color:transparent; border:none; \" >
 CIC1401
@@ -247,10 +249,10 @@ CIC1401
 	</div>
 	<div class=\"modal-body\">
 	<h4>
-Le CIC-IT de Bordeaux est un des trois modules du CIC1401 de Bordeaux. Les deux autres modules sont :
--	Le CIC-P (plurithématique) qui assure le support investigateur (mise à disposition ARC, IDERC, médecins investigateurs) des essais cliniques (site web),
--	Le CIC-EC (épidémiologie clinique) qui assure l’expertise méthodologique, conçoit le plan statistique, met en place les e-CRF et la saisie des données, et réalise l’analyse statistique des essais cliniques (site Web.
-Le CIC-IT travaille étroitement avec les modules P et EC du CIC1401 pour les essais cliniques promus par le CHU de Bordeaux. Les trois modules sont constitutifs de la plateforme F-CRIN EUCLID.
+Le CIC-IT de Bordeaux est un des trois modules du CIC1401 de Bordeaux. Les deux autres modules sont :<br>
+-Le CIC-P (plurithématique) qui assure le support investigateur (mise à disposition ARC, IDERC, médecins investigateurs) des essais cliniques (site web),<br>
+-Le CIC-EC (épidémiologie clinique) qui assure l’expertise méthodologique, conçoit le plan statistique, met en place les e-CRF et la saisie des données, et réalise l’analyse statistique des essais cliniques (site Web).
+<br>Le CIC-IT travaille étroitement avec les modules P et EC du CIC1401 pour les essais cliniques promus par le CHU de Bordeaux. Les trois modules sont constitutifs de la plateforme F-CRIN EUCLID.
 Le CIC1401 dépend directement de la Direction de la Recherche Clinique et de l’Innovation (DRCI) du CHU de Bordeaux et de la Délégation Régionale de l’INSERM. Une convention lie les 4 tutelles du CIC401 : CHU de Bordeaux, INSERM, Université de Bordeaux, Institut de Lutte Contre le Cancer Bergonié.
 Le CIC1401 est géré par un comité de pilotage annuel et est l’objet d’une évaluation quadriennale par l’HCERES (dernier renouvellement le 1er janvier 2016). 
 </h4>
@@ -259,16 +261,16 @@ Le CIC1401 est géré par un comité de pilotage annuel et est l’objet d’une
 <br>Un bilan d’activité y est présenté et les orientations stratégiques et scientifiques futures 
 y sont discutées et déterminées.<br> Un compte-rendu est rédigé et adressé aux participants. <br>");
 	define('TXT_TMA2',"<br>Le CIC-IT de Bordeaux est dirigé par <a href=\"LaurenceBordenave.php\">un coordonnateur médical</a> et par <a href=\"MarleneDurand.php\">un coordonnateur délégué</a>. Le coordonnateur médical assure la coordination médicale et scientifique du CIC-IT et est également en charge des relations avec les tutelles du CIC-IT. Le coordonnateur délégué assiste le coordonnateur médical dans ses fonctions et assure la coordination administrative, managériale, logistique et scientifique du CIC-IT au quotidien. Le coordonnateur délégué peut également suppléer le coordonnateur médical dans certaines instances.
-Les coordinateur sont à l'initiative de la mise en place d'un <a href=\"systeme-qualite.php \">système de management de la qualité</a> au sein du CIC-IT et sont ainsi garants de la mise en oeuvre des actions associées à la politique \"qualité\" par l'ensemble de l'équipe.Ils ont par ailleurs et ont aussi la charge d’instruire les demandes de nouveaux projets soumis au CIC-IT : évaluation de l’éligibilité, recherche de partenaires, réponse aux appels d’offre. 
+Les coordinateur sont à l'initiative de la mise en place d'un <a href=\"systeme-qualite.php \">système de management de la qualité</a> au sein du CIC-IT et sont ainsi garants de la mise en oeuvre des actions associées à la politique \"qualité\" par l'ensemble de l'équipe.Ils ont aussi la charge d’instruire les demandes de nouveaux projets soumis au CIC-IT : évaluation de l’éligibilité, recherche de partenaires, réponse aux appels d’offre. 
 Le coordonnateur délégué établit les budgets, 
 devis et conventions avec les services ad hoc. Il assure ensuite le suivi des projets en termes 
 d’attribution des ressources humaines et techniques, d’avancement des travaux (réunions et échanges divers), 
 mise à jour des devis et contrats si nécessaire, et de rédaction/validation des rapports. 
-Il rapporte régulièrement au coordonnateur médicale toute difficulté concernant la conduite des projets et de l’équipe. 
+Il rapporte régulièrement au coordonnateur médical toute difficulté concernant la conduite des projets et de l’équipe. 
 Il représente aussi le CIC-IT dans les différents réseaux auxquels il appartient et établit également les bilans d’activité annuels et 
 quadriennaux demandés par les tutelles.");
 
-define('TXT_TMA4',"<div style=\"display:inline-block; margin-left:0px; \">
+define('TXT_TMA4',"<div style=\"display:inline-block; margin-left:none; text-align:justify;\">
 <h2>Secrétariat/gestion</h2>
 Cette fonction est assurée par Claire Darcos qui gère le circuit des commandes et l’organisation des missions pour toute l’équipe.
 Elle assiste les coordonnateurs dans leur travail quotidien sur les questions administratives et de suivi de l’activité.<br></div>");
@@ -276,13 +278,13 @@ Elle assiste les coordonnateurs dans leur travail quotidien sur les questions ad
 	//---------------------------------------------------------
   	// Système qualitée  
   	//---------------------------------------------------------
-	define('TXT_QualiteTitre',"<h1 align=\"center\">La qualité au CIC-IT</h1> ");
+	define('TXT_QualiteTitre',"<h1 align=\"center\">Le sytème qualité au CIC-IT</h1>");
 	define('TXT_A1Qualite',"Le CIC-IT organise ses activités dans le respect de son système de management qualité en conformité avec la norme ISO 9001. Il s’est engagé dès 2016 dans une démarche de certification selon la nouvelle version 2015 de la Norme.");
 
 	define('TXT_SuiteA1Q',"<h3 style=\"margin-left:10px;\">Ce travail autour de notre système de management qualité se traduit par :</h3>
-	<ul id=\"puces\"><li>la mise en place de documents qualité qui encadrent les pratiques et organisent les activités,</li>
-	<li>le suivi des actions face aux dysfonctionnements ou des actions pour l’amélioration des processus,</li>
-	<li>les évaluations de nos processus à plusieurs niveaux (revues de processus, audits de processus et de projets)  afin d’assurer leur mise en application selon les termes prévus.</li></ul>
+	<ul id=\"puces\"><li>la mise en place de documents qualité qui encadrent les pratiques et organisent les activités</li>
+	<li>le suivi des actions face aux dysfonctionnements ou des actions pour l’amélioration des processus </li>
+	<li>les évaluations de nos processus à plusieurs niveaux (revues de processus, audits de processus et de projets) afin d’assurer leur mise en application selon les termes prévus.</li></ul>
 	");
 	
 	define('TXT_SuiteA2Q',"<h3 style=\"margin-left:10px;\">Le système qualité a été mis en place selon les préconisations des systèmes qualité des organismes de tutelle suivants :</h3>
@@ -307,7 +309,7 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
 	define('TXT_ImgQP',"<a href=\"../image/carto_v2.4.png\"  title=\"CIC-IT : processus de management, réalisation et support\"><img src=\"../image/carto_v2.4.png\" alt=\" CIC-IT : processus de management, réalisation et support\" title=\"CIC-IT : processus de management, réalisation et support \" width=\"60%\";></a>");
 
 	//responsable : Carolina
-	define('TXT_TQ',"<h2 style=\"text-align:center\"><strong>Systeme de management qualité</strong></h2>");
+	define('TXT_TQ',"<h2 style=\"text-align:center\"><strong>Systeme de management par la qualité</strong></h2>");
 	define('TXT_ResponsableQ', "<h3>Responsable:<br>Carolina Lanchas Fuentes.</h3>");
 	define('TXT_TQR',"Chargée d'études qualité<br>Tél : 05-57-10-28-65 / Fax : 05-57-10-28-63<br>
 <div style=\"display:inline\">Courriel:<a href=\"mailto:carolina.lanchas-fuentes@chu-bordeaux.fr\" >carolina.lanchas-fuentes@chu-bordeaux.fr </a></div>");
@@ -315,13 +317,14 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
 	//---------------------------------------------------------
   	//  Valorisation
   	//---------------------------------------------------------
+	define('TXT_VRET',"<TR><TH width=\"35%\">titre</TH><TH width=\"25%\">auteur</TH><TH width=\"18%\">journale/symposium</TH><TH width=\"10%\">annee</TH></TR>");
 	
-	define('TXT_TV',"<h1 style=\"text-align:center\">Fonctionnement</h1><h2 style=\"text-align:center\">Valorisation</h2>");
+	define('TXT_TV',"<h1 style=\"text-align:center\">Nos Réalisations</h1>");
 	define('TXT_VCB',"Type de publication");
 	define('TXT_OK',"Validez");
 	//les fenetres modales :
 	define('TXT_TM1',"Communications affichées");
-	define('TXT_STM1',"Valorisation");
+	define('TXT_STM1',"Nos réalisations");
 	define('TXT_TbM1',"Communiquations affichées et autres publications lors d'un symposium:");
 	//
 	define('TXT_TM2',"Article");
@@ -335,14 +338,7 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
 	//
 	define('TXT_TM5',"Ouvrage(participation)");
 	define('TXT_TbM5',"Participation à un ouvrage:");
-	//
-	
-	//---------------------------------------------------------
-  	// valorisationR : page supprimé !
-  	//---------------------------------------------------------
-	define('TXT_VRET',"<TR><TH width=\"35%\">titre</TH><TH width=\"25%\">auteur</TH><TH width=\"18%\">journale/symposium</TH><TH width=\"10%\">annee</TH></TR>");
-	
-	
+		
 	//---------------------------------------------------------
   	// Activités
   	//---------------------------------------------------------	
@@ -376,34 +372,28 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
 	define('TXT_Img',"<img src='../image/cic_it_preuve_concept.jpg'  width=\"100%\" class=\"arrondie\">");
 
 	define('TXT_Col',"<div id=\"projet\"><ul><li>	
-<em><strong>9ANR:</strong></em>
+<em><strong>9 projets ANR(Agence Nationale de la Recherche)</strong></em>
 
-1 GIP(BIORIMP), 4 TECSAN (ATOS, SUBVACEL, BONEPRINTING, CHIDART),
 
-2 ETEC(BIOMPLANT, MATRIX),
 
-1 P3N(MEDICIN ),
+</li><li><em><strong>1 projet FUI (Fond Unique Interministériel) </em>
 
-1BLANC( BIOCERPORDDDS2 ).
+<li><em><strong>1 projet PHRCI ()</em></strong></li>
 
-</li><li><em><strong>1FUI: </em></strong>COLOMATRIX.</li>
+<li><em><strong>2 projets AOI(Appel d'Offres Interne)</em></strong></li>
 
-<li><em><strong>1PHRCI:</em></strong>DIRC(Matribone ).</li>
+<li><em><strong>2 projet RCT(Recherche Clinique Translationnelle)</em></strong></li>
 
-<li><em><strong>2 Appel d'Offres Interne</em></strong> du chu de bordeaux(EVAFAV, EOS)</li>
+<li><em><strong>1 projet \"Fondation de l'Avenir\"</em></strong></li>
 
-<li><em><strong>2 RCT:</em></strong>INSERM/DGOS (NASEPT, PREDIOS)</li>
+<li><em><strong>1 projet RNTS()</em></strong></li>
 
-<li><em><strong>Fondation de l'Avenir:</em></strong> Septum nasal</li>
+<li><em><strong>1 bourse post doctorale</em></strong></li>
 
-<li><em><strong>1 RNTS</em></strong> (OTV, TRICOS )</li>
-
-<li><em><strong>1 bourse post doctorale</em></strong> IDEX.</li>
-
-<li><em><strong>Agence de Biomédecine</em></strong> (ITOV )</li><ul>
+<li><em><strong>1 projet \"Agence de Biomédecine\"</em></strong></li><ul>
 </div>");
 	define('TXT_TCol',"Projets collaboratifs depuis 2006:");
-	//define('TXT_Pub',"<strong>Nos publications</strong>");
+	
 //---------------------------------------------------------
 // page histologie
 //---------------------------------------------------------
@@ -416,7 +406,7 @@ Tél. :  05 57 10 28 61 / Fax. : 05 57 10 28 63
 <br>Courriel:<a href=\"mailto:samantha.delmond@chu-bordeaux.fr\"> samantha.delmond@chu-bordeaux.fr </a></div>");
 
 	define('TXT_HST',"<h1 align=\"center\"><strong>Activités</strong></h1>");
-	define('TXT_HT1',"<h2 align=\"justify\">Inclusion de tissus mous<em> (paraffine) </em>et calcifiés <em>(résine méthacrylate, technovit 9100)<em></h2>  
+	define('TXT_HT1',"<h2 align=\"justify\">Inclusion de tissus mous (paraffine) et calcifiés (résine méthacrylate, technovit 9100)</h2>  
 <br>
 <h3>Coupes de petits et gros échantillons</h3>
  <br>");
@@ -438,9 +428,9 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
 	define('TXT_HTC21',"Automate de coloration");
 		//define('TXT_HTC21',"Automate de coloration \"Microm Microtech HMS MYR\"<br>mis à disposition par la PTIB.");
 	define('TXT_HTC3',"<h2>Coloration sur tissu calcifié</h2>(<em>Trichrome de Goldner, Von Kossa Mac Neal</em>)");
-	define('TXT_HTC4',"<h2>immuno-histo-chimie sur \"coupes de paraffines\"</h2><em>( alpha-actine, CD31, CD45, CD68, Ki67,... ) et mises au point.</em>");
-	define('TXT_HTC5',"<h2>Analyse histomorphométrique, quantification de différents paramètres</h2><em>(reconstruction osseuse, fibrose, inflammation, ...)</em>");
-	define('TXT_HTC6',"<em>Equipements associés : Microscope Ni-U Nikon et microscope NIKON Eclipse 80i à tête motorisée 90i (équipés de deux caméras pour fluorescence DS-Qi1Mc et lumière blanche DS-Fi2) (PTIB) et logiciel d'analyse d'images NIS-Elements D version 4.2.</em>");
+	define('TXT_HTC4',"<h2>immuno-histo-chimie sur \"coupes de paraffine\"</h2>( alpha-actine, CD31, CD45, CD68, Ki67,... ) et mises au point.");
+	define('TXT_HTC5',"<h2>Analyse histomorphométrique, quantification de différents paramètres</h2>(reconstruction osseuse, fibrose, inflammation, ...)");
+	define('TXT_HTC6',"Equipements associés : Microscope Ni-U Nikon et microscope NIKON Eclipse 80i à tête motorisée 90i (équipés de deux caméras pour fluorescence DS-Qi1Mc et lumière blanche DS-Fi2) (PTIB) et logiciel d'analyse d'images NIS-Elements D version 4.2.");
 	define('TXT_HTC61',"microscope NIKON Ni-U");
 	//define('TXT_HTC61',"microscope NIKON Ni-U.<br>mis à disposition par la PTIB.");
 	define('TXT_HTC62',"microscope à tête motorisée");
@@ -466,7 +456,7 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
 <br>Tél : 05 47 30 27 54 / Fax : 05 57 10 28 63
 <br><div style=\"display:inline;\">Courriel :<a href=\"mailto:mallory.meulle.univ@chu-bordeaux.fr\"> mallory.meulle.univ@chu-bordeaux.fr</a><br></div>");
 
-	define('TXT_HDT',"Hemodynamique");
+	define('TXT_HDT',"Hémodynamique");
 	define('TXT_HDTA',"<h1><strong>Activités</strong></h1>");
 	define('TXT_HDTA1',"<h3>Tests hémodynamiques : compliance, éclatement. </h3>");	
 	define('TXT_HDA1',"Chambre BioDynamic BOSE + moteur pulsatile + pompe et veines saphènes en parallèles");
@@ -486,7 +476,7 @@ define('TXT_HTC1',"<h2>Colorations sur tissu décalcifié </h2><em>(HES, Trichro
   	//---------------------------------------------------------
 	define('TXT_TAB',"<h1 style=\"text-align:center\">Plateforme de bactériologie</h1>");
 	define('TXT_BM',"Activité antibiotique des tissus extraits");
-	define('TXT_BM1',"Réalisation d'un modéle d'ostéomyelyte infectieuse.");
+	define('TXT_BM1',"Réalisation d'un modéle d'ostéomyelyte infectieuse:");
 	define('TXT_BM4',"<h2 align=\"center\">Activité bactérienne/antibactérienne</h2>");
 	define('TXT_BLI3',"<strong>Broyeur de tissus.</strong>");
 	define('TXT_BLI1',"<strong>Activité bactiérienne /<br> anti-bactérienne: CMI, CMB.</strong>");

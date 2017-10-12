@@ -3,13 +3,16 @@
  	 //---------------------------------------------------------
  	 // index.php
  	 //---------------------------------------------------------
-  	 define('TXT_indexA', 'The CIC-IT: one stop to bring innovation to the bedside.');
+  	 
+	 define('TXT_indexA', 'The CIC-IT: one stop to bring innovation to the bedside.');
 	
 	 define('TXT_Menu', "<li><a href=\"index.php\">Welcome to CIC-IT</a>
 	 <ul>
 	 <li><a href=\"html/histoire.php\">History and partners</a></li>
 	 <li><a href=\"html/missions.php\">Missions</a></li>
-	 <li><a href=\"html/environnement-de-pointe.php\">advanced environment</a></li></ul></li>
+	 <li><a href=\"html/environnement-de-pointe.php\">advanced environment</a></li>
+	<li><a href=\"html/cic-it-publications.php\">Our achievements</a></li>
+	 </ul></li>
 	 
 	 <li><a href=\"html/organisation.php\">Operation</a><ul>
 	 <li><a href=\"html/organisation.php\">Organization</a></li>
@@ -24,12 +27,10 @@
 	 <li><a href=\"html/Bacteriologie.php\">Bacteriology</a></li>
 	 <li><a href=\"html/Hemocompatibilite.php\">Hemocompatibility</a></li>
 	 <li><a href=\"html/Hemodynamiques.php\" >Hemodynamic</a></li>
-	  <li><a href=\"html/TestesPreCliniquesInVivo.php\">Preclinical studies <em>in vivo</em></a></li>
+	  <li><a href=\"html/TestesPreCliniquesInVivo.php\">Pre-clinical studies <em>in vivo</em></a></li>
 	 <li><a href=\"html/TestesCliniques.php\">Clinical Studies</a></li>
 	
 	 </ul></li>
-	 
-	 
 	 
 	 <li><a href=\"html/master-bidim.php\">Training/Recruitment</a>
 	 <ul><li><a href=\"html/master-bidim.php\">Master BiDim</a></li>
@@ -39,15 +40,14 @@
 	 <li><a href=\"html/fiche-de-contact.php\">Contact/Practical Information</a>
 	 <ul><li><a href=\"html/fiche-de-contact.php\">Plug Contact</a></li>
 	 <li><a href=\"html/coordonnees.php\">Contact information</a></li></ul></li>
-	 <li><a href=\"html/admin.php\">Intranet</a>
 	<ul><li><a href=\"html/admin.php\">Intranet</a></li></ul></li>");
 	  
 	 define('TXT_Resume', "The Clinical Investigation Centre - Technological Innovation (CIC-IT) Biomaterials Bordeaux is a major player in supporting the <strong> Biomedical Innovation </strong> and <strong> Translational Research </strong>. In this context, the Bordeaux University Hospital has partnered with INSERM and the University Bordeaux Segalen to effectively structure the transfer of technological innovations in the field of <strong> biomaterials </strong>. The CIC-IT integrated approaches biomaterials and assessment of their biocompatibility in a scientific and clinical advanced environment.");
 	 define('TXT_Titre', "The CIC-IT Bordeaux");
-	 define('TXT_Pied', "<ul ><a href=\"html/sitemap.php\" title=\"Plan du site\">sitemap</a> | <a href=\"html/mentions-legales.php\">Legal Notice</a>|<a href=\"html/fiche-de-contact.php\" title=\"Contact\">Contact</a></ul>");
+	define('TXT_Pied', "<ul ><a href=\"html/sitemap.php\" title=\"Plan du site\">sitemap</a> | <a href=\"html/mentions-legales.php\">Legal Notice</a>|<a href=\"html/fiche-de-contact.php\" title=\"Contact\">Contact</a></ul>");
 	 define('TXT_SSTitre', "One stop shop to bring your innovation to the patients.");
-	 define('TXT_Article', "The CIC-IT Bordeaux provides service dedicated to biomedical innovation and translational research in the field of Biomaterials and Implantable Medical Devices (IMD).<br>
-			It is a collaboration between Inserm , the University Hospital of Bordeaux, the Bergonie Institute and the University of Bordeaux to effectively structure the transfer of technological innovations:CIC -IT integrates preclinical and clinical evaluation of biomaterials and IMD in an advanced scientific and clinical environment.");
+	define('TXT_Article', "The CIC-IT Bordeaux provides service dedicated to biomedical innovation and translational research in the field of Biomaterials and Implantable Medical Devices (IMD).<br>
+	It is a collaboration between Inserm , the University Hospital of Bordeaux, the Bergonie Institute and the University of Bordeaux to effectively structure the transfer of technological innovations:CIC -IT integrates preclinical and clinical evaluation of biomaterials and IMD in an advanced scientific and clinical environment.");
 	 
 	 define('TXT_Anim',"<div id=\"div1\"><a href=\"html/qui-sommes-nous-detailspage1.php\" >Biomatériaux</a></div><div id=\"div2\"><h4><a href=\"html/qui-sommes-nous-detailspage2.php\">clinical recherch</a></h4></div><div id=\"div3\"><h4><a href=\"qui-sommes-nous-detailspage3.php\">Innovation_technologique</a></h4></div><div id=\"div4\"><h4><a href=\"html/qui-sommes-nous-detailspage4.php\">CHU_Bordeaux</a></h4></div><div id=\"div5\"><a href=\"html/qui-sommes-nous-detailspage5.php\">your innovations to beds patients</a></div><div id=\"div6\"><a href=\"html/qui-sommes-nous-detailspage6.php\">translational</a></div>");
 	 
@@ -87,8 +87,9 @@ It is supported by <a target=\"_blank\" href=\"http://www.biotis-bordeaux.com \"
 	 <li><a href=\"Bacteriologie.php\">Bacteriology</a></li>
 	 <li><a href=\"Hemocompatibilite.php\">Hemocompatibility</a></li>
 	 <li><a href=\"Hemodynamiques.php\" >Hemodynamic</a></li>
-	 <li><a href=\"TestesCliniques.php\">Clinical Studies</a></li>
 	 <li><a href=\"TestesPreCliniquesInVivo.php\">Preclinical studies <em>in vivo</em></a></li>
+	 <li><a href=\"TestesCliniques.php\">Clinical Studies</a></li>
+	
 	 </ul></li>
 	 
 	
@@ -144,7 +145,7 @@ and actively participates in <a href=\"https://bcrm.u-bordeaux.fr/\" />BxCRM (Bo
 	//---------------------------------------------------------
   	// Fonctionnement/organisation.php
   	//---------------------------------------------------------
-	//define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organization</h1> ");
+	define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organization</h1> ");
 	define('TXT_A1Fonction',"The CIC Bordeaux (comprising 3 IT Governance modules, P & EC) is managed via an annual steering committee, and is subject to a four-year evaluation by the HCERES. <br>CIC depends directly on the Directorate of Clinical Research and Innovation (DRCI) of the University, Hospital of Bordeaux and the Regional Delegation of INSERM. <br>
 The CIC-IT works closely with P & EC CIC modules Bordeaux especially for clinical trials, for which it uses <a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr/\">the CIC-P</a> of skills for investigative support and <a target=\"_blank\" href=\"http://usmr.isped.u-bordeaux2.fr/\"> the CIC-EC</a> for the methodology, data management and statistics, and under the direction of DRCI for clinical trials in academic promotion.");
 	define('TXT_A2Fonction',"
