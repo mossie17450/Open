@@ -11,7 +11,6 @@ session_start();
 <meta name="description" content="Acteur aquitain de l&#039;innovation biomédicale, le Centre d&#039;Investigation Clinique Innovation Technologique Biomatériaux de Bordeaux opère au sein d&#039;une structure scientifique actuelle et avancée pour appuyer tous ces travaux de recherche." />
 <link rel="icon" type="image/png" href="../image/logoCIC-ITB.png" />
 <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
-
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
 <link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
@@ -53,13 +52,6 @@ alert("englais choisie");
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-
-<div id="header">
-<img src="../image/header.jpg" width="100%" height="150px" class="arrondie">
-</div><br>
-<!-- choix de la langue -->
-
 <?php
 
   if($_SESSION['lang'] && empty($_GET['langue'])){
@@ -80,6 +72,20 @@ alert("englais choisie");
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
+<div id="body" class="arrondie">
+<!-- en tete -->
+
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div><br><br>
+
+<!-- choix de la langue -->
+
+
  <!-- gestion du choix des langues en php -->
 
  <div  style="display:flex;  flex-direction:row;"> 
@@ -141,7 +147,7 @@ else if($_POST['langue']=='en'){
 <!-- fin du menu -->
 <div>
 <div style="text-align:center"><?php echo TXT_CoordoTitre; ?></div>                        
-<div style="text-align:center"><?php echo TXT_CoordoAdresse; ?></div> 
+<!--<div style="text-align:center"><?php echo TXT_CoordoAdresse; ?></div> -->
 <div  style="margin-top:25px;">
 
 <div  style="display:flex; flex-direction:row;">
@@ -205,11 +211,15 @@ else if($_POST['langue']=='en'){
   </a><br>
   <div><?php echo TXT_CoordoCoSecretériat;  ; ?></div>
   </div>
-  annuaire du personnel du cicit : <br>en cour de developpement.<a href="annuairePDF.php">ici</a>
+  <!-- le pdf ne se genere pas avec des photos...  extensions sur le serveur qui manque (gd)-->
+  Annuaire du personnel du CIC-IT de Bordeaux : <br><a href="personnel.pdf">ici</a>
   </div> 
 
-<br><br>
+
 <div  style="display:flex; flex-direction:column; margin-left:5%; width:40%">
+
+<div style="text-align:center"><h3>Notre adresse:</h3><?php echo TXT_CoordoAdresse; ?></div> 
+
 <?php echo TXT_Coordo; ?><br>
 <iframe width="70%" height="70%"  frameborder="2px" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=Hopital+Xavier+Arnozan,+33600+Pessac&amp;aq=&amp;sll=44.848567,-0.623131&amp;sspn=0.120486,0.220757&amp;ie=UTF8&amp;hq=Hopital+Xavier+Arnozan,&amp;hnear=Pessac,+Gironde,+Aquitaine&amp;cid=14449669705423434568&amp;ll=44.833474,-0.604935&amp;spn=0.121735,0.192261&amp;z=11&amp;output=embed">
 </iframe>
@@ -222,16 +232,16 @@ else if($_POST['langue']=='en'){
 <img src="../image/plantbcchu.jpg" width="60%"><br/>
 <?php //echo "Plan de l'hopital Xavier Xernozan de Pessac"; ?>
 </a>
-<?php echo "Pour se déplacer sur la communauté urbaine de bordeaux grace au transport en commun.<br>"; echo TXT_MobiliteTBM; ?><a href="http://www.infotbm.com/" ></a>
+<?php echo "Pour se déplacer grâce aux transports en commun.<br>"; echo TXT_MobiliteTBM; ?><a href="http://www.infotbm.com/" ></a>
 <br>
-<div align="inline"><?php echo "Pour venir au CIC-IT(hopital Xavier Xernozan) en partant de l'aeroport de Mérignac"; ?><a target="_blank" href="aeroportXavierXernozan.php" >
+<div align="inline"><?php echo "De l'aéroport de Mérignac au CIC-IT,Hôpital Xavier Arnozan (Pessac)"; ?><br><a target="_blank" href="aeroportXavierXernozan.php" >
 <!--<img src="../image/aeroportXavierXernozan.png" width="50%"><br/>-->
 le plan est ici
 </a></div>
 
 <br>
-<div align="inline"><?php echo "Pour venir au CIC-IT hopital Xavier Xernozan) en partant de la gare Saint Jean(Bordeaux)"; ?>
-<a target="_blank" href="gareStJeanXavierXernozan.php">
+<div align="inline"><?php echo "De la gare Saint Jean (Bordeaux) au CIC-IT, hopital Xavier Arnozan (Pessac)"; ?>
+<br><a target="_blank" href="gareStJeanXavierXernozan.php">
 <!--<img src="../image/gareStJeanXavierXernozan.png" width="50%"><br/>  gareStJeanXavierXernozan-->
 le plan est ici
 </a><br><br></div>

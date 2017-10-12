@@ -102,6 +102,12 @@ session_start();
 	    };
 	    var myShow = new Slideshow('show6', data6, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
 	  });
+	  window.addEvent('domready', function(){
+	    var data7 = {
+	      '11-08 P1B-9 caldesmon (G10)pp.jpg': { caption: 'Caldesmon' },  
+	    };
+	    var myShow = new Slideshow('show7', data7, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	  });
 	</script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -128,13 +134,7 @@ if (d) {d.style.display='block';}
 //-->
 </script>
 </head>
-<body id="equipe" >
-<div id="body" class="arrondie">
-
-<div id="header">
-<img src="../image/header.jpg" width="100%" height="150px"; class="arrondie">
-</div>
-<br>
+<body id="equipe">
 <!-- choix de la langue  -->
 <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
@@ -156,6 +156,18 @@ if (d) {d.style.display='block';}
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
+<div id="body" class="arrondie">
+<!-- en tête -->
+
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div><br><br>
+
+
   
 <div  style="display:flex; flex-direction:row;">   
 <div id="contenu" align="inline" width="100%">
@@ -220,28 +232,30 @@ else if($_POST['langue']=='en'){
 <div id="fin-article" style="display:flex; flex-direction:row;">
 <div style="display:flex; flex-direction:column; width:30%; ">
 <?php echo TXT_TH ; ?> 
-
 </div>
-<div style="display:flex; flex-direction:column; width:30%;  ">
+
+<div style="display:flex; flex-direction:column; width:30%; float:left; margin-right:1%;">
 <a target="_blank" href="../image/personnels/SamP.png">
 
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/SamP.png\" width=\"60%\" height=\"auto\">
+			echo "<img src=\"../image/personnels/SamP.png\" width=\"60%\"; title=\"Samantha Roques\" alt=\"Samantha Roques\" height=\"auto\"; align=\"right\";>
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/SamP.png\" width=\"50%\" >
+		echo "<img src=\"../image/personnels/SamP.png\" width=\"50%\" title=\"Samantha Roques\" alt=\"Samantha Roques\" align=\"right\";>
 			";
 		}
 		?> </a>
-	</div><div style="display:flex; flex-direction:column; width:30%;  ">
+	</div>
+	<div style="display:flex; flex-direction:column; width:30%;  ">
 <?php echo TXT_ResponsableHisto ; ?>	
-<div  style="display:inline-block; width:100%; height:auto; text-align:left;">
+<div  style="display:inline-block; width:100%;  text-align:left;">
 <?php echo TXT_THR ; ?> 
-</div></div>
+</div>
+</div>
 </div>
 
 
@@ -250,19 +264,19 @@ else if($_POST['langue']=='en'){
 <div id="contenu" align="inline-block" width="100%" >
 
 <div id="footbis"  class="arrondie" >
-<!-- images centrées a droite de la page -->
+<!-- images centrées a droite de la page : une autre facon de faire l'aside...-->
 <h4><?php echo TXT_HEA; ?></h4>
 <div class="img" style="border:none;">
   <!--<a target="_blank" href="../image/Tissus_Leica_TP1020.jpg">-->
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"AutomateTraitementTissus.php\"/><img src=\"../image/Tissus_Leica_TP1020.jpg\" alt=\"TP1020 LEICA\" title=\"TP1020 LEICA\" style=\"width:80%; padding:2px; height:auto;\">
+			echo "<a target=\"_blank\" href=\"AutomateTraitementTissus.php\"/><img src=\"../image/equipements/Tissus_Leica_TP1020.jpg\" alt=\"TP1020 LEICA\" title=\"TP1020 LEICA\" style=\"width:80%; padding:2px; height:auto;\">
 ";
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"AutomateTraitementTissus.php\"/><img src=\"../image/Tissus_Leica_TP1020.jpg\" alt=\"TP1020 LEICA\" title=\"TP1020 LEICA\" style=\"width:80%; padding:2px;\">
+		echo "<a target=\"_blank\" href=\"AutomateTraitementTissus.php\"/><img src=\"../image/equipements/Tissus_Leica_TP1020.jpg\" alt=\"TP1020 LEICA\" title=\"TP1020 LEICA\" style=\"width:80%; padding:2px;\">
 ";
 		}
 		?>
@@ -271,12 +285,12 @@ else if($_POST['langue']=='en'){
   <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"Polisseuse.php\"/><img src=\"../image/Polisseuse.jpg\" alt=\"Polisseuse Buelher beta grinder-polisher (CIC-IT)\" title=\"Polisseuse Buelher beta grinder-polisher (CIC-IT)\" style=\"width:80%; padding:2px; height:auto;\">
+			echo "<a target=\"_blank\" href=\"Polisseuse.php\"/><img src=\"../image/equipements/Polisseuse.jpg\" alt=\"Polisseuse Buelher beta grinder-polisher (CIC-IT)\" title=\"Polisseuse Buelher beta grinder-polisher (CIC-IT)\" style=\"width:80%; padding:2px; height:auto;\">
 ";
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"Polisseuse.php\"/><img src=\"../image/Polisseuse.jpg\" alt=\"Polisseuse Buelher beta grinder-polisher (CIC-IT)\" title=\"Polisseuse Buelher beta grinder-polisher (CIC-IT)\" style=\"width:80%; padding:2px;\">
+		echo "<a target=\"_blank\" href=\"Polisseuse.php\"/><img src=\"../image/equipements/Polisseuse.jpg\" alt=\"Polisseuse Buelher beta grinder-polisher (CIC-IT)\" title=\"Polisseuse Buelher beta grinder-polisher (CIC-IT)\" style=\"width:80%; padding:2px;\">
 ";
 		}
 		?>
@@ -286,28 +300,28 @@ else if($_POST['langue']=='en'){
   <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"PlateformeInclusion.php\"><img src=\"../image/Leica_EG115.jpg\" alt=\"plateforme d'inclusion EG1150H LEICA\" title=\"plateforme d'inclusion EG1150H LEICA\" style=\"width:80%; padding:2px; height:auto;\">
+			echo "<a target=\"_blank\" href=\"PlateformeInclusion.php\"><img src=\"../image/equipements/Leica_EG115.jpg\" alt=\"plateforme d'inclusion EG1150H LEICA\" title=\"plateforme d'inclusion EG1150H LEICA\" style=\"width:80%; padding:2px; height:auto;\">
 
 ";
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"PlateformeInclusion.php\"><img src=\"../image/Leica_EG115.jpg\" alt=\"plateforme d'inclusion EG1150H LEICA\" title=\"plateforme d'inclusion EG1150H LEICA\" style=\"width:80%; padding:2px;\">
+		echo "<a target=\"_blank\" href=\"PlateformeInclusion.php\"><img src=\"../image/equipements/Leica_EG115.jpg\" alt=\"plateforme d'inclusion EG1150H LEICA\" title=\"plateforme d'inclusion EG1150H LEICA\" style=\"width:80%; padding:2px;\">
 
 ";
 		}
 		?>
-		<div><?php echo TXT_HT12;   ?></div></a>
+		<div><?php echo TXT_HT12; ?></div></a>
 		 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"microtome.php\"><img src=\"../image/37960.jpg\" alt=\"\" title=\"microtome\" style=\"width:80%; padding:2px;height:auto;\">
+			echo "<a target=\"_blank\" href=\"microtome.php\"><img src=\"../image/equipements/microtomeR2255.jpg\" alt=\"\" title=\"microtome\" style=\"width:80%; padding:2px;height:auto;\">
 
 ";
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"microtome.php\"><img src=\"../image/37960.jpg\" alt=\"CIC-IT\" title=\"microtome\" style=\"width:80%; padding:2px;\">
+		echo "<a target=\"_blank\" href=\"microtome.php\"><img src=\"../image/equipements/microtomeR2255.jpg\" alt=\"\" title=\"microtome\" style=\"width:80%; padding:2px;\">
 
 ";
 		}
@@ -317,12 +331,12 @@ else if($_POST['langue']=='en'){
   <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"microtomeGlissiere.php\"><img src=\"../image/MicrotomeLEICA.jpg\" title=\"microtome à glissière SM2500 (CIT)\" alt=\"microtome à glissière SM2500 (CIT)\" style=\"width:80%; padding:2px; height:auto;\" >
+			echo "<a target=\"_blank\" href=\"microtomeGlissiere.php\"><img src=\"../image/equipements/MicrotomeLEICA.jpg\" title=\"microtome à glissière SM2500 (CIT)\" alt=\"microtome à glissière SM2500 (CIT)\" style=\"width:80%; padding:2px; height:auto;\" >
 ";
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"microtomeGlissiere.php\"><img src=\"../image/MicrotomeLEICA.jpg\" title=\"microtome à glissière SM2500 (CIT)\" alt=\"microtome à glissière SM2500 (CIT\" style=\"width:80%; padding:2px;\" >
+		echo "<a target=\"_blank\" href=\"microtomeGlissiere.php\"><img src=\"../image/equipements/MicrotomeLEICA.jpg\" title=\"microtome à glissière SM2500 (CIT)\" alt=\"microtome à glissière SM2500 (CIT\" style=\"width:80%; padding:2px;\" >
 ";
 		}
 		?>
@@ -331,13 +345,13 @@ else if($_POST['langue']=='en'){
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"ScieDiamante.php\"><img src=\"../image/ScieSP1600LEICA.jpg\"  title=\"scie diamantée SM1600 (CIT)\" style=\"width:80%; padding:2px;height:auto%;\" >
+			echo "<a target=\"_blank\" href=\"ScieDiamante.php\"><img src=\"../image/equipements/ScieSP1600LEICA.jpg\"  title=\"scie diamantée SM1600 (CIT)\" style=\"width:80%; padding:2px;height:auto%;\" >
 
 ";
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"ScieDiamante.php\"><img src=\"../image/ScieSP1600LEICA.jpg\"  title=\"scie diamantée SM1600 (CIT)\" style=\"width:80%; padding:2px;\" >
+		echo "<a target=\"_blank\" href=\"ScieDiamante.php\"><img src=\"../image/equipements/ScieSP1600LEICA.jpg\"  title=\"scie diamantée SM1600 (CIT)\" style=\"width:80%; padding:2px;\" >
 
 ";
 		}
@@ -347,14 +361,14 @@ else if($_POST['langue']=='en'){
   <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"automateColoration.php\"><img src=\"../image/tienturierHMS70.jpg\" alt=\"automate de coloration HSM 70\" style=\"width:80%; padding:2px;height:auto;\" >
+			echo "<a target=\"_blank\" href=\"automateColoration.php\"><img src=\"../image/equipements/tienturierHMS70.jpg\" alt=\"automate de coloration HSM 70\" style=\"width:80%; padding:2px;height:auto;\" >
 
 
 ";
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"automateColoration.php\"><img src=\"../image/tienturierHMS70.jpg\" alt=\"automate de coloration HSM 70\" style=\"width:80%; padding:2px;\" >
+		echo "<a target=\"_blank\" href=\"automateColoration.php\"><img src=\"../image/equipements/tienturierHMS70.jpg\" alt=\"automate de coloration HSM 70\" style=\"width:80%; padding:2px;\" >
 
 
 ";
@@ -365,7 +379,7 @@ else if($_POST['langue']=='en'){
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"MicroscopeNickon.php\"><img src=\"../image/MicroscopeNi-UNIKON.jpg\"  title=\"Microscope Ni-U Nikon (CIT)\" style=\"width:80%; padding:2px;height:auto;\" >
+			echo "<a target=\"_blank\" href=\"MicroscopeNickon.php\"><img src=\"../image/equipements/MicroscopeNi-UNIKON.jpg\"  title=\"Microscope Ni-U Nikon (CIT)\" style=\"width:80%; padding:2px;height:auto;\" >
 
 
 
@@ -373,7 +387,7 @@ else if($_POST['langue']=='en'){
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"MicroscopeNickon.php\"><img src=\"../image/MicroscopeNi-UNIKON.jpg\"  title=\"Microscope Ni-U Nikon (CIT)\" style=\"width:80%; padding:2px;\" ></br>
+		echo "<a target=\"_blank\" href=\"MicroscopeNickon.php\"><img src=\"../image/equipements/MicroscopeNi-UNIKON.jpg\"  title=\"Microscope Ni-U Nikon (CIT)\" style=\"width:80%; padding:2px;\" ></br>
 ";
 		}
 		?>
@@ -382,19 +396,11 @@ else if($_POST['langue']=='en'){
      <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"microscopeMotorise.php\"><img src=\"../image/Microscope80iNIKON.jpg\" title=\"microscope NIKON 80i à tête motorisée 90i\" style=\"width:80%; padding:2px;height:auto;\">
-
-
-
-
-";
+			echo "<a target=\"_blank\" href=\"microscopeMotorise.php\"><img src=\"..image/equipements/microscope80iNIKON.jpg\" title=\"microscope NIKON 80i à tête motorisée 90i\" style=\"width:80%; padding:2px; height:auto;\" >  ";
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"microscopeMotorise.php\"><img src=\"../image/Microscope80iNIKON.jpg\" title=\"microscope NIKON 80i à tête motorisée 90i\" style=\"width:80%; padding:2px;\">
-
-
-
+		echo "<a target=\"_blank\" href=\"microscopeMotorise.php\"><img src=\"../image/equipements/microscope80iNIKON.jpg\" title=\"microscope NIKON 80i à tête motorisée 90i\" style=\"width:80%; padding:2px;\">
 
 ";
 		}
@@ -404,12 +410,12 @@ else if($_POST['langue']=='en'){
      <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"Loupe.php\" ><img src=\"../image/Loupe.jpg\"  title=\"Loupe binoculaire (CIT)\" style=\"width:80%; padding:2px;height:auto;\" >
+			echo "<a target=\"_blank\" href=\"Loupe.php\" ><img src=\"../image/equipements/Loupe.jpg\"  title=\"Loupe binoculaire (CIT)\" style=\"width:80%; padding:2px;height:auto;\" >
 ";
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"Loupe.php\"><img src=\"../image/Loupe.jpg\"  title=\"Loupe binoculaire (CIT)\" style=\"width:80%; padding:2px;\" >
+		echo "<a target=\"_blank\" href=\"Loupe.php\"><img src=\"../image/equipements/Loupe.jpg\"  title=\"Loupe binoculaire (CIT)\" style=\"width:80%; padding:2px;\" >
 ";
 		}
 		?>
@@ -418,21 +424,21 @@ else if($_POST['langue']=='en'){
 
 </div></div><!-- fin footbis -->
  
-<div  style="display:flex; flex-direction:column; height:100%;">
+<div  style="display:flex; flex-direction:column;  height:100%;">
 <!-- premier tableau... -->
 
 <div id="section-article" class="table-responsive"><?php echo TXT_HST; ?>
 
  <?php echo TXT_HT1; ?>
 
- <table class="table" ><tr><td colspan="5">
+ <table class="table" width="100%"><tr><td colspan="5">
   <?php echo TXT_HTC1; ?></td></tr><td>
   <?php echo TXT_HCI; ?></td></table>
  
 
 <!-- deusième tableau... -->
  
-<table class="table" ><tr><td colspan="3"><? echo TXT_HTC3; ?></td></tr>
+<table class="table" width="100%"><tr><td colspan="3"><? echo TXT_HTC3; ?></td></tr>
 <tr><td><div id="show4" class="slideshow" >
     <img src="../image/15-01 158D-c- A (G10)b.jpg" width="50%" height="auto" alt="Trichrome de Goldner" />
   </div></td><td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>
@@ -442,7 +448,7 @@ else if($_POST['langue']=='en'){
   </td></tr></table>
 
  
-<table class="table">
+<table class="table" width="100%">
 
 <tr><td colspan="5"><h4><?php echo TXT_HTC4; ?></h4></td></tr>
 <tr><td><div id="show2" class="slideshow">
@@ -450,13 +456,13 @@ else if($_POST['langue']=='en'){
   </div></td>
   <td><img src="../image/markerTransparent.png" width="3%" height="auto"></td>
   <td><div id="show7" class="slideshow">
-    <img src="../image/10-08 1-BV0-P07-1 CK8 (G10)b.jpg" alt=" CK8" width="50%" height="auto"/>
+    <img src="../image/11-08 P1B-9 caldesmon (G10)pp.jpg" alt="Caldesmon" width="50%" height="auto"/>
   </div></td>
   <td><img src="../image/markerTransparent.png" width="3%" height="auto"></td>
   <td><div id="show3" class="slideshow" >
   <img src="../image/10-08 1-BV0-P10-1 ki67(G40)7b.jpg" alt=" ki67" title=" ki67" width="50%" height="auto"/>
   </div></tr>
-  <td style="text-align:left"><strong>CK8</strong></td><td></td><td><strong>CK8</strong></td><td></td><td style="text-align:left"><strong>Ki67</strong></td>
+  <td style="text-align:left"><strong>CK8</strong></td><td></td><td><strong>Caldesmon</strong></td><td></td><td style="text-align:left"><strong>Ki67</strong></td>
   </table>
  <br>
 

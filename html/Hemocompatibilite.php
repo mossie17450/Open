@@ -57,18 +57,6 @@ if (d) {d.style.display='block';}
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-
-<div id="header" style=" display:flex; flex-direction:row;" >
-<div style=" display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
-<div style="display:flex;  width:80%; flex-direction:column;">
-<h3 style="color:white; text-align:center;">CENTRE D’INVESTIGATION CLINIQUE</h3><h3 style="color:red; text-align:center;">INNOVATION TECHNOLOGIQUE</h3><h3 style="color:white; text-align:center;">BIOMATERIAUX ET DISPOSITIFS MEDICAUX IMPLANTABLES</h3>
-</div>
-<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
-</div>
-
-<!-- choix de la langue  -->
-
 <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
  ($_SESSION['lang']);
@@ -91,6 +79,19 @@ if (d) {d.style.display='block';}
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
+<div id="body" class="arrondie">
+
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div><br><br>
+
+<!-- choix de la langue  -->
+
+
  
  <!--<div style="display:flex; flex-direction:column;">-->
  <div  style="display:flex; flex-direction:row;"> 
@@ -111,7 +112,7 @@ if (d) {d.style.display='block';}
 			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"display:flex; flex-direction:row;\" >
 <a href=\"\" ><input type=\"radio\" hidden name=\"langue\" id=\"choixlangue1\" onclick=\"this.form.submit();\" value=\"fr\"><label for=\"choixlangue1\"><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>
 <a href=\"\"><input type=\"radio\" hidden  name=\"langue\" id=\"choixlangue2\" onclick=\"this.form.submit();\" value=\"en\"><label for=\"choixlangue2\"><img src=\"../image/en.png\" width=\"150%\"></a>			
-			";
+";
 		}
 		
 		?>
@@ -136,13 +137,10 @@ else if($_POST['langue']=='en'){
 ?>
 </form> 
  </div>
- 
 <!--                                           -->
 <!-- choix des langues                     fin -->
 <!--                                           -->	
-<!-- menu HDR(Horizontale Deroulant Responsif) -->  
-      
-
+<!-- menu HDR(Horizontale Deroulant Responsif) -->       
 <nav>
 <ul id="menu" style="display:inline;"><?php echo TXT_Menuhtml; ?>
 </ul>
@@ -172,25 +170,15 @@ else if($_POST['langue']=='en'){
 		?></a>
 		</div>
 <div style="display:flex; flex-direction:column; width:30%;">
-<h3 align="center"><?php echo TXT_ResponsableCellule ; ?></h3>
-<?php echo TXT_TCBHR; ?></div></div>
+
+<h3><?php echo TXT_ResponsableCellule ; ?></h3>
+<div  style="display:inline-block; width:100%;  text-align:left;">
+<?php echo TXT_TCBHRbis; ?></div></div></div>
 
 
 <div  style="display:flex; flex-direction:row;">  
  
 <div id="contenu" align="inline-block" width="100%">
-<!-- images equipements à droite 
-<div id="footbis"  class="arrondie" >
-<br><br><h4><?php// echo TXT_HEA; ?></h4>
- <br><br><a target="_blank" href="../image/LaserScan.jpg"><img src="../image/LaserScan.jpg" style="width:95%; height:auto;padding:2px;" class="displayed">
-<h6><?php// echo TXT_HDA3; ?></h6></a></br></br></br>
- <a target="_blank" href="../image/PCPiloteScan.jpg"><img src="../image/PCPiloteScan.jpg" style="width:95%; height:auto; padding:2px;" class="displayed">
-<h6><?php// echo TXT_HDEA1; ?></h6></a></br></br></br>
-<a target="_blank" href="../image/etuvesCO2.jpg"><img src="../image/etuvesCO2.jpg" style="width:55%; height:auto; padding:2px;" class="displayed">
-<h6><?php// echo TXT_HDEA2; ?></h6></a>
-</div>
-    teste.          -->
-
 
 <div id="footbis"  class="arrondie" align="block">
 <?php echo TXT_HEA; ?>
@@ -215,7 +203,7 @@ else if($_POST['langue']=='en'){
  <?php echo TXT_HM; ?><br>
  
 <div style="display:flex; flex-direction:column; ">
-<?php echo "<h3>Hémolyse</h3>"; ?>
+<?php echo TXT_HST1; ?>
 <div  style="display:flex;flex-direction:column; margin:5px;">
   <a target="_blank" href="../image/hemolyse.jpg">
     <img src="../image/hemolyse.jpg" alt="test d'hémolyse" style="width:80%;" class="displayed">
@@ -225,7 +213,7 @@ else if($_POST['langue']=='en'){
   <br>
   
 
- <?php echo "<h3>Plaquettes</h3>"; ?><br>
+ <?php echo TXT_HST2; ?><br>
   <div class="displayed" style="display:flex;flex-direction:raw; margin:5px; ">
    
    
@@ -235,7 +223,7 @@ else if($_POST['langue']=='en'){
   <a target="_blank" href="../image/agrego.png">
     <img src="../image/agrego.png" alt="" style="width:80%" class="displayed">
   </a><br>
-  <div><?php echo TXT_HLI4; ?></div>
+  <div text-align="center"><?php echo TXT_HLI4; ?></div>
   </div></div>
    
   <div class="displayed" style="display:flex;flex-direction:column; margin:5px; ">
@@ -287,56 +275,12 @@ else if($_POST['langue']=='en'){
  
  
 
-</div></div>
-<!-- le carousel.....
-<?php// echo TXT_AEQ; ?>
-
-<div class="container">
-<br>
-<div id="myCarousel" class="carousel slide" data-ride="carousel" >
-<!-- Indicators 
-    <ol class="carousel-indicators">
-    <li data-target="../css/#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="../css/#myCarousel" data-slide-to="1"></li>
-    <li data-target="../css/#myCarousel" data-slide-to="2"></li>
-	<li data-target="../css/#myCarousel" data-slide-to="3"></li>
-	<li data-target="../css/#myCarousel" data-slide-to="4"></li> 
-    </ol>
-
-    <!-- Wrapper for slides  
-    <div class="carousel-inner" role="listbox" id="image-car">
- 
-	<div class="item active"><h6><? //echo// TXT_legendeIHU ; ?><br><?php// echo "Numerateur de sang humain"; ?></h6> 	
-		<img src="../image/Numerateursh.jpg" alt="Numerateur de sang humain" width="auto" height="150px">
-      </div>
-	  
-	  <div class="item"><h6><?php// echo TXT_legendeCare ; ?><br><?php// echo TXT_carrouselIm10; ?></h6>  	
-		<img src="../image/LaveriePTIB.jpg" alt="La laverie" width="auto" height="150px" >
-      </div>
-	  
-	  <div class="item"><h6><?php// echo TXT_legCICe ; ?><br><?php// echo TXT_carrouselIm12; ?></h6>  	
-		<img src="../image/centrifugeuseCultureCell.jpg" alt="centrifugeuse" width="auto" height="150px">
-      </div>
-	   
-	   <div class="item"><h6><?php// echo TXT_legendeCare ; ?><br><?php// echo TXT_carrouselIm11; ?></h6>  	
-		<img src="../image/ChambreFroidebis.jpg" alt="Chambre Froide" width="auto" height="150px">
-      </div>
-	   
-	   <div class="item"><h6><?php// echo TXT_legendeCar; ?><br><?php// echo "combine 4°C/20°C"; ?></h6>  	
-		<img src="../image/combinebis.jpg" alt="congelateur 4 et -20°C" width="auto" height="150px">
-      </div>  
-    </div>
-
-    </a>
-  </div>
-</div>
-
-
-
-
-<!-- fin du carousel! -->
 </div>
 </div>
+
+</div>
+</div>
+</div></div></div>
 <!-- fin du contenu  -->
 <!-- ajout pied de page : plan du site....   --> 
 <div id="test" class="arrondie">

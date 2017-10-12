@@ -103,18 +103,6 @@ if (d) {d.style.display='block';}
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-<!-- en tête -->
-<div id="header" style=" display:flex; flex-direction:row;" >
-<div style=" display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
-<div style="display:flex;  width:80%; flex-direction:column;">
-<h3 style="color:white; text-align:center;">CENTRE D’INVESTIGATION CLINIQUE</h3><h3 style="color:red; text-align:center;">INNOVATION TECHNOLOGIQUE</h3><h3 style="color:white; text-align:center;">BIOMATERIAUX ET DISPOSITIFS MEDICAUX IMPLANTABLES</h3>
-</div>
-<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
-</div>
-<!--                     -->
-<!-- choix de la langue  -->
-<!--                     -->
 	 <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
 		$_SESSION['lang'];
@@ -135,9 +123,19 @@ if (d) {d.style.display='block';}
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
- 
+<div id="body" class="arrondie">
+<!-- en tête -->
 
-
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div><br><br>
+<!--                     -->
+<!-- choix de la langue  -->
+<!--                     -->
 <div  style="display:flex; flex-direction:row;"> 
 <div id="contenu" align="inline-block" width="100%" >
 
@@ -192,7 +190,6 @@ else if($_POST['langue']=='en'){
 </div></div>
 <!-- fin du menu -->
 <!-- presentation responsable -->
-<!--<div  style="display:flex; flex-direction:column;">--> 
 
 <div id="fin-article" style="display:flex; flex-direction:row; margin-right:2%;">
 <div style="display:flex; width:35%; ">
@@ -205,20 +202,21 @@ else if($_POST['langue']=='en'){
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\" title=\"Martine Renard\" align=\"right\";>";
+			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\" title=\"Martine Renard\" alt=\"Martine Renard\" align=\"right\";>";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" title=\"Martine Renard\" align=\"right\";>";
+		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" title=\"Martine Renard\" alt=\"Martine Renard\" align=\"right\";>";
 		}
 		?> 
 		</a>
 		</div>
 		<div style="display:flex; flex-direction:column; width:30%; ">
 		<h3><?php echo TXT_ResponsableCellule; ?></h3>
-<br><?php echo TXT_TCBHR; ?>
+		<div  style="display:inline-block; width:100%;  text-align:left;">
+<?php echo TXT_TCBHR; ?>
 </div>
-</div>
+</div></div>
 
 <!-- corps de la page -->
 
@@ -227,7 +225,7 @@ else if($_POST['langue']=='en'){
 
 <div id="footbis"  class="arrondie" ><!-- images a droite -->
 
-<h4><?php echo TXT_HEA; ?></h4><br><br>
+<h4><?php echo TXT_HEA; ?></h4><br>
 <!--  -->
 <div class="img" style="border:none; ">
   <a target="_blank" href="PSM.php">
@@ -294,29 +292,29 @@ echo " <br><img src=\"../image/equipements/etuvesCO2.jpg\" style=\"width:80%; pa
 </div> 
 
 
-<div id="section-article" > 
+<div id="section-article" style="width: 75%; padding-right:10%;"> 
 <?php echo TXT_HST; ?>
 <?php echo TXT_CCM; ?>
 
 <!-- image et legende , voire avec Martine! -->
 
-<table>
+<table width="100%">
 <tr><td colspan="2"><div id="show10" class="slideshow" >
     <img src="../image/vWF x40.jpg" alt="" width="50%" />
   </div></td>
  <td><img src="../image/markerTransparent.png" width="10%" height="5%"></td>
   <td><div id="show11" class="slideshow">
     <img src="../image/Isolement ECP J9.jpg" alt="" width="70%"/>
-	</div></td><tr><td style="text-align:left" colspan="2"><em><?php echo TXT_IlegCC1; ?></em></td><td></td><td style="text-align:left"><em><?php echo TXT_IlegCC2; ?></em></td></tr>
-</td>
-</tr></table>
+	</div></td></tr>
+	<tr><td style="text-align:left" colspan="2"><em><?php echo TXT_IlegCC1; ?></em></td><td></td><td style="text-align:left"><em><?php echo TXT_IlegCC2; ?></em></td>
+	</tr></table>
 
 <h2>Cyto-compatibilité</h2>
 <h4>Cytotoxicité (EN ISO 10993-5)</h4>
 <h4>Attachement, prolifération (EN ISO 10993-5)</h4>
 <h2>Bio-ingénierie</h2>
 <h4>Culture en condition statique (bio-réacteur)</h4>
-<h4>Culture sous flux (cf page "hémodynamique")</h4>
+<h4>Culture sous flux (cf page "<a href="Hemodynamiques.php">hémodynamique</a>")</h4>
 </div>
 </div></div>
 

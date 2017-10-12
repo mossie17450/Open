@@ -40,11 +40,6 @@ if (d) {d.style.display='block';}
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-<div id="header">
-<img src="../image/headerGG.jpg" width="100%" height="150px" class="arrondie"><!-- a optimiser en responsive -->
-</div>
-<br>
 <?php
 	 //premiere page du site : je choisit la langue francaise par défaut. Ce choix est nécessaire car si pas de langue choisit :renvoie d'une erreur...
 	
@@ -66,6 +61,17 @@ if (d) {d.style.display='block';}
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
+<div id="body" class="arrondie">
+
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div><br><br>
+
+
 
 	 
 <div  style="display:flex; flex-direction:row;  "> 
@@ -132,7 +138,7 @@ else if($_POST['langue']=='en'){
 	 
 <!-- insertion  -->
 <div  style="display:flex; flex-direction:row; ">
-<!--<div id="contenu" align="inline-block">-->
+
 
 
 <!-- a gauche -->
@@ -141,24 +147,28 @@ else if($_POST['langue']=='en'){
 
 <div id="footbis" class="arrondie" align="center" >
 <br>
-<a href="https://www.ihu-liryc.fr/"><img src="../image/logos/IHU liryc.jpg" width="50%" class="displayed"></a><br><span><img src="../image/blanc.png" width="2%" height="0%"></span><br>
-
-<a href="https://www.dondusang.net/rewrite/heading/804/efs/l-efs-en-regions/aquitaine-limousin.htm?idRubrique=804"><img src="../image/logos/EFSAL.jpg" width="70%" class="displayed"></a><br><span><img src="../image/blanc.png" width="5%" height="0%"></span><br>
-
-<a href="https://bcrm.u-bordeaux.fr/"><img src="../image/logos/BxCRM.png" width="70%" class="displayed"></a><br><span><img src="../image/blanc.png" width="5%" height="0%"></span><br>
-
-<a href="http://www.ptib.u-bordeaux2.fr/index.php?p=accueil"><img src="../image/logos/logo_PTIB.jpg" width="70%" class="displayed"></a><br><span><img src="../image/blanc.png" width="5%" height="0%"></span><br>
-
-<a href="http://www.2acbi-asso.fr/"><img src="../image/logos/logo-2acbi.jpg" width="50%" class="displayed"></a>
-
+<a href="https://www.chu-bordeaux.fr" style="dysplay:inline;"><img src="../image/logos/Chubordeaux.jpg" width="60%" class="displayed"></a><span><img src="../image/blanc.png" width="2%"></span><br>
+<a href="http://www.aquitaine-poitou-charentes.inserm.fr" style="dysplay:inline;"><img src="../image/logos/logo-generique-SD.gif" width="80%" class="displayed"></a><span><img src="../image/blanc.png" width="2%"></span><br>
+<a href="http//www.u-bordeaux.fr"><img src="../image/logos/Universite-BordeauxRVB-01.jpg" width="70%" class="displayed"></a><span><img src="../image/blanc.png" width="2%"></span><br> 
+<a href="http://www.bergonie.org" ><img src="../image/logos/Bergonie.jpg" width="60%" class="displayed"></a><span><img src="../image/blanc.png" width="2%"></span><br> 
 </div>
 
-
+<div style="display:flex; flex-direction:column;">
 <!--  titres de la page....   -->
 <div align="center"><?php echo TXT_TitreEnvironnement; ?></div>
 	
 <!--  texte de la page....   -->
 <article><?php echo TXT_ArticleEnvironnement; ?></article>
+
+<div style=" margin-left:5%; display:flex; flex-direction:row;">
+<a href="https://www.dondusang.net/rewrite/heading/804/efs/l-efs-en-regions/aquitaine-limousin.htm?idRubrique=804"><img src="../image/logos/EFSAL.jpg" width="100%" class="displayed"></a><span><img src="../image/blanc.png" width="1%" height="0%"></span><br>
+<a href="http://www.ptib.u-bordeaux2.fr/index.php?p=accueil"><img src="../image/logos/logo_PTIB.jpg" width="250%" class="displayed"></a><br><span><img src="../image/blanc.png" width="1%" height="0%"></span><br>
+<a href="https://www.ihu-liryc.fr/"><img src="../image/logos/IHU liryc.jpg" width="100%" class="displayed"></a><br><span><img src="../image/blanc.png" width="2%" height="0%"></span><br>
+<a href="http://www.2acbi-asso.fr/"><img src="../image/logos/logo-2acbi.jpg" width="180%" class="displayed"></a>
+<a href="https://bcrm.u-bordeaux.fr/"><img src="../image/logos/BxCRM.png" width="70%" class="displayed"></a>
+
+</div>
+</div><br>
 
 </div></div>
  <div id="test" class="arrondie">

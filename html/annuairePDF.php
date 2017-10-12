@@ -1,8 +1,9 @@
 <?php
+//phpinfo();
+echo "un truc?!";
+require('PDF_MC_Table.php');
 
-require('mc_table.php');
-
-
+// classe étendue pour créer en-tête et pied de page
 class annuairePDF extends PDF_MC_Table
 {
 protected $B = 0;
@@ -124,56 +125,14 @@ $pdf->AddPage();//ajout d'une page
 $pdf->SetFont('Arial','B',10); //font
 $pdf->Ln(0);//saut de 15 ligne(?)
 //faire un tableau d'une ligne et 4 colonnes identique au suivant...en tete du tablau du personnel du CIC-IT
-$pdf->SetWidths(array(30,40,40,40,40));
+$pdf->SetWidths(array(20,40,40,62,35));
 $pdf->WriteHTML($pdf->Row(array( "photo","personne" ,"activite","adresse mail","page activite")));//je remplit l'entete du tableau
 //connexion à la BD 'annuaire':
-/*
-$link=mysqli_connect('localhost','root','','annuaire');
- if (!$link) {
-die('Impossible de se connecter : ' . mysql_error());
-}
-//requete sql...
-$req="SELECT * FROM personnel INNER JOIN activite ON personnel.idpersonnel = activite.personnel_idpersonnel ";
-$personne = mysqli_query($link, $req);       
-	foreach($personne as $row){
-        $id = $row["idpersonnel"];
-	//	echo $id."<br>";
-        $nom= $row["nomPerso"];
-	//	echo $nom."<br>";
-        $prenom = $row["prenomPerso"];
-	//	echo $prenom."<br>";
-		$photo=$row["photoPerso"];
-		$email=$row['mailPerso'];
-	//activite? 
-	$activite=$row['nomActivite'];
-	//$employeur=$row['empoyeur'];	
-	$pageA=$row['pageWebActivite'];	//ici j'ai un lien...
-	$idA=$row['idActivite'];
-	
-    $pdf->SetFont('Arial','B',8);
-	 
-		if($idA<12)$h=20*$idA+5;
-		
-		//taille des photos...
 
 
- //$pdf->WriteHTML('<a href='.$pageA.'>'.$activite.'</a>');  //les liens en dynamiques marche, pas à la bonne place...
-  
 
-  //$pdf->Image('http://localhost/webjuillet2017/image/personnels/CecileP.png'.coucou,5,5,20,30); //marche
- //$pdf->Image($photo,140,5,20,30);  //marche aussi
- // $pdf->Image('Will_code_HTML_for_food.jpg',10,10,50,70);
- /* 
- $pdf->Image('image', a gauche, en haut, hauteur, largeur) 
-*/
-
-//Table de 20 lignes et 5 colonnes
-//$pdf->SetWidths(array(30,40,40,40,40));
-//$pdf->Row(array($pdf->Image($photo,15,$h,20,20,'',$pageA),$nom.' '.$prenom ,$activite." \n\n\n\n",$email ,$pageA));
-
-//	}
-//	mysqli_close($link);
 
 $pdf->Output('personnel.pdf', 'I');
 // sortie du fichier
+
 ?>

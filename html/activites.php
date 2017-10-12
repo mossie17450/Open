@@ -8,11 +8,13 @@ session_start();
 <title>Innovation biomédicale, recherche de biomateriaux avec le CHU de Bordeaux : le CIC-IT. Aquitaine - France</title>
 <meta name="keywords" content="CIC, centre, investigation, clinique, innovation, technologique, biomatériaux, bordeaux, CIC-IT, chu bordeaux, PTIB, Master, bidim, cellules, in vivo, in vitro, médical, recherche, Pessac, Arnozan, hôpital, réparation tissulaire, CIC IT, biomédical, Aquitaine, ingénierie tissulaire, scientifique" />
 <meta name="description" content="Acteur aquitain de l&#039;innovation biomédicale, le Centre d&#039;Investigation Clinique Innovation Technologique Biomatériaux de Bordeaux opère au sein d&#039;une structure scientifique actuelle et avancée pour appuyer tous ces travaux de recherche." />
-<!-- icon dans la barre du navigateur  -->
+
+<!-- icon de la barre du navigateur. -->
 <link rel="icon" type="image/png" href="../image/logos/logoCIC-ITB.png" />
 <!--[if IE]><link rel="icon" type="image/png" href="../image/logos/logoCIC-ITB.png" /><![endif]-->
 
-<!--- mes  feuilles de styles : -->
+<!--- mes feuilles de style : -->
+<!---                         -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
 <link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
@@ -35,12 +37,6 @@ if (d) {d.style.display='block';}
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-<div id="header">
-<img src="../image/header.jpg" width="100%" height="150px"; class="arrondie">
-</div>
-<br>
-<!-- choix de la langue  -->
 <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
  ($_SESSION['lang']);
@@ -61,6 +57,18 @@ if (d) {d.style.display='block';}
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
+<div id="body" class="arrondie">
+<!-- en tête  -->
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div>
+
+<!-- choix de la langue  -->
+
 
 <div  style="display:flex;  flex-direction:row;"> 
 <div id="contenu" width="100%" style="display:inline;">	 
@@ -132,32 +140,26 @@ else if($_POST['langue']=='en'){
 
 <!-- ecrire dans lang pour la traduction englais/francais   -->
 
-<div id="footbis" class="arrondie" style="padding:10px; width:20%; height:100%;">
-<br>
-<!-- projets collaboratifs -->
-
-<h3><?php echo  TXT_TCol;  ?></h3>
-<br>
-<!---    --->
-<?php echo  TXT_Col;  ?><!-- fin projet coll -->
-<h2><a href="cic-it-publications.php"><?php echo  TXT_Pub;  ?></a></h2>
-
-</div><!-- fin du footbis   id="projet" -->
-
-	
-
 <div id="section-article">
 <!--  titres de la page....   -->
 <h1 align="center"><?php echo TXT_TitreA;  ?></h1>
-<article>
+
 <?php echo  TXT_ArticleA1;  ?>
 		
 <h3><?php echo TXT_ArticleA11;  ?></h3>
 <?php echo TXT_ArticleA12; ?>
-
 <?php echo TXT_ArticleA13; ?>
-<div><img src='../image/cic_it_preuve_concept.jpg'   class="arrondie" width="80%"></div>
-</article>
+<div style="display:flex; flex-direction:row; ">
+<img src='../image/cic_it_preuve_concept.jpg' alt="preuve de concept" title="preuve de concept"  class="arrondie" width="60%" height="30%" style="margin-top:80px; padding:1%;">
+
+<div id="footbis" class="arrondie" style="padding:1px; width:40%; height:20%;">
+<!-- projets collaboratifs -->
+<h4><?php echo  TXT_TCol;  ?></h4>
+<?php echo  TXT_Col;  ?><!-- fin projet coll -->
+</div><!-- fin du footbis   id="projet" -->
+
+
+</div>
 <br>
 </div>
 </div>
