@@ -93,19 +93,6 @@ if (d) {d.style.display='block';}
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-
-<div id="header" style=" display:flex; flex-direction:row;" >
-<div style=" display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
-<div style="display:flex;  width:80%; flex-direction:column;">
-<h3 style="color:white; text-align:center;">CENTRE D’INVESTIGATION CLINIQUE</h3><h3 style="color:red; text-align:center;">INNOVATION TECHNOLOGIQUE</h3><h3 style="color:white; text-align:center;">BIOMATERIAUX ET DISPOSITIFS MEDICAUX IMPLANTABLES</h3>
-</div>
-<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
-</div>
-
-<!-- choix de la langue  -->
-<!-- mon menu HDR -->
-
  <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
  ($_SESSION['lang']);
@@ -128,6 +115,21 @@ if (d) {d.style.display='block';}
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
+<div id="body" class="arrondie">
+
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div>
+<br><br>
+
+<!-- choix de la langue  -->
+<!-- mon menu HDR -->
+
+
  
 
 <div  style="display:flex; flex-direction:row;" >
@@ -201,20 +203,24 @@ else if($_POST['langue']=='en'){
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\" align=\"right\";></a>
+			echo "<img src=\"../image/personnels/MartineP.png\" width=\"60%\" height=\"auto\" title=\"Martine Renard\" alt=\"Martine Renard\" align=\"right\";></a>
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" align=\"right\";></a>
+		echo "<img src=\"../image/personnels/MartineP.png\" width=\"50%\" title=\"Martine Renard\" alt=\"Martine Renard\" align=\"right\";></a>
 			";
 		}
 	?>
 	</div>
+	
 	<div style="display:flex; flex-direction:column; width:30%; ">
 	<h3><?php echo TXT_ResponsableCellule; ?></h3>
-<?php echo TXT_TCBHR; ?></div>
+	<div  style="display:inline-block; width:100%;  text-align:left;">
+<?php echo TXT_TCBHRbis; ?></div>
 </div>
+</div>
+
 
 
 
@@ -280,7 +286,7 @@ else if($_POST['langue']=='en'){
 <br><h3 align="center"><?php echo TXT_BLI3; ?></h3>
  
  <h2><?php echo TXT_BM4; ?></h2> <!-- titre -->
- <table class="table">
+ <table class="table" width="100%">
 <tr><td colspan="3"><div id="show9" class="slideshow">
 <img src="../image/CMIphotoA.jpg" alt="" width="100%" /></div><br><?php echo TXT_BLI1; ?></td>
 <td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>
