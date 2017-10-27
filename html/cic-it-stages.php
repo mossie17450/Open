@@ -50,9 +50,12 @@ if (d) {d.style.display='block';}
 <body id="equipe">
 <div id="body" class="arrondie">
 
-<div id="header">
+<!--<div id="header">
 <img src="../image/header.jpg" width="100%" height="150px" class="arrondie" />
-</div><br>
+</div><br>-->
+<div id="header">
+<img src="../image/headerBon.png" width="100%" height="240px" class="arrondie" />
+</div>
 <!-- choix des langues -->
 <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
@@ -161,8 +164,8 @@ else if($_POST['langue']=='en'){
 	  <br><br><br>
 	  <?php
 	  
-$link =mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev' );	
-					
+//$link =mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev' );	//connexion serveur distant
+$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....					
 	 if (!$link) {
 die('Impossible de se connecter : ' . mysql_error());
 }
@@ -227,7 +230,8 @@ $req = "SELECT * FROM stage";
 <CENTER><table id="tab">
 	<?php
 
-$link =mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev' );	
+//$link =mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev' );	//connexion serveur distant
+$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....
  if (!$link) {
 die('Impossible de se connecter : ' . mysql_error());
 }	

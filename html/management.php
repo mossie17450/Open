@@ -5,6 +5,15 @@ session_start();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="utf8" lang="utf8" dir="ltr">
 
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108361116-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108361116-1');
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <title>Innovation biomédicale, recherche de biomateriaux avec le CHU de Bordeaux : le CIC-IT. Aquitaine - France</title>
 <meta name="keywords" content="CIC, centre, investigation, clinique, innovation, technologique, biomatériaux, bordeaux, CIC-IT, chu bordeaux, PTIB, Master, bidim, cellules, in vivo, in vitro, médical, recherche, Pessac, Arnozan, hôpital, réparation tissulaire, CIC IT, biomédical, Aquitaine, ingénierie tissulaire, scientifique" />
@@ -215,7 +224,7 @@ else if($_POST['langue']=='en'){
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/ClaireP.png\" alt=\"Claire Darcos\"  title=\"Claire Darcos\" width=\"200%\" >";
+			echo "<img src=\"../image/personnels/ClaireP.png\" alt=\"Claire Darcos\"  title=\"Claire Darcos\" width=\"120%\" >";
 		}
 		else {
 			
@@ -237,9 +246,9 @@ else if($_POST['langue']=='en'){
 <div id="test" class="arrondie">
 <?php echo TXT_Piedhtml ; ?>
 </div>
-<!-- fin ajout -->
-</br>
-</div><br></div>
+<!-- fin ajout --> 
+<div><br></div>
+
 </body>
 </html>
 

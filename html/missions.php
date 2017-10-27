@@ -5,6 +5,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108361116-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108361116-1');
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
   <title>Innovation biomédicale, recherche de biomateriaux avec le CHU de Bordeaux : le CIC-IT. Aquitaine - France</title>
 <meta name="keywords" content="CIC, centre, investigation, clinique, innovation, technologique, biomatériaux, bordeaux, CIC-IT, chu bordeaux, PTIB, Master, bidim, cellules, in vivo, in vitro, médical, recherche, Pessac, Arnozan, hôpital, réparation tissulaire, CIC IT, biomédical, Aquitaine, ingénierie tissulaire, scientifique" />
@@ -33,24 +42,11 @@ var d = document.getElementById(id);
 if (d) {d.style.display='block';}
 }
 
-function fr(){
-alert("francais");
-
-}
-function en(){
-alert("englais");
-}
-
 //-->
 </script>
 </head>
 <body id="equipe">
-<div id="body" class="arrondie">
-<!-- entete -->
-<div id="header">
-<img src="../image/headerGG.jpg" width="100%" height="150px" class="arrondie" />
-</div>
-	 <?php
+ <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
  ($_SESSION['lang']);
  }
@@ -71,7 +67,16 @@ alert("englais");
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
- 
+<div id="body" class="arrondie">
+<!-- entete -->
+
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div><br>
 <br>
  <div  style="display:flex; flex-direction:row;"> 
 <div id="contenu" align="inline" width="100%">
@@ -138,11 +143,11 @@ else if($_POST['langue']=='en'){
 
 <div id="footbis" class="arrondie" align="center">
 <br>
-<a href="http://www.cic-it.fr/"><img src="../image/logos/cic-itreseau.jpg" width="70%" class="displayed"></a><br><span><img src="../image/blanc.png" width="2%" ></span><br>
-<h6 style="color:white;">.</h6>
+<a href="http://www.cic-it.fr/"><img src="../image/logos/reseauCIC-ITter.jpg" width="70%" class="displayed"></a><br><span><img src="../image/blanc.png" width="2%" ></span><br>
+
 <a href="http://ast-innovations.com/"><img src="../image/Satt-Aquitaine.png" width="80%" class="displayed"></a><br><span><img src="../image/blanc.png" width="2%" ></span><br>
 
-<a href="http://euclid-ctu.eu/"><img src="../image/logos/euclide&fcrin.jpg" width="90%" class="displayed"></a><br><span><img src="../image/blanc.png" width="2%" ></span><br>
+<a href="http://euclid-ctu.eu/"><img src="../image/logos/logo-euclid.jpg" width="90%" class="displayed"></a><br><span><img src="../image/blanc.png" width="2%" ></span><br>
 
 <a href="http://www.fcrin.org/"><img src="../image/logos/F-CRIN.png" width="50%" class="displayed"></a><br><span><img src="../image/blanc.png" width="2%" ></span>
 
@@ -150,16 +155,15 @@ else if($_POST['langue']=='en'){
 
 </div>
 
-<article>	
 
+<div style="margin-left:5%;margin-right:25%;">
 <h1><?php echo TXT_TitreMission; ?></h1>
-<!--  titres de la page....   -->
-<!--<div style="margin-right:20px; padding-right:20px;">-->
+
 
 <h3><?php echo TXT_SSSTitreMission; ?></h3>
 <div style="text-align:justify;"><?php echo TXT_SSMenuMission; ?>		
 <br><?php echo TXT_ArticleMission; ?></div>
-</article>
+</div>
 
 </div>
 </div>

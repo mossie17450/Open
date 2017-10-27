@@ -6,14 +6,20 @@ session_start();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="utf8" lang="utf8" dir="ltr">
 
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108361116-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108361116-1');
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <title>Innovation biomédicale, recherche de biomateriaux avec le CHU de Bordeaux : le CIC-IT. Aquitaine - France</title>
 <meta name="keywords" content="CIC, centre, investigation, clinique, innovation, technologique, biomatériaux, bordeaux, CIC-IT, chu bordeaux, PTIB, Master, bidim, cellules, in vivo, in vitro, médical, recherche, Pessac, Arnozan, hôpital, réparation tissulaire, CIC IT, biomédical, Aquitaine, ingénierie tissulaire, scientifique" />
 <meta name="description" content="Acteur aquitain de l&#039;innovation biomédicale, le Centre d&#039;Investigation Clinique Innovation Technologique Biomatériaux de Bordeaux opère au sein d&#039;une structure scientifique actuelle et avancée pour appuyer tous ces travaux de recherche." />
-
 <!--- mes feuilles de style : -->
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -39,13 +45,7 @@ if (d) {d.style.display='block';}
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-<div id="header">
-<img src="../image/header.jpg" width="100%" height="150px" class="arrondie" >
-</div><br>
-
-<!-- choix de la langue -->
- <?php
+<?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
  ($_SESSION['lang']);
  }
@@ -66,6 +66,18 @@ if (d) {d.style.display='block';}
   	 include('../lang/fr-lang.php');
   	 }
 	 ?>
+<div id="body" class="arrondie">
+
+<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div><br><br>
+
+<!-- choix de la langue -->
+ 
 <!-- gestion du choix des langues en php -->
 
  <div  style="display:flex; flex-direction:row;"> 
@@ -130,14 +142,16 @@ else if($_POST['langue']=='en'){
 <div id="contenu" align="inline-block">
 
 <div id="footbis" class="arrondie">
-<h6 style="color:white;">.<br>.</h6>
-<a href="https://cic-p.u-bordeaux.fr/Formation/DIU-FARC-TEC"><?php echo "DIU FARC"; ?></a>
-<h6 style="color:white;">.<br>.</h6>
-<a href="https://biologie.u-bordeaux.fr/formation/2016/PRMA_75/ingenierie-de-la-sante"><?php echo TXT_Master ; ?><img src="../image/logos/unite_de_formation_de_biologieBIDIM.png" width="100%"></a>
-<h6 style="color:white;">.<br>.</h6>
-<a href="http://www.fcrin.org/activite-de-formation"><?php echo TXT_FCRIN ; ?><img src="../image/logos/CoursFCRIN.jpg" width="100%"></a>
-<h6 style="color:white;">.<br>.</h6>
+<h6 style="color:white;"></h6> 
+<a><img src="../image/logos/Banniere-idv-gif-anime_petit.gif" width="100%"</a>
+<h6 style="color:white;"></h6>
+<a href="https://biologie.u-bordeaux.fr/formation/2016/PRMA_75/ingenierie-de-la-sante"><img src="../image/logos/unite_de_formation_de_biologieBIDIM.png" width="100%"><?php echo TXT_Master ; ?></a>
+<h6 style="color:white;"></h6>
+<a href="https://cic-p.u-bordeaux.fr/Formation/DIU-FARC-TEC"><img src="../image/logos/DIU-FARC-TEC-C-CIC-P_petit.jpg" width="100%"><?php echo "DIU FARC"; ?></a>
+<h6 style="color:white;"></h6>
 
+<a href="http://www.fcrin.org/activite-de-formation"><img src="../image/logos/CoursFCRIN.jpg" width="100%"><?php echo TXT_FCRIN ; ?></a>
+<h6 style="color:white;"></h6>
 </div>
 
 <!-- fin du menu -->
@@ -146,13 +160,6 @@ else if($_POST['langue']=='en'){
    <?php  echo TXT_TitreMaster; ?>
 <div align="justify"><?php echo TXT_ArticleM1; ?></div>
 
-
-<div style="float:right; width:25%; ">
-	<!--<img src="../image/formation_master_bidim.jpg" width="100%"> -->
-	
-</div>
-<br>
-<a href="https://biologie.u-bordeaux.fr/formation/2016/PRMA_75/ingenierie-de-la-sante"><div style="display:flex; flex-direction:row;"><h2>Master BiDiM: </h2><img src="../image/logos/unite_de_formation_de_biologieBIDIM.png" width="50%"></div></a>
 </div>
 </div>
 </div>

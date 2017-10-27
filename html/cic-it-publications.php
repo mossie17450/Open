@@ -2,9 +2,9 @@
 session_start();
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
-<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
 
 <title>Innovation biomédicale, recherche de biomateriaux avec le CHU de Bordeaux : le CIC-IT. Aquitaine - France</title>
@@ -69,12 +69,15 @@ if (d) {d.style.display='block';}
 
 <div id="body" class="arrondie">
 
-<div id="header">
+<!--<div id="header">
 
 <img src="../image/header.jpg" width="100%" height="150px" class="arrondie" >
 
+</div>-->
+<div id="header">
+<img src="../image/headerBon.png" width="100%" height="240px" class="arrondie" />
 </div>
-<br>
+
 <!-- choix de la langue -->
 
  <?php
@@ -228,8 +231,8 @@ else if($_POST['langue']=='en'){
 
 	<?php 
 
-...//serveur distant
-//$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
+//$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev'); //serveur distant
+$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
  if (!$link) {
 
 die('Impossible de se connecter : ' . mysql_error());
@@ -314,8 +317,8 @@ echo "<TD width=\"5%\">".$row[1]."</TD></TR>";
 	<h2><?php echo TXT_TbM1 ; ?></h2>
 	<?php
 
-... //serveur distant
-//$link = mysqli_connect( 'localhost', 'root','...','cic-it2017');		//connection en local....	
+//$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  //serveur distant
+$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
  if (!$link) {
 
 die('Impossible de se connecter : ' . mysql_error());
@@ -404,7 +407,7 @@ echo "<TD width=\"5%\">".$row[1]."</TD></TR>";
 	
 		<?php
 
-... // serveur distant
+$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  // serveur distant
 //$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
  if (!$link) {
 
@@ -487,7 +490,7 @@ echo "<TD width=\"5%\">".$row[1]."</TD></TR>";
 	<h1><?php echo TXT_TbM4 ; ?></h1>
 		<?php
 
-...  //serveur distant
+$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  //serveur distant
 //$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
  if (!$link) {
 
@@ -572,7 +575,7 @@ echo "<TD width=\"5%\">".$row[1]."</TD></TR>";
 	<h1><?php echo TXT_TbM5;?></h1>
 			<?php
 
-...//serveur distant
+$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');  //serveur distant
 //$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....	
  if (!$link) {
 

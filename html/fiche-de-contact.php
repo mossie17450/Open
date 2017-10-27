@@ -67,20 +67,25 @@ if (d) {d.style.display='block';}
 <div id="body" class="arrondie">
 
 
+<div id="header" style=" display:flex; flex-direction:row;" >
+<div style=" display:flex; flex-direction:column; width:20%;" ><a href="http://www.cic-it.fr/index.php" style="float:right; margin-right:0%;" ><img src="../image/logos/cicitg.png" class="arrondie"></a></div>
+<div style="display:flex; flex-direction:column; width:80%;" >
+<h3 style="color:white; text-align:center;">CENTRE D’INVESTIGATION CLINIQUE</h3><h3 style="color:red; text-align:center;">INNOVATION TECHNOLOGIQUE</h3><h3 style="color:white; text-align:center;">BIOMATERIAUX ET DISPOSITIFS MEDICAUX IMPLANTABLES</h3>
+</div>
+<div style="display:flex; width:20%;"><a href="http://www.cic-it.fr/index.php" style="float:right; margin-right:0%;"><img src="../image/logos/cic-itreseaubis.png" style="width:100%; height:40%;" class="arrondie"></a></div>
+</div>
 
-<div id="header">
-
-<img src="../image/header.jpg" width="100%" height="150px" class="arrondie" >
-
-</div><br>
 
 <!-- gestion du choix des langues en php -->
 
 <div>
 
  <!-- gestion du choix des langues en php -->
-
-
+ <div>
+Vous avez un projet ?
+Une question ?
+Vous cherchez des informations, notre équipe médicale et scientifique est à votre écoute.
+</div>
 
  <?php
 
@@ -389,8 +394,8 @@ else{
   
 
 // on se connecte à MySQL
-
-$link = mysqli_connect( 'localhost', 'c4cicit','dyKaTm8H#','c4dev');
+//
+$link = mysqli_connect( 'localhost', 'root','','cic-it2017'); //connexion local
 
 if (!$link) {
 
@@ -416,6 +421,8 @@ $req = mysqli_query($link,$sql) or die ("Erreur SQL !<br>".$sql."<br>".mysqli_er
 
 // on ferme la connexion à mysql
 //on envoie un mail à Marlène :un nouveau contacte....
+
+
 
 /*
 $mail = 'cecile.raymond@chu-bordeaux.fr'; // Déclaration de l'adresse de destination.
@@ -518,6 +525,21 @@ mail($mail,$sujet,$message,$header);
 
 //==========
 */
+
+// mail de base en php7...
+
+
+// Le message
+$message = "Line 1\r\nLine 2\r\nLine 3";
+
+// Dans le cas où nos lignes comportent plus de 70 caractères, nous les coupons en utilisant wordwrap()
+//$message = wordwrap($message, 70, "\r\n");
+
+// Envoi du mail
+mail('cecile.raymond@chu-bordeaux.fr', 'Mon Sujet', $message);
+
+
+
 
 mysqli_close($link);
 

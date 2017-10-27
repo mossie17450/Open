@@ -86,15 +86,15 @@ if (d) {d.style.display='block';}
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/MicrotomeLEICA.jpg\" width=\"70%\" >";
+			echo "<img src=\"../image/equipements/MicrotomeLEICA.jpg\" width=\"70%\" >";
 		}
 		else {
 			
-		echo "<img src=\"../image/MicrotomeLEICA.jpg\" width=\"70%\" >";
+		echo "<img src=\"../image/equipements/MicrotomeLEICA.jpg\" width=\"70%\" >";
 		}
 		?>
  <br>
-  <div><?php echo "Microtome à glissière Leica  SM2500<br>non mis à disposition.";   ?></div>
+  <div><?php echo "Microtome à glissière Leica  SM2500<br>non mis à disposition par le CIC-IT.";   ?></div>
 	</div>
 
 

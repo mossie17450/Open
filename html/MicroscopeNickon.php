@@ -86,15 +86,15 @@ if (d) {d.style.display='block';}
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/MicroscopeNi-UNIKON.jpg\" width=\"70%\" >";
+			echo "<img src=\"../image/equipements/MicroscopeNi-UNIKON.jpg\" width=\"70%\" >";
 		}
 		else {
 			
-		echo "<img src=\"../image/MicroscopeNi-UNIKON.jpg\" width=\"70%\" >";
+		echo "<img src=\"../image/equipements/MicroscopeNi-UNIKON.jpg\" width=\"70%\" >";
 		}
 		?>
  <br>
-  <div><?php echo "microscope NIKON Ni-U.<br>mis à disposition par la PTIB.";   ?></div>
+  <div><?php echo "microscope NIKON Ni-U.<br> non mis à disposition par le CIC-IT.";   ?></div>
 	</div>
 
 

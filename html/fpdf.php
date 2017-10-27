@@ -1267,7 +1267,7 @@ protected function _parsepng($file)
 protected function _parsepngstream($f, $file)
 {
 	// Check signature
-	if($this->_readstream($f,8)!=chr(137).'PNG'.chr(13).chr(10).chr(26).chr(10))
+	if($this->_readstream($f,8)!=chr(137).'png'.chr(13).chr(10).chr(26).chr(10))  //probleme d'image?
 		$this->Error('Not a PNG file: '.$file);
 
 	// Read header chunk

@@ -40,10 +40,13 @@ if (d) {d.style.display='block';}
 
 <body id="equipe">
 <div id="body" class="arrondie">
-<div id="header">
+<!--<div id="header">
 <img src="../image/header.jpg" width="100%" height="auto" class="arrondie">
+</div>-->
+<div id="header">
+<img src="../image/headerHtml1.png" width="100%" height="240px" class="arrondie" />
 </div>
-<br><br><br>
+
 <!-- choix de la langue  -->
  <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
@@ -138,7 +141,8 @@ else if($_POST['langue']=='en'){
 <br>
 <?php
 
-$link =mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev' );					
+//$link =mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev' );	
+$link = mysqli_connect( 'localhost', 'root','','cic-it2017');		//connection en local....		
 	 if (!$link) {
 die('Impossible de se connecter : ' . mysql_error());
 }

@@ -83,8 +83,6 @@ alert("englais choisie");
 <div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
 </div><br><br>
 
-<!-- choix de la langue -->
-
 
  <!-- gestion du choix des langues en php -->
 

@@ -115,8 +115,10 @@ if(isset($login)) { // on arrive du formulaire
     $pwd="admin"; //  change ton password ici 
 
 	//ici, l'adresse ip des ordinateurs autorisé à consulter l'espace administration....
-... ... ...
- 
+
+   // if ((strcmp($login, $log) != 0)||(strcmp($password, $pwd) != 0)|| !( (preg_match('#fe80::5da3:9c64:dc34:b1e9#', $ip))|| (preg_match('#194.167.179.10#', $ip)) || (preg_match('#fe80::8eb:d45:23f4:5142#', $ip)) )
+    if (((strcmp($login, $log) != 0)||(strcmp($password, $pwd) != 0)) && (!(preg_match('#194.167.179.10#', get_ip())) || !((preg_match('#127.0.0.1#', get_ip()))) ))// || (preg_match('#fe80::7401:6b45:c98a:7784#', $ip)) || (preg_match('#fe80::8eb:d45:23f4:5142#', $ip))) )
+
 
 	{ 
 

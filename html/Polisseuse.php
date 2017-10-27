@@ -86,11 +86,11 @@ if (d) {d.style.display='block';}
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/Polisseuse.jpg\" width=\"70%\" >";
+			echo "<img src=\"../image/equipements/Polisseuse.jpg\" width=\"70%\" >";
 		}
 		else {
 			
-		echo "<img src=\"../image/Polisseuse.jpg\" width=\"70%\" >";
+		echo "<img src=\"../image/equipements/Polisseuse.jpg\" width=\"70%\" >";
 		}
 		?>
  <br>

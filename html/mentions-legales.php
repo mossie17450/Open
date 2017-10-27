@@ -36,9 +36,16 @@ if (d) {d.style.display='block';}
 </head>	
 <body id="equipe">
 <div id="body" class="arrondie">
-<div id="header">
-<img src="../image/headerGG.jpg" width="100%" height="150px" class="arrondie" >
-</div><br>
+
+<div id="header" style=" display:flex; flex-direction:row;" >
+<div style=" display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<h3 style="color:white; text-align:center;">CENTRE D’INVESTIGATION CLINIQUE</h3><h3 style="color:red; text-align:center;">INNOVATION TECHNOLOGIQUE</h3><h3 style="color:white; text-align:center;">BIOMATERIAUX ET DISPOSITIFS MEDICAUX IMPLANTABLES</h3>
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div>
+
+
 <!-- choix de la langue -->
 
   <?php

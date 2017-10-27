@@ -69,11 +69,15 @@ if (d) {d.style.display='block';}
 
 <div id="body" class="arrondie">
 
-<div id="header">
+<!--<div id="header">
 
 <img src="../image/header.jpg" width="100%" height="150px" class="arrondie" >
 
-</div><br>
+</div><br>-->
+
+<div id="header">
+<img src="../image/headerBon.png" width="100%" height="240px" class="arrondie" />
+</div>
 
 <!-- choix de la langue  -->
 
@@ -313,33 +317,26 @@ else if($_POST['langue']=='en'){
 
  <br>
 
- <!--</fieldset>
+</fieldset>
 
-<fieldset>-->
+<fieldset>
 
- <!--<legend><?php//  echo TXT_Donnees;  ?></legend>
+ <legend><?php echo TXT_Donnees; ?></legend>
 
  <br>
 
-     <!--<img src="captchaLettres.php" ><label><?php //echo TXT_Code; ?></label> 
+     <img src="captchaLettres.php" ><label><?php echo TXT_Code; ?></label> 
 
-		<input type="text" name="code" >-->
+		<input type="text" name="code" >
 
 		<br>
 
-        
 
-
-
-
-
- 
-
-        <input type="submit" value="<?php echo TXT_ValueE; ?>" style="width:80px;" ><span><img src="../image/transparent.png" width="5%" height="5%"></span><input type="reset" value="<?php echo TXT_ValueR; ?>" style="width:80px;">	
+    <input type="submit" value="<?php echo TXT_ValueE; ?>" style="width:80px;" ><span><img src="../image/transparent.png" width="5%" height="5%"></span><input type="reset" value="<?php echo TXT_ValueR; ?>" style="width:80px;">	
 
 </fieldset>	
 <br>
-		</form>
+</form>
 
 
 
@@ -353,7 +350,7 @@ else if($_POST['langue']=='en'){
 
 <?php
 
-//echo "code captcha :".$_SESSION['captcha']; 
+echo "code captcha :".$_SESSION['captcha']; 
 
 // on se connecte à MySQL, si post cic-it et ok...
 
@@ -366,9 +363,9 @@ echo "langue :".$_SESSION['lang']."<br>";  //pour le dev : les sessions!
 	echo "code captcha :".$_SESSION['captcha']; 
 	echo "le post est: ".$_POST['code'];
 	echo "<br/>bonjour, verification du formulaire :<br/>";
-
+*/
 	
-/*
+
 	if($_POST['code']!=$_SESSION['captcha']){
 
 	echo "<br/>vous n'avez pas entrez le bon code, recommencez!";		
@@ -380,7 +377,7 @@ echo "langue :".$_SESSION['lang']."<br>";  //pour le dev : les sessions!
 	echo "<br/><h3 style=\"text-align:center\">vous avez entrez le bon code.</h3>";
 
 }
-*/
+
 echo "<br/><h3 style=\"text-align:center\">vous avez entrez le bon code.</h3>";
 
 //formulaire contact 
@@ -559,8 +556,8 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 
 	 
 
-$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');		 
-
+//$link = mysqli_connect('localhost', 'c4cicit','dyKaTm8H#','c4dev');	//connexion distant	 
+$link = mysqli_connect('localhost', 'root','','cic-it2017');
 			
 if (!$link) {
 

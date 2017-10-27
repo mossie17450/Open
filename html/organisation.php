@@ -4,6 +4,15 @@ session_start();
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108361116-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108361116-1');
+</script>
 <meta charset="utf8" />
 <title>Innovation biomédicale, recherche de biomateriaux avec le CHU de Bordeaux : le CIC-IT. Aquitaine - France</title>
 <meta name="keywords" content="CIC, centre, investigation, clinique, innovation, technologique, biomatériaux, bordeaux, CIC-IT, chu bordeaux, PTIB, Master, bidim, cellules, in vivo, in vitro, médical, recherche, Pessac, Arnozan, hôpital, réparation tissulaire, CIC IT, biomédical, Aquitaine, ingénierie tissulaire, scientifique" />
@@ -35,11 +44,7 @@ if (d) {d.style.display='block';}
 </head>
 
 <body id="equipe">
-<div id="body" class="arrondie">
-<!-- entete -->
-<div id="header">
-<img src="../image/header.jpg" width="100%" height="150px"; class="arrondie"; >
-</div><br>
+<div id="body" class="arrondie" height="100%" >
 <!-- choix de la langue -->
 
  <?php
@@ -64,18 +69,33 @@ if (d) {d.style.display='block';}
   	 }
 
 	 ?>
+	 
 
- <div  style="display:flex; flex-direction:row;"> 
- <div id="contenu" align="inline" width="100%">
- 
+<!-- entete -->
+
+<div id="header" style=" display:flex; flex-direction:row;" >
+<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div style="display:flex;  width:80%; flex-direction:column;">
+<?php echo TXT_EnTete; ?> 
+</div>
+<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div><br><br>
+
+
+<div  style="display:flex; flex-direction:row;"> 
+                                                                                        
+<div id="contenu" align="inline" width="100%">
+<!--                                                                                            -->
+<!-- formulaire de choix des langue, avec bouton radio remplace par une image et autosubmit...  -->
+<!--                                                                                            -->
 <div id="CdL" style="float:right; align:inline;"> 
 
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			echo "		
 			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"display:flex; flex-direction:row;\" >
-<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\" name=\"langue\" id=\"choixlangue1\"  onclick=\"this.form.submit();\" value=\"fr\"><label><img src=\"../image/fr.png\" width=\"130%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>
-<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\"  name=\"langue\" id=\"choixlangue2\"  onclick=\"this.form.submit();\" value=\"en\"><label><img src=\"../image/en.png\" width=\"130%\"></a>		
+<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\" name=\"langue\" id=\"choixlangue1\"  onclick=\"this.form.submit();\" value=\"fr\"><label><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>
+<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\"  name=\"langue\" id=\"choixlangue2\"  onclick=\"this.form.submit();\" value=\"en\"><label><img src=\"../image/en.png\" width=\"150%\"></a>		
 			"; 	
 		}
 		
@@ -107,12 +127,11 @@ else if($_POST['langue']=='en'){
 //echo "langue:".$_SESSION['lang'];
 ?>
 </form> 
- </div>
- 
-<!--                                           -->
-<!-- choix des langues en php à améliorer, fin -->
-<!--                                           -->	
-<!-- menu HDR(Horizontale Deroulant Responsif) -->  
+ </div> 
+
+<!-- choix des langues en php  fin -->
+<!--                               -->	
+<!-- menu HDR(Horizontale Deroulant Responsif)-->  
       
 
 <nav>
@@ -120,70 +139,71 @@ else if($_POST['langue']=='en'){
 </ul>
 </nav>
 
-</div></div>
 
-<div style="display:flex; flex-direction:column; height:100%;" >
+</div>
+</div>
 
-
-
-
-
-<div id="section-article" style="width:90%;">
-<?php // echo TXT_TitresFonctionnement ; ?>
-<br>
+<div  style="display:flex; flex-direction:row;"> 
+<div  style="display:flex; flex-direction:column; width:90%;">
+<div id="section-article">
+<?php  echo TXT_TitresFonctionnement ; ?>
 <div align="justify"><?php  echo TXT_A1Fonction ; ?></div>
 <br>
 <div align="justify"><?php echo TXT_A2Fonction ; ?></div>
-<br></div>
-<br>
-<div  style="display:flex; flex-direction:row; width:100%;  height:10%;" class="arrondie">
- <div  style="width:40%; height:auto;"><!-- compatibilité avec IE  -->
- <?php
-		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
-			
-			echo "<img src=\"../image/personnels/PhotoGroupeCIC-IT2017.jpg\" width=\"100%\" style=\"margin-left:2%; margin-right:2%; height:90%; \" >
-";
-		}
-		else {
-			
-		echo "<img src=\"../image/personnels/PhotoGroupeCIC-IT2017.jpg\" style=\"margin-left:2%; margin-right:2%; \"  width=\"100%\" >
-			";
-		}
-		?>
-
-<!--<img src="../image/personnels/PhotoGroupeCIC-IT2017.jpg" width="100%" height="auto" style="margin-left:2%; margin-right:2%; display:align;" class="arrondie" />-->
-<h4 align="center"><strong>Equipe du CIC-IT (Mars 2017)</strong></h4>
 
 </div>
- <div  style=" width:50%;"><br>
 
-<a href="../image/OrganigrammeCIC-ITnov2016.jpg" title="<?php echo TXT_imgOrganigramme; ?>" >
- <?php
+
+<div  style="display:flex; flex-direction:row; width:100%; margin-left:5%;">
+
+<div  style="display:flex; flex-direction:column; width:150%;">
+	 <div class="img2" >
+
+   <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/OrganigrammeCIC-ITnov2016.jpg\" width=\"100%\" style=\"margin-left:2%; margin-right:2%; height:90%; \" >
+			echo "<a target=\"_blank\" href=\"equipeCIC-IT.php \"><img src=\"../image/personnels/PhotoGroupeCIC-IT2017.jpg\" alt=\"photo de l'équipe du CIC-IT\" title=\"photo de l'équipe du CIC-IT, mars 2017\" style=\"width:100%; padding:2px; \">
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/OrganigrammeCIC-ITnov2016.jpg\" style=\"margin-left:2%; margin-right:2%; \"  width=\"100%\" >
-			";
+		echo "<a target=\"_blank\" href=\"equipeCIC-IT.php \" /><img src=\"../image/personnels/PhotoGroupeCIC-IT2017.jpg\" alt=\"photo de l'équipe du CIC-IT\" title=\"photo de l'équipe du CIC-IT\" style=\"width:100%;  padding:2px;\">
+";
 		}
 		?></a>
- 
- <h4 align="center"><?php echo TXT_legendeImg; ?></h4>
-
+		
+		<h4 align="center"><strong><?php  echo TXT_Equipe; ?></strong></h4>
+ </div>
+ </div>
+ <div  style="border:none; display:flex; flex-direction:column; width:200%;  ">
+	 <div class="img2" >
+   <?php
+		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
+			
+			echo "<a target=\"_blank\" href=\" ../image/OrganigrammeCIC-ITnov2016b.jpg\"><img src=\"../image/OrganigrammeCIC-ITnov2016b.jpg\" alt=\"Organigrame du CIC-IT\" title=\"Organigrame du CIC-IT\" style=\"width:80%; padding:2px; \">
+";
+		}
+		else {
+			
+		echo "<a target=\"_blank\" href=\"../image/OrganigrammeCIC-ITnov2016b.jpg \"><img src=\"../image/OrganigrammeCIC-ITnov2016b.jpg\" alt=\"Organigrame du CIC-IT\" title=\"Organigrame du CIC-IT\" style=\"width:80%; padding:2px;\">
+";
+		}
+		
+		?></a>
+		
+  			<h4 align="center"><strong><?php  echo TXT_legendeImg; ?></strong></h4>	
+	 </div>
+	</div>	
 </div>
 
+</div>	
 </div>
- <!--  plan du site....   --> 
-</div>
- 
- 
+
+
   <div id="test" class="arrondie">
      <?php echo TXT_Piedhtml ; ?> </div>
  <!-- fin ajout -->
-</br>
 </div>
+<br>
 </body>
 </html>
