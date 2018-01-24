@@ -51,7 +51,7 @@ session_start();
 	      '13-03(G20).jpg': { caption: 'coloration trichromique de Masson.' }, 
 	     
 	    };
-	    var myShow = new Slideshow('show', data, {controller: false, height:150, hu: '../image/', thumbnails: false,width:150  });
+	    var myShow = new Slideshow('show', data, {controller: false, height:180, hu: '../image/', thumbnails: false,width:180  });
 	  });
 	//]]>
 	
@@ -61,7 +61,7 @@ session_start();
 	      '16-01 1a-1 (G400)5.jpg': { caption: 'coloration HES.' }, 
 	    };
 		
-	    var myShow = new Slideshow('show1', data1, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show1', data1, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  
 	  window.addEvent('domready', function(){
@@ -71,8 +71,8 @@ session_start();
 	      '10-08 1-BV0-P21-2 CK8(G20)b.jpg': { caption: 'IHC-CK8.' }, 
 	    };
 		
-	    var myShow = new Slideshow('show2', data2, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
-		var myShow = new Slideshow('show7', data2, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show2', data2, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
+		var myShow = new Slideshow('show7', data2, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  
 	  
@@ -82,7 +82,7 @@ session_start();
 	      '10-08 1-BV4-P06-2 ki67 (G40)5b.jpg': { caption: 'IHC-ki67.' },     
 	    };
 		
-	    var myShow = new Slideshow('show3', data3, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show3', data3, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  
 	  window.addEvent('domready', function(){
@@ -93,7 +93,7 @@ session_start();
 	      '15-01 172G(C)-I2 (G10)b.jpg': { caption: 'G.' }, 
 		   '15-01 180G-d- D (G10)defect et osb.jpg': { caption: 'G?.' }, 
 	    };
-	    var myShow = new Slideshow('show4', data4, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show4', data4, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  
 	  window.addEvent('domready', function(){
@@ -103,20 +103,20 @@ session_start();
 	     '15-01 170D(C) (G100)b.jpg': { caption: 'VVK.' }, 
 	     
 	    };
-	    var myShow = new Slideshow('show5', data5, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show5', data5, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  
 	  window.addEvent('domready', function(){
 	    var data6 = {
 	      '16-01 1a-4 ORC (G400)2b.jpg': { caption: 'coloration spécifique à l\'orcéine' },  
 	    };
-	    var myShow = new Slideshow('show6', data6, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show6', data6, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  window.addEvent('domready', function(){
 	    var data7 = {
 	      '11-08 P1B-9 caldesmon (G10)pp.jpg': { caption: 'Caldesmon' },  
 	    };
-	    var myShow = new Slideshow('show7', data7, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show7', data7, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	</script>
 
@@ -267,9 +267,12 @@ else if($_POST['langue']=='en'){
 		?> </a>
 	</div>
 	<div style="display:flex; flex-direction:column; width:30%;  ">
-<?php echo TXT_ResponsableHisto ; ?>	
+<?php echo TXT_ResponsableHisto ; ?>
+
 <div  style="display:inline-block; width:100%;  text-align:left;">
-<?php echo TXT_THR ; ?> 
+<?php echo TXT_THR ; ?>
+
+<?php echo TXT_CH; ?>	 
 </div>
 </div>
 </div>
@@ -296,7 +299,7 @@ else if($_POST['langue']=='en'){
 ";
 		}
 		?>
-		<?php echo TXT_HT11;   ?>
+		<?php echo TXT_HT11; ?>
   </a>
   <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
@@ -447,21 +450,22 @@ else if($_POST['langue']=='en'){
 
 </div></div><!-- fin footbis -->
  
-<div  style="display:flex; flex-direction:column; ">
+<div  style="display:flex; flex-direction:column; width:78%;">
 <!-- premier tableau... -->
 
-<div id="section-article" class="table-responsive"><?php echo TXT_HST; ?>
+<div id="section-article" class="table-responsive" >
+<table class="ex2"><tr>
+<td colspan="6"><?php // echo TXT_HST; ?></td></tr>
+<tr><td colspan="6"><?php echo TXT_HT1; ?></td></tr>
+</table>
 
- <?php echo TXT_HT1; ?>
-
- <table class="table" width="100%"><tr><td colspan="5">
+ <table class="ex2"><tr><td colspan="6">
   <?php echo TXT_HTC1; ?></td></tr><td>
   <?php echo TXT_HCI; ?></td></table>
  
-
 <!-- deusième tableau... -->
- 
-<table class="table" width="100%"><tr><td colspan="3"><? echo TXT_HTC3; ?></td></tr>
+
+<table class="ex2"><tr><td colspan="4"><? echo TXT_HTC3; ?></td></tr>
 <tr><td><div id="show4" class="slideshow" >
     <img src="../image/15-01 158D-c- A (G10)b.jpg" width="50%" height="auto" alt="Trichrome de Goldner" />
   </div></td><td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>
@@ -471,9 +475,9 @@ else if($_POST['langue']=='en'){
   </td></tr></table>
 
  
-<table class="table" width="100%">
+<table class="ex2">
 
-<tr><td colspan="5"><?php echo TXT_HTC4; ?></td></tr>
+<tr><td colspan="6"><?php echo TXT_HTC4; ?></td></tr>
 <tr><td><div id="show2" class="slideshow">
     <img src="../image/10-08 1-BV0-P07-1 CK8 (G10)b.jpg" alt=" CK8" width="50%" height="auto"/>	
   </div></td>
@@ -491,12 +495,12 @@ else if($_POST['langue']=='en'){
 <br>
 
 <?php echo TXT_HTC6; ?>
-<br>
-</div><br>
+<br><br>
+</div>
 <div  style="display:flex; flex-direction:row; margin-right:5%; margin-top:5px; margin-bottom:5px;">
 
 	<div class="img" style="border:none; margin-right:1%; width:30%;">
-		<a  target="_blank" href="LionelCouraud.php"><!-- lien quand on clique sur l'image....   -->
+		<br><a  target="_blank" href="LionelCouraud.php"><!-- lien quand on clique sur l'image....   -->
 			<?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			

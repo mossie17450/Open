@@ -25,7 +25,8 @@
 <!--- ma premiere( presque) feuille de style : -->
 <!--<link rel="stylesheet" type="text/css" href="../css/SecondePage.css"> -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
+<!--<link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />-->
+<link rel="stylesheet" type="text/css" href="../css/CSSPage.css" />
 <link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
 <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/moyenneResolution.css" />
 <link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/petitResolution.css" />
@@ -45,7 +46,7 @@ if (d) {d.style.display='block';}
 //-->
 </script>
 </head>
-<body id="equipe">
+<body>
  <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
  ($_SESSION['lang']);
@@ -70,38 +71,41 @@ if (d) {d.style.display='block';}
 <div id="body" class="arrondie">
 <!-- entete -->
 
-<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
-<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div id="header" style=" display:flex; flex-direction:row; height:auto; " >
+<div style="display:flex; width:10%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/CIC-ITN.jpg" class="arrondie" style="width:100%; height;auto;"></a></div>
 <div style="display:flex;  width:80%; flex-direction:column;">
 <?php echo TXT_EnTete; ?> 
 </div>
-<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
-</div><br>
+<div style="display:flex; width:10%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITN.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div>
+
 <br>
  <div  style="display:flex; flex-direction:row;"> 
 <div id="contenu" align="inline" width="100%">
 
 <!-- formulaire de choix des langue :icon auto-submit -->
 <div id="CdL" style="float:right; align:inline; "> 
-
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			echo "		
-			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"display:flex; flex-direction:row;\" >
-<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\" name=\"langue\" id=\"choixlangue1\"  onclick=\"this.form.submit();\" value=\"fr\"><label><img src=\"../image/fr.png\" width=\"130%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>
-<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\"  name=\"langue\" id=\"choixlangue2\"  onclick=\"this.form.submit();\" value=\"en\"><label><img src=\"../image/en.png\" width=\"130%\"></a>		
+			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"display:flex; flex-direction:row;\" >			
+<a href=\"admin.php\" ><label><img src=\"../image/cadenasp.png\" width=\"100%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>	
+<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\" name=\"langue\" id=\"choixlangue1\"  onclick=\"this.form.submit();\" value=\"fr\"><label><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"30px\" ></span>
+<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\"  name=\"langue\" id=\"choixlangue2\"  onclick=\"this.form.submit();\" value=\"en\"><label><img src=\"../image/en.png\" width=\"150%\"></a>		
 			"; 	
 		}
 		
 		else {			
 		echo "
 			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"display:flex; flex-direction:row;\" >
-<a href=\"\" ><input type=\"radio\" hidden name=\"langue\" id=\"choixlangue1\" onclick=\"this.form.submit();\" value=\"fr\"><label for=\"choixlangue1\"><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>
+<a href=\"admin.php\" ><label><img src=\"../image/cadenasp.png\" width=\"100%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>			
+<a href=\"\" ><input type=\"radio\" hidden name=\"langue\" id=\"choixlangue1\" onclick=\"this.form.submit();\" value=\"fr\"><label for=\"choixlangue1\"><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"30px\" ></span>
 <a href=\"\"><input type=\"radio\" hidden  name=\"langue\" id=\"choixlangue2\" onclick=\"this.form.submit();\" value=\"en\"><label for=\"choixlangue2\"><img src=\"../image/en.png\" width=\"150%\"></a>			
 			";
 		}
 		
 		?>
+
  
 <?php
 
@@ -122,12 +126,14 @@ else if($_POST['langue']=='en'){
 ?>
 </form> 
  </div> 
- 
+ </div></div>
 <!--                                           -->
-<!-- choix des langues en php à améliorer, fin -->
+<!-- choix des langues, fin -->
 <!--                                           -->	
-<!-- menu HDR(Horizontale Deroulant Responsif) -->  
-      
+<!-- menu HDR(Horizontale Deroulant Responsif, boostrap) -->  
+<br>
+ <div  style="display:flex; flex-direction:row;"> 
+<div id="contenu" align="inline" width="100%">     
 
 <nav>
 <ul id="menu" style="display:inline;"><?php echo TXT_Menuhtml; ?>
@@ -141,7 +147,7 @@ else if($_POST['langue']=='en'){
 <div  style="display:flex; flex-direction:row;" >
 <div id="contenu" align="inline-block" >
 
-<div id="footbis" class="arrondie" align="center">
+<!--<div id="footbis" class="arrondie" align="center">
 <br>
 <a href="http://www.cic-it.fr/"><img src="../image/logos/reseauCIC-ITter.jpg" width="70%" class="displayed"></a><br><span><img src="../image/blanc.png" width="2%" ></span><br>
 
@@ -153,20 +159,40 @@ else if($_POST['langue']=='en'){
 
 <br><span><a href="http://tech4health.fr/"><img src="../image/logos/tech4health.jpg" width="70%" class="displayed"></a><img src="../image/blanc.png" width="2%"></span><br>
 
+</div>-->
+
+
+<div style="margin-left:5%;margin-right:5%; align:justfy;">
+<!--<h1><?php //echo TXT_TitreMission; ?></h1>-->
+
+</br>
+<h2><?php echo TXT_SSSTitreMission; ?></h2>
+<h6><?php echo "<br>".TXT_SSMenuMission; ?></h6>		
+<br><h6><?php echo "<br>".TXT_ArticleMission; ?></h6>
 </div>
 
-
-<div style="margin-left:5%;margin-right:25%;">
-<h1><?php echo TXT_TitreMission; ?></h1>
-
-
-<h3><?php echo TXT_SSSTitreMission; ?></h3>
-<div style="text-align:justify;"><?php echo TXT_SSMenuMission; ?>		
-<br><?php echo TXT_ArticleMission; ?></div>
+ <div  class="table-responsive">
+<table class="ex2" width="100%"><tr colspan="12">
+<td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>
+<td colspan="1"><a href="http://www.cic-it.fr/" ><img src="../image/logos/reseauCIC-ITter.jpg" width="100%"></a></td>
+  <td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>
+  <td colspan="2"><a href="http://ast-innovations.com/"><img src="../image/Satt-Aquitaine.png" width="50%" ></a></td>
+ 
+  <td colspan="3"><a href="http://euclid-ctu.eu/"><img src="../image/logos/logo-euclid.jpg" width="50%" ></a></td>
+ 
+  <td colspan="1"><a href="http://www.fcrin.org/" ><img src="../image/logos/F-CRIN.png" width="50%" ></a></td> 
+ <td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>
+    <td colspan="1"><a href="http://tech4health.fr/" ><img src="../image/logos/tech4health.jpg" width="120%" ></a></td>
+ <td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>	
+  </tr>
+ </table>
 </div>
 
 </div>
 </div>
+ 
+
+ 
  
  <div id="test" class="arrondie">
   <?php echo TXT_Piedhtml ; ?>
