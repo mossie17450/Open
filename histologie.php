@@ -5,6 +5,16 @@ session_start();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="utf8" lang="utf8" dir="ltr">
 
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108361116-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108361116-1');
+</script>
+<!--fin Global site tag (gtag.js) - Google Analytics fin-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <title>Innovation biomédicale, recherche de biomateriaux avec le CHU de Bordeaux : le CIC-IT. Aquitaine - France</title>
 <meta name="keywords" content="CIC, centre, investigation, clinique, innovation, technologique, biomatériaux, bordeaux, CIC-IT, chu bordeaux, PTIB, Master, bidim, cellules, in vivo, in vitro, médical, recherche, Pessac, Arnozan, hôpital, réparation tissulaire, CIC IT, biomédical, Aquitaine, ingénierie tissulaire, scientifique" />
@@ -21,14 +31,14 @@ session_start();
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">	
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">	
    <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 30%;
       margin: auto;
   }
-  </style> 
+  </style> -->
   <link rel="stylesheet" type="text/css" href="../css/slideshow.css" media="screen" />
 	<script type="text/javascript" src="../js/mootools.js"></script>
 	<script type="text/javascript" src="../js/slideshow.js"></script>
@@ -41,7 +51,7 @@ session_start();
 	      '13-03(G20).jpg': { caption: 'coloration trichromique de Masson.' }, 
 	     
 	    };
-	    var myShow = new Slideshow('show', data, {controller: false, height:150, hu: '../image/', thumbnails: false,width:150  });
+	    var myShow = new Slideshow('show', data, {controller: false, height:180, hu: '../image/', thumbnails: false,width:180  });
 	  });
 	//]]>
 	
@@ -51,7 +61,7 @@ session_start();
 	      '16-01 1a-1 (G400)5.jpg': { caption: 'coloration HES.' }, 
 	    };
 		
-	    var myShow = new Slideshow('show1', data1, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show1', data1, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  
 	  window.addEvent('domready', function(){
@@ -61,8 +71,8 @@ session_start();
 	      '10-08 1-BV0-P21-2 CK8(G20)b.jpg': { caption: 'IHC-CK8.' }, 
 	    };
 		
-	    var myShow = new Slideshow('show2', data2, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
-		var myShow = new Slideshow('show7', data2, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show2', data2, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
+		var myShow = new Slideshow('show7', data2, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  
 	  
@@ -72,7 +82,7 @@ session_start();
 	      '10-08 1-BV4-P06-2 ki67 (G40)5b.jpg': { caption: 'IHC-ki67.' },     
 	    };
 		
-	    var myShow = new Slideshow('show3', data3, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show3', data3, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  
 	  window.addEvent('domready', function(){
@@ -83,7 +93,7 @@ session_start();
 	      '15-01 172G(C)-I2 (G10)b.jpg': { caption: 'G.' }, 
 		   '15-01 180G-d- D (G10)defect et osb.jpg': { caption: 'G?.' }, 
 	    };
-	    var myShow = new Slideshow('show4', data4, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show4', data4, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  
 	  window.addEvent('domready', function(){
@@ -93,27 +103,28 @@ session_start();
 	     '15-01 170D(C) (G100)b.jpg': { caption: 'VVK.' }, 
 	     
 	    };
-	    var myShow = new Slideshow('show5', data5, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show5', data5, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  
 	  window.addEvent('domready', function(){
 	    var data6 = {
 	      '16-01 1a-4 ORC (G400)2b.jpg': { caption: 'coloration spécifique à l\'orcéine' },  
 	    };
-	    var myShow = new Slideshow('show6', data6, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show6', data6, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	  window.addEvent('domready', function(){
 	    var data7 = {
 	      '11-08 P1B-9 caldesmon (G10)pp.jpg': { caption: 'Caldesmon' },  
 	    };
-	    var myShow = new Slideshow('show7', data7, {controller: false, height:150, hu: '../image/', thumbnails: false,width: 150  });
+	    var myShow = new Slideshow('show7', data7, {controller: false, height:180, hu: '../image/', thumbnails: false,width: 180  });
 	  });
 	</script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
+<!--<link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />-->
+<link rel="stylesheet" type="text/css" href="../css/CSSPage.css" /><!-- remplace la SecondePage.css   -->
 <link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
 
 <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/moyenneResolution.css" />
@@ -134,7 +145,7 @@ if (d) {d.style.display='block';}
 //-->
 </script>
 </head>
-<body id="equipe">
+<body>
 <!-- choix de la langue  -->
 <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
@@ -158,14 +169,14 @@ if (d) {d.style.display='block';}
 	 ?>
 <div id="body" class="arrondie">
 <!-- en tête -->
-
-<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
-<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div id="header" style=" display:flex; flex-direction:row; height:auto; " >
+<div style="display:flex; width:10%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/CIC-ITN.jpg" class="arrondie" style="width:100%; height;auto;"></a></div>
 <div style="display:flex;  width:80%; flex-direction:column;">
 <?php echo TXT_EnTete; ?> 
 </div>
-<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
-</div><br><br>
+<div style="display:flex; width:10%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITN.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div>
+<br>
 
 
   
@@ -176,8 +187,9 @@ if (d) {d.style.display='block';}
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			echo "		
-			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"display:flex; flex-direction:row;\" >
-<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\" name=\"langue\" id=\"choixlangue1\"  onclick=\"this.form.submit();\" value=\"fr\"><label><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>
+			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"display:flex; flex-direction:row;\" >			
+<a href=\"admin.php\" ><label><img src=\"../image/cadenasp.png\" width=\"100%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>	
+<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\" name=\"langue\" id=\"choixlangue1\"  onclick=\"this.form.submit();\" value=\"fr\"><label><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"30px\" ></span>
 <a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\"  name=\"langue\" id=\"choixlangue2\"  onclick=\"this.form.submit();\" value=\"en\"><label><img src=\"../image/en.png\" width=\"150%\"></a>		
 			"; 	
 		}
@@ -185,7 +197,8 @@ if (d) {d.style.display='block';}
 		else {			
 		echo "
 			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"display:flex; flex-direction:row;\" >
-<a href=\"\" ><input type=\"radio\" hidden name=\"langue\" id=\"choixlangue1\" onclick=\"this.form.submit();\" value=\"fr\"><label for=\"choixlangue1\"><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>
+<a href=\"admin.php\" ><label><img src=\"../image/cadenasp.png\" width=\"100%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>			
+<a href=\"\" ><input type=\"radio\" hidden name=\"langue\" id=\"choixlangue1\" onclick=\"this.form.submit();\" value=\"fr\"><label for=\"choixlangue1\"><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"30px\" ></span>
 <a href=\"\"><input type=\"radio\" hidden  name=\"langue\" id=\"choixlangue2\" onclick=\"this.form.submit();\" value=\"en\"><label for=\"choixlangue2\"><img src=\"../image/en.png\" width=\"150%\"></a>			
 			";
 		}
@@ -212,12 +225,15 @@ else if($_POST['langue']=='en'){
 ?>
 </form> 
  </div>
+ </div></div>
 <!--                                           -->
 <!-- choix des langues, fin                    -->
+<br>
 <!--                                           -->	
 <!-- menu HDR(Horizontale Deroulant Responsif) -->  
 <!--                                           -->      
-
+<div  style="display:flex; flex-direction:row;">   
+<div id="contenu" align="inline" width="100%">
 <nav>
 <ul id="menu" style="display:inline;"><?php echo TXT_Menuhtml; ?>
 </ul>
@@ -234,32 +250,35 @@ else if($_POST['langue']=='en'){
 <?php echo TXT_TH ; ?> 
 </div>
 
-<div style="display:flex; flex-direction:column; width:30%; float:left; margin-right:1%;">
+<div style="display:flex;  width:30%;  margin-right:1%; margin-top:2%; margin-bottom:2%">
 <a target="_blank" href="../image/personnels/SamP.png">
 
 <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<img src=\"../image/personnels/SamP.png\" width=\"60%\"; title=\"Samantha Roques\" alt=\"Samantha Roques\" height=\"auto\"; align=\"right\";>
+			echo "<img src=\"../image/personnels/SamP.png\" width=\"90%\"; title=\"Samantha Roques\" alt=\"Samantha Roques\" height=\"auto\"; align=\"right\";>
 ";
 		}
 		else {
 			
-		echo "<img src=\"../image/personnels/SamP.png\" width=\"50%\" title=\"Samantha Roques\" alt=\"Samantha Roques\" align=\"right\";>
+		echo "<img src=\"../image/personnels/SamP.png\" width=\"auto\" title=\"Samantha Roques\" alt=\"Samantha Roques\" height=\"auto\"; align=\"right\";>
 			";
 		}
 		?> </a>
 	</div>
 	<div style="display:flex; flex-direction:column; width:30%;  ">
-<?php echo TXT_ResponsableHisto ; ?>	
+<?php echo TXT_ResponsableHisto ; ?>
+
 <div  style="display:inline-block; width:100%;  text-align:left;">
-<?php echo TXT_THR ; ?> 
+<?php echo TXT_THR ; ?>
+
+<?php echo TXT_CH; ?>	 
 </div>
 </div>
 </div>
 
 
-<!--<div  style="display:flex; flex-direction:row; width:100%; height:100%; ">-->
+
 <div  style="display:flex; flex-direction:row; ">
 <div id="contenu" align="inline-block" width="100%" >
 
@@ -267,7 +286,7 @@ else if($_POST['langue']=='en'){
 <!-- images centrées a droite de la page : une autre facon de faire l'aside...-->
 <h4><?php echo TXT_HEA; ?></h4>
 <div class="img" style="border:none;">
-  <!--<a target="_blank" href="../image/Tissus_Leica_TP1020.jpg">-->
+
    <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
@@ -280,7 +299,7 @@ else if($_POST['langue']=='en'){
 ";
 		}
 		?>
-		<?php echo TXT_HT11;   ?>
+		<?php echo TXT_HT11; ?>
   </a>
   <?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
@@ -376,7 +395,9 @@ else if($_POST['langue']=='en'){
 		?>
 		<div><?php echo TXT_HTC21;   ?></div>
   </a>
+ 
    <?php
+
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
 			echo "<a target=\"_blank\" href=\"MicroscopeNickon.php\"><img src=\"../image/equipements/MicroscopeNi-UNIKON.jpg\"  title=\"Microscope Ni-U Nikon (CIT)\" style=\"width:80%; padding:2px;height:auto;\" >
@@ -389,21 +410,26 @@ else if($_POST['langue']=='en'){
 			
 		echo "<a target=\"_blank\" href=\"MicroscopeNickon.php\"><img src=\"../image/equipements/MicroscopeNi-UNIKON.jpg\"  title=\"Microscope Ni-U Nikon (CIT)\" style=\"width:80%; padding:2px;\" ></br>
 ";
-		}
+}
+
+
+		
 		?>
 		<div><?php echo TXT_HTC61;  ?></div>
   </a>
      <?php
+
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
 			
-			echo "<a target=\"_blank\" href=\"microscopeMotorise.php\"><img src=\"..image/equipements/microscope80iNIKON.jpg\" title=\"microscope NIKON 80i à tête motorisée 90i\" style=\"width:80%; padding:2px; height:auto;\" >  ";
+			echo "<a target=\"_blank\" href=\"microscopeMotorise.php\"><img src=\"../image/equipements/microscope80i.jpg\"  title=\"Microscope Ni-U Nikon (CIT)\" style=\" width:80%; padding:2px; height:auto; \" >
+";
 		}
 		else {
 			
-		echo "<a target=\"_blank\" href=\"microscopeMotorise.php\"><img src=\"../image/equipements/microscope80iNIKON.jpg\" title=\"microscope NIKON 80i à tête motorisée 90i\" style=\"width:80%; padding:2px;\">
-
+		echo "<a target=\"_blank\" href=\"microscopeMotorise.php\"><img src=\"../image/equipements/microscope80i.jpg\"  title=\"Microscope Ni-U Nikon (CIT)\" style=\"width:80%; padding:2px;\" ></br>
 ";
-		}
+}
+		
 		?>
 		<div><?php echo TXT_HTC62;   ?></div>
   </a>
@@ -419,26 +445,27 @@ else if($_POST['langue']=='en'){
 ";
 		}
 		?>
-		<div><?php echo TXT_HTC63;   ?></div>
+		<div><?php echo TXT_HTC63; ?></div>
   </a>
 
 </div></div><!-- fin footbis -->
  
-<div  style="display:flex; flex-direction:column;  height:100%;">
+<div  style="display:flex; flex-direction:column; width:78%;">
 <!-- premier tableau... -->
 
-<div id="section-article" class="table-responsive"><?php echo TXT_HST; ?>
+<div id="section-article" class="table-responsive" >
+<table class="ex2"><tr>
+<td colspan="6"><?php // echo TXT_HST; ?></td></tr>
+<tr><td colspan="6"><?php echo TXT_HT1; ?></td></tr>
+</table>
 
- <?php echo TXT_HT1; ?>
-
- <table class="table" width="100%"><tr><td colspan="5">
+ <table class="ex2"><tr><td colspan="6">
   <?php echo TXT_HTC1; ?></td></tr><td>
   <?php echo TXT_HCI; ?></td></table>
  
-
 <!-- deusième tableau... -->
- 
-<table class="table" width="100%"><tr><td colspan="3"><? echo TXT_HTC3; ?></td></tr>
+
+<table class="ex2"><tr><td colspan="4"><? echo TXT_HTC3; ?></td></tr>
 <tr><td><div id="show4" class="slideshow" >
     <img src="../image/15-01 158D-c- A (G10)b.jpg" width="50%" height="auto" alt="Trichrome de Goldner" />
   </div></td><td><img src="../image/markerTransparent.png" width="5%" height="auto"></td>
@@ -448,35 +475,52 @@ else if($_POST['langue']=='en'){
   </td></tr></table>
 
  
-<table class="table" width="100%">
+<table class="ex2">
 
-<tr><td colspan="5"><h4><?php echo TXT_HTC4; ?></h4></td></tr>
+<tr><td colspan="6"><?php echo TXT_HTC4; ?></td></tr>
 <tr><td><div id="show2" class="slideshow">
     <img src="../image/10-08 1-BV0-P07-1 CK8 (G10)b.jpg" alt=" CK8" width="50%" height="auto"/>	
   </div></td>
-  <td><img src="../image/markerTransparent.png" width="3%" height="auto"></td>
+  <td><img src="../image/markerTransparent.png" width="2%" height="auto"></td>
   <td><div id="show7" class="slideshow">
     <img src="../image/11-08 P1B-9 caldesmon (G10)pp.jpg" alt="Caldesmon" width="50%" height="auto"/>
   </div></td>
-  <td><img src="../image/markerTransparent.png" width="3%" height="auto"></td>
+  <td><img src="../image/markerTransparent.png" width="2%" height="auto"></td>
   <td><div id="show3" class="slideshow" >
   <img src="../image/10-08 1-BV0-P10-1 ki67(G40)7b.jpg" alt=" ki67" title=" ki67" width="50%" height="auto"/>
   </div></tr>
-  <td style="text-align:left"><strong>CK8</strong></td><td></td><td><strong>Caldesmon</strong></td><td></td><td style="text-align:left"><strong>Ki67</strong></td>
+  <td style="text-align:center"><strong>CK8</strong></td><td></td><td><strong>Caldesmon</strong></td><td></td><td style="text-align:left"><strong>Ki67</strong></td>
   </table>
- <br>
-
- 
-<h4><?php echo TXT_HTC5; ?></h4>
+<?php echo TXT_HTC5; ?>
 <br>
-<h4><?php echo TXT_HTC6; ?></h4>
 
+<?php echo TXT_HTC6; ?>
+<br><br>
+</div>
+<div  style="display:flex; flex-direction:row; margin-right:5%; margin-top:5px; margin-bottom:5px;">
 
-
-
+	<div class="img" style="border:none; margin-right:1%; width:30%;">
+		<br><a  target="_blank" href="LionelCouraud.php"><!-- lien quand on clique sur l'image....   -->
+			<?php
+		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
+			
+			echo "<img src=\"../image/personnels/LionelPP.jpg\" alt=\"Lionel Couraud\" title=\"Lionel Couraud\" width=\"100%\" >
+";
+		}
+		else {
+			
+		echo "<img src=\"../image/personnels/LionelPP.jpg\" alt=\"Lionel Couraud\" title=\"Lionel Couraud\" width=\"100%\" >
+			";
+		}
+		?>
+		</a>
+	</div>
+	<div style="border:none; margin-right:1%; width:70%;"><h3>Dc Lionel Couraud, Vétérinaire,</h3><?php echo "<article>Le Dr Couraud apporte son expertise d'anatomo-pathologiste des tissus vétérinaires sur les coupes préparées à partir d'explants.<br>Il caractèrise la réaction inflammatoire et le comportement du matériau, in situ et dans le temps.</article>" ?>
 </div>
 </div>
-</div></div>
+</div>
+
+</div></div><br>
  <!-- ajout fin fin -->
 
  <!-- fin du contenu  -->
@@ -484,9 +528,7 @@ else if($_POST['langue']=='en'){
 <div id="test" class="arrondie">
 <?php echo TXT_Piedhtml ; ?>
 </div>
-
 <!-- fin ajout -->
-
 </div>
 </body>
 </html>
