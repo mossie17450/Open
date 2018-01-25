@@ -100,7 +100,7 @@ else {
 <div id="header" style=" display:flex; flex-direction:row; height:auto; " >
 <div style="display:flex; width:10%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="image/logos/CIC-ITN.jpg" class="arrondie" style="width:100%; height;auto;"></a></div>
 <div style="display:flex;  width:80%; flex-direction:column;">
-<?php echo TXT_EnTete; ?> 
+<img src="image/logos/CICITBordeaux.png"  class="arrondie" style="width:100%;" >
 </div>
 <div style="display:flex; width:10%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="image/logos/reseauCIC-ITN.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
 </div>
@@ -171,7 +171,7 @@ else if($_POST['langue']=='en'){
 </div>
 <div  style="display:flex; flex-direction:row; width:100%; ">
 <div  id="section-article"><br>
-<!--<h1 align="center" ><?php // echo TXT_Titre; ?></h1>-->
+<!--<h1 align="center" ><?php // echo TXT_Titre; ?></h1> titre supprimé -->
 <h2 align="center" ><strong><?php echo TXT_SSTitre; ?></strong></h2>
 <!--  titres de la page....  -->
 <?php echo TXT_Article; ?>		
@@ -277,7 +277,6 @@ swfobject.addDomLoadEvent(function() {
 
 <a href="http://www.adobe.com/go/getflashplayer"><img src="image/Responsable.png" alt="Get Adobe Flash player" />installez adobe flash s'il vous plais</a>
 </div> 
-
 </div>
 
 
@@ -301,9 +300,7 @@ swfobject.addDomLoadEvent(function() {
  </table>
 </div>
 
-<!--<hr>-->
 <br>
-
 
 <div id="test" class="arrondie">
 <?php echo TXT_Pied; ?> 
