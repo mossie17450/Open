@@ -13,14 +13,17 @@ session_start();
 
   gtag('config', 'UA-108361116-1');
 </script>
+<!-- Global site tag (gtag.js) - Google Analytics fin-->
 
 <title>Innovation biomédicale, recherche de biomateriaux avec le CHU de Bordeaux : le CIC-IT. Aquitaine - France</title>
-<meta  charset="utf8" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <meta name="keywords" content="CIC, centre, investigation, clinique, innovation, technologique, biomatériaux, bordeaux, CIC-IT, chu bordeaux, PTIB, Master, bidim, cellules, in vivo, in vitro, médical, recherche, Pessac, Arnozan, hôpital, réparation tissulaire, CIC IT, biomédical, Aquitaine, ingénierie tissulaire, scientifique" />
 <meta name="description" content="Acteur aquitain de l&#039;innovation biomédicale, le Centre d&#039;Investigation Clinique Innovation Technologique Biomatériaux de Bordeaux opère au sein d&#039;une structure scientifique actuelle et avancée pour appuyer tous ces travaux de recherche." />
 <link rel="icon" type="image/png" href="image/logos/logoCIC-ITB.png" />
-
 <!--[if IE]><link rel="icon" type="image/png" href="image/logos/logoCIC-ITB.png" /><![endif]-->
+
 <!---                         -->
 <!--- mes feuilles de style : -->
 <!---                         -->
@@ -155,30 +158,31 @@ else if($_POST['langue']=='en'){
  </div> 
  </div>
  
-</div><br><br>
+</div>
+
 <!--                               -->
 <!-- choix des langues en php  fin -->
 <!--                               -->
 <!-- menu HDR(Horizontale Deroulant Responsif) -->  
- <div  style="display:flex; flex-direction:row; width:100%; "> 
+<div  style="display:flex; flex-direction:row; width:100%; "> 
 <div id="contenu" align="inline">
 <nav>
 <ul id="menu"><?php echo TXT_Menu; ?>
 </ul>
 </nav>
 </div>
-
 </div>
+
+
 <div  style="display:flex; flex-direction:row; width:100%; ">
 <div  id="section-article"><br>
 <!--<h1 align="center" ><?php // echo TXT_Titre; ?></h1> titre supprimé -->
 <h2 align="center" ><strong><?php echo TXT_SSTitre; ?></strong></h2>
 <!--  titres de la page....  -->
 <?php echo TXT_Article; ?>		
-
+</div>
 </div>
 
-</div>
 </div><br>
 <div id="contenu" style="display:inline-block; " >
 
@@ -275,8 +279,8 @@ swfobject.addDomLoadEvent(function() {
 <!-- id="AlternativeContent" dans le header.... -->
 <div id="AlternativeContent">
 
-<a href="http://www.adobe.com/go/getflashplayer"><img src="image/Responsable.png" alt="Get Adobe Flash player" />installez adobe flash s'il vous plais</a>
-</div> 
+<a href="http://www.adobe.com/go/getflashplayer"><img src="image/logos/Adobe-Flash-Player-icon.png" alt="Get Adobe Flash player" />installez adobe flash s'il vous plait</a>
+</div>
 </div>
 
 
@@ -305,6 +309,7 @@ swfobject.addDomLoadEvent(function() {
 <div id="test" class="arrondie">
 <?php echo TXT_Pied; ?> 
 </div>
+
 
 
 </div>
