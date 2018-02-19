@@ -3,7 +3,7 @@
  	 //---------------------------------------------------------
  	 // index.php
  	 //---------------------------------------------------------
-	 define('TXT_Menu', "<li><a href=\"index.php\">Accueil du CIC-IT</a>
+	 define('TXT_Menu', "<li style=\"font-family:'Century Gothic Normal';\"><a href=\"index.php\">Accueil du CIC-IT</a>
 	 <ul>
 	 <li><a href=\"html/histoire.php\">Histoire et partenaires</a></li>
 	 <li><a href=\"html/missions.php\">Missions</a></li>
@@ -32,22 +32,22 @@
 	 <li><a href=\"html/cic-it-postes.php\">Offres de postes</a></li>
 	 <li><a href=\"html/cic-it-stages.php\">Offres de stages</a></li>
 	 <li><a href=\"html/cic-it-spontanee.php\">Dépôt de CV et candidatures spontanées</a></li></ul></li>
+	 <li><a href=\"html/actualites.php\">Evenements</a></li>
+	 <li><a href=\"html/coordonnees.php\">Contact/Infos pratiques</a>
+	 </li>
+	
 	 
-	 <li><a href=\"html/fiche-de-contact.php\">Contact/Infos pratiques</a>
-	 <ul>
-	 <li><a href=\"html/coordonnees.php\">Coordonnées</a></li></ul></li>
-	 
-	 <li><a href=\"html/actualites.php\">Evenements</a></li></ul></li>
+	 </ul></li>
 	 ");
 	 
 	 
-
-	define('TXT_EnTete',"<h1 style=\"color:#0059b3; text-align:center; \"><strong>CENTRE D’INVESTIGATION CLINIQUE</strong></h1><h1 style=\"color:red; text-align:center;  \"><strong>INNOVATION TECHNOLOGIQUE</strong></h1><h1 style=\"color:#0059b3; text-align:center; \"><strong>BIOMATERIAUX ET DISPOSITIFS MEDICAUX IMPLANTABLES</strong></h1>");
+	//suppression de l'entete. devient un image.
+	//define('TXT_EnTete',"<h1 style=\"color:#0059b3; text-align:center; \"><strong>CENTRE D’INVESTIGATION CLINIQUE</strong></h1><h1 style=\"color:red; text-align:center;  \"><strong>INNOVATION TECHNOLOGIQUE</strong></h1><h1 style=\"color:#0059b3; text-align:center; \"><strong>BIOMATERIAUX ET DISPOSITIFS MEDICAUX IMPLANTABLES</strong></h1>");
 	 define('TXT_Titre', "Le CIC-IT de Bordeaux");
-	 define('TXT_Pied', "<ul><a href=\"html/sitemap.php\" title=\"Plan du site\">Plan du site  | </a><a href=\"html/mentions-legales.php\">Mentions légales | </a>|<a href=\"html/fiche-de-contact.php\" title=\"Contact\">Contact</a></ul>");
+	 define('TXT_Pied', "<ul><a href=\"html/sitemap.php\" title=\"Plan du site\">Plan du site  | </a><a href=\"html/mentions-legales.php\">Mentions légales | </a>|<a href=\"html/coordonnees.php\" title=\"Contact\">Contact</a></ul>");
 	 define('TXT_SSTitre', "Un guichet unique pour amener votre innovation au lit du patient");
-	 define('TXT_Article', "<br><h6>Le CIC-IT de Bordeaux est un service du CHU dédié à l'innovation biomédicale et la recherche translationnelle dans le domaine des Biomatériaux et Dispositifs Médicaux Implantables (DMI).<br><br>
-			Il est issu de la collaboration entre l'Inserm, le CHU de Bordeaux, l'Institut Bergonié et l'Université de Bordeaux pour structurer efficacement le transfert des innovations technologiques :<br> le CIC-IT aborde de manière intégrée l'évaluation préclinique et clinique des biomatériaux et DMI dans un environnement scientifique et clinique de pointe.</h6>");	
+	 define('TXT_Article', "<br><div style=\"margin-left:5%; margin-right:5%; text-align:left; \"><h6>Le CIC-IT de Bordeaux est un service du CHU dédié à l'innovation biomédicale et la recherche translationnelle dans le domaine des Biomatériaux et Dispositifs Médicaux Implantables (DMI).<br><br>
+			Il est issu de la collaboration entre l'Inserm, le CHU de Bordeaux, l'Institut Bergonié et l'Université de Bordeaux pour structurer efficacement le transfert des innovations technologiques :<br> le CIC-IT aborde de manière intégrée l'évaluation préclinique et clinique des biomatériaux et DMI dans un environnement scientifique et clinique de pointe.</h6></div>");	
 	 define('TXT_IE',"<p><strong>Note:</strong>animation non supportée par Internet Explorer 9 et les précédantes versions.</p>");
 	//---------------------------------------------------------
   	 // html/Histoire.php
@@ -91,9 +91,6 @@
 	 <li><a href=\"TestesCliniques.php\">Etudes cliniques</a></li>
 	
 	 </ul></li>
-	 
-	 
-	 
 	 <li><a href=\"master-bidim.php\">Formations/Recrutement</a>
 	 <ul>
 	 
@@ -101,21 +98,16 @@
 	 <li><a href=\"cic-it-stages.php\">Offres de stages</a></li>
 	 <li><a href=\"cic-it-spontanee.php\">Dépôt de CV et candidatures spontanées</a></li></ul></li>
 	 
-	 <li><a href=\"fiche-de-contact.php\">Contact/Infos pratiques</a>
-	 <ul>
+	 <li><a href=\"actualites.php\">Evenements</a></li>
+	 <li><a href=\"coordonnees.php\">Contact/Infos pratiques</a>
+	 </li>
 	
-	 <li><a href=\"coordonnees.php\">Coordonnées</a></li>
-	 
 	 </ul></li>
-	 
-	 <li><a href=\"actualites.php\">Evenements</a></li></ul></li>
-	 
-	
 	 ");
 	
 	define('TXT_TitreMission', "<h1 align=\"center\">Nos missions</h1>");
 	
-	define('TXT_Piedhtml', "<ul><a href=\"sitemap.php\" title=\"Plan du site\">Plan du site |</a><a href=\"mentions-legales.php\">Mentions légales |</a><a href=\"fiche-de-contact.php\" title=\"Contact\">Contact</a></ul>");
+	define('TXT_Piedhtml', "<ul><a href=\"sitemap.php\" title=\"Plan du site\">Plan du site |</a><a href=\"mentions-legales.php\">Mentions légales |</a><a href=\"coordonnees.php\" title=\"Contact\">Contact</a></ul>");
 	define('TXT_ArticleMission',"Pour ce faire, le CIC-IT de Bordeaux s'appuie sur la 
 	<a target=\"_blank\" href=\"http://ast-innovations.com/ \">Société d'Accélération de Transfert 
 	</a>\"Aquitaine Science Transfert\" (AST),  le réseau national des CIC-IT et  les plateformes nationales 
@@ -151,18 +143,18 @@ et participe au <a href=\"https://bcrm.u-bordeaux.fr/\" /> \"Bordeaux Consortium
   	// Fonctionnement/organisation.php
   	//---------------------------------------------------------
 	define('TXT_TitresFonctionnement',"<h1 align=\"center\">Organisation</h1> ");
-	define('TXT_A1Fonction',"Le CIC de Bordeaux (regroupant la gouvernance des 3 modules: IT, P et EC) est géré via un 
+	define('TXT_A1Fonction',"<h6>Le CIC de Bordeaux (regroupant la gouvernance des 3 modules: IT, P et EC) est géré via un 
 	comité de pilotage annuel, et est l'objet d'une évaluation quinquennale par l'<a href=\"http://www.hceres.fr/\">HCERES</a>.<br> Le CIC dépend directement 
 	de la <a href=\"https://www.chu-bordeaux.fr/Espace-m%C3%A9dia/Actualit%C3%A9s/La-DRCI-:-toute-1%C3%A8re-structure-de-recherche-publique-%C3%A0-%C3%AAtre-certifi%C3%A9e-ISO-9001*-dans-la-nouvelle-version-2015/\">Direction de la Recherche Clinique et de l'Innovation (DRCI)</a> du CHU de Bordeaux et de la Délégation Régionale 
 	de l'INSERM.<br> 
 Le CIC-IT travaille étroitement avec les modules P et EC du CIC de Bordeaux en particulier pour les essais cliniques, 
-pour lesquels il fait appel aux compétences du <a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr/\">CIC-P</a> pour le support investigateur et du <a target=\"_blank\" href=\"http://usmr.isped.u-bordeaux2.fr/\">CIC-EC</a> pour la méthodologie, le data management et les statistiques, et sous la direction de la DRCI pour les essais cliniques à promotion académique.");
-	define('TXT_A2Fonction',"Le CIC-IT est piloté via un comité stratégique annuel, sous la direction du président du 
+pour lesquels il fait appel aux compétences du <a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr/\">CIC-P</a> pour le support investigateur et du <a target=\"_blank\" href=\"http://usmr.isped.u-bordeaux2.fr/\">CIC-EC</a> pour la méthodologie, le data management et les statistiques, et sous la direction de la DRCI pour les essais cliniques à promotion académique.</h6>");
+	define('TXT_A2Fonction',"<h6>Le CIC-IT est piloté via un comité stratégique annuel, sous la direction du président du 
 	comité (Pr Fricain), et regroupant le coordinateur médical (Pr Bordenave) et le coordinateur délégué (Dr Durand), 
 	les représentants de ses tutelles, le directeur de la PTIB (Pierre Dos Santos) et les membres scientifiques. Les coordonnateurs 
 	des modules EC et P sont également conviés. Un bilan d'activité y est présenté et les orientations 
-	scientifiques et stratégiques futures y sont déterminées.
-Les nouveaux projets soumis au CIC-IT sont présentés au comité technique mensuel regroupant toute l'équipe, 
+	scientifiques et stratégiques futures y sont déterminées.</h6>
+<h6>Les nouveaux projets soumis au CIC-IT sont présentés au comité technique mensuel regroupant toute l'équipe, 
 le représentant valorisation de la SATT et de l'INSERM, et les porteurs des nouveaux projets si nécessaire.
 Le Comité Technique a pour missions : 
 <div  id=\"puces\" ><ul><li style=\"text-align:justify; margin-left:25px;\">
@@ -175,12 +167,12 @@ Le Comité Technique a pour missions :
         <li style=\"text-align:justify; margin-left:25px;\">De faciliter la collaboration entre les différents acteurs de la recherche clinique au CHU et la continuité entre la recherche pré-clinique et clinique.</li>
         <li style=\"text-align:justify; margin-left:25px;\">De préparer la réponse aux appels d'offres.</li>
            
-        </ul></div>");
+        </ul></h6></div>");
 	
 	define('TXT_SSTitreFonction',"L'équipe");
 	define('TXT_imgOrganigramme',"Organigramme CIC-IT Biomatériaux");
 	define('TXT_imgOrganigrammeDRCI',"Organigramme de la DRCI");
-	define('TXT_legendeImg',"<b>Organigramme<b/>");
+	define('TXT_legendeImg',"Organigramme");
 	define('TXT_legendeImgDRCI',"<b>Organigramme<br/>DRCI</b>");
 	define('TXT_Equipe',"Equipe du CIC-IT");
 	define('TXT_PhotoEquipe',"<br>De gauche à droite : Cécile Raymond, Claire Darcos, Laurence Bordenave, Marlène Durand, Agung Purnama, Johanna Rannou, Carolina Lanchas Fuentes, Martine Renard, Mallory Meulle, Samantha Roques, Elodie Belmo.<br>");
@@ -192,8 +184,8 @@ Le Comité Technique a pour missions :
 
 	define('TXT_TMA1',"Le CIC-IT est piloté via un Comité d’Orientation Stratégique (COS) annuel, sous la direction de son président <a>le Pr Jean-Christophe Fricain</a>, et regroupant le coordonnateur médical (<a href=\"LaurenceBordenave.php\">Pr Laurence Bordenave</a>), le coordonnateur délégué (<a href=\"MarleneDurand.php\">Marlène Durand</a>), les représentants des tutelles du CIC1401 ,<a   href=\"http://www.u-bordeaux.fr/Universite/Organisation/Presidence2/Les-vice-presidents/Pierre-Dos-Santos-vice-president-en-charge-de-la-recherche\"> le directeur de la PTIB</a> et les membres scientifiques du CIC-IT. <a>Les coordonnateurs des modules EC et P </a>sont également conviés. 
 <br>Un bilan d’activité y est présenté et les orientations stratégiques et scientifiques futures 
-y sont discutées et déterminées.<br> Un compte-rendu est rédigé et adressé aux participants. <br>");
-	define('TXT_TMA2',"<br>Le CIC-IT de Bordeaux est dirigé par un <a href=\"LaurenceBordenave.php\">coordonnateur médical (Pr L Bordenave)</a> et par un <a href=\"MarleneDurand.php\">coordonnateur délégué (PhD M Durand)</a>. <br>Le coordonnateur médical assure la coordination médicale et scientifique du CIC-IT et est également en charge des relations avec les tutelles du CIC-IT. Le coordonnateur délégué assiste le coordonnateur médical dans ses fonctions et assure la coordination administrative, managériale, logistique et scientifique du CIC-IT au quotidien. Le coordonnateur délégué peut également suppléer le coordonnateur médical dans certaines instances.
+y sont discutées et déterminées.<br> Un compte-rendu est rédigé et adressé aux participants.<br>");
+	define('TXT_TMA2',"<br><h6>Le CIC-IT de Bordeaux est dirigé par un <a href=\"LaurenceBordenave.php\">coordonnateur médical (Pr L Bordenave)</a> et par un <a href=\"MarleneDurand.php\">coordonnateur délégué (PhD M Durand)</a>. <br>Le coordonnateur médical assure la coordination médicale et scientifique du CIC-IT et est également en charge des relations avec les tutelles du CIC-IT. Le coordonnateur délégué assiste le coordonnateur médical dans ses fonctions et assure la coordination administrative, managériale, logistique et scientifique du CIC-IT au quotidien. Le coordonnateur délégué peut également suppléer le coordonnateur médical dans certaines instances.
 Les coordinateurs sont à l'initiative de la mise en place d'un <a href=\"systeme-qualite.php \">système de management de la qualité</a> au sein du CIC-IT et sont ainsi garants de la mise en oeuvre des actions associées à la politique \"qualité\" par l'ensemble de l'équipe.Ils ont aussi la charge d’instruire les demandes de nouveaux projets soumis au CIC-IT : évaluation de l’éligibilité, recherche de partenaires, réponse aux appels d’offre. 
 <br>Le coordonnateur délégué établit les budgets, 
 devis et conventions avec les services ad hoc. Il assure ensuite le suivi des projets en termes 
@@ -201,34 +193,34 @@ d’attribution des ressources humaines et techniques, d’avancement des travau
 mise à jour des devis et contrats si nécessaire, et de rédaction/validation des rapports. 
 Il rapporte régulièrement au coordonnateur médical toute difficulté concernant la conduite des projets et de l’équipe. 
 Il représente aussi le CIC-IT dans les différents réseaux auxquels il appartient et établit également les bilans d’activité annuels et 
-quadriennaux demandés par les tutelles.");
+quadriennaux demandés par les tutelles.</h6>");
 
 	define('TXT_TMA4',"<div style=\"display:inline-block; margin-left:none; text-align:justify;\">
-<h2>Secrétariat/gestion</h2>
-Cette fonction est assurée par Claire Darcos qui gère le circuit des commandes et l’organisation des missions pour toute l’équipe.<br>
-Elle assiste les coordonnateurs dans leur travail quotidien sur les questions administratives et de suivi de l’activité.<br></div>");
+<h6>Claire Darcos</h6><br>
+<h6>Le secrétariat et la gestion sont assurés par Claire Darcos qui gère le circuit des commandes et l’organisation des missions pour toute l’équipe.<br>
+Elle assiste les coordonnateurs dans leur travail quotidien sur les questions administratives et de suivi de l’activité.<br></div></h6>");
 //modifications le 25 septembre 2017...
-	define('TXT_TMA3',"Une réunion de projet mensuelle 
+	define('TXT_TMA3',"<h6>Une réunion de projet mensuelle 
 permet de discuter l’avancement des projets en cours.<br>Une réunion mensuelle dite de fonctionnement
-est régulièrement animée par le coordonnateur délégué du CIC-IT, avec toute l’équipe, afin de discuter de l'organisation et fonctionnement quotidiens de la structure.<br><br>");
+est régulièrement animée par le coordonnateur délégué du CIC-IT, avec toute l’équipe, afin de discuter de l'organisation et fonctionnement quotidiens de la structure.<br><br></h6>");
 	define('TXT_coordinateurD',"Coordonnateur délégué");
 	define('TXT_coordinateurM',"Coordonnateur médical");
 
 	//---------------------------------------------------------
   	// Système qualitée  
   	//---------------------------------------------------------
-	define('TXT_QualiteTitre',"<h1 align=\"center\">Le sytème qualité au CIC-IT</h1>");
+	//define('TXT_QualiteTitre',"<h1 align=\"center\">Le sytème qualité au CIC-IT</h1>");
 	define('TXT_A1Qualite',"Le CIC-IT organise ses activités dans le respect de son système de management qualité en conformité avec la norme ISO 9001. Il s’est engagé dès 2016 dans une démarche de certification selon la nouvelle version 2015 de la Norme.");
 
 	define('TXT_SuiteA1Q',"<h3 style=\"margin-left:10px;\">Ce travail autour de notre système de management qualité se traduit par :</h3>
-	<ul id=\"puces\"><li>la mise en place de documents qualité qui encadrent les pratiques et organisent les activités</li>
+	<h6><ul id=\"puces\"><li>la mise en place de documents qualité qui encadrent les pratiques et organisent les activités</li>
 	<li>le suivi des actions face aux dysfonctionnements ou des actions pour l’amélioration des processus </li>
-	<li>les évaluations de nos processus à plusieurs niveaux (revues de processus, audits de processus et de projets) afin d’assurer leur mise en application selon les termes prévus.</li></ul>
+	<li>les évaluations de nos processus à plusieurs niveaux (revues de processus, audits de processus et de projets) afin d’assurer leur mise en application selon les termes prévus.</li></ul></h6>
 	");
 	
 	define('TXT_SuiteA2Q',"<h3 style=\"margin-left:10px;\">Le système qualité a été mis en place selon les préconisations des systèmes qualité des organismes de tutelle suivants :</h3>
-<ul id=\"puces\"><li>le CHU de Bordeaux et notamment son Département Qualité et Performance (DQP) pour ce qui concerne les consignes et modèles pour l’élaboration des documents qualité, et la Direction de la Recherche Clinique et de l'Innovation (DRCI), pour les éléments propres à la recherche clinique,</li>
-<li>l'INSERM, en raison de son intégration au Réseau National des CIC et de sa participation au groupe « Harmonisation des procédures des CIC » (HP-CIC). </li></ul>");
+<h6><ul id=\"puces\"><li>le CHU de Bordeaux et notamment son Département Qualité et Performance (DQP) pour ce qui concerne les consignes et modèles pour l’élaboration des documents qualité, et la Direction de la Recherche Clinique et de l'Innovation (DRCI), pour les éléments propres à la recherche clinique,</li>
+<li>l'INSERM, en raison de son intégration au Réseau National des CIC et de sa participation au groupe « Harmonisation des procédures des CIC » (HP-CIC). </li></h6></ul>");
 	
 	define('TXT_A3Qualite',"Les activités du CIC-IT sont réalisées dans le respect des Normes et le cadre législatif en vigueur en France, Europe et au niveau International.<br>
 Tout le personnel du CIC-IT est impliqué dans la démarche qualité de la structure et est garant, à son niveau, de son bon fonctionnement afin d’aboutir à un travail conforme aux atteintes des clients et des autres parties intéressées.<br>
@@ -236,8 +228,8 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
 ");
 	
 	
-	define('TXT_TexteImage',"<h3 style=\"margin-left:10px;\">Objectifs du CIC-IT</h3>
-<ul><li>Se référer à la CONVENTION RELATIVE AU CENTRE D'INVESTIGATION CLINIQUE DE BORDEAUX N°074.2010.RC et au Règlement intérieur du CIC-IT.</li>
+	define('TXT_TexteImage',"<h3 style=\"margin-left:10px;\">Objectifs du CIC-IT</h3><h6>
+<ul><li>Se référer à la CONVENTION RELATIVE AU CENTRE D'INVESTIGATION CLINIQUE DE BORDEAUX N°074.2010.RC et au Règlement intérieur du CIC-IT.</li></h6>
 	<li class=\"blink_me\" style=\"color:red; text-align:center; list-style-type:none; \" ><h3>Obtenir la certification ISO 9001 version 2015 en 2018.</h3></li></ul>");
 	define ('TXT_TitreImg',"CIC-IT : processus de management, réalisation et support");
 	//define ('TXT_Vara',"Dans le souci de produire un travail de qualité, un service qualité à été mis en place en 2010. Celui-ci veille à la bonne application de ces réglementations et procédures. Pour y parvenir, le CIC-IT s'engage à accomplir la politique qualité et à mettre en place des outils de mesure d'efficacité des processus et d'atteinte des objectifs, ainsi que des ressources dédiées au système qualité: la chef de projet assure le fonctionnement des processus et la coordination fonctionnelle.<p>Le service qualité est à l\'origine, sous ma responsabilité, de la rédaction et de la révision des procédures et de la formation du personnel à celles-ci par des moyens divers (réunions, préparation de brochures, séances de révision...). Dans la continuité, le service qualité s\'assure de la mise en application de l\'organisation et des actions définies dans les documents qualité.</p><p>La formation du personnel aux modifications réglementaires et aux changements pratiques qui en résultent est également une priorité du CIC-IT.</p><p>Chaque membre du CIC-IT est donc responsable à son niveau de la garantie que son activité s\'inscrit dans une démarche qualité ce qui permet d\'assurer que le CIC-IT travaille dans un souci de développement d\'études de qualité scientifique maximale.</p><p>Dans cet esprit, en tant que coordinatrice du CIC-IT, j'attends un engagement fort du personnel à améliorer de façon continue nos performances pour satisfaire et anticiper les attentes de nos clients et partenaires.</p><p>La volonté du CIC-IT est d\'assurer à ses clients et aux parties intéressées la qualité de ses prestations, le meilleur service possible et les meilleurs conseils afin de répondre parfaitement à leurs besoins et aux exigences définies dans leurs demandes.</p><div>Pr Laurence BORDENAVE</div> ");
@@ -258,7 +250,7 @@ Pour tout renseignement concernant le système qualité, vous pouvez contacter l
   	//---------------------------------------------------------
 	define('TXT_VRET',"<TR><TH width=\"35%\">titre</TH><TH width=\"25%\">auteur</TH><TH width=\"18%\">journale/symposium</TH><TH width=\"10%\">annee</TH></TR>");
 	
-	define('TXT_TV',"<h1 style=\"text-align:center\">Nos Réalisations</h1>");
+	define('TXT_TV',"<h1 style=\"text-align:center\">Nos Réalisations</h1><h1></br></h1>");
 	define('TXT_VCB',"Type de publication");
 	define('TXT_OK',"Validez");
 	//les fenetres modales :
@@ -297,19 +289,20 @@ Aborder de manière intégrée les biomatériaux innovants et l'appréciation de
 </ul></div></div> ");
 
 	define('TXT_ArticleA13',
-"Pour la validation des \"biomatériaux naturels et synthétiques\", dans des applications cliniques variées, et en particulier dans les domaines ostéo-articulaires, cardio vasculaires, digestif (mais pas seulement), En mettant au point des modèles d'évaluation.<div style=\"display:block; text-align:left;\">
-<h3>par exemple:<br></h3>
-<div  id=\"puces\" ><ul><li style=\"text-align:justify; margin-left:25px;\">
-	Simulation de circulation artérielle sur banc hémodynamique</li>
+"Pour la validation des \"biomatériaux naturels et synthétiques\", dans des applications cliniques variées, et en particulier dans les domaines ostéo-articulaires, cardio vasculaires, digestif (mais pas seulement), En mettant au point des modèles d'évaluation.
+<div style=\"display:block; text-align:left;\"><br>
+par exemple:<br><br>
+<div  id=\"puces\" ><ul>
+<li style=\"text-align:justify; margin-left:25px;\">Simulation de circulation artérielle sur banc hémodynamique</li>
 <li style=\"text-align:justify; margin-left:25px;\">Modèles chirurgicaux</li>
 <li style=\"text-align:justify; margin-left:25px;\">Suivi longitudinal <em>in vivo</em> par imagerie non invasive</li>
 <li style=\"text-align:justify; margin-left:25px;\">Etc.</li></ul></div></div>");
 
-	define('TXT_Img',"<img src='../image/cic_it_preuve_concept.jpg'  width=\"100%\" class=\"arrondie\">");
+	define('TXT_Img',"<img src='../image/cic_it_preuve_concept.jpg'  width=\"80%\" class=\"arrondie\">");
 
 	define('TXT_Col',"<div id=\"projet\"><br><ul>
-	<li><em><strong>Programme européen FP7 ou H2020 :1(#)</strong></em></li>
-<li><em><strong>Agence Nationale de la Recherche:1(*) et 7(#)</strong></em></li>
+	<li><em>Programme européen FP7 ou H2020 :1(#)</em></li>
+<li><em>Agence Nationale de la Recherche:1(*) et 7(#)</em></li>
 
 <li><em><strong>Programme Hospitalier de Recherche Clinique-National:2(#)</strong></em></li>
 <li><em><strong>Programme Hospitalier de Recherche Clinique-Interrégional:2(#)</strong></em></li>
@@ -339,7 +332,7 @@ Responsable du Plateau Histologie de la PTIB<br>
 <div style=\"display:inline\">
 Tél. :  05 57 10 28 61 / Fax. : 05 57 10 28 63
 <br>Courriel:<a href=\"mailto:samantha.delmond@chu-bordeaux.fr\"> samantha.delmond@chu-bordeaux.fr </a></div>");
-define('TXT_CH',"<br><a href=\"LionelCouraud.php\">Lionel Coureau </a>consultant en anatomo-histologie & vétérinaire.");
+define('TXT_CH',"<br><a href=\"LionelCouraud.php\">Lionel Coureau</a>: consultant en anatomo-histologie vétérinaire.");
 	define('TXT_HST',"<h1 align=\"center\"><strong>Activités</strong></h1>");
 	define('TXT_HT1',"<h3 align=\"justify\">Inclusion de tissus mous (paraffine) et calcifiés (résine méthacrylate, technovit 9100)</h3>  
 <br>
@@ -390,19 +383,19 @@ define('TXT_HTC1',"<h2>Colorations sur tissu mou et décalcifié </h2><em>(HES, 
 <br>Tél : 05 47 30 27 54 / Fax : 05 57 10 28 63
 <br><div style=\"display:inline;\">Courriel :<a href=\"mailto:mallory.meulle.univ@chu-bordeaux.fr\"> mallory.meulle.univ@chu-bordeaux.fr</a><br></div>");
 
-	define('TXT_HDT',"Hémodynamique");
+	define('TXT_HDT',"<h2 style=\"text-align:center\">Hémodynamique</h2>");
 	define('TXT_HDTA',"<h1><strong>Activités</strong></h1>");
-	define('TXT_HDTA1',"<h3>Tests hémodynamiques : compliance, éclatement.</h3>");	
+	define('TXT_HDTA1',"<h3>Tests hémodynamiques : compliance, éclatement</h3>");	
 	define('TXT_HDA1',"<strong>Chambre BioDynamic BOSE + moteur pulsatile</strong>");
 	
-	define('TXT_HDA2',"<strong>Veines saphenes en paralleles</strong>");
+	define('TXT_HDA2',"<strong>Veines saphenes en parallèle</strong>");
 	define('TXT_HDA3',"<strong>Mise sous flux d’un vaisseau artificiel</strong>");
-	define('TXT_HDA4',"<strong>Veines saphenes</strong>");
+	define('TXT_HDA4',"<strong>Veine saphene</strong>");
 	
 	
-	define('TXT_HDTA2',"<h3>Tests d'étanchéité de produits d'ingénierie tissulaire tubulaires.</h3> ");
-	define('TXT_HDA2',"<h3>Décellularisation dynamique.</h3>");
-	define('TXT_HDAp1',"<strong>Mise sous flux d'une veines saphènes.</strong>");
+	define('TXT_HDTA2',"<h3>Tests d'étanchéité de produits d'ingénierie tissulaire tubulaires</h3> ");
+	define('TXT_HDA2',"<h3>Décellularisation dynamique</h3>");
+	define('TXT_HDAp1',"<strong>Mise sous flux d'une veines saphène </strong>");
 	
 
 	define('TXT_HDAp3',"<strong>Décellularisation dynamique.</strong>");
@@ -417,11 +410,11 @@ define('TXT_HTC1',"<h2>Colorations sur tissu mou et décalcifié </h2><em>(HES, 
 	define('TXT_TAB',"<h2 style=\"text-align:center\">Bactériologie</h2>");
 	define('TXT_BM',"Etude de l'activité antibiotique sur extraits tissulaires<br>");
 	define('TXT_BM1',"à partir de modèles infectieux");
-	define('TXT_BM4',"<h2>Ensemencement et culture</h2>");
+	define('TXT_BM4',"<h3>Ensemencement et culture</h3>");
 	define('TXT_BLI3',"<strong>Broyeur de tissus</strong>");
-	define('TXT_BLI1',"<strong>Activité bactiérienne /<br> anti-bactérienne: CMI, CMB</strong>");
+	define('TXT_BLI1',"Activité bactiérienne /<br> anti-bactérienne: CMI, CMB");
 	define('TXT_BLI2',"<strong>Caractérisation</strong>");
-	define('TXT_BM3',"<h2>Identification</h2>");
+	define('TXT_BM3',"<h3>Identification</h3>");
 	define('TXT_BLI4',"<strong>GRAM sur étalement</strong>"); 
 	define('TXT_BLI5',"<strong>GRAM sur coupe histologique</strong>");
 	
@@ -439,23 +432,23 @@ define('TXT_HTC1',"<h2>Colorations sur tissu mou et décalcifié </h2><em>(HES, 
 	");
 	define('TXT_HCT',"<strong><h2 style=\"width:100%; text-align:center; \">Activités :</h2></strong>");
 	define('TXT_HMT',"<h2 style=\"text-align:center\">Hémocompatibilité</h2>");
-	define('TXT_HM',"<br><div style=\"width:100%; text-align:left; \"><h2><strong>Tests d'hémocompatibilité </strong></h2><ul><li><strong>Tests d'hémolyse selon la norme ASTM F756-08</strong></li><li><strong>Test d'activation plaquettaire</strong></li><li><strong>Test d'activation du complément(C3a, CH50, SC5b-9)</strong></li><li><strong>Comptage des plaquettes et leucocytes sur des matériaux utilisés en cardiovasculaire selon la norme ASTM F2888-13.</strong></li></ul></div>");
-	define('TXT_HLI1',"<strong>Test d'hémolyse</strong>");
-	define('TXT_HTI2',"<strong>Plaquettes</strong>");
+	define('TXT_HM',"<br><div style=\"width:100%; text-align:left; \"><h3><strong>Tests d'hémocompatibilité</strong></h3><ul><h6><li>Tests d'hémolyse selon la norme ASTM F756-08</strong></li><li>Test d'activation plaquettaire</li><li>Test d'activation du complément(C3a, CH50, SC5b-9)</li><li>Comptage des plaquettes et leucocytes sur des matériaux utilisés en cardiovasculaire selon la norme ASTM F2888-13.</li></h-></ul></div>");
+	define('TXT_HLI1',"<h6><strong>Test d'hémolyse</h6></strong></h6>");
+	define('TXT_HTI2',"Plaquettes");
 	
 		define('TXT_HTI5',"<strong>Etude du complément</strong>");
 		define('TXT_HTI6',"<strong>Etude de la coagulation</strong>");
 		define('TXT_HTI7',"<strong>Numération sanguine</strong>");
 	
-	define('TXT_HST1',"<h3>Hémolyse</h3>");
-	define('TXT_HST2',"<h3>Plaquettes</h3>");
+	define('TXT_HST1',"<h3><strong>Hémolyse</strong></h3>");
+	define('TXT_HST2',"<h3><strong>Plaquettes</strong></h3>");
 	
 	define('TXT_HLI4',"<strong>Agrégation</strong>");
 	define('TXT_HLI2',"<strong>Activation plaquettaire<br> T=0min</strong>");
 	define('TXT_HLI3',"<strong>Activation plaquettaire<br> T=15min</strong>");
 	
 	define('TXT_HLI8',"<strong>Dosage ELISA du C3a</strong>");
-	define('TXT_HLI9',"<strong>tests chronométriques (ici: Activated Partial Thromboplastin Time)</strong>");
+	define('TXT_HLI9',"<strong>Tests chronométriques (ici: Activated Partial Thromboplastin Time)</strong>");
 	define('TXT_HLI10',"<strong>Numérateur vetABC</strong>");
 
 	
@@ -466,17 +459,19 @@ define('TXT_HTC1',"<h2>Colorations sur tissu mou et décalcifié </h2><em>(HES, 
 	//---------------------------------------------------------
   	//              page Culture cellulaire
   	//---------------------------------------------------------
-	define('TXT_ResponsableCellule',"Responsable:<br>Martine RENARD");
+	define('TXT_ResponsableCellule',"<h3>Responsable:<br>Martine RENARD</h3>");
 	define('TXT_TCBHR',"Chargée d'études précliniques.
-	<br>Responsable du plateau culture cellulaire de la PTIB<br>
+	<!--<br>Responsable du plateau culture cellulaire de la PTIB<br>-->
 	<div style=\"display:inline;\">Tel: 05 57 10 28 59/ Fax: 05 57 10 28 63<br>Courriel: <a href=\"mailto:martine.renard@chu-bordeaux.fr\">martine.renard@chu-bordeaux.fr</a></div>
 	");
 
 
-	define('TXT_CCM',"<h2>Cellules endothéliales, musculaires lisses, musculaires striées, urothéliales, fibroblastes, </h2><h2>d'origine humaines, porcines, ovines ...</h2>
-<div  style=\"width:100%; text-align:left; \"><ul style=\"list-style-type:circle;\"><li><h4>Isolement et caractérisation de cellules primaires.</h4></li>
-<li><h4>Amplification</h4></li>
-<li><h4>Caractérisation cellulaire.</h4></li>
+	define('TXT_CCM',"<h3>Collection de cellules d'origines divers:</h3><ul>
+	<li><h3>origine tissulaire: </h3><h6>endothèliales, musculaires lisses, musculaires striées, urothéliales, fibroblastes, ... </h6></li>
+	<li><h3>origine animal</h3><h6>humaines, porcines, ovines ...</h6></li></ul>
+<div  style=\"width:100%; text-align:left; \"><ul style=\"list-style-type:circle;\"><li><h3>cellulaire primaire</h3><h6>Isolement et caractérisation de cellules primaires.</h6></li>
+<li><h3>Amplification</h3></li>
+<li><h3>Caractérisation cellulaire.</h3></li>
 </ul></div>");
 	define('TXT_EAT',"Equipements associés");
 	define('TXT_CCTM',"<div id=\"section-article\"><h2><strong>Activités</strong></h2>");
@@ -496,7 +491,7 @@ define('TXT_HTC1',"<h2>Colorations sur tissu mou et décalcifié </h2><em>(HES, 
   	// page    tests precliniques in vivo...
   	//---------------------------------------------------------
 	define('TXT_ResponsableInVivo',"Responsable: <br>Marlène Durand");
-	define('TXT_IVT',"Les tests pré-cliniques<em> in vivo</em>");
+	define('TXT_IVT',"<h2 style=\"text-align:center\">Etudes pré-cliniques<em> in vivo</em></h2>");
 	define('TXT_IVR',"Coordonnateur délégué, chef de projets
 	<div style=\"display:inline;\">	
 	Tél : 05 57 10 28 66 / Fax. :05 57 10 28 63<br>
@@ -508,9 +503,10 @@ define('TXT_HTC1',"<h2>Colorations sur tissu mou et décalcifié </h2><em>(HES, 
 <li>Suivi de l'expérimentation (suivi clinique et biologique, imagerie) et des analyses histologiques</li><br>
 </ul></div>");
 
-	define('TXT_IVIA',"<strong><h3 style=\"margin-left:5%;\">Exemples:</h3></strong><br>");
+	define('TXT_IVIA',"<h3 style=\"margin-left:5%; text-align:left;\"><strong>Exemples:</strong></h3><br>");
+	
 	define('TXT_IVEquipements',"<h4 style=\"text-align:center; margin-left:5%; margin-rigth:5%;\">
-Ressources de l'Université de Bordeaux, la PTIB et l'IHU LIRYC:</h4><h6><br><ul style=\"text-align:left; margin-left:5%; margin-rigth:5%;\"><li>Animaleries,</li><br><li>Blocs opératoires,</li><br><li>Imagerie rayons X,</li><br><li>IRM,</li><br><li>PhotoImager,</li><br><li>Echographie.</li></ul></h6>");
+Ressources de l'Université de Bordeaux, la PTIB et l'IHU LIRYC:</h4><h6><br><ul style=\"text-align:left; margin-left:5%; margin-rigth:5%;\"><li>Animaleries agréées,</li><br><li>Blocs opératoires,</li><br><li>Imagerie rayons X,</li><br><li>IRM,</li><br><li>PhotoImager,</li><br><li>Echographie.</li></ul></h6>");
 	
 	define('TXT_IVI1',"<strong>Echodoppler carotide de brebis après pontage</strong>");
 	define('TXT_IVI2',"<strong>Injection intervertébrale chez le mouton</strong>");
@@ -523,47 +519,47 @@ Ressources de l'Université de Bordeaux, la PTIB et l'IHU LIRYC:</h4><h6><br><ul
   	//---------------------------------------------------------
 	define('TXT_Resp',"Responsable:");
 	define('TXT_ResponsableClinique',"Elodie Belmo");
-	define('TXT_TCT',"Les études cliniques");
+	define('TXT_TCT',"<h2 style=\"text-align:center\">Etudes cliniques</h2>");
 	define('TXT_TCR',"Chargée d'études cliniques<br>
 	<div style=\"display:inline; \">	
 	Tél: 05 57 10 28 95/ Fax: 05 57 10 28 63<br>
 	Courriel: <a href=\"mailto:elodie.seris@chu-bordeaux.fr\">elodie.seris@chu-bordeaux.fr</div></a>");
-	define('TXT_ECM1',"<h2>Missions recherche clinique:</h2>
-<h4><strong>Coordination et gestion d'essais cliniques mono et multicentriques portant sur des dispositifs médicaux</strong></h4>
- <div  style=\"display:block; text-align:left;\" id=\"puces\">
-<ul ><li>Conception/Rédaction de protocole et documents de l'étude (note d'info-consentement, brochure investigateur, cahier d'observation, etc...)</li>
+	define('TXT_ECM1',"<h3>Missions recherche clinique:</h3>
+<h6><strong>Coordination et gestion d'essais cliniques mono et multicentriques portant sur des dispositifs médicaux</strong></h6>
+ <div  style=\"display:block; text-align:left;margin-left:5%;\" id=\"puces\"><h6>
+<ul><li>Conception/Rédaction de protocole et documents de l'étude (note d'info-consentement, brochure investigateur, cahier d'observation, etc...)</li>
 <li>Recherche de collaborations (cliniciens, industriels, chercheurs) et de financements (appels d'offres, etc...)</li>
 <li>Constitution et suivi des dossiers administratifs et réglementaires au niveau national</li>
 <li>Logistique de l'étude (circuit pharmacie, échantillons biologiques, etc...)</li>
 <li>Contrôle qualité des données (e-CRF ou support papier) : monitoring sur site public ou privé</li>
 <li>Participation à la valorisation de la recherche (aide au plan statistique, résumé du rapport final et publication)</li>
-</ul></div>");
+</ul></h6></div>");
 
-	define('TXT_ECM2',"<h2>Missions transversales:</h2> 
-<div  style=\"display:block; text-align:left;\" id=\"puces\">
-<ul>
+	define('TXT_ECM2',"<h3>Missions transversales:</h3> 
+<div  style=\"display:block; text-align:left; margin-left:5%;\" id=\"puces\">
+<h6><ul>
 
  <li>Veille réglementaire relative aux dispositifs médicaux et à la recherche clinique</li>
  <li>Participation à l'élaboration/validation de documents Qualité relatifs au Management par la Qualité en recherche clinique (CHU de Bordeaux, Inserm et Réseau des CIC, plateforme EUCLID)</li>
- </ul>
+ </ul></h6>
  </div>
  
-<h2>Expérience dans les domaines médicaux suivants :</h2>
- <div  style=\"display:block; text-align:left;\" id=\"puces\">
- Orthopédie, chirurgie vasculaire, ORL et chirurgie maxillo-faciale, ORL pédiatrique, chirurgie plastique et reconstructrice, implantologie dentaire, ingénierie tissulaire, cardiologie et imagerie interventionnelle et plus...
+<h3>Expérience dans les domaines médicaux suivants :</h3>
+ <div  style=\"display:block; text-align:left; margin-left:5%;\" id=\"puces\">
+ <h6>Orthopédie, chirurgie vasculaire, ORL et chirurgie maxillo-faciale, ORL pédiatrique, chirurgie plastique et reconstructrice, implantologie dentaire, ingénierie tissulaire, cardiologie et imagerie interventionnelle et plus...</h6>
  </div>");
 	//---------------------------------------------------------
   	// Master BIDIM
   	//---------------------------------------------------------
 	define('TXT_TitreMaster',"<h1 style=\"text-align:center\">Activités de formation à et par la recherche</h1>");
-	define('TXT_ArticleM1',"<p>Les membres du CIC IT interviennent dans les formations suivantes :</p>
-<ul id=\"puces\">
+	define('TXT_ArticleM1',"<p><h3>Les membres du CIC IT interviennent dans les formations suivantes :</h3></p>
+<h6><ul id=\"puces\">
 <li>Master BiDim de Bordeaux:<br>
 En réponse à la demande industrielle, ce <strong>master professionnel</strong> a pour objectif de former des cadres (actuellement 20 maxi/an) aux problématiques spécifiques des matériaux et matériels du <strong>secteur biomédical</strong>.
 Les compétences réglementaires ont été renforcées ces dernieres années.</li>
 <li>DIU FARC de l'université de Bordeaux</li>
 <li>Formation à la recherche clinique plateforme F-CRIN</li>
-</ul>
+</ul></h6>
 ");
 	
 	define('TXT_lien',"Liens: ");
@@ -574,7 +570,7 @@ Les compétences réglementaires ont été renforcées ces dernieres années.</l
   	// Offre de stages
   	//---------------------------------------------------------
 	define('TEXT_TitreStage',"<h1>Offres de stages</h1>");
-	define('TXT_ArticleStage',"Aucun stage proposé à ce jour.");
+	define('TXT_ArticleStage',"<h3>Aucun stage proposé à ce jour.</h3>");
 	define ('TXT_PostulerS',"Si le stage vous intéresse,");
 	define ('TXT_IciPostulerS',"postulez ici,");
 	define('TXT_TMS',"Ici, la liste des personnes ayant effectué un stage au sein du CIC-IT de Bordeaux");
@@ -585,14 +581,14 @@ Les compétences réglementaires ont été renforcées ces dernieres années.</l
   	// Offre de postes
   	//---------------------------------------------------------
 	define('TXT_TitrePoste',"<h1>Offres de postes</h1>");
-	define('TXT_ArticlePoste',"Aucun poste à pourvoir à ce jour.");
+	define('TXT_ArticlePoste',"<h3>Aucun poste à pourvoir à ce jour.</h3>");
 	define('TXT_TPDF',"plus de détail dans le pdf ci-dessous:");
 	
 	//---------------------------------------------------------
-  	// contact
+  	// contact  // à supprimer: inutil...
   	//---------------------------------------------------------	
 	define('TXT_TitreContact',"<h1>Contact </h1>");
-	define('TXT_stContact',"<br><h2>Fiche de contact</h2>");
+	define('TXT_stContact',"<br><h3>Fiche de contact</h3>");
 	define('TXT_Contacte',"Contactez-nous");
 	define('TXT_Nom',"Nom  :<span title=\"Ce champ est obligatoire.\">");
 	define('TXT_Prenom',"Prénom  :<span title=\"Ce champ est obligatoire.\">");
@@ -604,7 +600,7 @@ Les compétences réglementaires ont été renforcées ces dernieres années.</l
 	//---------------------------------------------------------
   	// candidature spontanées
   	//---------------------------------------------------------
-	define('TXT_TitreSpon',"<h1 style=\"text-align:center\">Vous souhaitez travailler au CIC-IT!</h1><br/>Déposez votre CV et remplissez le formulaire ici,<br/> Nous pourrons vous contacter dés qu'une offre en rapport avec nos besoins et vos compétences sera disponible.</h4>
+	define('TXT_TitreSpon',"<h1 style=\"text-align:center\">Vous souhaitez travailler avec nous, au CIC-IT de Bordeaux!</h1><br/><h6>Déposez votre CV et remplissez le formulaire ici,<br/> Nous pourrons vous contacter dés qu'une offre en rapport avec nos besoins et vos compétences sera disponible.</h6>
 <div style=\"text-align:center\"></div>");
 	define('TXT_Spon',"<h3>Merci de bien vouloire compléter le formulaire ci-dessous:</h3>");
 	
