@@ -21,15 +21,22 @@ session_start();
 <meta name="description" content="Acteur aquitain de l&#039;innovation biomédicale, le Centre d&#039;Investigation Clinique Innovation Technologique Biomatériaux de Bordeaux opère au sein d&#039;une structure scientifique actuelle et avancée pour appuyer tous ces travaux de recherche." />
 <!--- mes feuilles de style : -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />-->
+<!--<link rel="stylesheet" type="text/css" href="../css/SecondePage.css" />-->
+
 <link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
-<link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/moyenneResolution.css" />
-<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/petitResolution.css" />
-<link rel="stylesheet" media="screen and (max-width: 400px)" href="../css/toutpetitResolution.css" />
-<link rel="stylesheet" type="text/css" href="../css/menuHDR2.css" />
+<link rel="stylesheet"  media="screen and (min-width: 240px)" type="text/css" href="../css/CSSPage.css" />
+<link rel="stylesheet"  media="screen and (min-width: 240px)"type="text/css" href="../css/menuHDR2.css" />
+<link rel="stylesheet" type="text/css" href="../css/menuHD.css" />
+
 <script type="text/javascript">
 <!--
 window.onload=montre;
@@ -44,7 +51,7 @@ if (d) {d.style.display='block';}
 </script>
 </head>
 
-<body id="equipe">
+<body style="font-family:'Century Gothic Normal'; max-width:1200px; " >
 <?php
 	  if($_SESSION['lang'] && empty($_GET['langue'])){
  ($_SESSION['lang']);
@@ -68,13 +75,15 @@ if (d) {d.style.display='block';}
 	 ?>
 <div id="body" class="arrondie">
 
-<div id="header" style=" display:flex; flex-direction:row; height:auto;" >
-<div style="display:flex; width:17%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/cicitgbis.png" class="arrondie" style="width:100%; height;auto;"></a></div>
+<div id="header" style=" display:flex; flex-direction:row; height:auto; " >
+<div style="display:flex; width:10%;"><a href="https://dev.cic-it-bordeaux.fr/index.php" style="float:left; "><img src="../image/logos/CIC-ITN.jpg" class="arrondie" style="width:100%; height;auto;"></a></div>
 <div style="display:flex;  width:80%; flex-direction:column;">
-<?php echo TXT_EnTete; ?> 
+
+<img src="../image/logos/CICITBordeaux.png"  class="arrondie" style="width:100%;" >
 </div>
-<div style="display:flex; width:17%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITter.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
-</div><br><br>
+<div style="display:flex; width:10%;"><a href="http://www.cic-it.fr/index.php" style="float:right;"><img src="../image/logos/reseauCIC-ITN.jpg"  class="arrondie" style="width:100%; height;auto;" ></a></div>
+</div>
+
 
 <!-- choix de la langue -->
  
@@ -84,25 +93,36 @@ if (d) {d.style.display='block';}
  <div id="contenu" align="inline-block" width="100%">
  
 <div id="CdL" style="float: right; align:inline-block;"> 
-
-<?php
+ 
+ 		<?php
 		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
-			echo "		
-			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"display:flex; flex-direction:row;\" >
-<a href=\"#\" style=\"display:flex; flex-direction:row;\" ><input type=\"radio\" name=\"langue\" id=\"choixlangue1\"  onclick=\"this.form.submit();\" value=\"fr\"><label><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>
-<a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\"  name=\"langue\" id=\"choixlangue2\"  onclick=\"this.form.submit();\" value=\"en\"><label><img src=\"../image/en.png\" width=\"150%\"></a>		
+			echo "
+<div style=\"display:flex; flex-direction:row; float:left; width:200% \">			
+			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"  \">
+<div  class=\"table-responsive, ex2\" ><table style=\"border:none; width:30%; float:left; \"><tr colspan=\"12\">
+
+<td colspan=\"1\"><img src=\"../image/transparent.png\" width=\"5%\" ></td>	
+<td colspan=\"4\"><a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\"  name=\"langue\" id=\"choixlangue1\"  onclick=\"this.form.submit();\" value=\"fr\"><label><img src=\"../image/fr.png\" width=\"100%\"></a></td>
+<td colspan=\"1\"><img src=\"../image/transparent.png\" width=\"5%\" ></td>	
+<td colspan=\"4\"><a href=\"#\" style=\"display:flex; flex-direction:row;\"><input type=\"radio\"  name=\"langue\" id=\"choixlangue2\"  onclick=\"this.form.submit();\" value=\"en\"><label><img src=\"../image/en.png\" width=\"100%\"></a></td>
+<td colspan=\"2\"><a href=\"html/admin.php\" ><label><img src=\"../image/cadenasp.png\" width=\"100%\"></a></td>
+</tr></table></div>	
 			"; 	
 		}
 		
 		else {			
 		echo "
-			<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" style=\"display:flex; flex-direction:row;\" >
-<a href=\"\" ><input type=\"radio\" hidden name=\"langue\" id=\"choixlangue1\" onclick=\"this.form.submit();\" value=\"fr\"><label for=\"choixlangue1\"><img src=\"../image/fr.png\" width=\"150%\"></a><span><img src=\"../image/transparent.png\" width=\"20px\" ></span>
-<a href=\"\"><input type=\"radio\" hidden  name=\"langue\" id=\"choixlangue2\" onclick=\"this.form.submit();\" value=\"en\"><label for=\"choixlangue2\"><img src=\"../image/en.png\" width=\"150%\"></a>			
-			";
-		}
-		
-		?>
+		<form  action=\"\" methode=\"post\" name=\"automatiquement\" id=\"choixlangue\" >
+		<div class=\"table-responsive, ex2\" style=\"min-height:50px; min-width:100px;\">			
+			<table class=\"table, ex2\" style=\"border:none; min-height:50px; min-width:100px;\"><tr colspan=\"13\">			
+<a href=\"\" ><input type=\"radio\" hidden name=\"langue\" id=\"choixlangue1\" onclick=\"this.form.submit();\" value=\"fr\"><td colspan=\"4\"><label for=\"choixlangue1\"><img src=\"../image/fr.png\" width=\"100%\"></td></a><td colspan=\"1\"><img src=\"../image/transparent.png\" width=\"10%\" height=\"auto\"></td>
+<a href=\"\"><input type=\"radio\" hidden  name=\"langue\" id=\"choixlangue2\" onclick=\"this.form.submit();\" value=\"en\"><td colspan=\"4\"><label for=\"choixlangue2\"><img src=\"../image/en.png\" width=\"100%\"></td></a><td colspan=\"1\"img src=\"../image/transparent.png\" width=\"10%\" height=\"auto\"></td>		
+	<a href=\"html/admin.php\" ><td colspan=\"3\"><label><img src=\"../image/cadenasp.png\" width=\"100%\"></td></a>
+	</tr></table></div>
+		";
+		}		
+		?>	
+		</div>
 
 <?php
 
@@ -123,38 +143,103 @@ else if($_POST['langue']=='en'){
 ?>
 </form> 
  </div>
- 
+ </div></div>
 <!--                                           -->
 <!-- choix des langues,                    fin -->
 <!--                                           -->	
+<br>
 <!-- menu HDR(Horizontale Deroulant Responsif) -->  
       
-<div>
+<div  style="display:flex; flex-direction:row;"> 
+ <div id="contenu" align="inline-block" width="100%">
 <nav>
 <ul id="menu" style="display:inline;"><?php echo TXT_Menuhtml; ?>
 </ul>
 </nav>
-</div>
+
 </div></div>
 
 
 <div style="display:flex; flex-direction:row;" >
 <div id="contenu" align="inline-block">
 
-<div id="footbis" class="arrondie">
-<h6 style="color:white;"></h6> 
-<a><img src="../image/logos/Banniere-idv-gif-anime_petit.gif" width="100%"</a>
-<h6 style="color:white;"></h6>
-<a href="https://biologie.u-bordeaux.fr/formation/2016/PRMA_75/ingenierie-de-la-sante"><img src="../image/logos/unite_de_formation_de_biologieBIDIM.png" width="100%"><?php echo TXT_Master ; ?></a>
-<h6 style="color:white;"></h6>
-<a href="https://cic-p.u-bordeaux.fr/Formation/DIU-FARC-TEC"><img src="../image/logos/DIU-FARC-TEC-C-CIC-P_petit.jpg" width="100%"><?php echo "DIU FARC"; ?></a>
-<h6 style="color:white;"></h6>
 
-<a href="http://www.fcrin.org/activite-de-formation"><img src="../image/logos/CoursFCRIN.jpg" width="100%"><?php echo TXT_FCRIN ; ?></a>
-<h6 style="color:white;"></h6>
-</div>
 
-<!-- fin du menu -->
+<div id="footbis"  class="arrondie" >
+<!-- images centrées a droite de la page : une autre facon de faire l'aside...-->
+<h4><?php echo "<strong>organismes associés</strong>" ; ?></h4>
+<div class="img" style="border:none; ">
+   <?php
+		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
+			
+			echo "<a target=\"_blank\" href=\"\"/><img src=\"../image/logos/Banniere-idv-gif-anime_petit.gif\" alt=\"\" title=\"UBordeaux\" style=\"width:60%; padding:2px; height:auto;\">
+";
+		}
+		else {
+			
+		echo "<a target=\"_blank\" href=\"\"/><img src=\"../image/logos/Banniere-idv-gif-anime_petit.gif\" alt=\"université de Bordeaux\" title=\"UBordeaux\" style=\"width:60%; padding:2px; align:center;\">
+";
+		}
+		?>
+		<?php echo "université de Bordeaux"; ?>
+  
+  <?php
+		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
+			
+			echo "<a target=\"_blank\" href=\"https://biologie.u-bordeaux.fr/formation/2016/PRMA_75/ingenierie-de-la-sante\"/><img src=\"../image/logos/unite_de_formation_de_biologieBIDIM.png\" alt=\"Formation BIDIM\" title=\"Formation BIDIM\" style=\"width:90%; padding:2px; height:auto;\">
+";
+		}
+		else {
+			
+		echo "<a target=\"_blank\" href=\"https://biologie.u-bordeaux.fr/formation/2016/PRMA_75/ingenierie-de-la-sante \"/><img src=\"../image/logos/unite_de_formation_de_biologieBIDIM.png\" alt=\"Formation BIDIM\" title=\"Formation BIDIM\" style=\"width:90%; padding:2px; align:center;\">
+";
+		}
+		?>
+		<div><?php echo TXT_Master;   ?></div>
+		
+  </a>
+
+  <?php
+		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
+			
+			echo "<a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr/Formation/DIU-FARC-TEC\"/><img src=\"../image/logos/DIU-FARC-TEC-C-CIC-P_petit.jpg\" alt=\"\" title=\"DU FARC\" style=\"width:60%; padding:2px; height:auto;\">
+";
+		}
+		else {
+			
+		echo "<a target=\"_blank\" href=\"https://cic-p.u-bordeaux.fr/Formation/DIU-FARC-TEC \"/><img src=\"../image/logos/DIU-FARC-TEC-C-CIC-P_petit.jpg\" alt=\"Formation BIDIM\" title=\"DU FARC\" style=\"width:60%; padding:2px; align:center; \">
+";
+		}
+		?>
+		<div><?php echo "DIU FARC";   ?></div>
+		
+  </a>
+
+    <?php
+		if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'windows phone') !== false)) {
+			
+			echo "<a target=\"_blank\" href=\"http://www.fcrin.org/activite-de-formation\"/><img src=\"../image/logos/CoursFCRIN.jpg\" alt=\"Formation FCRIN\" title=\"Formation FCRIN\" style=\"width:80%; padding:2px; height:auto;\">
+";
+		}
+		else {
+			
+		echo "<a target=\"_blank\" href=\"http://www.fcrin.org/activite-de-formation \"/><img src=\"../image/logos/CoursFCRIN.jpg\" alt=\"Formation FCRIN\" title=\"Formation FCRIN\" style=\"width:80%; padding:2px;\">
+";
+		}
+		?>
+		<div><?php echo TXT_FCRIN;   ?></div>
+		
+  </a>
+
+
+
+ 
+ 
+   
+
+
+</div></div>
+
    
 <div id="section-article">
    <?php  echo TXT_TitreMaster; ?>
